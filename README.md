@@ -87,4 +87,6 @@ WEBOX_LIVE_RUN="$(date -u +%Y%m%dT%H%M%SZ)-browser" ./scripts/frontend.sh run te
 
 生产配置位于`infra/nginx.conf`、`infra/webox.service`与`application-prod.yml`。需要部署方提供主机、域名和真实TLS证书；本项目的本地生产代理验证不代表已对外部署。扩展多应用节点前须增加共享事件广播与共享限流。
 
-原始AI编程对话保存于私有、忽略的`ai-conversations/`；`python3 scripts/export-conversations.py`复制本项目全部可访问的Codex原生JSONL，包括代理会话，生成含来源路径、时间范围和SHA-256的[manifest.json](ai-conversations/manifest.json)。它不把摘要或截图当完整导出。`python3 scripts/finalize-conversation-export.py`等待本轮原生task_complete记录，再复制包含最终回复的完整会话；核验文件摘要成功后才更新T136和AC-DC-010。若自动导出未运行，可执行`python3 scripts/export-conversations.py`取得当前快照。后续新对话、其他工具或不可访问历史须分别补充原生完整导出。原始对话可能包含私有配置，不应随公开源码发布。
+公开仓库提供[AI编程对话的脱敏Markdown副本](ai-conversations/README.md)，保留现有导出的消息顺序和工具记录，隐藏检测到的密钥及会话凭据；文件摘要和脱敏数量见[公开清单](ai-conversations/manifest.public.json)。修改前原件完整保存在本机被忽略的`.local/private-conversations/`中，公开副本不代替“未修改原生导出”的验收。
+
+`python3 scripts/export-conversations.py`仍可复制本项目全部可访问的Codex原生JSONL（包括代理会话）到`ai-conversations/`，生成私有`manifest.json`；这些新原始导出默认被Git忽略。`python3 scripts/finalize-conversation-export.py`等待本轮原生task_complete后复制包含最终回复的完整会话，核验摘要成功才更新T136和AC-DC-010。后续新对话、其他工具或不可访问历史须分别补充原生完整导出，并在公开前单独检查凭据。

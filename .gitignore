@@ -3,7 +3,12 @@
 .env.*
 !.env.example
 .local/
-ai-conversations/
+# Only reviewed public conversation copies are tracked; new raw exports stay private.
+/ai-conversations/*
+!/ai-conversations/README.md
+!/ai-conversations/manifest.public.json
+!/ai-conversations/codex-session-01a142c2-6f17-73b1-9dc9-4a17e788e669.md
+!/ai-conversations/codex-session-01a14323-2627-79c1-8e6a-3d7653636198.md
 *.key
 *.pem
 

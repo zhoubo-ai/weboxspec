@@ -1,0 +1,34 @@
+{
+  "publishedAt": "2026-10-16T16:50:54.749785+00:00",
+  "format": "Existing Markdown conversation exports, reviewed and sanitized for public sharing",
+  "scope": "The two existing codex-session Markdown files; message order and line counts retained. No new conversation turns are appended.",
+  "unmodifiedNativeExport": false,
+  "originalsPreservedLocally": true,
+  "privateBackupDirectory": ".local/private-conversations/20261016T165054Z",
+  "redactionNotice": "Detected API keys, authentication/session tokens and credential-like literals are replaced by explicit REDACTED markers. Public copies are not byte-identical originals.",
+  "files": [
+    {
+      "path": "codex-session-01a142c2-6f17-73b1-9dc9-4a17e788e669.md",
+      "sourceBytes": 577135,
+      "sourceSha256": "9327a200613a873ccd97aa131077b79440da18533e963fa3e85199074b578f09",
+      "publishedBytes": 577135,
+      "publishedSha256": "9327a200613a873ccd97aa131077b79440da18533e963fa3e85199074b578f09",
+      "lines": 5119,
+      "redactions": {}
+    },
+    {
+      "path": "codex-session-01a14323-2627-79c1-8e6a-3d7653636198.md",
+      "sourceBytes": 9051328,
+      "sourceSha256": "80aa666c70b640d9875caa1b2d80ed52a0ef93bcfc926a890aeda8f5e037ad4d",
+      "publishedBytes": 9051084,
+      "publishedSha256": "d3bd5074f1af0ae488e1576b28853ec8263faf886ee61a6f2ea7184bd1772c36",
+      "lines": 95123,
+      "redactions": {
+        "CSRF_TOKEN": 3,
+        "OPENROUTER_API_KEY": 2,
+        "SESSION_COOKIE": 3,
+        "CREDENTIAL_LITERAL": 7
+      }
+    }
+  ]
+}
