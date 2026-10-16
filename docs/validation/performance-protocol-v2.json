@@ -1,0 +1,59 @@
+{
+  "version": 2,
+  "registeredAt": "2026-10-16T14:54:00.403422+00:00",
+  "status": "Registered before full retest after bounded SSE batching fix",
+  "users": 200,
+  "menuDishes": 500,
+  "rampSeconds": 60,
+  "steadySecondsAfterAllSseConnected": 600,
+  "thinkSeconds": [
+    1,
+    5
+  ],
+  "validOrdersMinimum": 200,
+  "inventoryStreamsPerEmployee": 1,
+  "browser": "Chromium",
+  "viewport": [
+    1440,
+    900
+  ],
+  "samplesPerMetric": 20,
+  "limitsMs": {
+    "menu": 2000,
+    "filter": 2000,
+    "searchIncludingDebounce": 2000,
+    "cart": 300,
+    "validOrder": 3000,
+    "inventory": 2000,
+    "dashboard": 3000
+  },
+  "percentile": "nearest-rank; all 20 attempts; failed/missing samples are positive infinity",
+  "retries": 0,
+  "warmup": "one menu and search; ordinary fixture preparation before each action",
+  "menuAndSearchRequireFreshNetworkResponse": true,
+  "cartMeasurement": "in-page click through two requestAnimationFrame callbacks after updated quantity is observed",
+  "inventoryMeasurement": "before authoritative order request through changed stock badge; includes write latency, conservative versus post-commit-only timing",
+  "hardware": {
+    "host": "Apple M4 Pro",
+    "logicalCpus": 14,
+    "memoryBytes": 51539607552,
+    "os": "macOS 15.7.3 (24G419)",
+    "dockerEngine": "28.1.1",
+    "dockerCpus": 2,
+    "dockerMemoryBytes": 6214086656
+  },
+  "applicationJvm": "JDK 17, separate from Gatling, Xms256m/Xmx1g",
+  "hikariPool": 16,
+  "authenticationSharedIp": {
+    "burst": 240,
+    "perMinute": 300
+  },
+  "sourceSha256": {
+    "backend/src/test/java/com/webox/load/LoadFixture.java": "9884b0a0f97ded0e6d261f9d75fc883e53360f2935443832d3448dbde6955466",
+    "backend/src/test/java/com/webox/load/MealOrderingSimulation.java": "96b71936c44dfce4d1c21909aa9abdffb916000dd4831dfb09051744ed74e80a",
+    "frontend/tests/performance/user-visible.spec.ts": "e7ad186bbffa03a50f353f11ca14098678792f7dc877548253d870a85097b6e9",
+    "frontend/playwright.performance.config.ts": "ede33b42f481af504e24aa048b536f3e8a8f0f3ad74860023bd5c6da8f4cc9f4",
+    "backend/src/main/java/com/webox/inventory/InventorySubscriptions.java": "f3dd6af4a143e751c15346fa480af95e2fc084490cd55f469f03a8e320f3dd7b"
+  },
+  "change": "Same acceptance thresholds and denominators; implementation now writes bounded consecutive SSE frames together and records closure reasons. Smoke supports 200 users."
+}

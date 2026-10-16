@@ -1,0 +1,20 @@
+CREATE TABLE order_items (
+ id CHAR(36) CHARACTER SET ascii COLLATE ascii_bin NOT NULL PRIMARY KEY,
+ order_id CHAR(36) CHARACTER SET ascii COLLATE ascii_bin NOT NULL,
+ dish_id CHAR(36) CHARACTER SET ascii COLLATE ascii_bin NOT NULL,
+ dish_name_snapshot VARCHAR(100) NOT NULL,
+ dish_version_snapshot BIGINT NOT NULL,
+ configuration_key CHAR(64) CHARACTER SET ascii COLLATE ascii_bin NOT NULL,
+ options_snapshot JSON NOT NULL, effective_allergens_snapshot JSON NOT NULL,
+ base_price_cents BIGINT NOT NULL, unit_price_cents BIGINT NOT NULL,
+ quantity INT NOT NULL, subtotal_cents BIGINT NOT NULL,
+ FOREIGN KEY(order_id) REFERENCES orders(id) ON DELETE RESTRICT,
+ FOREIGN KEY(dish_id) REFERENCES dishes(id) ON DELETE RESTRICT,
+ UNIQUE KEY uq_order_configuration(order_id,dish_id,configuration_key),
+ INDEX ix_order_items(order_id,id), INDEX ix_order_item_dish(dish_id,order_id),
+ CHECK(dish_version_snapshot BETWEEN 0 AND 9007199254740991),
+ CHECK(base_price_cents BETWEEN 0 AND 9007199254740991 AND unit_price_cents BETWEEN base_price_cents AND 9007199254740991),
+ CHECK(quantity BETWEEN 1 AND 5 AND subtotal_cents BETWEEN 0 AND 9007199254740991),
+ CHECK(CAST(unit_price_cents AS DECIMAL(20,0))*quantity=subtotal_cents),
+ CHECK(JSON_TYPE(options_snapshot)='ARRAY' AND JSON_TYPE(effective_allergens_snapshot)='ARRAY')
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

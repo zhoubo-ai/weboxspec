@@ -1,0 +1,121 @@
+{
+  "type": "object",
+  "properties": {
+    "repeatPolicy": {
+      "type": "string",
+      "enum": [
+        "DEFAULT",
+        "EXCLUDE"
+      ]
+    },
+    "repeatFrom": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "repeatThrough": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "repeatEvidence": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "needsClarification": {
+      "type": "boolean"
+    },
+    "cuisines": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Chinese",
+          "Western",
+          "Japanese",
+          "Light Meal",
+          "Korean",
+          "Southeast Asian"
+        ]
+      }
+    },
+    "spiceLevel": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "None",
+        "Mild",
+        "Medium",
+        "Hot",
+        null
+      ]
+    },
+    "flavor": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "Light",
+        "Moderate",
+        "Strong",
+        null
+      ]
+    },
+    "budgetMaxCents": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "protein": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "excludedAllergens": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Peanuts",
+          "Dairy",
+          "Egg",
+          "Gluten",
+          "Soy",
+          "Fish",
+          "Shellfish"
+        ]
+      }
+    },
+    "dishQuery": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Only explicitly requested dish-name keywords; otherwise null."
+    }
+  },
+  "required": [
+    "repeatPolicy",
+    "repeatFrom",
+    "repeatThrough",
+    "repeatEvidence",
+    "needsClarification",
+    "cuisines",
+    "spiceLevel",
+    "flavor",
+    "budgetMaxCents",
+    "protein",
+    "excludedAllergens",
+    "dishQuery"
+  ],
+  "additionalProperties": false
+}

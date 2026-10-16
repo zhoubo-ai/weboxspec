@@ -1,0 +1,4 @@
+data: {"id":"gen-1792155064-Akb6J18MUwdQaZKGpovI","object":"chat.completion.chunk","created":1792155064,"model":"openai/gpt-4.1-mini","provider":"OpenAI","choices":[{"index":0,"delta":{"content":"","role":"assistant"},"finish_reason":"length","native_finish_reason":"max_output_tokens"}]}
+
+data: [DONE]
+

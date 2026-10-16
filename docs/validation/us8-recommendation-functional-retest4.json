@@ -1,0 +1,3810 @@
+{
+  "manifestSha256" : "7e17a65d10f3fe36e5d16cde74caa579b74b9bf056b739b0ecc3332146a193ec",
+  "beganAt" : "2026-10-16T12:53:09.957389Z",
+  "java" : "17.0.20.1",
+  "os" : "Mac OS X",
+  "architecture" : "aarch64",
+  "configuredModel" : "openai/gpt-4.1-mini",
+  "concurrency" : 1,
+  "warmup" : {
+    "case" : "F01",
+    "expected" : "COMPLETE",
+    "deliveryDate" : "2032-01-01",
+    "httpStatus" : 200,
+    "elapsedMillis" : 4041,
+    "actual" : "COMPLETE",
+    "cards" : [ {
+      "requestId" : "cd639a76-eb9c-42b3-859e-4c802662ecd3",
+      "index" : 0,
+      "dish" : {
+        "dishId" : "fb74508a-3e2f-4546-9957-6a2cc7f80c25",
+        "name" : "Classic Beef Burger",
+        "description" : "Grilled beef, lettuce and tomato. Customize your bun and sauce.",
+        "imageUrl" : "/media/65566863-63ed-4186-bc60-fed3b0bc1a0a",
+        "basePriceCents" : 3200,
+        "category" : "Western",
+        "protein" : "Beef",
+        "allergens" : [ "Gluten" ],
+        "spiceLevel" : "None",
+        "optionGroups" : [ {
+          "groupId" : "8d2a73e2-4261-4f1c-a1d2-b89133e80738",
+          "name" : "Bun",
+          "required" : true,
+          "selectionMode" : "Single",
+          "options" : [ {
+            "optionId" : "f2e604bf-9cd2-4002-9cbb-e619b6c875b5",
+            "name" : "Plain bun",
+            "extraCents" : 0,
+            "allergens" : [ "Gluten" ]
+          }, {
+            "optionId" : "5750657f-7a9c-4180-9fc9-6cc1e6c14733",
+            "name" : "Brioche bun",
+            "extraCents" : 200,
+            "allergens" : [ "Dairy", "Egg", "Gluten" ]
+          } ]
+        }, {
+          "groupId" : "812a27be-f3de-47cd-859f-9767bebd7409",
+          "name" : "Sauce",
+          "required" : true,
+          "selectionMode" : "Single",
+          "options" : [ {
+            "optionId" : "c1536d9a-4eb4-4038-acf8-df3144e139e3",
+            "name" : "Ketchup",
+            "extraCents" : 0,
+            "allergens" : [ ]
+          }, {
+            "optionId" : "91bcf12f-6f48-4ca9-9d9a-c7fa8579bf61",
+            "name" : "Mayonnaise",
+            "extraCents" : 0,
+            "allergens" : [ "Egg" ]
+          } ]
+        }, {
+          "groupId" : "bb42075c-ff84-4451-a76e-86e0d3d5ab50",
+          "name" : "Burger extras",
+          "required" : false,
+          "selectionMode" : "Multiple",
+          "options" : [ {
+            "optionId" : "521762b3-f138-46fb-9f45-c715132dcd96",
+            "name" : "Extra cheese",
+            "extraCents" : 300,
+            "allergens" : [ "Dairy" ]
+          }, {
+            "optionId" : "dd81d9ee-eacb-4794-887e-596012c56eb4",
+            "name" : "Extra tomato",
+            "extraCents" : 100,
+            "allergens" : [ ]
+          } ]
+        } ],
+        "dishVersion" : 1,
+        "remaining" : 20,
+        "inventoryVersion" : 0,
+        "preferenceMatch" : {
+          "cuisine" : false,
+          "spice" : false
+        }
+      },
+      "reason" : "A classic Western choice featuring grilled beef with fresh lettuce and tomato, allowing customization for a satisfying lunch."
+    }, {
+      "requestId" : "cd639a76-eb9c-42b3-859e-4c802662ecd3",
+      "index" : 1,
+      "dish" : {
+        "dishId" : "9b0aead9-fe8a-4b84-920c-03f53a43a116",
+        "name" : "Tomato Pasta",
+        "description" : "Pasta with tomato sauce and fresh basil.",
+        "imageUrl" : "/media/6d17e51e-0b01-4466-b2ac-18429c355f55",
+        "basePriceCents" : 2650,
+        "category" : "Western",
+        "protein" : "Wheat",
+        "allergens" : [ "Gluten" ],
+        "spiceLevel" : "None",
+        "optionGroups" : [ {
+          "groupId" : "4573b31a-fb84-4fc2-9fa4-3f6d4e78126c",
+          "name" : "Pasta type",
+          "required" : true,
+          "selectionMode" : "Single",
+          "options" : [ {
+            "optionId" : "8d7c1e15-87b6-492a-9167-6676b03d2d2c",
+            "name" : "Spaghetti",
+            "extraCents" : 0,
+            "allergens" : [ "Gluten" ]
+          }, {
+            "optionId" : "dcdb3b12-eaa6-4afe-971f-923abe6061bf",
+            "name" : "Fusilli",
+            "extraCents" : 0,
+            "allergens" : [ "Gluten" ]
+          } ]
+        }, {
+          "groupId" : "e04df12c-314a-4a87-9061-51751f2f0c38",
+          "name" : "Add-ons",
+          "required" : false,
+          "selectionMode" : "Multiple",
+          "options" : [ {
+            "optionId" : "6fb576ff-0730-451c-b04e-428573a3c513",
+            "name" : "Cheese",
+            "extraCents" : 300,
+            "allergens" : [ "Dairy" ]
+          }, {
+            "optionId" : "e50bae85-6e83-4fdc-b59e-bf2bd89ad0a4",
+            "name" : "Extra basil",
+            "extraCents" : 100,
+            "allergens" : [ ]
+          } ]
+        } ],
+        "dishVersion" : 1,
+        "remaining" : 20,
+        "inventoryVersion" : 0,
+        "preferenceMatch" : {
+          "cuisine" : false,
+          "spice" : false
+        }
+      },
+      "reason" : "Western-style pasta with tomato sauce and fresh basil offers a flavorful and comforting meal option."
+    }, {
+      "requestId" : "cd639a76-eb9c-42b3-859e-4c802662ecd3",
+      "index" : 2,
+      "dish" : {
+        "dishId" : "a61cbd9c-91cd-4bae-ae37-2c10299c2b37",
+        "name" : "Japanese Garden Salad",
+        "description" : "Fresh greens with soy dressing.",
+        "imageUrl" : "/media/e4e58c7d-522d-44c7-8f59-b17951e0a0b4",
+        "basePriceCents" : 1800,
+        "category" : "Japanese",
+        "protein" : "Chickpeas",
+        "allergens" : [ ],
+        "spiceLevel" : "None",
+        "optionGroups" : [ ],
+        "dishVersion" : 1,
+        "remaining" : 20,
+        "inventoryVersion" : 0,
+        "preferenceMatch" : {
+          "cuisine" : false,
+          "spice" : false
+        }
+      },
+      "reason" : "Japanese garden salad with fresh greens and soy dressing provides a light and refreshing choice."
+    } ],
+    "server" : {
+      "requestId" : "cd639a76-eb9c-42b3-859e-4c802662ecd3",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:53:10.576604Z",
+      "intent" : {
+        "generationId" : "gen-1792155191-v8iEz3A8zc9TEl1lcgbN",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 662,
+          "completion_tokens" : 65,
+          "total_tokens" : 727,
+          "cost" : 3.688E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.688E-4,
+            "upstream_inference_prompt_cost" : 2.648E-4,
+            "upstream_inference_completions_cost" : 1.04E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : {
+        "generationId" : "gen-1792155193-oc9Ow73VdGcENyuBWsmg",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 959,
+          "completion_tokens" : 154,
+          "total_tokens" : 1113,
+          "cost" : 6.3E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 6.3E-4,
+            "upstream_inference_prompt_cost" : 3.836E-4,
+            "upstream_inference_completions_cost" : 2.464E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "firstCardMillis" : 3196,
+      "finishedMillis" : 3929,
+      "cards" : 3,
+      "outcome" : "COMPLETE"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "DEFAULT",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : null,
+      "needsClarification" : false,
+      "cuisines" : [ ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : null,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ {
+      "dishId" : "fb74508a-3e2f-4546-9957-6a2cc7f80c25",
+      "reason" : "A classic Western choice featuring grilled beef with fresh lettuce and tomato, allowing customization for a satisfying lunch."
+    }, {
+      "dishId" : "9b0aead9-fe8a-4b84-920c-03f53a43a116",
+      "reason" : "Western-style pasta with tomato sauce and fresh basil offers a flavorful and comforting meal option."
+    }, {
+      "dishId" : "a61cbd9c-91cd-4bae-ae37-2c10299c2b37",
+      "reason" : "Japanese garden salad with fresh greens and soy dressing provides a light and refreshing choice."
+    } ],
+    "problems" : [ ],
+    "passed" : true
+  },
+  "functional" : [ {
+    "case" : "F01",
+    "expected" : "COMPLETE",
+    "deliveryDate" : "2032-01-02",
+    "httpStatus" : 200,
+    "elapsedMillis" : 3441,
+    "actual" : "COMPLETE",
+    "cards" : [ {
+      "requestId" : "5216b9e7-23d0-4ad8-8c4b-3208af987d8d",
+      "index" : 0,
+      "dish" : {
+        "dishId" : "fbe376e7-32a9-476d-bd5a-8a0369811893",
+        "name" : "Classic Beef Burger",
+        "description" : "Grilled beef, lettuce and tomato. Customize your bun and sauce.",
+        "imageUrl" : "/media/a2656381-55fd-496a-b6da-57570f00c139",
+        "basePriceCents" : 3200,
+        "category" : "Western",
+        "protein" : "Beef",
+        "allergens" : [ "Gluten" ],
+        "spiceLevel" : "None",
+        "optionGroups" : [ {
+          "groupId" : "bc08f2a2-ffb2-48cc-8882-90c15c449a8e",
+          "name" : "Bun",
+          "required" : true,
+          "selectionMode" : "Single",
+          "options" : [ {
+            "optionId" : "a918d345-7e1f-4c99-927a-21b4a6b18b22",
+            "name" : "Plain bun",
+            "extraCents" : 0,
+            "allergens" : [ "Gluten" ]
+          }, {
+            "optionId" : "95cdfee6-69b5-4505-ad4b-8472d800a408",
+            "name" : "Brioche bun",
+            "extraCents" : 200,
+            "allergens" : [ "Dairy", "Egg", "Gluten" ]
+          } ]
+        }, {
+          "groupId" : "430af210-6611-4442-949a-d5223518adfe",
+          "name" : "Sauce",
+          "required" : true,
+          "selectionMode" : "Single",
+          "options" : [ {
+            "optionId" : "99edaa1e-68d2-4f45-9244-35cf7081628b",
+            "name" : "Ketchup",
+            "extraCents" : 0,
+            "allergens" : [ ]
+          }, {
+            "optionId" : "71e21699-954f-4d76-975a-a06a3019bf5c",
+            "name" : "Mayonnaise",
+            "extraCents" : 0,
+            "allergens" : [ "Egg" ]
+          } ]
+        }, {
+          "groupId" : "30b8e543-18cc-4d25-84e3-76401f4b8b60",
+          "name" : "Burger extras",
+          "required" : false,
+          "selectionMode" : "Multiple",
+          "options" : [ {
+            "optionId" : "21746898-831f-4bcf-bc05-ac54260c6509",
+            "name" : "Extra cheese",
+            "extraCents" : 300,
+            "allergens" : [ "Dairy" ]
+          }, {
+            "optionId" : "015dd6b3-401d-41bc-bc79-ba6143b9dbc9",
+            "name" : "Extra tomato",
+            "extraCents" : 100,
+            "allergens" : [ ]
+          } ]
+        } ],
+        "dishVersion" : 1,
+        "remaining" : 20,
+        "inventoryVersion" : 0,
+        "preferenceMatch" : {
+          "cuisine" : false,
+          "spice" : false
+        }
+      },
+      "reason" : "A classic Western choice featuring grilled beef with fresh lettuce and tomato, allowing customization of bun and sauce for a satisfying lunch."
+    }, {
+      "requestId" : "5216b9e7-23d0-4ad8-8c4b-3208af987d8d",
+      "index" : 1,
+      "dish" : {
+        "dishId" : "6911c109-a308-40c4-bf4e-249b175aac0f",
+        "name" : "Tomato Pasta",
+        "description" : "Pasta with tomato sauce and fresh basil.",
+        "imageUrl" : "/media/5c0f4a09-9551-4d05-bd16-05dbca3cbabe",
+        "basePriceCents" : 2650,
+        "category" : "Western",
+        "protein" : "Wheat",
+        "allergens" : [ "Gluten" ],
+        "spiceLevel" : "None",
+        "optionGroups" : [ {
+          "groupId" : "aeee251a-873a-4dc8-b689-cef0a0b2b6d4",
+          "name" : "Pasta type",
+          "required" : true,
+          "selectionMode" : "Single",
+          "options" : [ {
+            "optionId" : "ba428bca-9ae0-430f-9d62-06b6dd635ab1",
+            "name" : "Spaghetti",
+            "extraCents" : 0,
+            "allergens" : [ "Gluten" ]
+          }, {
+            "optionId" : "9453f50a-ad43-4bc0-97f1-27fd0457c2a3",
+            "name" : "Fusilli",
+            "extraCents" : 0,
+            "allergens" : [ "Gluten" ]
+          } ]
+        }, {
+          "groupId" : "c4cbaf0f-df16-4a19-8825-d0abed041229",
+          "name" : "Add-ons",
+          "required" : false,
+          "selectionMode" : "Multiple",
+          "options" : [ {
+            "optionId" : "3b7d458b-9028-4ba5-b298-177ee575d388",
+            "name" : "Cheese",
+            "extraCents" : 300,
+            "allergens" : [ "Dairy" ]
+          }, {
+            "optionId" : "4926cb26-f08e-449f-b732-5bf884befd37",
+            "name" : "Extra basil",
+            "extraCents" : 100,
+            "allergens" : [ ]
+          } ]
+        } ],
+        "dishVersion" : 1,
+        "remaining" : 20,
+        "inventoryVersion" : 0,
+        "preferenceMatch" : {
+          "cuisine" : false,
+          "spice" : false
+        }
+      },
+      "reason" : "Western-style pasta with tomato sauce and fresh basil offers a comforting and flavorful option for lunch."
+    }, {
+      "requestId" : "5216b9e7-23d0-4ad8-8c4b-3208af987d8d",
+      "index" : 2,
+      "dish" : {
+        "dishId" : "c7d9db56-c4eb-4443-809d-504e2e4c8de6",
+        "name" : "Japanese Garden Salad",
+        "description" : "Fresh greens with soy dressing.",
+        "imageUrl" : "/media/c4dafb84-f5cb-47bb-ad5d-09c1cf6b73a1",
+        "basePriceCents" : 1800,
+        "category" : "Japanese",
+        "protein" : "Chickpeas",
+        "allergens" : [ ],
+        "spiceLevel" : "None",
+        "optionGroups" : [ ],
+        "dishVersion" : 1,
+        "remaining" : 20,
+        "inventoryVersion" : 0,
+        "preferenceMatch" : {
+          "cuisine" : false,
+          "spice" : false
+        }
+      },
+      "reason" : "Japanese garden salad with fresh greens and soy dressing provides a light and refreshing choice to balance your meal."
+    } ],
+    "server" : {
+      "requestId" : "5216b9e7-23d0-4ad8-8c4b-3208af987d8d",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:53:15.015210Z",
+      "intent" : {
+        "generationId" : "gen-1792155195-tZBGsmJwWa2xf2ACquw4",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 662,
+          "completion_tokens" : 65,
+          "total_tokens" : 727,
+          "cost" : 3.688E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.688E-4,
+            "upstream_inference_prompt_cost" : 2.648E-4,
+            "upstream_inference_completions_cost" : 1.04E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : {
+        "generationId" : "gen-1792155196-ni6ZEK7V5J8NDbXsnMuL",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 943,
+          "completion_tokens" : 159,
+          "total_tokens" : 1102,
+          "cost" : 6.316E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 6.316E-4,
+            "upstream_inference_prompt_cost" : 3.772E-4,
+            "upstream_inference_completions_cost" : 2.544E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "firstCardMillis" : 2770,
+      "finishedMillis" : 3419,
+      "cards" : 3,
+      "outcome" : "COMPLETE"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "DEFAULT",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : null,
+      "needsClarification" : false,
+      "cuisines" : [ ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : null,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ {
+      "dishId" : "fbe376e7-32a9-476d-bd5a-8a0369811893",
+      "reason" : "A classic Western choice featuring grilled beef with fresh lettuce and tomato, allowing customization of bun and sauce for a satisfying lunch."
+    }, {
+      "dishId" : "6911c109-a308-40c4-bf4e-249b175aac0f",
+      "reason" : "Western-style pasta with tomato sauce and fresh basil offers a comforting and flavorful option for lunch."
+    }, {
+      "dishId" : "c7d9db56-c4eb-4443-809d-504e2e4c8de6",
+      "reason" : "Japanese garden salad with fresh greens and soy dressing provides a light and refreshing choice to balance your meal."
+    } ],
+    "problems" : [ ],
+    "passed" : true
+  }, {
+    "case" : "F02",
+    "expected" : "COMPLETE",
+    "deliveryDate" : "2032-01-03",
+    "httpStatus" : 200,
+    "elapsedMillis" : 3786,
+    "actual" : "COMPLETE",
+    "cards" : [ {
+      "requestId" : "bd696197-4597-44a8-bdab-28189508345b",
+      "index" : 0,
+      "dish" : {
+        "dishId" : "407add0f-b448-4233-90b9-897d85b957d1",
+        "name" : "Chinese Garden Salad",
+        "description" : "Fresh greens with a 100% plant-based dressing_!.",
+        "imageUrl" : "/media/f498ff50-7c5b-4382-b9fd-bd596bb8dbdf",
+        "basePriceCents" : 1800,
+        "category" : "Chinese",
+        "protein" : "Chickpeas",
+        "allergens" : [ ],
+        "spiceLevel" : "None",
+        "optionGroups" : [ ],
+        "dishVersion" : 1,
+        "remaining" : 20,
+        "inventoryVersion" : 0,
+        "preferenceMatch" : {
+          "cuisine" : false,
+          "spice" : false
+        }
+      },
+      "reason" : "This Chinese Garden Salad offers fresh greens with a plant-based dressing, fitting well within your budget and providing a light, flavorful option."
+    }, {
+      "requestId" : "bd696197-4597-44a8-bdab-28189508345b",
+      "index" : 1,
+      "dish" : {
+        "dishId" : "d4cc7fdd-231b-4b86-9bae-e072578cea61",
+        "name" : "Japanese Garden Salad",
+        "description" : "Fresh greens with soy dressing.",
+        "imageUrl" : "/media/f498ff50-7c5b-4382-b9fd-bd596bb8dbdf",
+        "basePriceCents" : 1800,
+        "category" : "Japanese",
+        "protein" : "Chickpeas",
+        "allergens" : [ ],
+        "spiceLevel" : "None",
+        "optionGroups" : [ ],
+        "dishVersion" : 1,
+        "remaining" : 20,
+        "inventoryVersion" : 0,
+        "preferenceMatch" : {
+          "cuisine" : false,
+          "spice" : false
+        }
+      },
+      "reason" : "The Japanese Garden Salad features fresh greens with a soy dressing, delivering a simple and tasty choice that meets your budget preference."
+    } ],
+    "server" : {
+      "requestId" : "bd696197-4597-44a8-bdab-28189508345b",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:53:18.917105Z",
+      "intent" : {
+        "generationId" : "gen-1792155199-2oOh0LRpELzLGflcKihI",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 666,
+          "completion_tokens" : 66,
+          "total_tokens" : 732,
+          "cost" : 3.72E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.72E-4,
+            "upstream_inference_prompt_cost" : 2.664E-4,
+            "upstream_inference_completions_cost" : 1.056E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : {
+        "generationId" : "gen-1792155201-ocjd46RwY2eqrobUnD2D",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 747,
+          "completion_tokens" : 113,
+          "total_tokens" : 860,
+          "cost" : 4.796E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 4.796E-4,
+            "upstream_inference_prompt_cost" : 2.988E-4,
+            "upstream_inference_completions_cost" : 1.808E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "firstCardMillis" : 3202,
+      "finishedMillis" : 3771,
+      "cards" : 2,
+      "outcome" : "COMPLETE"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "DEFAULT",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : null,
+      "needsClarification" : false,
+      "cuisines" : [ ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : 2000,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ {
+      "dishId" : "407add0f-b448-4233-90b9-897d85b957d1",
+      "reason" : "This Chinese Garden Salad offers fresh greens with a plant-based dressing, fitting well within your budget and providing a light, flavorful option."
+    }, {
+      "dishId" : "d4cc7fdd-231b-4b86-9bae-e072578cea61",
+      "reason" : "The Japanese Garden Salad features fresh greens with a soy dressing, delivering a simple and tasty choice that meets your budget preference."
+    } ],
+    "problems" : [ ],
+    "passed" : true
+  }, {
+    "case" : "F03",
+    "expected" : "COMPLETE",
+    "deliveryDate" : "2032-01-04",
+    "httpStatus" : 200,
+    "elapsedMillis" : 3203,
+    "actual" : "COMPLETE",
+    "cards" : [ {
+      "requestId" : "d9881dfa-718a-4c8d-9090-618c87a45ec4",
+      "index" : 0,
+      "dish" : {
+        "dishId" : "3bec8f46-0ab6-4a01-84b3-89f0e83a73f6",
+        "name" : "Classic Beef Burger",
+        "description" : "Grilled beef, lettuce and tomato. Customize your bun and sauce.",
+        "imageUrl" : "/media/cbd23df9-fac9-43ad-b47a-b5dff6633e78",
+        "basePriceCents" : 3200,
+        "category" : "Western",
+        "protein" : "Beef",
+        "allergens" : [ "Gluten" ],
+        "spiceLevel" : "None",
+        "optionGroups" : [ {
+          "groupId" : "7c35dfd4-513d-4d45-9b31-3fa71bb47cc6",
+          "name" : "Bun",
+          "required" : true,
+          "selectionMode" : "Single",
+          "options" : [ {
+            "optionId" : "6878b10c-a8db-48be-9e1b-c2b808cbe414",
+            "name" : "Plain bun",
+            "extraCents" : 0,
+            "allergens" : [ "Gluten" ]
+          }, {
+            "optionId" : "a9338e76-5251-48b1-8e7f-9337660e8e5f",
+            "name" : "Brioche bun",
+            "extraCents" : 200,
+            "allergens" : [ "Dairy", "Egg", "Gluten" ]
+          } ]
+        }, {
+          "groupId" : "948a9d67-e5e9-45c0-9059-4bd641246c2b",
+          "name" : "Sauce",
+          "required" : true,
+          "selectionMode" : "Single",
+          "options" : [ {
+            "optionId" : "439d2c0f-6b6a-45e4-a6bd-9ae44c2d4107",
+            "name" : "Ketchup",
+            "extraCents" : 0,
+            "allergens" : [ ]
+          }, {
+            "optionId" : "1412a4be-0e44-4da6-8a1a-7cef7c7c7ea1",
+            "name" : "Mayonnaise",
+            "extraCents" : 0,
+            "allergens" : [ "Egg" ]
+          } ]
+        }, {
+          "groupId" : "b55a0d92-3ddb-4074-aa79-4179decec9cc",
+          "name" : "Burger extras",
+          "required" : false,
+          "selectionMode" : "Multiple",
+          "options" : [ {
+            "optionId" : "bcc8aa04-963b-4c11-aff4-da0887594c8e",
+            "name" : "Extra cheese",
+            "extraCents" : 300,
+            "allergens" : [ "Dairy" ]
+          }, {
+            "optionId" : "4291a4e4-03b9-4150-a159-2f6e707709bb",
+            "name" : "Extra tomato",
+            "extraCents" : 100,
+            "allergens" : [ ]
+          } ]
+        } ],
+        "dishVersion" : 1,
+        "remaining" : 20,
+        "inventoryVersion" : 0,
+        "preferenceMatch" : {
+          "cuisine" : false,
+          "spice" : false
+        }
+      },
+      "reason" : "This classic beef burger offers a traditional Western taste with grilled beef and fresh vegetables, allowing customization for a personalized meal."
+    }, {
+      "requestId" : "d9881dfa-718a-4c8d-9090-618c87a45ec4",
+      "index" : 1,
+      "dish" : {
+        "dishId" : "de027f11-6102-4d62-9db1-52f256cb9464",
+        "name" : "Tomato Pasta",
+        "description" : "Pasta with tomato sauce and fresh basil.",
+        "imageUrl" : "/media/8d754ae9-0066-42d4-a3dd-6a1c0640e556",
+        "basePriceCents" : 2650,
+        "category" : "Western",
+        "protein" : "Wheat",
+        "allergens" : [ "Gluten" ],
+        "spiceLevel" : "None",
+        "optionGroups" : [ {
+          "groupId" : "d3229d26-b0af-4407-b23c-d26564eb339b",
+          "name" : "Pasta type",
+          "required" : true,
+          "selectionMode" : "Single",
+          "options" : [ {
+            "optionId" : "4d2bd4e6-2228-4c81-93cc-04c9d24fbda5",
+            "name" : "Spaghetti",
+            "extraCents" : 0,
+            "allergens" : [ "Gluten" ]
+          }, {
+            "optionId" : "0163e7ce-06ae-49b2-83df-8093d9374178",
+            "name" : "Fusilli",
+            "extraCents" : 0,
+            "allergens" : [ "Gluten" ]
+          } ]
+        }, {
+          "groupId" : "0ba61acc-3052-4fc8-b5c0-f4fc238128d5",
+          "name" : "Add-ons",
+          "required" : false,
+          "selectionMode" : "Multiple",
+          "options" : [ {
+            "optionId" : "590d2ea8-cf6c-4c4f-9ab5-4632a5537d0c",
+            "name" : "Cheese",
+            "extraCents" : 300,
+            "allergens" : [ "Dairy" ]
+          }, {
+            "optionId" : "4994fe22-4b48-4ee0-ae39-5d4c1e55b385",
+            "name" : "Extra basil",
+            "extraCents" : 100,
+            "allergens" : [ ]
+          } ]
+        } ],
+        "dishVersion" : 1,
+        "remaining" : 20,
+        "inventoryVersion" : 0,
+        "preferenceMatch" : {
+          "cuisine" : false,
+          "spice" : false
+        }
+      },
+      "reason" : "Enjoy a simple yet flavorful Western dish with pasta in tomato sauce accented by fresh basil for a comforting experience."
+    } ],
+    "server" : {
+      "requestId" : "d9881dfa-718a-4c8d-9090-618c87a45ec4",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:53:23.144986Z",
+      "intent" : {
+        "generationId" : "gen-1792155203-ajEBkOGWgguCQ4R9slHe",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 659,
+          "completion_tokens" : 67,
+          "total_tokens" : 726,
+          "cost" : 3.708E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.708E-4,
+            "upstream_inference_prompt_cost" : 2.636E-4,
+            "upstream_inference_completions_cost" : 1.072E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : {
+        "generationId" : "gen-1792155205-bhk4k7ZgFIBIwyxkjhwj",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 757,
+          "completion_tokens" : 114,
+          "total_tokens" : 871,
+          "cost" : 4.852E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 4.852E-4,
+            "upstream_inference_prompt_cost" : 3.028E-4,
+            "upstream_inference_completions_cost" : 1.824E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "firstCardMillis" : 2756,
+      "finishedMillis" : 3194,
+      "cards" : 2,
+      "outcome" : "COMPLETE"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "DEFAULT",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : null,
+      "needsClarification" : false,
+      "cuisines" : [ "Western" ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : null,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ {
+      "dishId" : "3bec8f46-0ab6-4a01-84b3-89f0e83a73f6",
+      "reason" : "This classic beef burger offers a traditional Western taste with grilled beef and fresh vegetables, allowing customization for a personalized meal."
+    }, {
+      "dishId" : "de027f11-6102-4d62-9db1-52f256cb9464",
+      "reason" : "Enjoy a simple yet flavorful Western dish with pasta in tomato sauce accented by fresh basil for a comforting experience."
+    } ],
+    "problems" : [ ],
+    "passed" : true
+  }, {
+    "case" : "F04",
+    "expected" : "COMPLETE",
+    "deliveryDate" : "2032-01-05",
+    "httpStatus" : 200,
+    "elapsedMillis" : 2954,
+    "actual" : "COMPLETE",
+    "cards" : [ {
+      "requestId" : "3cb08166-f0ec-4182-b029-a08882578ae7",
+      "index" : 0,
+      "dish" : {
+        "dishId" : "ad2cc058-4df4-4c80-97ba-b7797031517b",
+        "name" : "Japanese Garden Salad",
+        "description" : "Fresh greens with soy dressing.",
+        "imageUrl" : "/media/e08f89d1-2074-4522-a029-be87f3b5e84c",
+        "basePriceCents" : 1800,
+        "category" : "Japanese",
+        "protein" : "Chickpeas",
+        "allergens" : [ ],
+        "spiceLevel" : "None",
+        "optionGroups" : [ ],
+        "dishVersion" : 1,
+        "remaining" : 20,
+        "inventoryVersion" : 0,
+        "preferenceMatch" : {
+          "cuisine" : false,
+          "spice" : false
+        }
+      },
+      "reason" : "This Japanese Garden Salad offers fresh greens with a soy dressing, providing a light and authentic taste of Japanese cuisine."
+    } ],
+    "server" : {
+      "requestId" : "3cb08166-f0ec-4182-b029-a08882578ae7",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:53:26.808875Z",
+      "intent" : {
+        "generationId" : "gen-1792155207-3GVBuF5dlvuPBiY4Cjbc",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 659,
+          "completion_tokens" : 67,
+          "total_tokens" : 726,
+          "cost" : 3.708E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.708E-4,
+            "upstream_inference_prompt_cost" : 2.636E-4,
+            "upstream_inference_completions_cost" : 1.072E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : {
+        "generationId" : "gen-1792155209-128kLYquwJVjZGAqOAXd",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 643,
+          "completion_tokens" : 57,
+          "total_tokens" : 700,
+          "cost" : 3.484E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.484E-4,
+            "upstream_inference_prompt_cost" : 2.572E-4,
+            "upstream_inference_completions_cost" : 9.12E-5
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "firstCardMillis" : 2831,
+      "finishedMillis" : 2941,
+      "cards" : 1,
+      "outcome" : "COMPLETE"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "DEFAULT",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : null,
+      "needsClarification" : false,
+      "cuisines" : [ "Japanese" ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : null,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ {
+      "dishId" : "ad2cc058-4df4-4c80-97ba-b7797031517b",
+      "reason" : "This Japanese Garden Salad offers fresh greens with a soy dressing, providing a light and authentic taste of Japanese cuisine."
+    } ],
+    "problems" : [ ],
+    "passed" : true
+  }, {
+    "case" : "F05",
+    "expected" : "COMPLETE",
+    "deliveryDate" : "2032-01-06",
+    "httpStatus" : 200,
+    "elapsedMillis" : 4382,
+    "actual" : "COMPLETE",
+    "cards" : [ {
+      "requestId" : "5cda5d7f-7360-4c6a-ad35-4b019417f995",
+      "index" : 0,
+      "dish" : {
+        "dishId" : "906218f0-e86c-4dbd-ae7c-dfa73f1d9d99",
+        "name" : "Chinese Garden Salad",
+        "description" : "Fresh greens with a 100% plant-based dressing_!.",
+        "imageUrl" : "/media/9eb8185e-c6d4-4699-8533-9031370ff749",
+        "basePriceCents" : 1800,
+        "category" : "Chinese",
+        "protein" : "Chickpeas",
+        "allergens" : [ ],
+        "spiceLevel" : "None",
+        "optionGroups" : [ ],
+        "dishVersion" : 1,
+        "remaining" : 20,
+        "inventoryVersion" : 0,
+        "preferenceMatch" : {
+          "cuisine" : false,
+          "spice" : false
+        }
+      },
+      "reason" : "This Chinese Garden Salad offers a fresh take on Chinese cuisine with crisp greens and a fully plant-based dressing, providing a light and refreshing option."
+    } ],
+    "server" : {
+      "requestId" : "5cda5d7f-7360-4c6a-ad35-4b019417f995",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:53:30.202845Z",
+      "intent" : {
+        "generationId" : "gen-1792155210-LJfXi0PdFEEk7NwpYUsw",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 659,
+          "completion_tokens" : 67,
+          "total_tokens" : 726,
+          "cost" : 3.708E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.708E-4,
+            "upstream_inference_prompt_cost" : 2.636E-4,
+            "upstream_inference_completions_cost" : 1.072E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : {
+        "generationId" : "gen-1792155212-A2exXbB258zFYr063BMK",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 656,
+          "completion_tokens" : 66,
+          "total_tokens" : 722,
+          "cost" : 3.68E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.68E-4,
+            "upstream_inference_prompt_cost" : 2.624E-4,
+            "upstream_inference_completions_cost" : 1.056E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "firstCardMillis" : 4354,
+      "finishedMillis" : 4372,
+      "cards" : 1,
+      "outcome" : "COMPLETE"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "DEFAULT",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : null,
+      "needsClarification" : false,
+      "cuisines" : [ "Chinese" ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : null,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ {
+      "dishId" : "906218f0-e86c-4dbd-ae7c-dfa73f1d9d99",
+      "reason" : "This Chinese Garden Salad offers a fresh take on Chinese cuisine with crisp greens and a fully plant-based dressing, providing a light and refreshing option."
+    } ],
+    "problems" : [ ],
+    "passed" : true
+  }, {
+    "case" : "F06",
+    "expected" : "COMPLETE",
+    "deliveryDate" : "2032-01-07",
+    "httpStatus" : 200,
+    "elapsedMillis" : 3096,
+    "actual" : "COMPLETE",
+    "cards" : [ {
+      "requestId" : "02fc285f-9ef3-4310-aa71-143450e21435",
+      "index" : 0,
+      "dish" : {
+        "dishId" : "3c7a3832-3f8b-4ff0-8776-c15a2aa98ea4",
+        "name" : "Classic Beef Burger",
+        "description" : "Grilled beef, lettuce and tomato. Customize your bun and sauce.",
+        "imageUrl" : "/media/3c883b5c-fc57-4948-8550-19308212a414",
+        "basePriceCents" : 3200,
+        "category" : "Western",
+        "protein" : "Beef",
+        "allergens" : [ "Gluten" ],
+        "spiceLevel" : "None",
+        "optionGroups" : [ {
+          "groupId" : "f21eae92-71e9-4607-b05d-7292efa3b632",
+          "name" : "Bun",
+          "required" : true,
+          "selectionMode" : "Single",
+          "options" : [ {
+            "optionId" : "8cfdc418-7625-4cf1-9028-8b7b2940eab5",
+            "name" : "Plain bun",
+            "extraCents" : 0,
+            "allergens" : [ "Gluten" ]
+          }, {
+            "optionId" : "b990feeb-ed46-4085-9178-81c57f28865d",
+            "name" : "Brioche bun",
+            "extraCents" : 200,
+            "allergens" : [ "Dairy", "Egg", "Gluten" ]
+          } ]
+        }, {
+          "groupId" : "a0059fbb-d015-4acd-85f4-c5433918b5c7",
+          "name" : "Sauce",
+          "required" : true,
+          "selectionMode" : "Single",
+          "options" : [ {
+            "optionId" : "9ba1e67d-dd60-4a7c-8fad-5d653fb7fa9d",
+            "name" : "Ketchup",
+            "extraCents" : 0,
+            "allergens" : [ ]
+          }, {
+            "optionId" : "57d8136d-8bb2-4e05-ab96-52b2865a9b21",
+            "name" : "Mayonnaise",
+            "extraCents" : 0,
+            "allergens" : [ "Egg" ]
+          } ]
+        }, {
+          "groupId" : "1388b11f-1964-49c3-909e-de044da66d07",
+          "name" : "Burger extras",
+          "required" : false,
+          "selectionMode" : "Multiple",
+          "options" : [ {
+            "optionId" : "f3ef04df-657c-4613-90a1-16d943e23fca",
+            "name" : "Extra cheese",
+            "extraCents" : 300,
+            "allergens" : [ "Dairy" ]
+          }, {
+            "optionId" : "c12fbc2a-fe49-49d0-8d2d-31c39a132627",
+            "name" : "Extra tomato",
+            "extraCents" : 100,
+            "allergens" : [ ]
+          } ]
+        } ],
+        "dishVersion" : 1,
+        "remaining" : 20,
+        "inventoryVersion" : 0,
+        "preferenceMatch" : {
+          "cuisine" : false,
+          "spice" : false
+        }
+      },
+      "reason" : "A classic Western dish featuring grilled beef with fresh lettuce and tomato, offering a mild and familiar flavor profile."
+    }, {
+      "requestId" : "02fc285f-9ef3-4310-aa71-143450e21435",
+      "index" : 1,
+      "dish" : {
+        "dishId" : "a53a9bf8-e311-4f53-9542-b85dd00ba398",
+        "name" : "Tomato Pasta",
+        "description" : "Pasta with tomato sauce and fresh basil.",
+        "imageUrl" : "/media/1312267f-cffb-47ee-b31d-4e6050160264",
+        "basePriceCents" : 2650,
+        "category" : "Western",
+        "protein" : "Wheat",
+        "allergens" : [ "Gluten" ],
+        "spiceLevel" : "None",
+        "optionGroups" : [ {
+          "groupId" : "89e08e6a-3a1f-4ba5-8eae-8821626e1a31",
+          "name" : "Pasta type",
+          "required" : true,
+          "selectionMode" : "Single",
+          "options" : [ {
+            "optionId" : "d1c1778f-ab77-4b49-956d-b47d78aa005e",
+            "name" : "Spaghetti",
+            "extraCents" : 0,
+            "allergens" : [ "Gluten" ]
+          }, {
+            "optionId" : "65b034b9-09b3-44f7-8525-7b65a66e9cab",
+            "name" : "Fusilli",
+            "extraCents" : 0,
+            "allergens" : [ "Gluten" ]
+          } ]
+        }, {
+          "groupId" : "8ff0d2fd-b250-46fc-9dbf-fd4665682acb",
+          "name" : "Add-ons",
+          "required" : false,
+          "selectionMode" : "Multiple",
+          "options" : [ {
+            "optionId" : "4e42f629-205b-46c1-9287-6707f0f5ec9a",
+            "name" : "Cheese",
+            "extraCents" : 300,
+            "allergens" : [ "Dairy" ]
+          }, {
+            "optionId" : "bfa20c49-302f-4de2-a85f-0137042ba3c4",
+            "name" : "Extra basil",
+            "extraCents" : 100,
+            "allergens" : [ ]
+          } ]
+        } ],
+        "dishVersion" : 1,
+        "remaining" : 20,
+        "inventoryVersion" : 0,
+        "preferenceMatch" : {
+          "cuisine" : false,
+          "spice" : false
+        }
+      },
+      "reason" : "Western-style pasta with tomato sauce and fresh basil, providing a gentle and comforting taste."
+    }, {
+      "requestId" : "02fc285f-9ef3-4310-aa71-143450e21435",
+      "index" : 2,
+      "dish" : {
+        "dishId" : "fab89b0a-5080-4bf4-9d2f-d298210ca59c",
+        "name" : "Japanese Garden Salad",
+        "description" : "Fresh greens with soy dressing.",
+        "imageUrl" : "/media/094d8818-9f0e-4310-966a-ea1c52ce4717",
+        "basePriceCents" : 1800,
+        "category" : "Japanese",
+        "protein" : "Chickpeas",
+        "allergens" : [ ],
+        "spiceLevel" : "None",
+        "optionGroups" : [ ],
+        "dishVersion" : 1,
+        "remaining" : 20,
+        "inventoryVersion" : 0,
+        "preferenceMatch" : {
+          "cuisine" : false,
+          "spice" : false
+        }
+      },
+      "reason" : "Japanese garden salad with fresh greens and soy dressing, delivering a mild and refreshing option."
+    } ],
+    "server" : {
+      "requestId" : "02fc285f-9ef3-4310-aa71-143450e21435",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:53:35.034722Z",
+      "intent" : {
+        "generationId" : "gen-1792155215-GuzexI2zvivDU3ULBO4J",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 659,
+          "completion_tokens" : 66,
+          "total_tokens" : 725,
+          "cost" : 3.692E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.692E-4,
+            "upstream_inference_prompt_cost" : 2.636E-4,
+            "upstream_inference_completions_cost" : 1.056E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : {
+        "generationId" : "gen-1792155216-Kd02VO6PGfq3awQcTY0o",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 945,
+          "completion_tokens" : 153,
+          "total_tokens" : 1098,
+          "cost" : 6.228E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 6.228E-4,
+            "upstream_inference_prompt_cost" : 3.78E-4,
+            "upstream_inference_completions_cost" : 2.448E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "firstCardMillis" : 2522,
+      "finishedMillis" : 3082,
+      "cards" : 3,
+      "outcome" : "COMPLETE"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "DEFAULT",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : null,
+      "needsClarification" : false,
+      "cuisines" : [ ],
+      "spiceLevel" : "Mild",
+      "flavor" : null,
+      "budgetMaxCents" : null,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ {
+      "dishId" : "3c7a3832-3f8b-4ff0-8776-c15a2aa98ea4",
+      "reason" : "A classic Western dish featuring grilled beef with fresh lettuce and tomato, offering a mild and familiar flavor profile."
+    }, {
+      "dishId" : "a53a9bf8-e311-4f53-9542-b85dd00ba398",
+      "reason" : "Western-style pasta with tomato sauce and fresh basil, providing a gentle and comforting taste."
+    }, {
+      "dishId" : "fab89b0a-5080-4bf4-9d2f-d298210ca59c",
+      "reason" : "Japanese garden salad with fresh greens and soy dressing, delivering a mild and refreshing option."
+    } ],
+    "problems" : [ ],
+    "passed" : true
+  }, {
+    "case" : "F07",
+    "expected" : "COMPLETE",
+    "deliveryDate" : "2032-01-08",
+    "httpStatus" : 200,
+    "elapsedMillis" : 2994,
+    "actual" : "COMPLETE",
+    "cards" : [ {
+      "requestId" : "5f6fca5c-f7db-4114-836c-7b6338b1da04",
+      "index" : 0,
+      "dish" : {
+        "dishId" : "186c9f09-5efa-4853-b462-2156710341af",
+        "name" : "Classic Beef Burger",
+        "description" : "Grilled beef, lettuce and tomato. Customize your bun and sauce.",
+        "imageUrl" : "/media/1768ce4b-7aaa-484c-a147-90faaedfdc8d",
+        "basePriceCents" : 3200,
+        "category" : "Western",
+        "protein" : "Beef",
+        "allergens" : [ "Gluten" ],
+        "spiceLevel" : "None",
+        "optionGroups" : [ {
+          "groupId" : "da2f8751-bd80-4600-8900-cc41e40f8d1c",
+          "name" : "Bun",
+          "required" : true,
+          "selectionMode" : "Single",
+          "options" : [ {
+            "optionId" : "797f443c-1186-4a15-809d-ea04bf24cc6f",
+            "name" : "Plain bun",
+            "extraCents" : 0,
+            "allergens" : [ "Gluten" ]
+          }, {
+            "optionId" : "b1d685a1-be95-4f3b-a799-92e1ade951d1",
+            "name" : "Brioche bun",
+            "extraCents" : 200,
+            "allergens" : [ "Dairy", "Egg", "Gluten" ]
+          } ]
+        }, {
+          "groupId" : "13b2d407-4a6c-4378-8aea-ea77a0a57202",
+          "name" : "Sauce",
+          "required" : true,
+          "selectionMode" : "Single",
+          "options" : [ {
+            "optionId" : "8f12c128-56d8-486a-9d58-cd8677f8bd5f",
+            "name" : "Ketchup",
+            "extraCents" : 0,
+            "allergens" : [ ]
+          }, {
+            "optionId" : "bbe28504-65ad-4bd4-ae0f-3f0c6b0a72b8",
+            "name" : "Mayonnaise",
+            "extraCents" : 0,
+            "allergens" : [ "Egg" ]
+          } ]
+        }, {
+          "groupId" : "9e976dcd-5fac-4c02-bd52-da718e40390f",
+          "name" : "Burger extras",
+          "required" : false,
+          "selectionMode" : "Multiple",
+          "options" : [ {
+            "optionId" : "2d20879f-eb22-4439-9d64-19a4151de8c3",
+            "name" : "Extra cheese",
+            "extraCents" : 300,
+            "allergens" : [ "Dairy" ]
+          }, {
+            "optionId" : "47eec686-cd6c-473f-aeb4-1e5c42e7be6a",
+            "name" : "Extra tomato",
+            "extraCents" : 100,
+            "allergens" : [ ]
+          } ]
+        } ],
+        "dishVersion" : 1,
+        "remaining" : 20,
+        "inventoryVersion" : 0,
+        "preferenceMatch" : {
+          "cuisine" : false,
+          "spice" : false
+        }
+      },
+      "reason" : "This Classic Beef Burger features grilled beef with fresh lettuce and tomato, offering a straightforward Western-style beef option that matches your protein preference."
+    } ],
+    "server" : {
+      "requestId" : "5f6fca5c-f7db-4114-836c-7b6338b1da04",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:53:38.562295Z",
+      "intent" : {
+        "generationId" : "gen-1792155219-VPkeNycOFcDAKH33wvqj",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 659,
+          "completion_tokens" : 66,
+          "total_tokens" : 725,
+          "cost" : 3.692E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.692E-4,
+            "upstream_inference_prompt_cost" : 2.636E-4,
+            "upstream_inference_completions_cost" : 1.056E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : {
+        "generationId" : "gen-1792155220-ao4c7072I4rJI4BQlltZ",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 645,
+          "completion_tokens" : 59,
+          "total_tokens" : 704,
+          "cost" : 3.524E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.524E-4,
+            "upstream_inference_prompt_cost" : 2.58E-4,
+            "upstream_inference_completions_cost" : 9.44E-5
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "firstCardMillis" : 2932,
+      "finishedMillis" : 2978,
+      "cards" : 1,
+      "outcome" : "COMPLETE"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "DEFAULT",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : null,
+      "needsClarification" : false,
+      "cuisines" : [ ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : null,
+      "protein" : "beef",
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ {
+      "dishId" : "186c9f09-5efa-4853-b462-2156710341af",
+      "reason" : "This Classic Beef Burger features grilled beef with fresh lettuce and tomato, offering a straightforward Western-style beef option that matches your protein preference."
+    } ],
+    "problems" : [ ],
+    "passed" : true
+  }, {
+    "case" : "F08",
+    "expected" : "COMPLETE",
+    "deliveryDate" : "2032-01-09",
+    "httpStatus" : 200,
+    "elapsedMillis" : 2732,
+    "actual" : "COMPLETE",
+    "cards" : [ {
+      "requestId" : "cabf7e4b-4f57-4dc9-951d-a572819df3b0",
+      "index" : 0,
+      "dish" : {
+        "dishId" : "ef532ce8-f64d-472c-8963-f80a18ea1ff2",
+        "name" : "Tomato Pasta",
+        "description" : "Pasta with tomato sauce and fresh basil.",
+        "imageUrl" : "/media/f15b34fb-901b-4606-8c6f-5fce66ccb9bf",
+        "basePriceCents" : 2650,
+        "category" : "Western",
+        "protein" : "Wheat",
+        "allergens" : [ "Gluten" ],
+        "spiceLevel" : "None",
+        "optionGroups" : [ {
+          "groupId" : "180fd80c-6055-4c7d-a645-947a47bb90b8",
+          "name" : "Pasta type",
+          "required" : true,
+          "selectionMode" : "Single",
+          "options" : [ {
+            "optionId" : "2ad87347-9414-4fe2-994a-ae8032d3b329",
+            "name" : "Spaghetti",
+            "extraCents" : 0,
+            "allergens" : [ "Gluten" ]
+          }, {
+            "optionId" : "9bdfa11e-3e40-47c8-93a7-9c86cdec9bc9",
+            "name" : "Fusilli",
+            "extraCents" : 0,
+            "allergens" : [ "Gluten" ]
+          } ]
+        }, {
+          "groupId" : "bf1fef22-7949-47fe-a8e1-7232157f7aab",
+          "name" : "Add-ons",
+          "required" : false,
+          "selectionMode" : "Multiple",
+          "options" : [ {
+            "optionId" : "09fa6b4e-6b4f-484b-b89f-01f67a2067f9",
+            "name" : "Cheese",
+            "extraCents" : 300,
+            "allergens" : [ "Dairy" ]
+          }, {
+            "optionId" : "6c0b0378-0e78-442b-8ccb-2a94ae00b062",
+            "name" : "Extra basil",
+            "extraCents" : 100,
+            "allergens" : [ ]
+          } ]
+        } ],
+        "dishVersion" : 1,
+        "remaining" : 20,
+        "inventoryVersion" : 0,
+        "preferenceMatch" : {
+          "cuisine" : false,
+          "spice" : false
+        }
+      },
+      "reason" : "This Western dish features pasta with a classic tomato sauce and fresh basil, matching your request for tomato pasta."
+    } ],
+    "server" : {
+      "requestId" : "cabf7e4b-4f57-4dc9-951d-a572819df3b0",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:53:42.009178Z",
+      "intent" : {
+        "generationId" : "gen-1792155222-Cq33gtcbGrP0vFvTO6C8",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 660,
+          "completion_tokens" : 67,
+          "total_tokens" : 727,
+          "cost" : 3.712E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.712E-4,
+            "upstream_inference_prompt_cost" : 2.64E-4,
+            "upstream_inference_completions_cost" : 1.072E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : {
+        "generationId" : "gen-1792155223-7HCHLWRufyEn5nsYloH8",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 647,
+          "completion_tokens" : 56,
+          "total_tokens" : 703,
+          "cost" : 3.484E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.484E-4,
+            "upstream_inference_prompt_cost" : 2.588E-4,
+            "upstream_inference_completions_cost" : 8.96E-5
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "firstCardMillis" : 2685,
+      "finishedMillis" : 2722,
+      "cards" : 1,
+      "outcome" : "COMPLETE"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "DEFAULT",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : null,
+      "needsClarification" : false,
+      "cuisines" : [ ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : null,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : "tomato pasta"
+    },
+    "generatedItems" : [ {
+      "dishId" : "ef532ce8-f64d-472c-8963-f80a18ea1ff2",
+      "reason" : "This Western dish features pasta with a classic tomato sauce and fresh basil, matching your request for tomato pasta."
+    } ],
+    "problems" : [ ],
+    "passed" : true
+  }, {
+    "case" : "F09",
+    "expected" : "COMPLETE",
+    "deliveryDate" : "2032-01-10",
+    "httpStatus" : 200,
+    "elapsedMillis" : 4139,
+    "actual" : "COMPLETE",
+    "cards" : [ {
+      "requestId" : "048e5ff2-c803-42d8-ac95-da14ca7a9bf3",
+      "index" : 0,
+      "dish" : {
+        "dishId" : "9d87cb9a-3001-4fc4-9f26-5c09f5fc383d",
+        "name" : "Chinese Garden Salad",
+        "description" : "Fresh greens with a 100% plant-based dressing_!.",
+        "imageUrl" : "/media/1677a60c-5919-4986-be04-093761040906",
+        "basePriceCents" : 1800,
+        "category" : "Chinese",
+        "protein" : "Chickpeas",
+        "allergens" : [ ],
+        "spiceLevel" : "None",
+        "optionGroups" : [ ],
+        "dishVersion" : 1,
+        "remaining" : 20,
+        "inventoryVersion" : 0,
+        "preferenceMatch" : {
+          "cuisine" : false,
+          "spice" : false
+        }
+      },
+      "reason" : "This Chinese Garden Salad offers fresh greens paired with a fully plant-based dressing, providing a light and refreshing option."
+    }, {
+      "requestId" : "048e5ff2-c803-42d8-ac95-da14ca7a9bf3",
+      "index" : 1,
+      "dish" : {
+        "dishId" : "992e544e-079b-47a4-a5bb-bb442e7ceed0",
+        "name" : "Japanese Garden Salad",
+        "description" : "Fresh greens with soy dressing.",
+        "imageUrl" : "/media/1677a60c-5919-4986-be04-093761040906",
+        "basePriceCents" : 1800,
+        "category" : "Japanese",
+        "protein" : "Chickpeas",
+        "allergens" : [ ],
+        "spiceLevel" : "None",
+        "optionGroups" : [ ],
+        "dishVersion" : 1,
+        "remaining" : 20,
+        "inventoryVersion" : 0,
+        "preferenceMatch" : {
+          "cuisine" : false,
+          "spice" : false
+        }
+      },
+      "reason" : "The Japanese Garden Salad features fresh greens complemented by a savory soy dressing, delivering a simple and flavorful choice."
+    } ],
+    "server" : {
+      "requestId" : "048e5ff2-c803-42d8-ac95-da14ca7a9bf3",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:53:45.175987Z",
+      "intent" : {
+        "generationId" : "gen-1792155225-DOrGkyvr7lUdIi44tE0F",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 661,
+          "completion_tokens" : 65,
+          "total_tokens" : 726,
+          "cost" : 3.684E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.684E-4,
+            "upstream_inference_prompt_cost" : 2.644E-4,
+            "upstream_inference_completions_cost" : 1.04E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : {
+        "generationId" : "gen-1792155228-YwEg71EqSoYfotrUHxwd",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 751,
+          "completion_tokens" : 111,
+          "total_tokens" : 862,
+          "cost" : 4.78E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 4.78E-4,
+            "upstream_inference_prompt_cost" : 3.004E-4,
+            "upstream_inference_completions_cost" : 1.776E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "firstCardMillis" : 4060,
+      "finishedMillis" : 4133,
+      "cards" : 2,
+      "outcome" : "COMPLETE"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "DEFAULT",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : null,
+      "needsClarification" : false,
+      "cuisines" : [ ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : null,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ {
+      "dishId" : "9d87cb9a-3001-4fc4-9f26-5c09f5fc383d",
+      "reason" : "This Chinese Garden Salad offers fresh greens paired with a fully plant-based dressing, providing a light and refreshing option."
+    }, {
+      "dishId" : "992e544e-079b-47a4-a5bb-bb442e7ceed0",
+      "reason" : "The Japanese Garden Salad features fresh greens complemented by a savory soy dressing, delivering a simple and flavorful choice."
+    } ],
+    "problems" : [ ],
+    "passed" : true
+  }, {
+    "case" : "F10",
+    "expected" : "COMPLETE",
+    "deliveryDate" : "2032-01-11",
+    "httpStatus" : 200,
+    "elapsedMillis" : 3730,
+    "actual" : "COMPLETE",
+    "cards" : [ {
+      "requestId" : "167c24d1-6036-4bac-9037-feeaf9e93426",
+      "index" : 0,
+      "dish" : {
+        "dishId" : "dcaf41d1-358f-4533-be50-c5c8fcac5cf8",
+        "name" : "Chinese Garden Salad",
+        "description" : "Fresh greens with a 100% plant-based dressing_!.",
+        "imageUrl" : "/media/3d7a4663-220e-4c3a-bd6c-4286ad83ce02",
+        "basePriceCents" : 1800,
+        "category" : "Chinese",
+        "protein" : "Chickpeas",
+        "allergens" : [ ],
+        "spiceLevel" : "None",
+        "optionGroups" : [ ],
+        "dishVersion" : 1,
+        "remaining" : 20,
+        "inventoryVersion" : 0,
+        "preferenceMatch" : {
+          "cuisine" : false,
+          "spice" : false
+        }
+      },
+      "reason" : "This Chinese Garden Salad offers fresh greens with a unique plant-based dressing, providing a light and refreshing option."
+    }, {
+      "requestId" : "167c24d1-6036-4bac-9037-feeaf9e93426",
+      "index" : 1,
+      "dish" : {
+        "dishId" : "cce7d699-4ddd-4aba-af09-435b0faa731a",
+        "name" : "Japanese Garden Salad",
+        "description" : "Fresh greens with soy dressing.",
+        "imageUrl" : "/media/3d7a4663-220e-4c3a-bd6c-4286ad83ce02",
+        "basePriceCents" : 1800,
+        "category" : "Japanese",
+        "protein" : "Chickpeas",
+        "allergens" : [ ],
+        "spiceLevel" : "None",
+        "optionGroups" : [ ],
+        "dishVersion" : 1,
+        "remaining" : 20,
+        "inventoryVersion" : 0,
+        "preferenceMatch" : {
+          "cuisine" : false,
+          "spice" : false
+        }
+      },
+      "reason" : "The Japanese Garden Salad features fresh greens paired with a savory soy dressing, delivering a simple and flavorful choice."
+    } ],
+    "server" : {
+      "requestId" : "167c24d1-6036-4bac-9037-feeaf9e93426",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:53:49.738453Z",
+      "intent" : {
+        "generationId" : "gen-1792155230-05Fj7bx9HNI9DSimnMnQ",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 661,
+          "completion_tokens" : 65,
+          "total_tokens" : 726,
+          "cost" : 3.684E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.684E-4,
+            "upstream_inference_prompt_cost" : 2.644E-4,
+            "upstream_inference_completions_cost" : 1.04E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : {
+        "generationId" : "gen-1792155232-gnVICGMnpRqH05N5VKBC",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 741,
+          "completion_tokens" : 105,
+          "total_tokens" : 846,
+          "cost" : 4.644E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 4.644E-4,
+            "upstream_inference_prompt_cost" : 2.964E-4,
+            "upstream_inference_completions_cost" : 1.68E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "firstCardMillis" : 3358,
+      "finishedMillis" : 3722,
+      "cards" : 2,
+      "outcome" : "COMPLETE"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "DEFAULT",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : null,
+      "needsClarification" : false,
+      "cuisines" : [ ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : null,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ {
+      "dishId" : "dcaf41d1-358f-4533-be50-c5c8fcac5cf8",
+      "reason" : "This Chinese Garden Salad offers fresh greens with a unique plant-based dressing, providing a light and refreshing option."
+    }, {
+      "dishId" : "cce7d699-4ddd-4aba-af09-435b0faa731a",
+      "reason" : "The Japanese Garden Salad features fresh greens paired with a savory soy dressing, delivering a simple and flavorful choice."
+    } ],
+    "problems" : [ ],
+    "passed" : true
+  }, {
+    "case" : "F11",
+    "expected" : "COMPLETE",
+    "deliveryDate" : "2032-01-12",
+    "httpStatus" : 200,
+    "elapsedMillis" : 2970,
+    "actual" : "AI_INVALID_RESPONSE",
+    "cards" : [ ],
+    "server" : {
+      "requestId" : "d33d6d1b-7657-4fba-bf83-06fb039cc243",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:53:53.896255Z",
+      "intent" : {
+        "generationId" : "gen-1792155234-soyntyvO87M0rWuZflHx",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 666,
+          "completion_tokens" : 83,
+          "total_tokens" : 749,
+          "cost" : 3.992E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.992E-4,
+            "upstream_inference_prompt_cost" : 2.664E-4,
+            "upstream_inference_completions_cost" : 1.328E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : {
+        "generationId" : "gen-1792155236-GA2VybRTcd2hhrok9054",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : null,
+        "fingerprint" : ""
+      },
+      "firstCardMillis" : null,
+      "finishedMillis" : 2964,
+      "cards" : 0,
+      "outcome" : "AI_INVALID_RESPONSE"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "DEFAULT",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : null,
+      "needsClarification" : false,
+      "cuisines" : [ ],
+      "spiceLevel" : null,
+      "flavor" : "Light",
+      "budgetMaxCents" : null,
+      "protein" : null,
+      "excludedAllergens" : [ "Peanuts", "Dairy", "Egg", "Gluten", "Soy", "Fish", "Shellfish" ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ {
+      "dishId" : "2fb611af-00b3-4283-8583-df35c31996b5",
+      "reason" : "This Chinese salad offers fresh greens with a plant-based dressing, fitting your preference for light flavors and Western-style cuisine."
+    } ],
+    "problems" : [ "Unexpected outcome" ],
+    "passed" : false
+  }, {
+    "case" : "F12",
+    "expected" : "COMPLETE",
+    "deliveryDate" : "2032-01-13",
+    "httpStatus" : 200,
+    "elapsedMillis" : 2895,
+    "actual" : "COMPLETE",
+    "cards" : [ {
+      "requestId" : "7308b652-c45d-4736-931c-9c8b92d9c8f0",
+      "index" : 0,
+      "dish" : {
+        "dishId" : "91de9d4f-eb50-43ca-97cc-7524f82d1f5b",
+        "name" : "Chinese Garden Salad",
+        "description" : "Fresh greens with a 100% plant-based dressing_!.",
+        "imageUrl" : "/media/f7a973f5-d4f1-45fd-9f76-05c9a08d8b70",
+        "basePriceCents" : 1800,
+        "category" : "Chinese",
+        "protein" : "Chickpeas",
+        "allergens" : [ ],
+        "spiceLevel" : "None",
+        "optionGroups" : [ ],
+        "dishVersion" : 1,
+        "remaining" : 20,
+        "inventoryVersion" : 0,
+        "preferenceMatch" : {
+          "cuisine" : false,
+          "spice" : false
+        }
+      },
+      "reason" : "This Chinese salad offers fresh greens with a plant-based dressing, fitting well within your budget and providing a light, refreshing option."
+    }, {
+      "requestId" : "7308b652-c45d-4736-931c-9c8b92d9c8f0",
+      "index" : 1,
+      "dish" : {
+        "dishId" : "fd370224-9ab4-4aaf-a603-21419db67723",
+        "name" : "Japanese Garden Salad",
+        "description" : "Fresh greens with soy dressing.",
+        "imageUrl" : "/media/f7a973f5-d4f1-45fd-9f76-05c9a08d8b70",
+        "basePriceCents" : 1800,
+        "category" : "Japanese",
+        "protein" : "Chickpeas",
+        "allergens" : [ ],
+        "spiceLevel" : "None",
+        "optionGroups" : [ ],
+        "dishVersion" : 1,
+        "remaining" : 20,
+        "inventoryVersion" : 0,
+        "preferenceMatch" : {
+          "cuisine" : false,
+          "spice" : false
+        }
+      },
+      "reason" : "Enjoy a Japanese garden salad featuring fresh greens and soy dressing, a simple and flavorful choice that matches your budget."
+    } ],
+    "server" : {
+      "requestId" : "7308b652-c45d-4736-931c-9c8b92d9c8f0",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:53:57.291310Z",
+      "intent" : {
+        "generationId" : "gen-1792155237-lWByjjXQ1AKKpE6uQBRr",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 663,
+          "completion_tokens" : 65,
+          "total_tokens" : 728,
+          "cost" : 3.692E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.692E-4,
+            "upstream_inference_prompt_cost" : 2.652E-4,
+            "upstream_inference_completions_cost" : 1.04E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : {
+        "generationId" : "gen-1792155239-p5fBrnZHM7DoFYrxNvWz",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 947,
+          "completion_tokens" : 111,
+          "total_tokens" : 1058,
+          "cost" : 5.564E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 5.564E-4,
+            "upstream_inference_prompt_cost" : 3.788E-4,
+            "upstream_inference_completions_cost" : 1.776E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "firstCardMillis" : 2530,
+      "finishedMillis" : 2881,
+      "cards" : 2,
+      "outcome" : "COMPLETE"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "DEFAULT",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : null,
+      "needsClarification" : false,
+      "cuisines" : [ ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : null,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ {
+      "dishId" : "91de9d4f-eb50-43ca-97cc-7524f82d1f5b",
+      "reason" : "This Chinese salad offers fresh greens with a plant-based dressing, fitting well within your budget and providing a light, refreshing option."
+    }, {
+      "dishId" : "fd370224-9ab4-4aaf-a603-21419db67723",
+      "reason" : "Enjoy a Japanese garden salad featuring fresh greens and soy dressing, a simple and flavorful choice that matches your budget."
+    } ],
+    "problems" : [ ],
+    "passed" : true
+  }, {
+    "case" : "F13",
+    "expected" : "COMPLETE",
+    "deliveryDate" : "2032-01-14",
+    "httpStatus" : 200,
+    "elapsedMillis" : 3724,
+    "actual" : "COMPLETE",
+    "cards" : [ {
+      "requestId" : "47ee61f9-bd14-40f8-9adf-a6750262f166",
+      "index" : 0,
+      "dish" : {
+        "dishId" : "ca273ab8-90e5-4488-b426-3810cb84c821",
+        "name" : "Classic Beef Burger",
+        "description" : "Grilled beef, lettuce and tomato. Customize your bun and sauce.",
+        "imageUrl" : "/media/4b61703a-716d-4a5c-9714-27bfef52da25",
+        "basePriceCents" : 3200,
+        "category" : "Western",
+        "protein" : "Beef",
+        "allergens" : [ "Gluten" ],
+        "spiceLevel" : "None",
+        "optionGroups" : [ {
+          "groupId" : "13ff57f8-9673-441b-b3f9-c3e414f8d573",
+          "name" : "Bun",
+          "required" : true,
+          "selectionMode" : "Single",
+          "options" : [ {
+            "optionId" : "e7f0c9f4-81a2-4a73-b1b7-0238dc669a61",
+            "name" : "Plain bun",
+            "extraCents" : 0,
+            "allergens" : [ "Gluten" ]
+          }, {
+            "optionId" : "3fb54369-8abf-4652-aa9c-8aa7b5e99557",
+            "name" : "Brioche bun",
+            "extraCents" : 200,
+            "allergens" : [ "Dairy", "Egg", "Gluten" ]
+          } ]
+        }, {
+          "groupId" : "ea8657ac-ec02-446a-9249-c5c57197d0e9",
+          "name" : "Sauce",
+          "required" : true,
+          "selectionMode" : "Single",
+          "options" : [ {
+            "optionId" : "345f3e2d-c566-4605-b827-25279c623523",
+            "name" : "Ketchup",
+            "extraCents" : 0,
+            "allergens" : [ ]
+          }, {
+            "optionId" : "4916d9ac-bebf-47a1-919c-a44be1b4a323",
+            "name" : "Mayonnaise",
+            "extraCents" : 0,
+            "allergens" : [ "Egg" ]
+          } ]
+        }, {
+          "groupId" : "437798cf-920d-4404-92a1-48560f1c7a57",
+          "name" : "Burger extras",
+          "required" : false,
+          "selectionMode" : "Multiple",
+          "options" : [ {
+            "optionId" : "8d3a2d10-5b20-419e-8e38-bac5305a3e93",
+            "name" : "Extra cheese",
+            "extraCents" : 300,
+            "allergens" : [ "Dairy" ]
+          }, {
+            "optionId" : "d74e2ad6-93ce-4904-874b-3c6ce97381dd",
+            "name" : "Extra tomato",
+            "extraCents" : 100,
+            "allergens" : [ ]
+          } ]
+        } ],
+        "dishVersion" : 1,
+        "remaining" : 20,
+        "inventoryVersion" : 0,
+        "preferenceMatch" : {
+          "cuisine" : false,
+          "spice" : false
+        }
+      },
+      "reason" : "A classic Western dish featuring grilled beef with fresh lettuce and tomato, offering a satisfying and customizable burger experience."
+    }, {
+      "requestId" : "47ee61f9-bd14-40f8-9adf-a6750262f166",
+      "index" : 1,
+      "dish" : {
+        "dishId" : "f1b28990-93d7-4848-abce-b49dded5c12d",
+        "name" : "Chinese Garden Salad",
+        "description" : "Fresh greens with a 100% plant-based dressing_!.",
+        "imageUrl" : "/media/6c461cab-1bae-4cb0-90a3-100f47880614",
+        "basePriceCents" : 1800,
+        "category" : "Chinese",
+        "protein" : "Chickpeas",
+        "allergens" : [ ],
+        "spiceLevel" : "None",
+        "optionGroups" : [ ],
+        "dishVersion" : 1,
+        "remaining" : 20,
+        "inventoryVersion" : 0,
+        "preferenceMatch" : {
+          "cuisine" : false,
+          "spice" : false
+        }
+      },
+      "reason" : "A Chinese-style garden salad with fresh greens and a fully plant-based dressing, providing a light and refreshing option."
+    }, {
+      "requestId" : "47ee61f9-bd14-40f8-9adf-a6750262f166",
+      "index" : 2,
+      "dish" : {
+        "dishId" : "652a423f-d260-4b35-b1be-ea60b8dedfdc",
+        "name" : "Japanese Garden Salad",
+        "description" : "Fresh greens with soy dressing.",
+        "imageUrl" : "/media/6c461cab-1bae-4cb0-90a3-100f47880614",
+        "basePriceCents" : 1800,
+        "category" : "Japanese",
+        "protein" : "Chickpeas",
+        "allergens" : [ ],
+        "spiceLevel" : "None",
+        "optionGroups" : [ ],
+        "dishVersion" : 1,
+        "remaining" : 20,
+        "inventoryVersion" : 0,
+        "preferenceMatch" : {
+          "cuisine" : false,
+          "spice" : false
+        }
+      },
+      "reason" : "A Japanese garden salad featuring fresh greens paired with a savory soy dressing for a simple and flavorful choice."
+    } ],
+    "server" : {
+      "requestId" : "47ee61f9-bd14-40f8-9adf-a6750262f166",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:54:00.627104Z",
+      "intent" : {
+        "generationId" : "gen-1792155241-fOdU1M0vESjYoEaMgzEP",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 659,
+          "completion_tokens" : 65,
+          "total_tokens" : 724,
+          "cost" : 3.676E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.676E-4,
+            "upstream_inference_prompt_cost" : 2.636E-4,
+            "upstream_inference_completions_cost" : 1.04E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : {
+        "generationId" : "gen-1792155242-xc5XQOi291tJb8c9Mypg",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 837,
+          "completion_tokens" : 154,
+          "total_tokens" : 991,
+          "cost" : 5.812E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 5.812E-4,
+            "upstream_inference_prompt_cost" : 3.348E-4,
+            "upstream_inference_completions_cost" : 2.464E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "firstCardMillis" : 2721,
+      "finishedMillis" : 3708,
+      "cards" : 3,
+      "outcome" : "COMPLETE"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "DEFAULT",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : null,
+      "needsClarification" : false,
+      "cuisines" : [ ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : null,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ {
+      "dishId" : "ca273ab8-90e5-4488-b426-3810cb84c821",
+      "reason" : "A classic Western dish featuring grilled beef with fresh lettuce and tomato, offering a satisfying and customizable burger experience."
+    }, {
+      "dishId" : "f1b28990-93d7-4848-abce-b49dded5c12d",
+      "reason" : "A Chinese-style garden salad with fresh greens and a fully plant-based dressing, providing a light and refreshing option."
+    }, {
+      "dishId" : "652a423f-d260-4b35-b1be-ea60b8dedfdc",
+      "reason" : "A Japanese garden salad featuring fresh greens paired with a savory soy dressing for a simple and flavorful choice."
+    } ],
+    "problems" : [ ],
+    "passed" : true
+  }, {
+    "case" : "F14",
+    "expected" : "COMPLETE",
+    "deliveryDate" : "2032-01-15",
+    "httpStatus" : 200,
+    "elapsedMillis" : 7318,
+    "actual" : "COMPLETE",
+    "cards" : [ {
+      "requestId" : "55ee6963-dd47-478b-aeed-2826b1a4b352",
+      "index" : 0,
+      "dish" : {
+        "dishId" : "8c09782d-ef0d-4299-a24d-42b80b1b8868",
+        "name" : "Classic Beef Burger",
+        "description" : "Grilled beef, lettuce and tomato. Customize your bun and sauce.",
+        "imageUrl" : "/media/023f16c0-3773-464d-ae77-6ee36f5ba78c",
+        "basePriceCents" : 3200,
+        "category" : "Western",
+        "protein" : "Beef",
+        "allergens" : [ "Gluten" ],
+        "spiceLevel" : "None",
+        "optionGroups" : [ {
+          "groupId" : "fd2eaf93-aa1b-4cb5-9b30-6d0fe0ee197d",
+          "name" : "Bun",
+          "required" : true,
+          "selectionMode" : "Single",
+          "options" : [ {
+            "optionId" : "060c221a-d0cc-4305-aac8-7bd6bd9ffada",
+            "name" : "Plain bun",
+            "extraCents" : 0,
+            "allergens" : [ "Gluten" ]
+          }, {
+            "optionId" : "b03f47a9-3ace-4467-aac8-547576923ef1",
+            "name" : "Brioche bun",
+            "extraCents" : 200,
+            "allergens" : [ "Dairy", "Egg", "Gluten" ]
+          } ]
+        }, {
+          "groupId" : "f134e8db-3fd0-4b37-aee7-507348e2c2b4",
+          "name" : "Sauce",
+          "required" : true,
+          "selectionMode" : "Single",
+          "options" : [ {
+            "optionId" : "72f97ae9-2281-47be-827b-826c89671fcb",
+            "name" : "Ketchup",
+            "extraCents" : 0,
+            "allergens" : [ ]
+          }, {
+            "optionId" : "a4e5399e-090d-4347-ae9a-cfec238a27c9",
+            "name" : "Mayonnaise",
+            "extraCents" : 0,
+            "allergens" : [ "Egg" ]
+          } ]
+        }, {
+          "groupId" : "b9e94f61-dcc6-4a36-ad9e-ca2718fa872a",
+          "name" : "Burger extras",
+          "required" : false,
+          "selectionMode" : "Multiple",
+          "options" : [ {
+            "optionId" : "00e65aa7-0049-43ae-89fd-efcabcd1717e",
+            "name" : "Extra cheese",
+            "extraCents" : 300,
+            "allergens" : [ "Dairy" ]
+          }, {
+            "optionId" : "da95f059-2dfd-401a-9dd0-b003496e4b8f",
+            "name" : "Extra tomato",
+            "extraCents" : 100,
+            "allergens" : [ ]
+          } ]
+        } ],
+        "dishVersion" : 1,
+        "remaining" : 20,
+        "inventoryVersion" : 0,
+        "preferenceMatch" : {
+          "cuisine" : false,
+          "spice" : false
+        }
+      },
+      "reason" : "A classic Western dish featuring grilled beef with fresh lettuce and tomato, offering a familiar and satisfying flavor."
+    }, {
+      "requestId" : "55ee6963-dd47-478b-aeed-2826b1a4b352",
+      "index" : 1,
+      "dish" : {
+        "dishId" : "3e088082-f373-42dd-94d7-88a31b1ba581",
+        "name" : "Tomato Pasta",
+        "description" : "Pasta with tomato sauce and fresh basil.",
+        "imageUrl" : "/media/dacba9e9-7af9-40af-8b97-cf795dda6ce1",
+        "basePriceCents" : 2650,
+        "category" : "Western",
+        "protein" : "Wheat",
+        "allergens" : [ "Gluten" ],
+        "spiceLevel" : "None",
+        "optionGroups" : [ {
+          "groupId" : "e40e4d69-f4be-458e-9632-4b059db21098",
+          "name" : "Pasta type",
+          "required" : true,
+          "selectionMode" : "Single",
+          "options" : [ {
+            "optionId" : "ef998d1f-c028-4e86-9851-001cc4985ee8",
+            "name" : "Spaghetti",
+            "extraCents" : 0,
+            "allergens" : [ "Gluten" ]
+          }, {
+            "optionId" : "891812e2-e9a9-4d2f-a4f7-e585916f2300",
+            "name" : "Fusilli",
+            "extraCents" : 0,
+            "allergens" : [ "Gluten" ]
+          } ]
+        }, {
+          "groupId" : "a04891ae-765a-4caa-87c5-68ffdb7c8d87",
+          "name" : "Add-ons",
+          "required" : false,
+          "selectionMode" : "Multiple",
+          "options" : [ {
+            "optionId" : "28146d7d-f0c3-4608-a20f-ff2f25a06973",
+            "name" : "Cheese",
+            "extraCents" : 300,
+            "allergens" : [ "Dairy" ]
+          }, {
+            "optionId" : "ce81e338-6108-411d-97bf-29ffdde8ee71",
+            "name" : "Extra basil",
+            "extraCents" : 100,
+            "allergens" : [ ]
+          } ]
+        } ],
+        "dishVersion" : 1,
+        "remaining" : 20,
+        "inventoryVersion" : 0,
+        "preferenceMatch" : {
+          "cuisine" : false,
+          "spice" : false
+        }
+      },
+      "reason" : "Western-style pasta with tomato sauce and fresh basil provides a comforting and aromatic meal choice."
+    }, {
+      "requestId" : "55ee6963-dd47-478b-aeed-2826b1a4b352",
+      "index" : 2,
+      "dish" : {
+        "dishId" : "1dd1b735-04cd-442e-939b-9c25f4122b2b",
+        "name" : "Japanese Garden Salad",
+        "description" : "Fresh greens with soy dressing.",
+        "imageUrl" : "/media/88296322-d839-49d4-8811-0e3b6cf07120",
+        "basePriceCents" : 1800,
+        "category" : "Japanese",
+        "protein" : "Chickpeas",
+        "allergens" : [ ],
+        "spiceLevel" : "None",
+        "optionGroups" : [ ],
+        "dishVersion" : 1,
+        "remaining" : 20,
+        "inventoryVersion" : 0,
+        "preferenceMatch" : {
+          "cuisine" : false,
+          "spice" : false
+        }
+      },
+      "reason" : "Japanese garden salad with fresh greens and soy dressing offers a light and refreshing option with a subtle savory taste."
+    } ],
+    "server" : {
+      "requestId" : "55ee6963-dd47-478b-aeed-2826b1a4b352",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:54:04.783124Z",
+      "intent" : {
+        "generationId" : "gen-1792155249-Pa8f2OKtmTYaRfqFQ6B2",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 662,
+          "completion_tokens" : 65,
+          "total_tokens" : 727,
+          "cost" : 3.688E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.688E-4,
+            "upstream_inference_prompt_cost" : 2.648E-4,
+            "upstream_inference_completions_cost" : 1.04E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : {
+        "generationId" : "gen-1792155250-abQ2e8zx7wLTOEDXRYgr",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 953,
+          "completion_tokens" : 155,
+          "total_tokens" : 1108,
+          "cost" : 6.292E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 6.292E-4,
+            "upstream_inference_prompt_cost" : 3.812E-4,
+            "upstream_inference_completions_cost" : 2.48E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "firstCardMillis" : 6668,
+      "finishedMillis" : 7306,
+      "cards" : 3,
+      "outcome" : "COMPLETE"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "DEFAULT",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : null,
+      "needsClarification" : false,
+      "cuisines" : [ ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : null,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ {
+      "dishId" : "8c09782d-ef0d-4299-a24d-42b80b1b8868",
+      "reason" : "A classic Western dish featuring grilled beef with fresh lettuce and tomato, offering a familiar and satisfying flavor."
+    }, {
+      "dishId" : "3e088082-f373-42dd-94d7-88a31b1ba581",
+      "reason" : "Western-style pasta with tomato sauce and fresh basil provides a comforting and aromatic meal choice."
+    }, {
+      "dishId" : "1dd1b735-04cd-442e-939b-9c25f4122b2b",
+      "reason" : "Japanese garden salad with fresh greens and soy dressing offers a light and refreshing option with a subtle savory taste."
+    } ],
+    "problems" : [ ],
+    "passed" : true
+  }, {
+    "case" : "F15",
+    "expected" : "COMPLETE",
+    "deliveryDate" : "2032-01-16",
+    "httpStatus" : 200,
+    "elapsedMillis" : 3418,
+    "actual" : "COMPLETE",
+    "cards" : [ {
+      "requestId" : "51fc5087-57a8-48af-a9bb-5345dc3ba3a6",
+      "index" : 0,
+      "dish" : {
+        "dishId" : "80eadf27-2a19-438c-b022-145166c28b24",
+        "name" : "Chinese Garden Salad",
+        "description" : "Fresh greens with a 100% plant-based dressing_!.",
+        "imageUrl" : "/media/1a5b8e6a-2b77-46bb-a224-20da97875aec",
+        "basePriceCents" : 1800,
+        "category" : "Chinese",
+        "protein" : "Chickpeas",
+        "allergens" : [ ],
+        "spiceLevel" : "None",
+        "optionGroups" : [ ],
+        "dishVersion" : 1,
+        "remaining" : 20,
+        "inventoryVersion" : 0,
+        "preferenceMatch" : {
+          "cuisine" : false,
+          "spice" : false
+        }
+      },
+      "reason" : "Enjoy a fresh Chinese salad with a unique plant-based dressing for a light and different lunch option."
+    }, {
+      "requestId" : "51fc5087-57a8-48af-a9bb-5345dc3ba3a6",
+      "index" : 1,
+      "dish" : {
+        "dishId" : "03450470-14f9-4de8-8842-6d1fce7a414c",
+        "name" : "Classic Beef Burger",
+        "description" : "Grilled beef, lettuce and tomato. Customize your bun and sauce.",
+        "imageUrl" : "/media/f0a000fa-ab5f-4073-b3e9-898ca3bedc21",
+        "basePriceCents" : 3200,
+        "category" : "Western",
+        "protein" : "Beef",
+        "allergens" : [ "Gluten" ],
+        "spiceLevel" : "None",
+        "optionGroups" : [ {
+          "groupId" : "c5385321-7d29-4664-bc1b-e0e216f28e6d",
+          "name" : "Bun",
+          "required" : true,
+          "selectionMode" : "Single",
+          "options" : [ {
+            "optionId" : "ba291b12-8705-4c08-a010-eee8d1279f01",
+            "name" : "Plain bun",
+            "extraCents" : 0,
+            "allergens" : [ "Gluten" ]
+          }, {
+            "optionId" : "bc3e6d95-4fc3-4dc5-b50f-cab03754b1cf",
+            "name" : "Brioche bun",
+            "extraCents" : 200,
+            "allergens" : [ "Dairy", "Egg", "Gluten" ]
+          } ]
+        }, {
+          "groupId" : "5a999253-fd62-4783-b50a-4f2d71d903b3",
+          "name" : "Sauce",
+          "required" : true,
+          "selectionMode" : "Single",
+          "options" : [ {
+            "optionId" : "1edc5e8e-cdbe-4e53-909d-efdfbb994714",
+            "name" : "Ketchup",
+            "extraCents" : 0,
+            "allergens" : [ ]
+          }, {
+            "optionId" : "729f9c23-3da8-41fa-a454-7877ce73cefb",
+            "name" : "Mayonnaise",
+            "extraCents" : 0,
+            "allergens" : [ "Egg" ]
+          } ]
+        }, {
+          "groupId" : "c78ed36c-e242-404a-aa99-1d5301d069ef",
+          "name" : "Burger extras",
+          "required" : false,
+          "selectionMode" : "Multiple",
+          "options" : [ {
+            "optionId" : "3b03fd2e-0d4b-46a8-a4ef-3be2c638f89c",
+            "name" : "Extra cheese",
+            "extraCents" : 300,
+            "allergens" : [ "Dairy" ]
+          }, {
+            "optionId" : "a062896a-52eb-49a4-9bee-2a3ec0c98ee0",
+            "name" : "Extra tomato",
+            "extraCents" : 100,
+            "allergens" : [ ]
+          } ]
+        } ],
+        "dishVersion" : 1,
+        "remaining" : 20,
+        "inventoryVersion" : 0,
+        "preferenceMatch" : {
+          "cuisine" : false,
+          "spice" : false
+        }
+      },
+      "reason" : "Try a classic Western beef burger with customizable bun and sauce for a satisfying and hearty meal."
+    }, {
+      "requestId" : "51fc5087-57a8-48af-a9bb-5345dc3ba3a6",
+      "index" : 2,
+      "dish" : {
+        "dishId" : "be8ff419-0280-4777-a342-dfa258912bcc",
+        "name" : "Japanese Garden Salad",
+        "description" : "Fresh greens with soy dressing.",
+        "imageUrl" : "/media/1a5b8e6a-2b77-46bb-a224-20da97875aec",
+        "basePriceCents" : 1800,
+        "category" : "Japanese",
+        "protein" : "Chickpeas",
+        "allergens" : [ ],
+        "spiceLevel" : "None",
+        "optionGroups" : [ ],
+        "dishVersion" : 1,
+        "remaining" : 20,
+        "inventoryVersion" : 0,
+        "preferenceMatch" : {
+          "cuisine" : false,
+          "spice" : false
+        }
+      },
+      "reason" : "Savor a Japanese garden salad featuring fresh greens and a savory soy dressing for a distinct flavor profile."
+    } ],
+    "server" : {
+      "requestId" : "51fc5087-57a8-48af-a9bb-5345dc3ba3a6",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:54:12.603682Z",
+      "intent" : {
+        "generationId" : "gen-1792155253-Dhw7r4jux25viOpJXaPZ",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 661,
+          "completion_tokens" : 65,
+          "total_tokens" : 726,
+          "cost" : 3.684E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.684E-4,
+            "upstream_inference_prompt_cost" : 2.644E-4,
+            "upstream_inference_completions_cost" : 1.04E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : {
+        "generationId" : "gen-1792155254-xTLTZHo22aNHV3nvZQZE",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 932,
+          "completion_tokens" : 146,
+          "total_tokens" : 1078,
+          "cost" : 6.064E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 6.064E-4,
+            "upstream_inference_prompt_cost" : 3.728E-4,
+            "upstream_inference_completions_cost" : 2.336E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "firstCardMillis" : 2945,
+      "finishedMillis" : 3409,
+      "cards" : 3,
+      "outcome" : "COMPLETE"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "DEFAULT",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : null,
+      "needsClarification" : false,
+      "cuisines" : [ ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : null,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ {
+      "dishId" : "80eadf27-2a19-438c-b022-145166c28b24",
+      "reason" : "Enjoy a fresh Chinese salad with a unique plant-based dressing for a light and different lunch option."
+    }, {
+      "dishId" : "03450470-14f9-4de8-8842-6d1fce7a414c",
+      "reason" : "Try a classic Western beef burger with customizable bun and sauce for a satisfying and hearty meal."
+    }, {
+      "dishId" : "be8ff419-0280-4777-a342-dfa258912bcc",
+      "reason" : "Savor a Japanese garden salad featuring fresh greens and a savory soy dressing for a distinct flavor profile."
+    } ],
+    "problems" : [ ],
+    "passed" : true
+  }, {
+    "case" : "F16",
+    "expected" : "COMPLETE",
+    "deliveryDate" : "2032-01-17",
+    "httpStatus" : 200,
+    "elapsedMillis" : 2925,
+    "actual" : "COMPLETE",
+    "cards" : [ {
+      "requestId" : "0a3172b1-054d-4dfc-b4cc-180f2da99ef3",
+      "index" : 0,
+      "dish" : {
+        "dishId" : "7da02adb-f639-4abf-844b-3799c337888e",
+        "name" : "Chinese Garden Salad",
+        "description" : "Fresh greens with a 100% plant-based dressing_!.",
+        "imageUrl" : "/media/c6b6066e-a14b-49f7-b829-6b06b05d45e8",
+        "basePriceCents" : 1800,
+        "category" : "Chinese",
+        "protein" : "Chickpeas",
+        "allergens" : [ ],
+        "spiceLevel" : "None",
+        "optionGroups" : [ ],
+        "dishVersion" : 1,
+        "remaining" : 20,
+        "inventoryVersion" : 0,
+        "preferenceMatch" : {
+          "cuisine" : false,
+          "spice" : false
+        }
+      },
+      "reason" : "This Chinese Garden Salad offers fresh greens with a plant-based dressing, providing a light and refreshing option with a distinct Chinese flavor."
+    }, {
+      "requestId" : "0a3172b1-054d-4dfc-b4cc-180f2da99ef3",
+      "index" : 1,
+      "dish" : {
+        "dishId" : "6dda2657-e003-4d87-bc6b-44a288ead7a9",
+        "name" : "Japanese Garden Salad",
+        "description" : "Fresh greens with soy dressing.",
+        "imageUrl" : "/media/c6b6066e-a14b-49f7-b829-6b06b05d45e8",
+        "basePriceCents" : 1800,
+        "category" : "Japanese",
+        "protein" : "Chickpeas",
+        "allergens" : [ ],
+        "spiceLevel" : "None",
+        "optionGroups" : [ ],
+        "dishVersion" : 1,
+        "remaining" : 20,
+        "inventoryVersion" : 0,
+        "preferenceMatch" : {
+          "cuisine" : false,
+          "spice" : false
+        }
+      },
+      "reason" : "The Japanese Garden Salad features fresh greens paired with a savory soy dressing, delivering a simple and flavorful Japanese-inspired dish."
+    } ],
+    "server" : {
+      "requestId" : "0a3172b1-054d-4dfc-b4cc-180f2da99ef3",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:54:16.495054Z",
+      "intent" : {
+        "generationId" : "gen-1792155257-YqMLvU4Ty7VUofaB1yTU",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 663,
+          "completion_tokens" : 69,
+          "total_tokens" : 732,
+          "cost" : 3.756E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.756E-4,
+            "upstream_inference_prompt_cost" : 2.652E-4,
+            "upstream_inference_completions_cost" : 1.104E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : {
+        "generationId" : "gen-1792155258-hAlNqE29tqNmMO7LCmZl",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 753,
+          "completion_tokens" : 111,
+          "total_tokens" : 864,
+          "cost" : 4.788E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 4.788E-4,
+            "upstream_inference_prompt_cost" : 3.012E-4,
+            "upstream_inference_completions_cost" : 1.776E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "firstCardMillis" : 2526,
+      "finishedMillis" : 2916,
+      "cards" : 2,
+      "outcome" : "COMPLETE"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "EXCLUDE",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : "last 30 days",
+      "needsClarification" : false,
+      "cuisines" : [ ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : null,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ {
+      "dishId" : "7da02adb-f639-4abf-844b-3799c337888e",
+      "reason" : "This Chinese Garden Salad offers fresh greens with a plant-based dressing, providing a light and refreshing option with a distinct Chinese flavor."
+    }, {
+      "dishId" : "6dda2657-e003-4d87-bc6b-44a288ead7a9",
+      "reason" : "The Japanese Garden Salad features fresh greens paired with a savory soy dressing, delivering a simple and flavorful Japanese-inspired dish."
+    } ],
+    "problems" : [ ],
+    "passed" : true
+  }, {
+    "case" : "F17",
+    "expected" : "COMPLETE",
+    "deliveryDate" : "2032-01-18",
+    "httpStatus" : 200,
+    "elapsedMillis" : 3125,
+    "actual" : "COMPLETE",
+    "cards" : [ {
+      "requestId" : "eacd7e2f-51f5-49fc-80f9-09edbb3302c2",
+      "index" : 0,
+      "dish" : {
+        "dishId" : "aadf222a-1000-4a61-b296-d82c367126eb",
+        "name" : "Chinese Garden Salad",
+        "description" : "Fresh greens with a 100% plant-based dressing_!.",
+        "imageUrl" : "/media/203ae05b-b829-4ec9-b5ed-16b4d8143527",
+        "basePriceCents" : 1800,
+        "category" : "Chinese",
+        "protein" : "Chickpeas",
+        "allergens" : [ ],
+        "spiceLevel" : "None",
+        "optionGroups" : [ ],
+        "dishVersion" : 1,
+        "remaining" : 20,
+        "inventoryVersion" : 0,
+        "preferenceMatch" : {
+          "cuisine" : false,
+          "spice" : false
+        }
+      },
+      "reason" : "This Chinese salad offers fresh greens with a unique plant-based dressing, providing a light and refreshing option."
+    }, {
+      "requestId" : "eacd7e2f-51f5-49fc-80f9-09edbb3302c2",
+      "index" : 1,
+      "dish" : {
+        "dishId" : "bbffe689-22a2-4342-9905-9294fae42502",
+        "name" : "Classic Beef Burger",
+        "description" : "Grilled beef, lettuce and tomato. Customize your bun and sauce.",
+        "imageUrl" : "/media/af222306-db14-4ecb-bdef-aac84dd4c9da",
+        "basePriceCents" : 3200,
+        "category" : "Western",
+        "protein" : "Beef",
+        "allergens" : [ "Gluten" ],
+        "spiceLevel" : "None",
+        "optionGroups" : [ {
+          "groupId" : "5f6dc1f7-98b7-4caa-b579-a7124a4d83c1",
+          "name" : "Bun",
+          "required" : true,
+          "selectionMode" : "Single",
+          "options" : [ {
+            "optionId" : "2157270f-9025-4c76-bf4c-bbb167c7122f",
+            "name" : "Plain bun",
+            "extraCents" : 0,
+            "allergens" : [ "Gluten" ]
+          }, {
+            "optionId" : "4094ad6b-638d-4d73-8999-5e2792ee833b",
+            "name" : "Brioche bun",
+            "extraCents" : 200,
+            "allergens" : [ "Dairy", "Egg", "Gluten" ]
+          } ]
+        }, {
+          "groupId" : "903f6557-6714-476e-9c6b-54c5caa35dc9",
+          "name" : "Sauce",
+          "required" : true,
+          "selectionMode" : "Single",
+          "options" : [ {
+            "optionId" : "79fd426f-5591-45f2-9e5d-0b4824ccbbee",
+            "name" : "Ketchup",
+            "extraCents" : 0,
+            "allergens" : [ ]
+          }, {
+            "optionId" : "e36512e8-b036-4ebf-9ea3-8acc0e882a48",
+            "name" : "Mayonnaise",
+            "extraCents" : 0,
+            "allergens" : [ "Egg" ]
+          } ]
+        }, {
+          "groupId" : "d5f07ae6-2c14-4fab-b03b-8b0d674e63fa",
+          "name" : "Burger extras",
+          "required" : false,
+          "selectionMode" : "Multiple",
+          "options" : [ {
+            "optionId" : "48181548-a88d-4f6b-ae21-0f6a0aa84988",
+            "name" : "Extra cheese",
+            "extraCents" : 300,
+            "allergens" : [ "Dairy" ]
+          }, {
+            "optionId" : "3b442603-ba05-43b2-b5cb-7c429371a35e",
+            "name" : "Extra tomato",
+            "extraCents" : 100,
+            "allergens" : [ ]
+          } ]
+        } ],
+        "dishVersion" : 1,
+        "remaining" : 20,
+        "inventoryVersion" : 0,
+        "preferenceMatch" : {
+          "cuisine" : false,
+          "spice" : false
+        }
+      },
+      "reason" : "Enjoy a classic Western-style beef burger with customizable bun and sauce for a satisfying meal."
+    }, {
+      "requestId" : "eacd7e2f-51f5-49fc-80f9-09edbb3302c2",
+      "index" : 2,
+      "dish" : {
+        "dishId" : "fec31aeb-04d1-48b5-9d41-56e6f0b635ec",
+        "name" : "Japanese Garden Salad",
+        "description" : "Fresh greens with soy dressing.",
+        "imageUrl" : "/media/203ae05b-b829-4ec9-b5ed-16b4d8143527",
+        "basePriceCents" : 1800,
+        "category" : "Japanese",
+        "protein" : "Chickpeas",
+        "allergens" : [ ],
+        "spiceLevel" : "None",
+        "optionGroups" : [ ],
+        "dishVersion" : 1,
+        "remaining" : 20,
+        "inventoryVersion" : 0,
+        "preferenceMatch" : {
+          "cuisine" : false,
+          "spice" : false
+        }
+      },
+      "reason" : "Try the Japanese garden salad featuring fresh greens paired with a savory soy dressing for a distinct flavor."
+    } ],
+    "server" : {
+      "requestId" : "eacd7e2f-51f5-49fc-80f9-09edbb3302c2",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:54:19.887353Z",
+      "intent" : {
+        "generationId" : "gen-1792155260-kK2Phs3hIhdvERgpwEuH",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 660,
+          "completion_tokens" : 67,
+          "total_tokens" : 727,
+          "cost" : 3.712E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.712E-4,
+            "upstream_inference_prompt_cost" : 2.64E-4,
+            "upstream_inference_completions_cost" : 1.072E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : {
+        "generationId" : "gen-1792155261-fWViymf5bAhMbj5ex0mj",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 850,
+          "completion_tokens" : 148,
+          "total_tokens" : 998,
+          "cost" : 5.768E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 5.768E-4,
+            "upstream_inference_prompt_cost" : 3.4E-4,
+            "upstream_inference_completions_cost" : 2.368E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "firstCardMillis" : 2539,
+      "finishedMillis" : 3112,
+      "cards" : 3,
+      "outcome" : "COMPLETE"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "EXCLUDE",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : "yesterday",
+      "needsClarification" : false,
+      "cuisines" : [ ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : null,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ {
+      "dishId" : "aadf222a-1000-4a61-b296-d82c367126eb",
+      "reason" : "This Chinese salad offers fresh greens with a unique plant-based dressing, providing a light and refreshing option."
+    }, {
+      "dishId" : "bbffe689-22a2-4342-9905-9294fae42502",
+      "reason" : "Enjoy a classic Western-style beef burger with customizable bun and sauce for a satisfying meal."
+    }, {
+      "dishId" : "fec31aeb-04d1-48b5-9d41-56e6f0b635ec",
+      "reason" : "Try the Japanese garden salad featuring fresh greens paired with a savory soy dressing for a distinct flavor."
+    } ],
+    "problems" : [ ],
+    "passed" : true
+  }, {
+    "case" : "F18",
+    "expected" : "COMPLETE",
+    "deliveryDate" : "2032-01-19",
+    "httpStatus" : 200,
+    "elapsedMillis" : 3399,
+    "actual" : "COMPLETE",
+    "cards" : [ {
+      "requestId" : "770deafa-5e8f-4960-85c5-b6052f87a0d8",
+      "index" : 0,
+      "dish" : {
+        "dishId" : "65a9914a-3fe3-4cbf-8f18-d7541995b08e",
+        "name" : "Chinese Garden Salad",
+        "description" : "Fresh greens with a 100% plant-based dressing_!.",
+        "imageUrl" : "/media/d6d46337-410d-43e1-ae79-ff1771410fc1",
+        "basePriceCents" : 1800,
+        "category" : "Chinese",
+        "protein" : "Chickpeas",
+        "allergens" : [ ],
+        "spiceLevel" : "None",
+        "optionGroups" : [ ],
+        "dishVersion" : 1,
+        "remaining" : 20,
+        "inventoryVersion" : 0,
+        "preferenceMatch" : {
+          "cuisine" : false,
+          "spice" : false
+        }
+      },
+      "reason" : "This Chinese Garden Salad offers fresh greens with a plant-based dressing, providing a light and refreshing option with a distinct Chinese flavor."
+    }, {
+      "requestId" : "770deafa-5e8f-4960-85c5-b6052f87a0d8",
+      "index" : 1,
+      "dish" : {
+        "dishId" : "05fb7613-5215-4646-85d9-a974253b99bd",
+        "name" : "Japanese Garden Salad",
+        "description" : "Fresh greens with soy dressing.",
+        "imageUrl" : "/media/d6d46337-410d-43e1-ae79-ff1771410fc1",
+        "basePriceCents" : 1800,
+        "category" : "Japanese",
+        "protein" : "Chickpeas",
+        "allergens" : [ ],
+        "spiceLevel" : "None",
+        "optionGroups" : [ ],
+        "dishVersion" : 1,
+        "remaining" : 20,
+        "inventoryVersion" : 0,
+        "preferenceMatch" : {
+          "cuisine" : false,
+          "spice" : false
+        }
+      },
+      "reason" : "The Japanese Garden Salad features fresh greens paired with a soy dressing, delivering a simple and savory taste inspired by Japanese cuisine."
+    } ],
+    "server" : {
+      "requestId" : "770deafa-5e8f-4960-85c5-b6052f87a0d8",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:54:23.498789Z",
+      "intent" : {
+        "generationId" : "gen-1792155264-uMeKIMZsNDxf3lGcntPK",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 675,
+          "completion_tokens" : 95,
+          "total_tokens" : 770,
+          "cost" : 4.22E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 4.22E-4,
+            "upstream_inference_prompt_cost" : 2.7E-4,
+            "upstream_inference_completions_cost" : 1.52E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : {
+        "generationId" : "gen-1792155265-MjgyWeWBnj6PDTQD98sK",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 769,
+          "completion_tokens" : 114,
+          "total_tokens" : 883,
+          "cost" : 4.9E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 4.9E-4,
+            "upstream_inference_prompt_cost" : 3.076E-4,
+            "upstream_inference_completions_cost" : 1.824E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "firstCardMillis" : 2994,
+      "finishedMillis" : 3391,
+      "cards" : 2,
+      "outcome" : "COMPLETE"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "EXCLUDE",
+      "repeatFrom" : "2026-09-01",
+      "repeatThrough" : "2026-10-16",
+      "repeatEvidence" : "Avoid meals I ate from 2026-09-01 through 2026-10-16.",
+      "needsClarification" : false,
+      "cuisines" : [ ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : null,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ {
+      "dishId" : "65a9914a-3fe3-4cbf-8f18-d7541995b08e",
+      "reason" : "This Chinese Garden Salad offers fresh greens with a plant-based dressing, providing a light and refreshing option with a distinct Chinese flavor."
+    }, {
+      "dishId" : "05fb7613-5215-4646-85d9-a974253b99bd",
+      "reason" : "The Japanese Garden Salad features fresh greens paired with a soy dressing, delivering a simple and savory taste inspired by Japanese cuisine."
+    } ],
+    "problems" : [ ],
+    "passed" : true
+  }, {
+    "case" : "F19",
+    "expected" : "COMPLETE",
+    "deliveryDate" : "2032-01-20",
+    "httpStatus" : 200,
+    "elapsedMillis" : 4867,
+    "actual" : "COMPLETE",
+    "cards" : [ {
+      "requestId" : "8f6dbc8a-1935-41fc-a7aa-78663bb48428",
+      "index" : 0,
+      "dish" : {
+        "dishId" : "77c5599c-3fdf-4811-8575-b2c41db37e7e",
+        "name" : "Chinese Garden Salad",
+        "description" : "Fresh greens with a 100% plant-based dressing_!.",
+        "imageUrl" : "/media/8b4cd4b2-76f9-4d4a-8523-6603cd9d1835",
+        "basePriceCents" : 1800,
+        "category" : "Chinese",
+        "protein" : "Chickpeas",
+        "allergens" : [ ],
+        "spiceLevel" : "None",
+        "optionGroups" : [ ],
+        "dishVersion" : 1,
+        "remaining" : 20,
+        "inventoryVersion" : 0,
+        "preferenceMatch" : {
+          "cuisine" : false,
+          "spice" : false
+        }
+      },
+      "reason" : "This Chinese Garden Salad offers fresh greens with a fully plant-based dressing, providing a light and refreshing option with a distinct Chinese flavor profile."
+    }, {
+      "requestId" : "8f6dbc8a-1935-41fc-a7aa-78663bb48428",
+      "index" : 1,
+      "dish" : {
+        "dishId" : "d928f8ba-3b15-4963-954d-37117313793b",
+        "name" : "Japanese Garden Salad",
+        "description" : "Fresh greens with soy dressing.",
+        "imageUrl" : "/media/8b4cd4b2-76f9-4d4a-8523-6603cd9d1835",
+        "basePriceCents" : 1800,
+        "category" : "Japanese",
+        "protein" : "Chickpeas",
+        "allergens" : [ ],
+        "spiceLevel" : "None",
+        "optionGroups" : [ ],
+        "dishVersion" : 1,
+        "remaining" : 20,
+        "inventoryVersion" : 0,
+        "preferenceMatch" : {
+          "cuisine" : false,
+          "spice" : false
+        }
+      },
+      "reason" : "The Japanese Garden Salad features fresh greens paired with a savory soy dressing, delivering a simple yet flavorful Japanese-inspired dish."
+    } ],
+    "server" : {
+      "requestId" : "8f6dbc8a-1935-41fc-a7aa-78663bb48428",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:54:27.315060Z",
+      "intent" : {
+        "generationId" : "gen-1792155267-r30ywDTeHkDrZcBXCg2j",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 669,
+          "completion_tokens" : 65,
+          "total_tokens" : 734,
+          "cost" : 3.716E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.716E-4,
+            "upstream_inference_prompt_cost" : 2.676E-4,
+            "upstream_inference_completions_cost" : 1.04E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : {
+        "generationId" : "gen-1792155270-mLWybaEq7Wtv5f8olHY2",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 755,
+          "completion_tokens" : 116,
+          "total_tokens" : 871,
+          "cost" : 4.876E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 4.876E-4,
+            "upstream_inference_prompt_cost" : 3.02E-4,
+            "upstream_inference_completions_cost" : 1.856E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "firstCardMillis" : 4357,
+      "finishedMillis" : 4855,
+      "cards" : 2,
+      "outcome" : "COMPLETE"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "DEFAULT",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : null,
+      "needsClarification" : false,
+      "cuisines" : [ ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : null,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ {
+      "dishId" : "77c5599c-3fdf-4811-8575-b2c41db37e7e",
+      "reason" : "This Chinese Garden Salad offers fresh greens with a fully plant-based dressing, providing a light and refreshing option with a distinct Chinese flavor profile."
+    }, {
+      "dishId" : "d928f8ba-3b15-4963-954d-37117313793b",
+      "reason" : "The Japanese Garden Salad features fresh greens paired with a savory soy dressing, delivering a simple yet flavorful Japanese-inspired dish."
+    } ],
+    "problems" : [ ],
+    "passed" : true
+  }, {
+    "case" : "F20",
+    "expected" : "NO_MATCH",
+    "deliveryDate" : "2052-01-21",
+    "httpStatus" : 200,
+    "elapsedMillis" : 16,
+    "actual" : "NO_MATCH",
+    "cards" : [ ],
+    "server" : {
+      "requestId" : "163f13bb-0a9b-4a16-9a5a-542fcd016c04",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:54:32.599866Z",
+      "intent" : null,
+      "recommendation" : null,
+      "firstCardMillis" : null,
+      "finishedMillis" : 5,
+      "cards" : 0,
+      "outcome" : "NO_MATCH"
+    },
+    "extractedIntent" : null,
+    "generatedItems" : [ ],
+    "problems" : [ ],
+    "passed" : true
+  }, {
+    "case" : "F21",
+    "expected" : "INTENT_CLARIFICATION_REQUIRED",
+    "deliveryDate" : "2032-01-22",
+    "httpStatus" : 200,
+    "elapsedMillis" : 1448,
+    "actual" : "INTENT_CLARIFICATION_REQUIRED",
+    "cards" : [ ],
+    "server" : {
+      "requestId" : "6f508ebc-ca11-4409-b592-bafd8cd13f7b",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:54:33.014502Z",
+      "intent" : {
+        "generationId" : "gen-1792155273-xKpsHBk0HNRhD3lkzQ7u",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 673,
+          "completion_tokens" : 93,
+          "total_tokens" : 766,
+          "cost" : 4.18E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 4.18E-4,
+            "upstream_inference_prompt_cost" : 2.692E-4,
+            "upstream_inference_completions_cost" : 1.488E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : null,
+      "firstCardMillis" : null,
+      "finishedMillis" : 1437,
+      "cards" : 0,
+      "outcome" : "INTENT_CLARIFICATION_REQUIRED"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "EXCLUDE",
+      "repeatFrom" : "2026-10-16",
+      "repeatThrough" : "2026-09-01",
+      "repeatEvidence" : "No repeats from 2026-10-16 through 2026-09-01.",
+      "needsClarification" : true,
+      "cuisines" : [ ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : null,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ ],
+    "problems" : [ ],
+    "passed" : true
+  }, {
+    "case" : "F22",
+    "expected" : "NO_MATCH",
+    "deliveryDate" : "2032-01-23",
+    "httpStatus" : 200,
+    "elapsedMillis" : 1488,
+    "actual" : "NO_MATCH",
+    "cards" : [ ],
+    "server" : {
+      "requestId" : "49b9e9f9-69b4-4576-a452-68edc1489685",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:54:34.893808Z",
+      "intent" : {
+        "generationId" : "gen-1792155275-JbNHqGenDH4nNZkVR8xY",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 664,
+          "completion_tokens" : 65,
+          "total_tokens" : 729,
+          "cost" : 3.696E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.696E-4,
+            "upstream_inference_prompt_cost" : 2.656E-4,
+            "upstream_inference_completions_cost" : 1.04E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : null,
+      "firstCardMillis" : null,
+      "finishedMillis" : 1479,
+      "cards" : 0,
+      "outcome" : "NO_MATCH"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "DEFAULT",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : null,
+      "needsClarification" : false,
+      "cuisines" : [ ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : 100,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ ],
+    "problems" : [ ],
+    "passed" : true
+  }, {
+    "case" : "F23",
+    "expected" : "COMPLETE",
+    "deliveryDate" : "2032-01-24",
+    "httpStatus" : 200,
+    "elapsedMillis" : 2421,
+    "actual" : "AI_INVALID_RESPONSE",
+    "cards" : [ ],
+    "server" : {
+      "requestId" : "4830868d-43ea-43ec-9411-a0917315e2e7",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:54:36.817030Z",
+      "intent" : {
+        "generationId" : "gen-1792155277-oT1uFm7tCdQjAtYm7ZHp",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 660,
+          "completion_tokens" : 68,
+          "total_tokens" : 728,
+          "cost" : 3.728E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.728E-4,
+            "upstream_inference_prompt_cost" : 2.64E-4,
+            "upstream_inference_completions_cost" : 1.088E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : {
+        "generationId" : "gen-1792155278-1OIpbJyuSFvve6iCky1X",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : null,
+        "fingerprint" : ""
+      },
+      "firstCardMillis" : null,
+      "finishedMillis" : 2411,
+      "cards" : 0,
+      "outcome" : "AI_INVALID_RESPONSE"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "DEFAULT",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : null,
+      "needsClarification" : false,
+      "cuisines" : [ ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : null,
+      "protein" : null,
+      "excludedAllergens" : [ "Dairy" ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ {
+      "dishId" : "1bde402b-abc2-4bf0-a54a-b122b42605ee",
+      "reason" : "This Chinese Garden Salad offers fresh greens with a plant-based dressing, providing a light and refreshing lunch option without dairy."
+    } ],
+    "problems" : [ "Unexpected outcome" ],
+    "passed" : false
+  }, {
+    "case" : "F24",
+    "expected" : "INTENT_CLARIFICATION_REQUIRED",
+    "deliveryDate" : "2032-01-25",
+    "httpStatus" : 200,
+    "elapsedMillis" : 2014,
+    "actual" : "INTENT_CLARIFICATION_REQUIRED",
+    "cards" : [ ],
+    "server" : {
+      "requestId" : "d278b95e-5852-42f1-8936-7b12a4b50ef7",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:54:39.681133Z",
+      "intent" : {
+        "generationId" : "gen-1792155280-Wk83LFNRJH8GmlXH2Xtf",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 668,
+          "completion_tokens" : 70,
+          "total_tokens" : 738,
+          "cost" : 3.792E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.792E-4,
+            "upstream_inference_prompt_cost" : 2.672E-4,
+            "upstream_inference_completions_cost" : 1.12E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : null,
+      "firstCardMillis" : null,
+      "finishedMillis" : 2005,
+      "cards" : 0,
+      "outcome" : "INTENT_CLARIFICATION_REQUIRED"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "EXCLUDE",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : "sometime years ago",
+      "needsClarification" : false,
+      "cuisines" : [ ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : null,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ ],
+    "problems" : [ ],
+    "passed" : true
+  } ]
+}

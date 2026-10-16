@@ -1,0 +1,918 @@
+{
+  "passed": false,
+  "aborted": true,
+  "reason": "Inventory connections fell below required 200; browser failed its active-load precondition. Stop invalid run before the full steady window.",
+  "observedAt": "2026-10-16T14:49:32.111046+00:00",
+  "lastReportedElapsedSeconds": 445,
+  "activeInventoryStreamsAtAbort": 51.0,
+  "lastGatlingValidOrderRow": "> Valid order                                                                        |       200 |       200 |         0",
+  "browser": {
+    "smokeOnly": false,
+    "browser": "156.0.8078.4",
+    "viewport": "1440x900",
+    "source": "production Vite build via local preview proxy",
+    "sampleCountPerMetric": 20,
+    "percentile": "nearest-rank, missing/failed attempt = positive infinity",
+    "warmup": "one menu/search; normal fixture preparation before each operation",
+    "results": {
+      "menu": [
+        {
+          "attempt": 1,
+          "elapsedMs": 1615.3045409999995,
+          "failure": null,
+          "activeStreams": 202
+        },
+        {
+          "attempt": 2,
+          "elapsedMs": null,
+          "failure": "Error",
+          "activeStreams": 84
+        },
+        {
+          "attempt": 3,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 4,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 5,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 6,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 7,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 8,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 9,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 10,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 11,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 12,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 13,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 14,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 15,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 16,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 17,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 18,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 19,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 20,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        }
+      ],
+      "filter": [
+        {
+          "attempt": 1,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 2,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 3,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 4,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 5,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 6,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 7,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 8,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 9,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 10,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 11,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 12,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 13,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 14,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 15,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 16,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 17,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 18,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 19,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 20,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        }
+      ],
+      "search": [
+        {
+          "attempt": 1,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 2,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 3,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 4,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 5,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 6,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 7,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 8,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 9,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 10,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 11,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 12,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 13,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 14,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 15,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 16,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 17,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 18,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 19,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 20,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        }
+      ],
+      "cart": [
+        {
+          "attempt": 1,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 2,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 3,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 4,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 5,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 6,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 7,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 8,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 9,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 10,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 11,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 12,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 13,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 14,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 15,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 16,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 17,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 18,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 19,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 20,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        }
+      ],
+      "order": [
+        {
+          "attempt": 1,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 2,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 3,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 4,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 5,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 6,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 7,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 8,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 9,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 10,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 11,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 12,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 13,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 14,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 15,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 16,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 17,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 18,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 19,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 20,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        }
+      ],
+      "inventory": [
+        {
+          "attempt": 1,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 2,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 3,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 4,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 5,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 6,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 7,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 8,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 9,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 10,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 11,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 12,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 13,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 14,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 15,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 16,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 17,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 18,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 19,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 20,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        }
+      ],
+      "dashboard": [
+        {
+          "attempt": 1,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 2,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 3,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 4,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 5,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 6,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 7,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 8,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 9,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 10,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 11,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 12,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 13,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 14,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 15,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 16,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 17,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 18,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 19,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 20,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        }
+      ]
+    },
+    "summaries": {
+      "menu": {
+        "attempts": 20,
+        "failures": 19,
+        "p95Ms": "Infinity",
+        "limitMs": 2000
+      },
+      "filter": {
+        "attempts": 20,
+        "failures": 20,
+        "p95Ms": "Infinity",
+        "limitMs": 2000
+      },
+      "search": {
+        "attempts": 20,
+        "failures": 20,
+        "p95Ms": "Infinity",
+        "limitMs": 2000
+      },
+      "cart": {
+        "attempts": 20,
+        "failures": 20,
+        "p95Ms": "Infinity",
+        "limitMs": 300
+      },
+      "order": {
+        "attempts": 20,
+        "failures": 20,
+        "p95Ms": "Infinity",
+        "limitMs": 3000
+      },
+      "inventory": {
+        "attempts": 20,
+        "failures": 20,
+        "p95Ms": "Infinity",
+        "limitMs": 2000
+      },
+      "dashboard": {
+        "attempts": 20,
+        "failures": 20,
+        "p95Ms": "Infinity",
+        "limitMs": 3000
+      }
+    }
+  }
+}

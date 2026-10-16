@@ -1,0 +1,1827 @@
+{
+  "smokeOnly" : false,
+  "users" : 200,
+  "dishes" : 500,
+  "rampSeconds" : 60,
+  "steadySeconds" : 600,
+  "ready" : 200,
+  "validOrders" : 200,
+  "businessConflicts" : 0,
+  "samples" : [ {
+    "elapsedMs" : 225,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 1228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 2218,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 3224,
+    "activeInventoryStreams" : 202.0
+  }, {
+    "elapsedMs" : 4228,
+    "activeInventoryStreams" : 203.0
+  }, {
+    "elapsedMs" : 5220,
+    "activeInventoryStreams" : 203.0
+  }, {
+    "elapsedMs" : 6218,
+    "activeInventoryStreams" : 201.0
+  }, {
+    "elapsedMs" : 7219,
+    "activeInventoryStreams" : 202.0
+  }, {
+    "elapsedMs" : 8228,
+    "activeInventoryStreams" : 201.0
+  }, {
+    "elapsedMs" : 9219,
+    "activeInventoryStreams" : 201.0
+  }, {
+    "elapsedMs" : 10226,
+    "activeInventoryStreams" : 201.0
+  }, {
+    "elapsedMs" : 11227,
+    "activeInventoryStreams" : 201.0
+  }, {
+    "elapsedMs" : 12227,
+    "activeInventoryStreams" : 201.0
+  }, {
+    "elapsedMs" : 13227,
+    "activeInventoryStreams" : 203.0
+  }, {
+    "elapsedMs" : 14221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 15227,
+    "activeInventoryStreams" : 201.0
+  }, {
+    "elapsedMs" : 16219,
+    "activeInventoryStreams" : 203.0
+  }, {
+    "elapsedMs" : 17225,
+    "activeInventoryStreams" : 202.0
+  }, {
+    "elapsedMs" : 18226,
+    "activeInventoryStreams" : 202.0
+  }, {
+    "elapsedMs" : 19228,
+    "activeInventoryStreams" : 202.0
+  }, {
+    "elapsedMs" : 20222,
+    "activeInventoryStreams" : 202.0
+  }, {
+    "elapsedMs" : 21226,
+    "activeInventoryStreams" : 201.0
+  }, {
+    "elapsedMs" : 22222,
+    "activeInventoryStreams" : 201.0
+  }, {
+    "elapsedMs" : 23222,
+    "activeInventoryStreams" : 203.0
+  }, {
+    "elapsedMs" : 24218,
+    "activeInventoryStreams" : 203.0
+  }, {
+    "elapsedMs" : 25218,
+    "activeInventoryStreams" : 201.0
+  }, {
+    "elapsedMs" : 26226,
+    "activeInventoryStreams" : 203.0
+  }, {
+    "elapsedMs" : 27219,
+    "activeInventoryStreams" : 201.0
+  }, {
+    "elapsedMs" : 28218,
+    "activeInventoryStreams" : 201.0
+  }, {
+    "elapsedMs" : 29227,
+    "activeInventoryStreams" : 203.0
+  }, {
+    "elapsedMs" : 30227,
+    "activeInventoryStreams" : 201.0
+  }, {
+    "elapsedMs" : 31227,
+    "activeInventoryStreams" : 202.0
+  }, {
+    "elapsedMs" : 32222,
+    "activeInventoryStreams" : 203.0
+  }, {
+    "elapsedMs" : 33220,
+    "activeInventoryStreams" : 202.0
+  }, {
+    "elapsedMs" : 34218,
+    "activeInventoryStreams" : 202.0
+  }, {
+    "elapsedMs" : 35222,
+    "activeInventoryStreams" : 202.0
+  }, {
+    "elapsedMs" : 36228,
+    "activeInventoryStreams" : 202.0
+  }, {
+    "elapsedMs" : 37224,
+    "activeInventoryStreams" : 202.0
+  }, {
+    "elapsedMs" : 38218,
+    "activeInventoryStreams" : 202.0
+  }, {
+    "elapsedMs" : 39227,
+    "activeInventoryStreams" : 202.0
+  }, {
+    "elapsedMs" : 40222,
+    "activeInventoryStreams" : 202.0
+  }, {
+    "elapsedMs" : 41220,
+    "activeInventoryStreams" : 202.0
+  }, {
+    "elapsedMs" : 42219,
+    "activeInventoryStreams" : 202.0
+  }, {
+    "elapsedMs" : 43218,
+    "activeInventoryStreams" : 202.0
+  }, {
+    "elapsedMs" : 44227,
+    "activeInventoryStreams" : 202.0
+  }, {
+    "elapsedMs" : 45221,
+    "activeInventoryStreams" : 202.0
+  }, {
+    "elapsedMs" : 46227,
+    "activeInventoryStreams" : 202.0
+  }, {
+    "elapsedMs" : 47227,
+    "activeInventoryStreams" : 201.0
+  }, {
+    "elapsedMs" : 48226,
+    "activeInventoryStreams" : 201.0
+  }, {
+    "elapsedMs" : 49227,
+    "activeInventoryStreams" : 201.0
+  }, {
+    "elapsedMs" : 50225,
+    "activeInventoryStreams" : 201.0
+  }, {
+    "elapsedMs" : 51227,
+    "activeInventoryStreams" : 201.0
+  }, {
+    "elapsedMs" : 52227,
+    "activeInventoryStreams" : 201.0
+  }, {
+    "elapsedMs" : 53226,
+    "activeInventoryStreams" : 201.0
+  }, {
+    "elapsedMs" : 54228,
+    "activeInventoryStreams" : 201.0
+  }, {
+    "elapsedMs" : 55219,
+    "activeInventoryStreams" : 201.0
+  }, {
+    "elapsedMs" : 56227,
+    "activeInventoryStreams" : 201.0
+  }, {
+    "elapsedMs" : 57239,
+    "activeInventoryStreams" : 201.0
+  }, {
+    "elapsedMs" : 58219,
+    "activeInventoryStreams" : 201.0
+  }, {
+    "elapsedMs" : 59227,
+    "activeInventoryStreams" : 201.0
+  }, {
+    "elapsedMs" : 60227,
+    "activeInventoryStreams" : 201.0
+  }, {
+    "elapsedMs" : 61228,
+    "activeInventoryStreams" : 201.0
+  }, {
+    "elapsedMs" : 62225,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 63218,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 64218,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 65219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 66227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 67228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 68227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 69228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 70226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 71228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 72227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 73226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 74227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 75219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 76226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 77219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 78218,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 79228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 80228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 81227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 82227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 83218,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 84226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 85225,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 86227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 87225,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 88228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 89227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 90226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 91227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 92225,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 93227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 94226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 95227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 96226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 97220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 98227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 99226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 100228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 101228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 102228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 103228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 104224,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 105223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 106220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 107227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 108228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 109227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 110227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 111218,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 112226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 113227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 114225,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 115218,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 116220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 117228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 118226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 119229,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 120225,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 121223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 122227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 123227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 124227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 125222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 126224,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 127226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 128227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 129220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 130227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 131226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 132226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 133227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 134225,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 135226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 136226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 137227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 138227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 139226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 140226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 141226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 142227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 143225,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 144226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 145228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 146227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 147227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 148227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 149225,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 150228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 151228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 152227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 153227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 154221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 155221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 156226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 157227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 158227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 159228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 160227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 161220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 162225,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 163225,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 164228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 165227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 166226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 167219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 168227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 169227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 170221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 171227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 172226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 173237,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 174227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 175226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 176227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 177226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 178224,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 179232,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 180227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 181218,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 182227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 183227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 184221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 185225,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 186226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 187224,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 188226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 189228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 190228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 191227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 192227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 193227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 194228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 195227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 196221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 197228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 198227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 199226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 200226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 201226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 202225,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 203227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 204225,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 205228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 206227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 207228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 208227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 209227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 210228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 211226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 212229,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 213227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 214226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 215227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 216222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 217228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 218225,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 219226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 220228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 221226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 222226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 223227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 224227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 225221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 226226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 227227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 228226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 229221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 230226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 231228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 232222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 233227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 234226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 235227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 236220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 237226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 238227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 239227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 240226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 241228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 242227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 243219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 244219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 245228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 246228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 247227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 248226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 249226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 250226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 251228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 252227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 253226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 254226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 255227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 256227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 257227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 258227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 259222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 260227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 261226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 262228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 263227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 264227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 265227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 266227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 267226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 268222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 269226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 270228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 271226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 272226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 273228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 274226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 275228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 276226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 277228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 278226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 279227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 280221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 281228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 282227,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 283228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 284222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 285228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 286228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 287228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 288228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 289228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 290228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 291226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 292228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 293228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 294228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 295226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 296228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 297226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 298229,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 299226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 300226,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 301219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 302218,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 303219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 304222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 305219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 306222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 307223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 308220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 309223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 310223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 311222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 312223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 313223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 314222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 315221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 316220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 317218,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 318221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 319221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 320222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 321221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 322223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 323222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 324221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 325219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 326223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 327221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 328220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 329219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 330222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 331221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 332220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 333222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 334219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 335221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 336223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 337218,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 338220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 339221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 340220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 341223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 342218,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 343221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 344234,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 345218,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 346219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 347222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 348219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 349223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 350221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 351220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 352221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 353223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 354223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 355221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 356221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 357220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 358220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 359218,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 360221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 361221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 362222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 363218,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 364223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 365222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 366222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 367222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 368220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 369219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 370220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 371219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 372221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 373218,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 374219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 375223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 376220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 377223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 378222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 379223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 380222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 381219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 382222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 383222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 384221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 385221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 386218,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 387221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 388223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 389223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 390222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 391221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 392222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 393220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 394223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 395223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 396223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 397223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 398223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 399221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 400223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 401219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 402219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 403223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 404219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 405222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 406222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 407236,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 408218,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 409223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 410220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 411219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 412222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 413219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 414220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 415219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 416223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 417221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 418223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 419222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 420220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 421223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 422219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 423222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 424220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 425219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 426223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 427219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 428219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 429219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 430222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 431222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 432223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 433221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 434223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 435222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 436220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 437223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 438223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 439221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 440221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 441220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 442223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 443220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 444222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 445219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 446223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 447222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 448223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 449220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 450220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 451222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 452223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 453219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 454223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 455219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 456223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 457223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 458223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 459222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 460219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 461223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 462219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 463219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 464221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 465222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 466223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 467223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 468221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 469223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 470222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 471220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 472220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 473220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 474224,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 475220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 476224,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 477220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 478224,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 479222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 480223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 481219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 482225,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 483221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 484219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 485222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 486223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 487223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 488223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 489222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 490222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 491222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 492220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 493223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 494223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 495223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 496223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 497222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 498223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 499222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 500223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 501223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 502223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 503223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 504223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 505223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 506223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 507223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 508223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 509223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 510220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 511220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 512223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 513223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 514223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 515223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 516223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 517223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 518223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 519223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 520221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 521223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 522220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 523222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 524223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 525221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 526220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 527223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 528222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 529223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 530219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 531221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 532221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 533221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 534222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 535221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 536223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 537222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 538220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 539222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 540220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 541222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 542222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 543223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 544223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 545222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 546219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 547222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 548223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 549222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 550221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 551222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 552223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 553220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 554219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 555220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 556220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 557221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 558223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 559221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 560219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 561219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 562220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 563220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 564222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 565220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 566223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 567223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 568222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 569219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 570222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 571219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 572219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 573220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 574220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 575222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 576223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 577223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 578222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 579221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 580222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 581222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 582221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 583219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 584222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 585220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 586219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 587222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 588222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 589222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 590220,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 591223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 592222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 593221,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 594219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 595223,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 596222,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 597219,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 598228,
+    "activeInventoryStreams" : 200.0
+  }, {
+    "elapsedMs" : 599222,
+    "activeInventoryStreams" : 200.0
+  } ],
+  "browserPassed" : true,
+  "monitorFailure" : null,
+  "separateApplicationJvm" : true,
+  "applicationHeap" : "256m–1g",
+  "hikariPool" : 16,
+  "sharedIpAuthenticationBurst" : 240,
+  "sharedIpAuthenticationPerMinute" : 300,
+  "streamCloseCounts" : {
+    "queue-limit" : 0.0,
+    "write-timeout" : 0.0,
+    "executor-limit" : 0.0,
+    "write-or-session-error" : 51.0,
+    "session-expired" : 0.0,
+    "lifetime" : 0.0
+  },
+  "passed" : true
+}

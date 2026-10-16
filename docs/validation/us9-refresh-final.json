@@ -1,0 +1,862 @@
+{
+  "samples": [
+    {
+      "project": "chromium-1440",
+      "elapsedMs": 153.54125,
+      "limitMs": 3000,
+      "date": "2101-03-08",
+      "expectedRevenueCents": 11300,
+      "actual": {
+        "date": "2101-03-08",
+        "generatedAt": "2101-03-15T01:00:00Z",
+        "totalOrders": 6,
+        "revenueCents": 11300,
+        "completedOrders": 4,
+        "pendingOrders": 0,
+        "cancelledOrders": 2,
+        "topDishes": [
+          {
+            "dishId": "a0dfcc9f-b591-4214-bd87-3b6f227b37a2",
+            "name": "Latest Burger",
+            "quantity": 3
+          },
+          {
+            "dishId": "caa4cd9b-a7f9-496f-a32d-3a44faaa2331",
+            "name": "Latest Pasta",
+            "quantity": 3
+          },
+          {
+            "dishId": "a4fa2378-dd18-4581-9fe0-fdd7d7612aa1",
+            "name": "Garden Greens",
+            "quantity": 1
+          }
+        ],
+        "mealDistribution": [
+          {
+            "meal": "Lunch",
+            "orderCount": 3
+          },
+          {
+            "meal": "Dinner",
+            "orderCount": 3
+          }
+        ],
+        "trend": [
+          {
+            "date": "2101-03-02",
+            "orderCount": 1,
+            "revenueCents": 3000
+          },
+          {
+            "date": "2101-03-03",
+            "orderCount": 0,
+            "revenueCents": 0
+          },
+          {
+            "date": "2101-03-04",
+            "orderCount": 1,
+            "revenueCents": 0
+          },
+          {
+            "date": "2101-03-05",
+            "orderCount": 1,
+            "revenueCents": 0
+          },
+          {
+            "date": "2101-03-06",
+            "orderCount": 1,
+            "revenueCents": 2000
+          },
+          {
+            "date": "2101-03-07",
+            "orderCount": 1,
+            "revenueCents": 0
+          },
+          {
+            "date": "2101-03-08",
+            "orderCount": 6,
+            "revenueCents": 11300
+          }
+        ],
+        "inventoryAlerts": [
+          {
+            "dishId": "caa4cd9b-a7f9-496f-a32d-3a44faaa2331",
+            "name": "Current menu B",
+            "remaining": 0,
+            "level": "SoldOut"
+          },
+          {
+            "dishId": "a0dfcc9f-b591-4214-bd87-3b6f227b37a2",
+            "name": "Current menu A",
+            "remaining": 3,
+            "level": "LowStock"
+          }
+        ],
+        "countingPolicy": "All figures use delivery dates in Asia/Shanghai. Order and meal counts include all statuses; pending means Pending + Confirmed. Completed Order Amount includes add-ons from Completed orders; it is not payment received. Top dishes count completed portions, merging configurations and using names at purchase. The trend covers the selected date and its six preceding days. Inventory alerts show the current remaining stock for scheduled, published dishes on the selected date, not historical stock."
+      }
+    },
+    {
+      "project": "chromium-375",
+      "elapsedMs": 145.6197500000003,
+      "limitMs": 3000,
+      "date": "2061-03-08",
+      "expectedRevenueCents": 11300,
+      "actual": {
+        "date": "2061-03-08",
+        "generatedAt": "2061-03-15T01:00:00Z",
+        "totalOrders": 6,
+        "revenueCents": 11300,
+        "completedOrders": 4,
+        "pendingOrders": 0,
+        "cancelledOrders": 2,
+        "topDishes": [
+          {
+            "dishId": "44d10726-48a2-417d-ba64-f182a13ffe89",
+            "name": "Latest Burger",
+            "quantity": 3
+          },
+          {
+            "dishId": "ead6fb01-252b-4846-bbbb-5e90f22d3185",
+            "name": "Latest Pasta",
+            "quantity": 3
+          },
+          {
+            "dishId": "7949dd37-d467-409c-ab7c-2d6d95f4a5d3",
+            "name": "Garden Greens",
+            "quantity": 1
+          }
+        ],
+        "mealDistribution": [
+          {
+            "meal": "Lunch",
+            "orderCount": 3
+          },
+          {
+            "meal": "Dinner",
+            "orderCount": 3
+          }
+        ],
+        "trend": [
+          {
+            "date": "2061-03-02",
+            "orderCount": 1,
+            "revenueCents": 3000
+          },
+          {
+            "date": "2061-03-03",
+            "orderCount": 0,
+            "revenueCents": 0
+          },
+          {
+            "date": "2061-03-04",
+            "orderCount": 1,
+            "revenueCents": 0
+          },
+          {
+            "date": "2061-03-05",
+            "orderCount": 1,
+            "revenueCents": 0
+          },
+          {
+            "date": "2061-03-06",
+            "orderCount": 1,
+            "revenueCents": 2000
+          },
+          {
+            "date": "2061-03-07",
+            "orderCount": 1,
+            "revenueCents": 0
+          },
+          {
+            "date": "2061-03-08",
+            "orderCount": 6,
+            "revenueCents": 11300
+          }
+        ],
+        "inventoryAlerts": [
+          {
+            "dishId": "ead6fb01-252b-4846-bbbb-5e90f22d3185",
+            "name": "Current menu B",
+            "remaining": 0,
+            "level": "SoldOut"
+          },
+          {
+            "dishId": "44d10726-48a2-417d-ba64-f182a13ffe89",
+            "name": "Current menu A",
+            "remaining": 3,
+            "level": "LowStock"
+          }
+        ],
+        "countingPolicy": "All figures use delivery dates in Asia/Shanghai. Order and meal counts include all statuses; pending means Pending + Confirmed. Completed Order Amount includes add-ons from Completed orders; it is not payment received. Top dishes count completed portions, merging configurations and using names at purchase. The trend covers the selected date and its six preceding days. Inventory alerts show the current remaining stock for scheduled, published dishes on the selected date, not historical stock."
+      }
+    },
+    {
+      "project": "chromium-768",
+      "elapsedMs": 147.53674999999998,
+      "limitMs": 3000,
+      "date": "2081-03-08",
+      "expectedRevenueCents": 11300,
+      "actual": {
+        "date": "2081-03-08",
+        "generatedAt": "2081-03-15T01:00:00Z",
+        "totalOrders": 6,
+        "revenueCents": 11300,
+        "completedOrders": 4,
+        "pendingOrders": 0,
+        "cancelledOrders": 2,
+        "topDishes": [
+          {
+            "dishId": "84375fda-2026-4558-8b76-6e02e717bcc9",
+            "name": "Latest Burger",
+            "quantity": 3
+          },
+          {
+            "dishId": "857fd668-033b-4cfb-adde-17c79dda7a10",
+            "name": "Latest Pasta",
+            "quantity": 3
+          },
+          {
+            "dishId": "965c7def-a2a6-476d-bd07-97f24c212945",
+            "name": "Garden Greens",
+            "quantity": 1
+          }
+        ],
+        "mealDistribution": [
+          {
+            "meal": "Lunch",
+            "orderCount": 3
+          },
+          {
+            "meal": "Dinner",
+            "orderCount": 3
+          }
+        ],
+        "trend": [
+          {
+            "date": "2081-03-02",
+            "orderCount": 1,
+            "revenueCents": 3000
+          },
+          {
+            "date": "2081-03-03",
+            "orderCount": 0,
+            "revenueCents": 0
+          },
+          {
+            "date": "2081-03-04",
+            "orderCount": 1,
+            "revenueCents": 0
+          },
+          {
+            "date": "2081-03-05",
+            "orderCount": 1,
+            "revenueCents": 0
+          },
+          {
+            "date": "2081-03-06",
+            "orderCount": 1,
+            "revenueCents": 2000
+          },
+          {
+            "date": "2081-03-07",
+            "orderCount": 1,
+            "revenueCents": 0
+          },
+          {
+            "date": "2081-03-08",
+            "orderCount": 6,
+            "revenueCents": 11300
+          }
+        ],
+        "inventoryAlerts": [
+          {
+            "dishId": "857fd668-033b-4cfb-adde-17c79dda7a10",
+            "name": "Current menu B",
+            "remaining": 0,
+            "level": "SoldOut"
+          },
+          {
+            "dishId": "84375fda-2026-4558-8b76-6e02e717bcc9",
+            "name": "Current menu A",
+            "remaining": 3,
+            "level": "LowStock"
+          }
+        ],
+        "countingPolicy": "All figures use delivery dates in Asia/Shanghai. Order and meal counts include all statuses; pending means Pending + Confirmed. Completed Order Amount includes add-ons from Completed orders; it is not payment received. Top dishes count completed portions, merging configurations and using names at purchase. The trend covers the selected date and its six preceding days. Inventory alerts show the current remaining stock for scheduled, published dishes on the selected date, not historical stock."
+      }
+    },
+    {
+      "project": "firefox-1440",
+      "elapsedMs": 134.847667,
+      "limitMs": 3000,
+      "date": "2161-03-08",
+      "expectedRevenueCents": 11300,
+      "actual": {
+        "date": "2161-03-08",
+        "generatedAt": "2161-03-15T01:00:00Z",
+        "totalOrders": 6,
+        "revenueCents": 11300,
+        "completedOrders": 4,
+        "pendingOrders": 0,
+        "cancelledOrders": 2,
+        "topDishes": [
+          {
+            "dishId": "4f1a406f-de2b-4b13-99cc-b18817c4eab4",
+            "name": "Latest Burger",
+            "quantity": 3
+          },
+          {
+            "dishId": "c92ef6c1-5927-4bec-ad46-1becb32e4011",
+            "name": "Latest Pasta",
+            "quantity": 3
+          },
+          {
+            "dishId": "283b4edd-e6ac-4d22-b7e8-aadb352aeb9b",
+            "name": "Garden Greens",
+            "quantity": 1
+          }
+        ],
+        "mealDistribution": [
+          {
+            "meal": "Lunch",
+            "orderCount": 3
+          },
+          {
+            "meal": "Dinner",
+            "orderCount": 3
+          }
+        ],
+        "trend": [
+          {
+            "date": "2161-03-02",
+            "orderCount": 1,
+            "revenueCents": 3000
+          },
+          {
+            "date": "2161-03-03",
+            "orderCount": 0,
+            "revenueCents": 0
+          },
+          {
+            "date": "2161-03-04",
+            "orderCount": 1,
+            "revenueCents": 0
+          },
+          {
+            "date": "2161-03-05",
+            "orderCount": 1,
+            "revenueCents": 0
+          },
+          {
+            "date": "2161-03-06",
+            "orderCount": 1,
+            "revenueCents": 2000
+          },
+          {
+            "date": "2161-03-07",
+            "orderCount": 1,
+            "revenueCents": 0
+          },
+          {
+            "date": "2161-03-08",
+            "orderCount": 6,
+            "revenueCents": 11300
+          }
+        ],
+        "inventoryAlerts": [
+          {
+            "dishId": "c92ef6c1-5927-4bec-ad46-1becb32e4011",
+            "name": "Current menu B",
+            "remaining": 0,
+            "level": "SoldOut"
+          },
+          {
+            "dishId": "4f1a406f-de2b-4b13-99cc-b18817c4eab4",
+            "name": "Current menu A",
+            "remaining": 3,
+            "level": "LowStock"
+          }
+        ],
+        "countingPolicy": "All figures use delivery dates in Asia/Shanghai. Order and meal counts include all statuses; pending means Pending + Confirmed. Completed Order Amount includes add-ons from Completed orders; it is not payment received. Top dishes count completed portions, merging configurations and using names at purchase. The trend covers the selected date and its six preceding days. Inventory alerts show the current remaining stock for scheduled, published dishes on the selected date, not historical stock."
+      }
+    },
+    {
+      "project": "firefox-375",
+      "elapsedMs": 128.27654100000018,
+      "limitMs": 3000,
+      "date": "2121-03-08",
+      "expectedRevenueCents": 11300,
+      "actual": {
+        "date": "2121-03-08",
+        "generatedAt": "2121-03-15T01:00:00Z",
+        "totalOrders": 6,
+        "revenueCents": 11300,
+        "completedOrders": 4,
+        "pendingOrders": 0,
+        "cancelledOrders": 2,
+        "topDishes": [
+          {
+            "dishId": "5ecdb598-a770-4869-9dbb-c68367c7cfc3",
+            "name": "Latest Burger",
+            "quantity": 3
+          },
+          {
+            "dishId": "abcd031c-9777-493a-87f6-e2d79eec083d",
+            "name": "Latest Pasta",
+            "quantity": 3
+          },
+          {
+            "dishId": "4310b859-805e-4773-9600-372bf62242b7",
+            "name": "Garden Greens",
+            "quantity": 1
+          }
+        ],
+        "mealDistribution": [
+          {
+            "meal": "Lunch",
+            "orderCount": 3
+          },
+          {
+            "meal": "Dinner",
+            "orderCount": 3
+          }
+        ],
+        "trend": [
+          {
+            "date": "2121-03-02",
+            "orderCount": 1,
+            "revenueCents": 3000
+          },
+          {
+            "date": "2121-03-03",
+            "orderCount": 0,
+            "revenueCents": 0
+          },
+          {
+            "date": "2121-03-04",
+            "orderCount": 1,
+            "revenueCents": 0
+          },
+          {
+            "date": "2121-03-05",
+            "orderCount": 1,
+            "revenueCents": 0
+          },
+          {
+            "date": "2121-03-06",
+            "orderCount": 1,
+            "revenueCents": 2000
+          },
+          {
+            "date": "2121-03-07",
+            "orderCount": 1,
+            "revenueCents": 0
+          },
+          {
+            "date": "2121-03-08",
+            "orderCount": 6,
+            "revenueCents": 11300
+          }
+        ],
+        "inventoryAlerts": [
+          {
+            "dishId": "abcd031c-9777-493a-87f6-e2d79eec083d",
+            "name": "Current menu B",
+            "remaining": 0,
+            "level": "SoldOut"
+          },
+          {
+            "dishId": "5ecdb598-a770-4869-9dbb-c68367c7cfc3",
+            "name": "Current menu A",
+            "remaining": 3,
+            "level": "LowStock"
+          }
+        ],
+        "countingPolicy": "All figures use delivery dates in Asia/Shanghai. Order and meal counts include all statuses; pending means Pending + Confirmed. Completed Order Amount includes add-ons from Completed orders; it is not payment received. Top dishes count completed portions, merging configurations and using names at purchase. The trend covers the selected date and its six preceding days. Inventory alerts show the current remaining stock for scheduled, published dishes on the selected date, not historical stock."
+      }
+    },
+    {
+      "project": "firefox-768",
+      "elapsedMs": 128.77999999999975,
+      "limitMs": 3000,
+      "date": "2141-03-08",
+      "expectedRevenueCents": 11300,
+      "actual": {
+        "date": "2141-03-08",
+        "generatedAt": "2141-03-15T01:00:00Z",
+        "totalOrders": 6,
+        "revenueCents": 11300,
+        "completedOrders": 4,
+        "pendingOrders": 0,
+        "cancelledOrders": 2,
+        "topDishes": [
+          {
+            "dishId": "b243b062-71cf-4d5d-9dd3-e6a998e19583",
+            "name": "Latest Burger",
+            "quantity": 3
+          },
+          {
+            "dishId": "ea830cf5-e99b-4eaa-937f-5647ae808ddc",
+            "name": "Latest Pasta",
+            "quantity": 3
+          },
+          {
+            "dishId": "7673a135-72a9-4ecf-a790-5a2d5d7b2ee1",
+            "name": "Garden Greens",
+            "quantity": 1
+          }
+        ],
+        "mealDistribution": [
+          {
+            "meal": "Lunch",
+            "orderCount": 3
+          },
+          {
+            "meal": "Dinner",
+            "orderCount": 3
+          }
+        ],
+        "trend": [
+          {
+            "date": "2141-03-02",
+            "orderCount": 1,
+            "revenueCents": 3000
+          },
+          {
+            "date": "2141-03-03",
+            "orderCount": 0,
+            "revenueCents": 0
+          },
+          {
+            "date": "2141-03-04",
+            "orderCount": 1,
+            "revenueCents": 0
+          },
+          {
+            "date": "2141-03-05",
+            "orderCount": 1,
+            "revenueCents": 0
+          },
+          {
+            "date": "2141-03-06",
+            "orderCount": 1,
+            "revenueCents": 2000
+          },
+          {
+            "date": "2141-03-07",
+            "orderCount": 1,
+            "revenueCents": 0
+          },
+          {
+            "date": "2141-03-08",
+            "orderCount": 6,
+            "revenueCents": 11300
+          }
+        ],
+        "inventoryAlerts": [
+          {
+            "dishId": "ea830cf5-e99b-4eaa-937f-5647ae808ddc",
+            "name": "Current menu B",
+            "remaining": 0,
+            "level": "SoldOut"
+          },
+          {
+            "dishId": "b243b062-71cf-4d5d-9dd3-e6a998e19583",
+            "name": "Current menu A",
+            "remaining": 3,
+            "level": "LowStock"
+          }
+        ],
+        "countingPolicy": "All figures use delivery dates in Asia/Shanghai. Order and meal counts include all statuses; pending means Pending + Confirmed. Completed Order Amount includes add-ons from Completed orders; it is not payment received. Top dishes count completed portions, merging configurations and using names at purchase. The trend covers the selected date and its six preceding days. Inventory alerts show the current remaining stock for scheduled, published dishes on the selected date, not historical stock."
+      }
+    },
+    {
+      "project": "webkit-1440",
+      "elapsedMs": 92.55879199999981,
+      "limitMs": 3000,
+      "date": "2221-03-08",
+      "expectedRevenueCents": 11300,
+      "actual": {
+        "date": "2221-03-08",
+        "generatedAt": "2221-03-15T01:00:00Z",
+        "totalOrders": 6,
+        "revenueCents": 11300,
+        "completedOrders": 4,
+        "pendingOrders": 0,
+        "cancelledOrders": 2,
+        "topDishes": [
+          {
+            "dishId": "23a450f0-1e87-4401-8ccb-1dec5567124b",
+            "name": "Latest Burger",
+            "quantity": 3
+          },
+          {
+            "dishId": "79e44256-72e7-48ab-bb62-5373d707d0c6",
+            "name": "Latest Pasta",
+            "quantity": 3
+          },
+          {
+            "dishId": "ced4ad87-d3a5-440b-980d-6ff6dde1e2e3",
+            "name": "Garden Greens",
+            "quantity": 1
+          }
+        ],
+        "mealDistribution": [
+          {
+            "meal": "Lunch",
+            "orderCount": 3
+          },
+          {
+            "meal": "Dinner",
+            "orderCount": 3
+          }
+        ],
+        "trend": [
+          {
+            "date": "2221-03-02",
+            "orderCount": 1,
+            "revenueCents": 3000
+          },
+          {
+            "date": "2221-03-03",
+            "orderCount": 0,
+            "revenueCents": 0
+          },
+          {
+            "date": "2221-03-04",
+            "orderCount": 1,
+            "revenueCents": 0
+          },
+          {
+            "date": "2221-03-05",
+            "orderCount": 1,
+            "revenueCents": 0
+          },
+          {
+            "date": "2221-03-06",
+            "orderCount": 1,
+            "revenueCents": 2000
+          },
+          {
+            "date": "2221-03-07",
+            "orderCount": 1,
+            "revenueCents": 0
+          },
+          {
+            "date": "2221-03-08",
+            "orderCount": 6,
+            "revenueCents": 11300
+          }
+        ],
+        "inventoryAlerts": [
+          {
+            "dishId": "79e44256-72e7-48ab-bb62-5373d707d0c6",
+            "name": "Current menu B",
+            "remaining": 0,
+            "level": "SoldOut"
+          },
+          {
+            "dishId": "23a450f0-1e87-4401-8ccb-1dec5567124b",
+            "name": "Current menu A",
+            "remaining": 3,
+            "level": "LowStock"
+          }
+        ],
+        "countingPolicy": "All figures use delivery dates in Asia/Shanghai. Order and meal counts include all statuses; pending means Pending + Confirmed. Completed Order Amount includes add-ons from Completed orders; it is not payment received. Top dishes count completed portions, merging configurations and using names at purchase. The trend covers the selected date and its six preceding days. Inventory alerts show the current remaining stock for scheduled, published dishes on the selected date, not historical stock."
+      }
+    },
+    {
+      "project": "webkit-375",
+      "elapsedMs": 95.99262499999986,
+      "limitMs": 3000,
+      "date": "2181-03-08",
+      "expectedRevenueCents": 11300,
+      "actual": {
+        "date": "2181-03-08",
+        "generatedAt": "2181-03-15T01:00:00Z",
+        "totalOrders": 6,
+        "revenueCents": 11300,
+        "completedOrders": 4,
+        "pendingOrders": 0,
+        "cancelledOrders": 2,
+        "topDishes": [
+          {
+            "dishId": "27f261f5-45a8-4eb7-bb9a-108669e1783a",
+            "name": "Latest Burger",
+            "quantity": 3
+          },
+          {
+            "dishId": "4348c559-489e-4739-83df-e8dff2a0d862",
+            "name": "Latest Pasta",
+            "quantity": 3
+          },
+          {
+            "dishId": "bb97192d-b33b-438d-b7f2-d4096bc5f17b",
+            "name": "Garden Greens",
+            "quantity": 1
+          }
+        ],
+        "mealDistribution": [
+          {
+            "meal": "Lunch",
+            "orderCount": 3
+          },
+          {
+            "meal": "Dinner",
+            "orderCount": 3
+          }
+        ],
+        "trend": [
+          {
+            "date": "2181-03-02",
+            "orderCount": 1,
+            "revenueCents": 3000
+          },
+          {
+            "date": "2181-03-03",
+            "orderCount": 0,
+            "revenueCents": 0
+          },
+          {
+            "date": "2181-03-04",
+            "orderCount": 1,
+            "revenueCents": 0
+          },
+          {
+            "date": "2181-03-05",
+            "orderCount": 1,
+            "revenueCents": 0
+          },
+          {
+            "date": "2181-03-06",
+            "orderCount": 1,
+            "revenueCents": 2000
+          },
+          {
+            "date": "2181-03-07",
+            "orderCount": 1,
+            "revenueCents": 0
+          },
+          {
+            "date": "2181-03-08",
+            "orderCount": 6,
+            "revenueCents": 11300
+          }
+        ],
+        "inventoryAlerts": [
+          {
+            "dishId": "4348c559-489e-4739-83df-e8dff2a0d862",
+            "name": "Current menu B",
+            "remaining": 0,
+            "level": "SoldOut"
+          },
+          {
+            "dishId": "27f261f5-45a8-4eb7-bb9a-108669e1783a",
+            "name": "Current menu A",
+            "remaining": 3,
+            "level": "LowStock"
+          }
+        ],
+        "countingPolicy": "All figures use delivery dates in Asia/Shanghai. Order and meal counts include all statuses; pending means Pending + Confirmed. Completed Order Amount includes add-ons from Completed orders; it is not payment received. Top dishes count completed portions, merging configurations and using names at purchase. The trend covers the selected date and its six preceding days. Inventory alerts show the current remaining stock for scheduled, published dishes on the selected date, not historical stock."
+      }
+    },
+    {
+      "project": "webkit-768",
+      "elapsedMs": 87.1120840000001,
+      "limitMs": 3000,
+      "date": "2201-03-08",
+      "expectedRevenueCents": 11300,
+      "actual": {
+        "date": "2201-03-08",
+        "generatedAt": "2201-03-15T01:00:00Z",
+        "totalOrders": 6,
+        "revenueCents": 11300,
+        "completedOrders": 4,
+        "pendingOrders": 0,
+        "cancelledOrders": 2,
+        "topDishes": [
+          {
+            "dishId": "4bcb270f-a6ab-4405-a4b2-bf93139ed125",
+            "name": "Latest Burger",
+            "quantity": 3
+          },
+          {
+            "dishId": "c2b601ce-fd7b-4667-9af3-0f16c1b30f8a",
+            "name": "Latest Pasta",
+            "quantity": 3
+          },
+          {
+            "dishId": "2aab35a6-b7c3-439c-badb-0a2d244076bd",
+            "name": "Garden Greens",
+            "quantity": 1
+          }
+        ],
+        "mealDistribution": [
+          {
+            "meal": "Lunch",
+            "orderCount": 3
+          },
+          {
+            "meal": "Dinner",
+            "orderCount": 3
+          }
+        ],
+        "trend": [
+          {
+            "date": "2201-03-02",
+            "orderCount": 1,
+            "revenueCents": 3000
+          },
+          {
+            "date": "2201-03-03",
+            "orderCount": 0,
+            "revenueCents": 0
+          },
+          {
+            "date": "2201-03-04",
+            "orderCount": 1,
+            "revenueCents": 0
+          },
+          {
+            "date": "2201-03-05",
+            "orderCount": 1,
+            "revenueCents": 0
+          },
+          {
+            "date": "2201-03-06",
+            "orderCount": 1,
+            "revenueCents": 2000
+          },
+          {
+            "date": "2201-03-07",
+            "orderCount": 1,
+            "revenueCents": 0
+          },
+          {
+            "date": "2201-03-08",
+            "orderCount": 6,
+            "revenueCents": 11300
+          }
+        ],
+        "inventoryAlerts": [
+          {
+            "dishId": "c2b601ce-fd7b-4667-9af3-0f16c1b30f8a",
+            "name": "Current menu B",
+            "remaining": 0,
+            "level": "SoldOut"
+          },
+          {
+            "dishId": "4bcb270f-a6ab-4405-a4b2-bf93139ed125",
+            "name": "Current menu A",
+            "remaining": 3,
+            "level": "LowStock"
+          }
+        ],
+        "countingPolicy": "All figures use delivery dates in Asia/Shanghai. Order and meal counts include all statuses; pending means Pending + Confirmed. Completed Order Amount includes add-ons from Completed orders; it is not payment received. Top dishes count completed portions, merging configurations and using names at purchase. The trend covers the selected date and its six preceding days. Inventory alerts show the current remaining stock for scheduled, published dishes on the selected date, not historical stock."
+      }
+    }
+  ],
+  "count": 9,
+  "p95Ms": 153.54125,
+  "limitMs": 3000
+}

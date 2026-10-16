@@ -1,0 +1,1975 @@
+{
+  "manifestSha256": "7e17a65d10f3fe36e5d16cde74caa579b74b9bf056b739b0ecc3332146a193ec",
+  "environment": {
+    "model": "openai/gpt-4.1-mini",
+    "browser": "156.0.8078.4",
+    "project": "chromium-1440",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "os": "darwin",
+    "release": "24.6.0",
+    "architecture": "arm64",
+    "cpu": "Apple M4 Pro",
+    "memoryBytes": 51539607552,
+    "node": "v24.22.0",
+    "concurrency": 1,
+    "warmupRequests": 1
+  },
+  "warmup": {
+    "case": "warmup",
+    "expected": "COMPLETE",
+    "actual": "COMPLETE",
+    "firstCardMillis": 3220.2000000476837,
+    "completeMillis": 4100.400000035763,
+    "terminalMillis": 4100.400000035763,
+    "problems": [],
+    "passed": true,
+    "server": {
+      "requestId": "b447843d-b481-49b8-a713-add4a39b5c7f",
+      "configuredModel": "openai/gpt-4.1-mini",
+      "beganAt": "2026-10-16T15:15:52.149959Z",
+      "intent": {
+        "generationId": "gen-1792163753-mjCFkqhUdVEqNnPsGExZ",
+        "model": "openai/gpt-4.1-mini",
+        "provider": "OpenAI",
+        "usage": {
+          "prompt_tokens": 693,
+          "completion_tokens": 65,
+          "total_tokens": 758,
+          "cost": 0.0003812,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0003812,
+            "upstream_inference_prompt_cost": 0.0002772,
+            "upstream_inference_completions_cost": 0.000104
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "fingerprint": ""
+      },
+      "recommendation": {
+        "generationId": "gen-1792163754-rvan6QxRVvawTX3cqESt",
+        "model": "openai/gpt-4.1-mini",
+        "provider": "OpenAI",
+        "usage": {
+          "prompt_tokens": 944,
+          "completion_tokens": 159,
+          "total_tokens": 1103,
+          "cost": 0.000632,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.000632,
+            "upstream_inference_prompt_cost": 0.0003776,
+            "upstream_inference_completions_cost": 0.0002544
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "fingerprint": ""
+      },
+      "firstCardMillis": 3188,
+      "finishedMillis": 4064,
+      "cards": 3,
+      "outcome": "COMPLETE"
+    },
+    "cards": [
+      {
+        "dishId": "898b7c31-f4b2-4e6e-91fa-78967916e0d3",
+        "name": "Classic Beef Burger",
+        "reason": "A classic Western dish featuring grilled beef with fresh lettuce and tomato, offering a satisfying and customizable burger experience.",
+        "remaining": 20
+      },
+      {
+        "dishId": "51e9c097-da3d-4312-a63e-2546e146ba66",
+        "name": "Tomato Pasta",
+        "reason": "Western-style pasta with a rich tomato sauce and fresh basil, providing a comforting and flavorful meal option.",
+        "remaining": 20
+      },
+      {
+        "dishId": "a415d772-8d77-40e3-9e99-1e0440e4814c",
+        "name": "Japanese Garden Salad",
+        "reason": "A Japanese salad with fresh greens and soy dressing, delivering a light and distinctively savory taste.",
+        "remaining": 20
+      }
+    ],
+    "requestId": "b447843d-b481-49b8-a713-add4a39b5c7f"
+  },
+  "denominator": 20,
+  "attempts": [
+    {
+      "case": "P01",
+      "expected": "COMPLETE",
+      "actual": "COMPLETE",
+      "firstCardMillis": 2479.600000023842,
+      "completeMillis": 3207.300000011921,
+      "terminalMillis": 3207.300000011921,
+      "problems": [],
+      "passed": true,
+      "server": {
+        "requestId": "442e319b-6f0a-461e-993e-9eb631d8255d",
+        "configuredModel": "openai/gpt-4.1-mini",
+        "beganAt": "2026-10-16T15:15:57.135085Z",
+        "intent": {
+          "generationId": "gen-1792163757-gEQsociOC0TfBwob5RZD",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 693,
+            "completion_tokens": 65,
+            "total_tokens": 758,
+            "cost": 0.0003812,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0003812,
+              "upstream_inference_prompt_cost": 0.0002772,
+              "upstream_inference_completions_cost": 0.000104
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "recommendation": {
+          "generationId": "gen-1792163759-uwu6wMNfuVCiQZHVp6VK",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 944,
+            "completion_tokens": 156,
+            "total_tokens": 1100,
+            "cost": 0.0006272,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0006272,
+              "upstream_inference_prompt_cost": 0.0003776,
+              "upstream_inference_completions_cost": 0.0002496
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "firstCardMillis": 2461,
+        "finishedMillis": 3190,
+        "cards": 3,
+        "outcome": "COMPLETE"
+      },
+      "cards": [
+        {
+          "dishId": "36b35720-e2eb-45d6-9645-b33dd1f3a159",
+          "name": "Chinese Garden Salad",
+          "reason": "This Chinese salad offers fresh greens with a plant-based dressing, providing a light and refreshing option.",
+          "remaining": 20
+        },
+        {
+          "dishId": "898b7c31-f4b2-4e6e-91fa-78967916e0d3",
+          "name": "Classic Beef Burger",
+          "reason": "A classic Western beef burger with grilled beef, lettuce, and tomato, allowing customization for bun and sauce.",
+          "remaining": 20
+        },
+        {
+          "dishId": "51e9c097-da3d-4312-a63e-2546e146ba66",
+          "name": "Tomato Pasta",
+          "reason": "Tomato pasta features a Western style with tomato sauce and fresh basil, delivering familiar and comforting flavors.",
+          "remaining": 20
+        }
+      ],
+      "requestId": "442e319b-6f0a-461e-993e-9eb631d8255d"
+    },
+    {
+      "case": "P02",
+      "expected": "COMPLETE",
+      "actual": "COMPLETE",
+      "firstCardMillis": 2808,
+      "completeMillis": 3416,
+      "terminalMillis": 3416,
+      "problems": [],
+      "passed": true,
+      "server": {
+        "requestId": "0b954ab1-c908-4659-a5cc-8d96eb90e493",
+        "configuredModel": "openai/gpt-4.1-mini",
+        "beganAt": "2026-10-16T15:16:01.116439Z",
+        "intent": {
+          "generationId": "gen-1792163761-6C8BEMq9gxsHElPODhxG",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 697,
+            "completion_tokens": 66,
+            "total_tokens": 763,
+            "cost": 0.0003844,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0003844,
+              "upstream_inference_prompt_cost": 0.0002788,
+              "upstream_inference_completions_cost": 0.0001056
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "recommendation": {
+          "generationId": "gen-1792163763-0P6w7Ve7lm30hngzYos2",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 744,
+            "completion_tokens": 115,
+            "total_tokens": 859,
+            "cost": 0.0004816,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0004816,
+              "upstream_inference_prompt_cost": 0.0002976,
+              "upstream_inference_completions_cost": 0.000184
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "firstCardMillis": 2795,
+        "finishedMillis": 3398,
+        "cards": 2,
+        "outcome": "COMPLETE"
+      },
+      "cards": [
+        {
+          "dishId": "36b35720-e2eb-45d6-9645-b33dd1f3a159",
+          "name": "Chinese Garden Salad",
+          "reason": "This Chinese Garden Salad offers fresh greens with a plant-based dressing, providing a light and refreshing option within your budget.",
+          "remaining": 20
+        },
+        {
+          "dishId": "a415d772-8d77-40e3-9e99-1e0440e4814c",
+          "name": "Japanese Garden Salad",
+          "reason": "The Japanese Garden Salad features fresh greens with a savory soy dressing, delivering a simple yet flavorful choice that fits your budget.",
+          "remaining": 20
+        }
+      ],
+      "requestId": "0b954ab1-c908-4659-a5cc-8d96eb90e493"
+    },
+    {
+      "case": "P03",
+      "expected": "COMPLETE",
+      "actual": "COMPLETE",
+      "firstCardMillis": 2572.300000011921,
+      "completeMillis": 2968.900000035763,
+      "terminalMillis": 2968.900000035763,
+      "problems": [],
+      "passed": true,
+      "server": {
+        "requestId": "9865a03e-7eaf-4f3d-b562-08f19c9f69ce",
+        "configuredModel": "openai/gpt-4.1-mini",
+        "beganAt": "2026-10-16T15:16:05.099655Z",
+        "intent": {
+          "generationId": "gen-1792163765-IpCN0jFHsirILU9lB1od",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 690,
+            "completion_tokens": 67,
+            "total_tokens": 757,
+            "cost": 0.0003832,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0003832,
+              "upstream_inference_prompt_cost": 0.000276,
+              "upstream_inference_completions_cost": 0.0001072
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "recommendation": {
+          "generationId": "gen-1792163767-b1H7cvxCXiTRcbbUEpxY",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 745,
+            "completion_tokens": 111,
+            "total_tokens": 856,
+            "cost": 0.0004756,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0004756,
+              "upstream_inference_prompt_cost": 0.000298,
+              "upstream_inference_completions_cost": 0.0001776
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "firstCardMillis": 2558,
+        "finishedMillis": 2953,
+        "cards": 2,
+        "outcome": "COMPLETE"
+      },
+      "cards": [
+        {
+          "dishId": "898b7c31-f4b2-4e6e-91fa-78967916e0d3",
+          "name": "Classic Beef Burger",
+          "reason": "A classic Western dish featuring grilled beef with fresh lettuce and tomato, offering a customizable bun and sauce for a satisfying meal.",
+          "remaining": 20
+        },
+        {
+          "dishId": "51e9c097-da3d-4312-a63e-2546e146ba66",
+          "name": "Tomato Pasta",
+          "reason": "This Western pasta dish combines tomato sauce with fresh basil for a simple yet flavorful option without added spice.",
+          "remaining": 20
+        }
+      ],
+      "requestId": "9865a03e-7eaf-4f3d-b562-08f19c9f69ce"
+    },
+    {
+      "case": "P04",
+      "expected": "COMPLETE",
+      "actual": "COMPLETE",
+      "firstCardMillis": 3289.600000023842,
+      "completeMillis": 3383.600000023842,
+      "terminalMillis": 3383.600000023842,
+      "problems": [],
+      "passed": true,
+      "server": {
+        "requestId": "b6b558b8-cd18-4241-b030-1a7319d89589",
+        "configuredModel": "openai/gpt-4.1-mini",
+        "beganAt": "2026-10-16T15:16:09.081436Z",
+        "intent": {
+          "generationId": "gen-1792163769-3BeA8uOwXttC115FmwJx",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 690,
+            "completion_tokens": 67,
+            "total_tokens": 757,
+            "cost": 0.0003832,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0003832,
+              "upstream_inference_prompt_cost": 0.000276,
+              "upstream_inference_completions_cost": 0.0001072
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "recommendation": {
+          "generationId": "gen-1792163770-gYxekA3SOfkF3xF41KJ5",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 644,
+            "completion_tokens": 66,
+            "total_tokens": 710,
+            "cost": 0.0003632,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0003632,
+              "upstream_inference_prompt_cost": 0.0002576,
+              "upstream_inference_completions_cost": 0.0001056
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "firstCardMillis": 3277,
+        "finishedMillis": 3369,
+        "cards": 1,
+        "outcome": "COMPLETE"
+      },
+      "cards": [
+        {
+          "dishId": "a415d772-8d77-40e3-9e99-1e0440e4814c",
+          "name": "Japanese Garden Salad",
+          "reason": "This Japanese Garden Salad offers a refreshing mix of fresh greens with a savory soy dressing, providing a light and flavorful option from Japanese cuisine.",
+          "remaining": 20
+        }
+      ],
+      "requestId": "b6b558b8-cd18-4241-b030-1a7319d89589"
+    },
+    {
+      "case": "P05",
+      "expected": "COMPLETE",
+      "actual": "COMPLETE",
+      "firstCardMillis": 2680.5,
+      "completeMillis": 3467.7000000476837,
+      "terminalMillis": 3467.7000000476837,
+      "problems": [],
+      "passed": true,
+      "server": {
+        "requestId": "d212f791-4f96-4660-801b-85ad7440546a",
+        "configuredModel": "openai/gpt-4.1-mini",
+        "beganAt": "2026-10-16T15:16:13.064590Z",
+        "intent": {
+          "generationId": "gen-1792163773-lEIHLQB1qSNtcudhgpcu",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 690,
+            "completion_tokens": 66,
+            "total_tokens": 756,
+            "cost": 0.0003816,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0003816,
+              "upstream_inference_prompt_cost": 0.000276,
+              "upstream_inference_completions_cost": 0.0001056
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "recommendation": {
+          "generationId": "gen-1792163774-8bxDMxIACuHhTeFlnlOJ",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 945,
+            "completion_tokens": 161,
+            "total_tokens": 1106,
+            "cost": 0.0006356,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0006356,
+              "upstream_inference_prompt_cost": 0.000378,
+              "upstream_inference_completions_cost": 0.0002576
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "firstCardMillis": 2667,
+        "finishedMillis": 3452,
+        "cards": 3,
+        "outcome": "COMPLETE"
+      },
+      "cards": [
+        {
+          "dishId": "36b35720-e2eb-45d6-9645-b33dd1f3a159",
+          "name": "Chinese Garden Salad",
+          "reason": "This Chinese salad offers fresh greens with a plant-based dressing, providing a mild and refreshing option without spice.",
+          "remaining": 20
+        },
+        {
+          "dishId": "51e9c097-da3d-4312-a63e-2546e146ba66",
+          "name": "Tomato Pasta",
+          "reason": "The tomato pasta features a classic Western flavor with fresh basil and a mild tomato sauce, fitting well for a gentle taste preference.",
+          "remaining": 20
+        },
+        {
+          "dishId": "898b7c31-f4b2-4e6e-91fa-78967916e0d3",
+          "name": "Classic Beef Burger",
+          "reason": "A classic beef burger with grilled beef and customizable toppings offers a satisfying Western choice without any spice.",
+          "remaining": 20
+        }
+      ],
+      "requestId": "d212f791-4f96-4660-801b-85ad7440546a"
+    },
+    {
+      "case": "P06",
+      "expected": "COMPLETE",
+      "actual": "COMPLETE",
+      "firstCardMillis": 2510.800000011921,
+      "completeMillis": 3347.899999976158,
+      "terminalMillis": 3347.899999976158,
+      "problems": [],
+      "passed": true,
+      "server": {
+        "requestId": "d2734904-9424-40ce-bb86-f0ba24e1de5a",
+        "configuredModel": "openai/gpt-4.1-mini",
+        "beganAt": "2026-10-16T15:16:17.048377Z",
+        "intent": {
+          "generationId": "gen-1792163777-GR53e4ebCCucMgea85AY",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 693,
+            "completion_tokens": 65,
+            "total_tokens": 758,
+            "cost": 0.0003812,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0003812,
+              "upstream_inference_prompt_cost": 0.0002772,
+              "upstream_inference_completions_cost": 0.000104
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "recommendation": {
+          "generationId": "gen-1792163778-02Ux1oCbz0gxrcRaFSKm",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 944,
+            "completion_tokens": 157,
+            "total_tokens": 1101,
+            "cost": 0.0006288,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0006288,
+              "upstream_inference_prompt_cost": 0.0003776,
+              "upstream_inference_completions_cost": 0.0002512
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "firstCardMillis": 2497,
+        "finishedMillis": 3326,
+        "cards": 3,
+        "outcome": "COMPLETE"
+      },
+      "cards": [
+        {
+          "dishId": "36b35720-e2eb-45d6-9645-b33dd1f3a159",
+          "name": "Chinese Garden Salad",
+          "reason": "This Chinese salad offers fresh greens with a plant-based dressing, providing a light and refreshing option.",
+          "remaining": 20
+        },
+        {
+          "dishId": "898b7c31-f4b2-4e6e-91fa-78967916e0d3",
+          "name": "Classic Beef Burger",
+          "reason": "A classic Western-style beef burger with grilled beef, lettuce, and tomato, customizable for a satisfying meal.",
+          "remaining": 20
+        },
+        {
+          "dishId": "51e9c097-da3d-4312-a63e-2546e146ba66",
+          "name": "Tomato Pasta",
+          "reason": "Tomato pasta with fresh basil offers a flavorful Western dish featuring wheat-based pasta and a rich tomato sauce.",
+          "remaining": 20
+        }
+      ],
+      "requestId": "d2734904-9424-40ce-bb86-f0ba24e1de5a"
+    },
+    {
+      "case": "P07",
+      "expected": "COMPLETE",
+      "actual": "COMPLETE",
+      "firstCardMillis": 2849.2999999523163,
+      "completeMillis": 3279.5,
+      "terminalMillis": 3279.5,
+      "problems": [],
+      "passed": true,
+      "server": {
+        "requestId": "45f24ba8-71f6-48ad-bf58-3d0893a108ee",
+        "configuredModel": "openai/gpt-4.1-mini",
+        "beganAt": "2026-10-16T15:16:21.031055Z",
+        "intent": {
+          "generationId": "gen-1792163781-1rfDNRJzW5wEdsfKJTXc",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 697,
+            "completion_tokens": 66,
+            "total_tokens": 763,
+            "cost": 0.0003844,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0003844,
+              "upstream_inference_prompt_cost": 0.0002788,
+              "upstream_inference_completions_cost": 0.0001056
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "recommendation": {
+          "generationId": "gen-1792163783-QVM1Iw7LWvdoMklqmMPy",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 744,
+            "completion_tokens": 112,
+            "total_tokens": 856,
+            "cost": 0.0004768,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0004768,
+              "upstream_inference_prompt_cost": 0.0002976,
+              "upstream_inference_completions_cost": 0.0001792
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "firstCardMillis": 2834,
+        "finishedMillis": 3264,
+        "cards": 2,
+        "outcome": "COMPLETE"
+      },
+      "cards": [
+        {
+          "dishId": "36b35720-e2eb-45d6-9645-b33dd1f3a159",
+          "name": "Chinese Garden Salad",
+          "reason": "This Chinese Garden Salad offers fresh greens with a unique plant-based dressing, providing a distinct taste from the Japanese option.",
+          "remaining": 20
+        },
+        {
+          "dishId": "a415d772-8d77-40e3-9e99-1e0440e4814c",
+          "name": "Japanese Garden Salad",
+          "reason": "The Japanese Garden Salad features fresh greens paired with a savory soy dressing, delivering a classic Japanese flavor profile.",
+          "remaining": 20
+        }
+      ],
+      "requestId": "45f24ba8-71f6-48ad-bf58-3d0893a108ee"
+    },
+    {
+      "case": "P08",
+      "expected": "COMPLETE",
+      "actual": "COMPLETE",
+      "firstCardMillis": 2980.899999976158,
+      "completeMillis": 3351.099999964237,
+      "terminalMillis": 3351.099999964237,
+      "problems": [],
+      "passed": true,
+      "server": {
+        "requestId": "082d1c51-79b7-4818-95e3-72921af2e778",
+        "configuredModel": "openai/gpt-4.1-mini",
+        "beganAt": "2026-10-16T15:16:25.014742Z",
+        "intent": {
+          "generationId": "gen-1792163785-hEJbqgIMF0JlhLTgFpY1",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 690,
+            "completion_tokens": 67,
+            "total_tokens": 757,
+            "cost": 0.0003832,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0003832,
+              "upstream_inference_prompt_cost": 0.000276,
+              "upstream_inference_completions_cost": 0.0001072
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "recommendation": {
+          "generationId": "gen-1792163786-XstSGzyB4URPrZkAJ6ng",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 745,
+            "completion_tokens": 114,
+            "total_tokens": 859,
+            "cost": 0.0004804,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0004804,
+              "upstream_inference_prompt_cost": 0.000298,
+              "upstream_inference_completions_cost": 0.0001824
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "firstCardMillis": 2965,
+        "finishedMillis": 3334,
+        "cards": 2,
+        "outcome": "COMPLETE"
+      },
+      "cards": [
+        {
+          "dishId": "898b7c31-f4b2-4e6e-91fa-78967916e0d3",
+          "name": "Classic Beef Burger",
+          "reason": "A classic Western dish featuring grilled beef with fresh lettuce and tomato, offering customization options for bun and sauce to suit your taste.",
+          "remaining": 20
+        },
+        {
+          "dishId": "51e9c097-da3d-4312-a63e-2546e146ba66",
+          "name": "Tomato Pasta",
+          "reason": "This Western pasta dish combines wheat pasta with a flavorful tomato sauce and fresh basil for a simple yet satisfying meal.",
+          "remaining": 20
+        }
+      ],
+      "requestId": "082d1c51-79b7-4818-95e3-72921af2e778"
+    },
+    {
+      "case": "P09",
+      "expected": "COMPLETE",
+      "actual": "COMPLETE",
+      "firstCardMillis": 2510,
+      "completeMillis": 2558.699999988079,
+      "terminalMillis": 2558.699999988079,
+      "problems": [],
+      "passed": true,
+      "server": {
+        "requestId": "fbe9069d-87cf-42a0-b998-8b131434ed2a",
+        "configuredModel": "openai/gpt-4.1-mini",
+        "beganAt": "2026-10-16T15:16:28.997854Z",
+        "intent": {
+          "generationId": "gen-1792163789-DD4kbZ1pg6SAfYkl3P4O",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 690,
+            "completion_tokens": 67,
+            "total_tokens": 757,
+            "cost": 0.0003832,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0003832,
+              "upstream_inference_prompt_cost": 0.000276,
+              "upstream_inference_completions_cost": 0.0001072
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "recommendation": {
+          "generationId": "gen-1792163790-ZpSCZb5SGRPmsDTJFGCy",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 644,
+            "completion_tokens": 66,
+            "total_tokens": 710,
+            "cost": 0.0003632,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0003632,
+              "upstream_inference_prompt_cost": 0.0002576,
+              "upstream_inference_completions_cost": 0.0001056
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "firstCardMillis": 2494,
+        "finishedMillis": 2543,
+        "cards": 1,
+        "outcome": "COMPLETE"
+      },
+      "cards": [
+        {
+          "dishId": "a415d772-8d77-40e3-9e99-1e0440e4814c",
+          "name": "Japanese Garden Salad",
+          "reason": "This Japanese Garden Salad offers a refreshing mix of fresh greens with a savory soy dressing, providing a light and flavorful option from Japanese cuisine.",
+          "remaining": 20
+        }
+      ],
+      "requestId": "fbe9069d-87cf-42a0-b998-8b131434ed2a"
+    },
+    {
+      "case": "P10",
+      "expected": "COMPLETE",
+      "actual": "COMPLETE",
+      "firstCardMillis": 2464.199999988079,
+      "completeMillis": 2898.800000011921,
+      "terminalMillis": 2898.800000011921,
+      "problems": [],
+      "passed": true,
+      "server": {
+        "requestId": "89644452-a68b-4f4c-84b8-018f343c80e6",
+        "configuredModel": "openai/gpt-4.1-mini",
+        "beganAt": "2026-10-16T15:16:31.964396Z",
+        "intent": {
+          "generationId": "gen-1792163792-lRahnpPZa6eEzANdqLH0",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 690,
+            "completion_tokens": 66,
+            "total_tokens": 756,
+            "cost": 0.0003816,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0003816,
+              "upstream_inference_prompt_cost": 0.000276,
+              "upstream_inference_completions_cost": 0.0001056
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "recommendation": {
+          "generationId": "gen-1792163793-ipIbETkBvytnbkzmaK5l",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 945,
+            "completion_tokens": 103,
+            "total_tokens": 1048,
+            "cost": 0.0005428,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0005428,
+              "upstream_inference_prompt_cost": 0.000378,
+              "upstream_inference_completions_cost": 0.0001648
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "firstCardMillis": 2445,
+        "finishedMillis": 2885,
+        "cards": 2,
+        "outcome": "COMPLETE"
+      },
+      "cards": [
+        {
+          "dishId": "36b35720-e2eb-45d6-9645-b33dd1f3a159",
+          "name": "Chinese Garden Salad",
+          "reason": "This Chinese salad offers fresh greens with a plant-based dressing, providing a mild and refreshing option.",
+          "remaining": 20
+        },
+        {
+          "dishId": "51e9c097-da3d-4312-a63e-2546e146ba66",
+          "name": "Tomato Pasta",
+          "reason": "The tomato pasta features classic Western flavors with tomato sauce and fresh basil, fitting a mild taste preference.",
+          "remaining": 20
+        }
+      ],
+      "requestId": "89644452-a68b-4f4c-84b8-018f343c80e6"
+    },
+    {
+      "case": "P11",
+      "expected": "COMPLETE",
+      "actual": "COMPLETE",
+      "firstCardMillis": 3182.100000023842,
+      "completeMillis": 3459.5,
+      "terminalMillis": 3459.5,
+      "problems": [],
+      "passed": true,
+      "server": {
+        "requestId": "a01e2d61-1da4-4492-96f4-428d70c0b038",
+        "configuredModel": "openai/gpt-4.1-mini",
+        "beganAt": "2026-10-16T15:16:34.913764Z",
+        "intent": {
+          "generationId": "gen-1792163795-PIqDaMBLNfA5c6yZJZjX",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 693,
+            "completion_tokens": 65,
+            "total_tokens": 758,
+            "cost": 0.0003812,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0003812,
+              "upstream_inference_prompt_cost": 0.0002772,
+              "upstream_inference_completions_cost": 0.000104
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "recommendation": {
+          "generationId": "gen-1792163796-7OsgQacNM6vEjX4HR6Mv",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 944,
+            "completion_tokens": 159,
+            "total_tokens": 1103,
+            "cost": 0.000632,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.000632,
+              "upstream_inference_prompt_cost": 0.0003776,
+              "upstream_inference_completions_cost": 0.0002544
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "firstCardMillis": 3168,
+        "finishedMillis": 3445,
+        "cards": 3,
+        "outcome": "COMPLETE"
+      },
+      "cards": [
+        {
+          "dishId": "898b7c31-f4b2-4e6e-91fa-78967916e0d3",
+          "name": "Classic Beef Burger",
+          "reason": "A classic Western dish featuring grilled beef with fresh lettuce and tomato, offering a satisfying and customizable burger experience.",
+          "remaining": 20
+        },
+        {
+          "dishId": "51e9c097-da3d-4312-a63e-2546e146ba66",
+          "name": "Tomato Pasta",
+          "reason": "Western-style pasta with a rich tomato sauce and fresh basil, providing a comforting and flavorful meal option.",
+          "remaining": 20
+        },
+        {
+          "dishId": "a415d772-8d77-40e3-9e99-1e0440e4814c",
+          "name": "Japanese Garden Salad",
+          "reason": "A Japanese salad with fresh greens and soy dressing, delivering a light and savory plant-based choice.",
+          "remaining": 20
+        }
+      ],
+      "requestId": "a01e2d61-1da4-4492-96f4-428d70c0b038"
+    },
+    {
+      "case": "P12",
+      "expected": "COMPLETE",
+      "actual": "COMPLETE",
+      "firstCardMillis": 2474.5,
+      "completeMillis": 2863,
+      "terminalMillis": 2863,
+      "problems": [],
+      "passed": true,
+      "server": {
+        "requestId": "381d90c5-13f2-42c6-8fa6-ffe1849d23e4",
+        "configuredModel": "openai/gpt-4.1-mini",
+        "beganAt": "2026-10-16T15:16:38.883921Z",
+        "intent": {
+          "generationId": "gen-1792163799-N7rDQgpXQjVO8Z959uPh",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 697,
+            "completion_tokens": 66,
+            "total_tokens": 763,
+            "cost": 0.0003844,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0003844,
+              "upstream_inference_prompt_cost": 0.0002788,
+              "upstream_inference_completions_cost": 0.0001056
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "recommendation": {
+          "generationId": "gen-1792163800-X1rtYnKfrpGiUpp2vUZw",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 744,
+            "completion_tokens": 116,
+            "total_tokens": 860,
+            "cost": 0.0004832,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0004832,
+              "upstream_inference_prompt_cost": 0.0002976,
+              "upstream_inference_completions_cost": 0.0001856
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "firstCardMillis": 2459,
+        "finishedMillis": 2844,
+        "cards": 2,
+        "outcome": "COMPLETE"
+      },
+      "cards": [
+        {
+          "dishId": "36b35720-e2eb-45d6-9645-b33dd1f3a159",
+          "name": "Chinese Garden Salad",
+          "reason": "This Chinese Garden Salad offers fresh greens paired with a plant-based dressing, providing a light and refreshing option within your budget.",
+          "remaining": 20
+        },
+        {
+          "dishId": "a415d772-8d77-40e3-9e99-1e0440e4814c",
+          "name": "Japanese Garden Salad",
+          "reason": "The Japanese Garden Salad features fresh greens with a savory soy dressing, delivering a simple and flavorful choice that fits your budget.",
+          "remaining": 20
+        }
+      ],
+      "requestId": "381d90c5-13f2-42c6-8fa6-ffe1849d23e4"
+    },
+    {
+      "case": "P13",
+      "expected": "COMPLETE",
+      "actual": "COMPLETE",
+      "firstCardMillis": 3176.199999988079,
+      "completeMillis": 3528.699999988079,
+      "terminalMillis": 3528.699999988079,
+      "problems": [],
+      "passed": true,
+      "server": {
+        "requestId": "d1f7ebed-83ea-45f9-9972-6b2cd7206257",
+        "configuredModel": "openai/gpt-4.1-mini",
+        "beganAt": "2026-10-16T15:16:41.864012Z",
+        "intent": {
+          "generationId": "gen-1792163802-JOBM3ZItBChD6tUwajTa",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 690,
+            "completion_tokens": 67,
+            "total_tokens": 757,
+            "cost": 0.0003832,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0003832,
+              "upstream_inference_prompt_cost": 0.000276,
+              "upstream_inference_completions_cost": 0.0001072
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "recommendation": {
+          "generationId": "gen-1792163804-abDNWmwFAF3icsZHCv6S",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 745,
+            "completion_tokens": 111,
+            "total_tokens": 856,
+            "cost": 0.0004756,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0004756,
+              "upstream_inference_prompt_cost": 0.000298,
+              "upstream_inference_completions_cost": 0.0001776
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "firstCardMillis": 3163,
+        "finishedMillis": 3509,
+        "cards": 2,
+        "outcome": "COMPLETE"
+      },
+      "cards": [
+        {
+          "dishId": "898b7c31-f4b2-4e6e-91fa-78967916e0d3",
+          "name": "Classic Beef Burger",
+          "reason": "A classic Western dish featuring grilled beef with fresh lettuce and tomato, offering a customizable bun and sauce for a satisfying meal.",
+          "remaining": 20
+        },
+        {
+          "dishId": "51e9c097-da3d-4312-a63e-2546e146ba66",
+          "name": "Tomato Pasta",
+          "reason": "This Western pasta dish combines tomato sauce with fresh basil for a simple yet flavorful option without added spice.",
+          "remaining": 20
+        }
+      ],
+      "requestId": "d1f7ebed-83ea-45f9-9972-6b2cd7206257"
+    },
+    {
+      "case": "P14",
+      "expected": "COMPLETE",
+      "actual": "COMPLETE",
+      "firstCardMillis": 2672.599999964237,
+      "completeMillis": 2737.300000011921,
+      "terminalMillis": 2737.300000011921,
+      "problems": [],
+      "passed": true,
+      "server": {
+        "requestId": "87cfeefb-53c3-47ac-b796-9560337f4cf0",
+        "configuredModel": "openai/gpt-4.1-mini",
+        "beganAt": "2026-10-16T15:16:45.847967Z",
+        "intent": {
+          "generationId": "gen-1792163806-GMU9iruAN3X1cE5hHFxB",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 690,
+            "completion_tokens": 67,
+            "total_tokens": 757,
+            "cost": 0.0003832,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0003832,
+              "upstream_inference_prompt_cost": 0.000276,
+              "upstream_inference_completions_cost": 0.0001072
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "recommendation": {
+          "generationId": "gen-1792163807-35e7cPgBXTkonyVLFXPj",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 644,
+            "completion_tokens": 66,
+            "total_tokens": 710,
+            "cost": 0.0003632,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0003632,
+              "upstream_inference_prompt_cost": 0.0002576,
+              "upstream_inference_completions_cost": 0.0001056
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "firstCardMillis": 2657,
+        "finishedMillis": 2722,
+        "cards": 1,
+        "outcome": "COMPLETE"
+      },
+      "cards": [
+        {
+          "dishId": "a415d772-8d77-40e3-9e99-1e0440e4814c",
+          "name": "Japanese Garden Salad",
+          "reason": "This Japanese Garden Salad offers a refreshing mix of fresh greens with a savory soy dressing, providing a light and flavorful option from Japanese cuisine.",
+          "remaining": 20
+        }
+      ],
+      "requestId": "87cfeefb-53c3-47ac-b796-9560337f4cf0"
+    },
+    {
+      "case": "P15",
+      "expected": "COMPLETE",
+      "actual": "COMPLETE",
+      "firstCardMillis": 2762.699999988079,
+      "completeMillis": 3503.400000035763,
+      "terminalMillis": 3503.400000035763,
+      "problems": [],
+      "passed": true,
+      "server": {
+        "requestId": "cfa4c914-5dc6-4430-bf00-d23385626af8",
+        "configuredModel": "openai/gpt-4.1-mini",
+        "beganAt": "2026-10-16T15:16:48.814635Z",
+        "intent": {
+          "generationId": "gen-1792163809-xh9GpuommQCcqhJVbyzp",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 690,
+            "completion_tokens": 66,
+            "total_tokens": 756,
+            "cost": 0.0003816,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0003816,
+              "upstream_inference_prompt_cost": 0.000276,
+              "upstream_inference_completions_cost": 0.0001056
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "recommendation": {
+          "generationId": "gen-1792163810-elZXk0mfry9sbcw2WbNy",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 945,
+            "completion_tokens": 157,
+            "total_tokens": 1102,
+            "cost": 0.0006292,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0006292,
+              "upstream_inference_prompt_cost": 0.000378,
+              "upstream_inference_completions_cost": 0.0002512
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "firstCardMillis": 2745,
+        "finishedMillis": 3485,
+        "cards": 3,
+        "outcome": "COMPLETE"
+      },
+      "cards": [
+        {
+          "dishId": "36b35720-e2eb-45d6-9645-b33dd1f3a159",
+          "name": "Chinese Garden Salad",
+          "reason": "This Chinese salad offers fresh greens with a plant-based dressing, providing a mild and refreshing option.",
+          "remaining": 20
+        },
+        {
+          "dishId": "51e9c097-da3d-4312-a63e-2546e146ba66",
+          "name": "Tomato Pasta",
+          "reason": "Tomato Pasta features classic Western flavors with tomato sauce and fresh basil, fitting a mild taste preference.",
+          "remaining": 20
+        },
+        {
+          "dishId": "898b7c31-f4b2-4e6e-91fa-78967916e0d3",
+          "name": "Classic Beef Burger",
+          "reason": "The Classic Beef Burger delivers a satisfying Western dish with grilled beef and customizable toppings, suitable for a mild palate.",
+          "remaining": 20
+        }
+      ],
+      "requestId": "cfa4c914-5dc6-4430-bf00-d23385626af8"
+    },
+    {
+      "case": "P16",
+      "expected": "COMPLETE",
+      "actual": "COMPLETE",
+      "firstCardMillis": 2651.800000011921,
+      "completeMillis": 3465.600000023842,
+      "terminalMillis": 3465.600000023842,
+      "problems": [],
+      "passed": true,
+      "server": {
+        "requestId": "b7397c7b-9608-4849-8227-1eb82102bdd8",
+        "configuredModel": "openai/gpt-4.1-mini",
+        "beganAt": "2026-10-16T15:16:52.780629Z",
+        "intent": {
+          "generationId": "gen-1792163813-42Vi1UOgfgwXUGTTsvKy",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 693,
+            "completion_tokens": 65,
+            "total_tokens": 758,
+            "cost": 0.0003812,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0003812,
+              "upstream_inference_prompt_cost": 0.0002772,
+              "upstream_inference_completions_cost": 0.000104
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "recommendation": {
+          "generationId": "gen-1792163814-TzpFmnBdcIASWSECNOC6",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 944,
+            "completion_tokens": 161,
+            "total_tokens": 1105,
+            "cost": 0.0006352,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0006352,
+              "upstream_inference_prompt_cost": 0.0003776,
+              "upstream_inference_completions_cost": 0.0002576
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "firstCardMillis": 2637,
+        "finishedMillis": 3448,
+        "cards": 3,
+        "outcome": "COMPLETE"
+      },
+      "cards": [
+        {
+          "dishId": "898b7c31-f4b2-4e6e-91fa-78967916e0d3",
+          "name": "Classic Beef Burger",
+          "reason": "A classic Western dish featuring grilled beef with fresh lettuce and tomato, offering a satisfying and customizable burger experience.",
+          "remaining": 20
+        },
+        {
+          "dishId": "51e9c097-da3d-4312-a63e-2546e146ba66",
+          "name": "Tomato Pasta",
+          "reason": "Western-style pasta with a rich tomato sauce and fresh basil, providing a comforting and flavorful meal option.",
+          "remaining": 20
+        },
+        {
+          "dishId": "a415d772-8d77-40e3-9e99-1e0440e4814c",
+          "name": "Japanese Garden Salad",
+          "reason": "A Japanese salad with fresh greens and soy dressing, delivering a light and savory taste from a different cuisine.",
+          "remaining": 20
+        }
+      ],
+      "requestId": "b7397c7b-9608-4849-8227-1eb82102bdd8"
+    },
+    {
+      "case": "P17",
+      "expected": "COMPLETE",
+      "actual": "COMPLETE",
+      "firstCardMillis": 2929.199999988079,
+      "completeMillis": 3299.099999964237,
+      "terminalMillis": 3299.099999964237,
+      "problems": [],
+      "passed": true,
+      "server": {
+        "requestId": "b2747764-8b4a-4170-85ad-9ad36999f5aa",
+        "configuredModel": "openai/gpt-4.1-mini",
+        "beganAt": "2026-10-16T15:16:56.747425Z",
+        "intent": {
+          "generationId": "gen-1792163817-FjLgFg5vEKywt7qffiCf",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 697,
+            "completion_tokens": 66,
+            "total_tokens": 763,
+            "cost": 0.0003844,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0003844,
+              "upstream_inference_prompt_cost": 0.0002788,
+              "upstream_inference_completions_cost": 0.0001056
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "recommendation": {
+          "generationId": "gen-1792163818-W7vM6VzG1oVd4bJ9NXI3",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 744,
+            "completion_tokens": 116,
+            "total_tokens": 860,
+            "cost": 0.0004832,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0004832,
+              "upstream_inference_prompt_cost": 0.0002976,
+              "upstream_inference_completions_cost": 0.0001856
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "firstCardMillis": 2916,
+        "finishedMillis": 3282,
+        "cards": 2,
+        "outcome": "COMPLETE"
+      },
+      "cards": [
+        {
+          "dishId": "36b35720-e2eb-45d6-9645-b33dd1f3a159",
+          "name": "Chinese Garden Salad",
+          "reason": "This Chinese Garden Salad offers fresh greens paired with a unique plant-based dressing, providing a distinct taste experience within your budget.",
+          "remaining": 20
+        },
+        {
+          "dishId": "a415d772-8d77-40e3-9e99-1e0440e4814c",
+          "name": "Japanese Garden Salad",
+          "reason": "The Japanese Garden Salad features fresh greens complemented by a savory soy dressing, delivering a classic flavor profile that fits your budget.",
+          "remaining": 20
+        }
+      ],
+      "requestId": "b2747764-8b4a-4170-85ad-9ad36999f5aa"
+    },
+    {
+      "case": "P18",
+      "expected": "COMPLETE",
+      "actual": "COMPLETE",
+      "firstCardMillis": 2534.900000035763,
+      "completeMillis": 2888.7000000476837,
+      "terminalMillis": 2888.7000000476837,
+      "problems": [],
+      "passed": true,
+      "server": {
+        "requestId": "ecd89a7c-8544-408d-90bf-45b8a81c2121",
+        "configuredModel": "openai/gpt-4.1-mini",
+        "beganAt": "2026-10-16T15:17:00.711485Z",
+        "intent": {
+          "generationId": "gen-1792163821-kNlWVXR6vkWbvmed4BJX",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 690,
+            "completion_tokens": 67,
+            "total_tokens": 757,
+            "cost": 0.0003832,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0003832,
+              "upstream_inference_prompt_cost": 0.000276,
+              "upstream_inference_completions_cost": 0.0001072
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "recommendation": {
+          "generationId": "gen-1792163822-aGDA17J5zQHZmWAJRUZa",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 745,
+            "completion_tokens": 112,
+            "total_tokens": 857,
+            "cost": 0.0004772,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0004772,
+              "upstream_inference_prompt_cost": 0.000298,
+              "upstream_inference_completions_cost": 0.0001792
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "firstCardMillis": 2523,
+        "finishedMillis": 2875,
+        "cards": 2,
+        "outcome": "COMPLETE"
+      },
+      "cards": [
+        {
+          "dishId": "898b7c31-f4b2-4e6e-91fa-78967916e0d3",
+          "name": "Classic Beef Burger",
+          "reason": "This classic beef burger offers a satisfying Western-style meal with grilled beef and fresh vegetables, allowing customization for a personalized taste.",
+          "remaining": 20
+        },
+        {
+          "dishId": "51e9c097-da3d-4312-a63e-2546e146ba66",
+          "name": "Tomato Pasta",
+          "reason": "Enjoy a simple yet flavorful Western pasta dish featuring tomato sauce and fresh basil for a comforting and familiar taste.",
+          "remaining": 20
+        }
+      ],
+      "requestId": "ecd89a7c-8544-408d-90bf-45b8a81c2121"
+    },
+    {
+      "case": "P19",
+      "expected": "COMPLETE",
+      "actual": "COMPLETE",
+      "firstCardMillis": 2505.5,
+      "completeMillis": 2535.099999964237,
+      "terminalMillis": 2535.099999964237,
+      "problems": [],
+      "passed": true,
+      "server": {
+        "requestId": "3a4c00b5-d659-4083-9ea5-2eaae4ef003f",
+        "configuredModel": "openai/gpt-4.1-mini",
+        "beganAt": "2026-10-16T15:17:03.662015Z",
+        "intent": {
+          "generationId": "gen-1792163824-cdFQBzCHVLaQOc395R7i",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 690,
+            "completion_tokens": 67,
+            "total_tokens": 757,
+            "cost": 0.0003832,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0003832,
+              "upstream_inference_prompt_cost": 0.000276,
+              "upstream_inference_completions_cost": 0.0001072
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "recommendation": {
+          "generationId": "gen-1792163825-dgrUVyDUtDclZHuazdLh",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 644,
+            "completion_tokens": 66,
+            "total_tokens": 710,
+            "cost": 0.0003632,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0003632,
+              "upstream_inference_prompt_cost": 0.0002576,
+              "upstream_inference_completions_cost": 0.0001056
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "firstCardMillis": 2493,
+        "finishedMillis": 2522,
+        "cards": 1,
+        "outcome": "COMPLETE"
+      },
+      "cards": [
+        {
+          "dishId": "a415d772-8d77-40e3-9e99-1e0440e4814c",
+          "name": "Japanese Garden Salad",
+          "reason": "This Japanese Garden Salad offers a refreshing mix of fresh greens with a savory soy dressing, providing a light and flavorful option from Japanese cuisine.",
+          "remaining": 20
+        }
+      ],
+      "requestId": "3a4c00b5-d659-4083-9ea5-2eaae4ef003f"
+    },
+    {
+      "case": "P20",
+      "expected": "COMPLETE",
+      "actual": "COMPLETE",
+      "firstCardMillis": 2712.899999976158,
+      "completeMillis": 3726.199999988079,
+      "terminalMillis": 3726.199999988079,
+      "problems": [],
+      "passed": true,
+      "server": {
+        "requestId": "52cbc2c5-347d-4c60-85b8-0ac48a18e915",
+        "configuredModel": "openai/gpt-4.1-mini",
+        "beganAt": "2026-10-16T15:17:06.613756Z",
+        "intent": {
+          "generationId": "gen-1792163827-Jny3n23Ob53qmkggJYS0",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 690,
+            "completion_tokens": 66,
+            "total_tokens": 756,
+            "cost": 0.0003816,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0003816,
+              "upstream_inference_prompt_cost": 0.000276,
+              "upstream_inference_completions_cost": 0.0001056
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "recommendation": {
+          "generationId": "gen-1792163828-Va3VeFfYNmCWXvujs8lX",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 945,
+            "completion_tokens": 103,
+            "total_tokens": 1048,
+            "cost": 0.0005428,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0005428,
+              "upstream_inference_prompt_cost": 0.000378,
+              "upstream_inference_completions_cost": 0.0001648
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "firstCardMillis": 2695,
+        "finishedMillis": 3709,
+        "cards": 2,
+        "outcome": "COMPLETE"
+      },
+      "cards": [
+        {
+          "dishId": "36b35720-e2eb-45d6-9645-b33dd1f3a159",
+          "name": "Chinese Garden Salad",
+          "reason": "This Chinese salad offers fresh greens with a plant-based dressing, providing a mild and refreshing option.",
+          "remaining": 20
+        },
+        {
+          "dishId": "51e9c097-da3d-4312-a63e-2546e146ba66",
+          "name": "Tomato Pasta",
+          "reason": "The tomato pasta features classic Western flavors with tomato sauce and fresh basil, fitting a mild taste preference.",
+          "remaining": 20
+        }
+      ],
+      "requestId": "52cbc2c5-347d-4c60-85b8-0ac48a18e915"
+    }
+  ],
+  "firstCardP95": 3182.100000023842,
+  "completeP95": 3528.699999988079
+}

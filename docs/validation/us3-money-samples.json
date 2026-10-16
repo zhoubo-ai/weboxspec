@@ -1,0 +1,415 @@
+[
+  {
+    "sample": 1,
+    "orderCents": 1800,
+    "databaseItemSumCents": 1800,
+    "expectedCents": 1800,
+    "configurationMatches": true,
+    "quoteCents": 1800,
+    "items": [
+      {
+        "options": [],
+        "dish": "Chinese Garden Salad",
+        "unitCents": 1800,
+        "quantity": 1,
+        "subtotalCents": 1800
+      }
+    ]
+  },
+  {
+    "sample": 2,
+    "orderCents": 6100,
+    "databaseItemSumCents": 6100,
+    "expectedCents": 6100,
+    "configurationMatches": true,
+    "quoteCents": 6100,
+    "items": [
+      {
+        "options": [
+          "Spaghetti",
+          "Cheese",
+          "Extra basil"
+        ],
+        "dish": "Tomato Pasta",
+        "unitCents": 3050,
+        "quantity": 2,
+        "subtotalCents": 6100
+      }
+    ]
+  },
+  {
+    "sample": 3,
+    "orderCents": 10800,
+    "databaseItemSumCents": 10800,
+    "expectedCents": 10800,
+    "configurationMatches": true,
+    "quoteCents": 10800,
+    "items": [
+      {
+        "options": [
+          "Plain bun",
+          "Extra cheese",
+          "Extra tomato",
+          "Ketchup"
+        ],
+        "dish": "Classic Beef Burger",
+        "unitCents": 3600,
+        "quantity": 3,
+        "subtotalCents": 10800
+      }
+    ]
+  },
+  {
+    "sample": 4,
+    "orderCents": 10600,
+    "databaseItemSumCents": 10600,
+    "expectedCents": 10600,
+    "configurationMatches": true,
+    "quoteCents": 10600,
+    "items": [
+      {
+        "options": [
+          "Fusilli"
+        ],
+        "dish": "Tomato Pasta",
+        "unitCents": 2650,
+        "quantity": 4,
+        "subtotalCents": 10600
+      }
+    ]
+  },
+  {
+    "sample": 5,
+    "orderCents": 18500,
+    "databaseItemSumCents": 18500,
+    "expectedCents": 18500,
+    "configurationMatches": true,
+    "quoteCents": 18500,
+    "items": [
+      {
+        "options": [
+          "Brioche bun",
+          "Extra cheese",
+          "Ketchup"
+        ],
+        "dish": "Classic Beef Burger",
+        "unitCents": 3700,
+        "quantity": 5,
+        "subtotalCents": 18500
+      }
+    ]
+  },
+  {
+    "sample": 6,
+    "orderCents": 1800,
+    "databaseItemSumCents": 1800,
+    "expectedCents": 1800,
+    "configurationMatches": true,
+    "quoteCents": 1800,
+    "items": [
+      {
+        "options": [],
+        "dish": "Chinese Garden Salad",
+        "unitCents": 1800,
+        "quantity": 1,
+        "subtotalCents": 1800
+      }
+    ]
+  },
+  {
+    "sample": 7,
+    "orderCents": 6400,
+    "databaseItemSumCents": 6400,
+    "expectedCents": 6400,
+    "configurationMatches": true,
+    "quoteCents": 6400,
+    "items": [
+      {
+        "options": [
+          "Plain bun",
+          "Ketchup"
+        ],
+        "dish": "Classic Beef Burger",
+        "unitCents": 3200,
+        "quantity": 2,
+        "subtotalCents": 6400
+      }
+    ]
+  },
+  {
+    "sample": 8,
+    "orderCents": 7900,
+    "databaseItemSumCents": 7900,
+    "expectedCents": 7900,
+    "configurationMatches": true,
+    "quoteCents": 7900,
+    "items": [
+      {
+        "options": [
+          "Spaghetti",
+          "Cheese",
+          "Extra basil"
+        ],
+        "dish": "Tomato Pasta",
+        "unitCents": 3050,
+        "quantity": 2,
+        "subtotalCents": 6100
+      },
+      {
+        "options": [],
+        "dish": "Chinese Garden Salad",
+        "unitCents": 1800,
+        "quantity": 1,
+        "subtotalCents": 1800
+      }
+    ]
+  },
+  {
+    "sample": 9,
+    "orderCents": 14800,
+    "databaseItemSumCents": 14800,
+    "expectedCents": 14800,
+    "configurationMatches": true,
+    "quoteCents": 14800,
+    "items": [
+      {
+        "options": [
+          "Brioche bun",
+          "Extra cheese",
+          "Ketchup"
+        ],
+        "dish": "Classic Beef Burger",
+        "unitCents": 3700,
+        "quantity": 4,
+        "subtotalCents": 14800
+      }
+    ]
+  },
+  {
+    "sample": 10,
+    "orderCents": 13250,
+    "databaseItemSumCents": 13250,
+    "expectedCents": 13250,
+    "configurationMatches": true,
+    "quoteCents": 13250,
+    "items": [
+      {
+        "options": [
+          "Fusilli"
+        ],
+        "dish": "Tomato Pasta",
+        "unitCents": 2650,
+        "quantity": 5,
+        "subtotalCents": 13250
+      }
+    ]
+  },
+  {
+    "sample": 11,
+    "orderCents": 1800,
+    "databaseItemSumCents": 1800,
+    "expectedCents": 1800,
+    "configurationMatches": true,
+    "quoteCents": 1800,
+    "items": [
+      {
+        "options": [],
+        "dish": "Chinese Garden Salad",
+        "unitCents": 1800,
+        "quantity": 1,
+        "subtotalCents": 1800
+      }
+    ]
+  },
+  {
+    "sample": 12,
+    "orderCents": 6100,
+    "databaseItemSumCents": 6100,
+    "expectedCents": 6100,
+    "configurationMatches": true,
+    "quoteCents": 6100,
+    "items": [
+      {
+        "options": [
+          "Spaghetti",
+          "Cheese",
+          "Extra basil"
+        ],
+        "dish": "Tomato Pasta",
+        "unitCents": 3050,
+        "quantity": 2,
+        "subtotalCents": 6100
+      }
+    ]
+  },
+  {
+    "sample": 13,
+    "orderCents": 10200,
+    "databaseItemSumCents": 10200,
+    "expectedCents": 10200,
+    "configurationMatches": true,
+    "quoteCents": 10200,
+    "items": [
+      {
+        "options": [
+          "Brioche bun",
+          "Ketchup"
+        ],
+        "dish": "Classic Beef Burger",
+        "unitCents": 3400,
+        "quantity": 3,
+        "subtotalCents": 10200
+      }
+    ]
+  },
+  {
+    "sample": 14,
+    "orderCents": 12200,
+    "databaseItemSumCents": 12200,
+    "expectedCents": 12200,
+    "configurationMatches": true,
+    "quoteCents": 12200,
+    "items": [
+      {
+        "options": [
+          "Spaghetti",
+          "Cheese",
+          "Extra basil"
+        ],
+        "dish": "Tomato Pasta",
+        "unitCents": 3050,
+        "quantity": 4,
+        "subtotalCents": 12200
+      }
+    ]
+  },
+  {
+    "sample": 15,
+    "orderCents": 9000,
+    "databaseItemSumCents": 9000,
+    "expectedCents": 9000,
+    "configurationMatches": true,
+    "quoteCents": 9000,
+    "items": [
+      {
+        "options": [],
+        "dish": "Chinese Garden Salad",
+        "unitCents": 1800,
+        "quantity": 1,
+        "subtotalCents": 1800
+      },
+      {
+        "options": [
+          "Plain bun",
+          "Extra cheese",
+          "Extra tomato",
+          "Ketchup"
+        ],
+        "dish": "Classic Beef Burger",
+        "unitCents": 3600,
+        "quantity": 2,
+        "subtotalCents": 7200
+      }
+    ]
+  },
+  {
+    "sample": 16,
+    "orderCents": 1800,
+    "databaseItemSumCents": 1800,
+    "expectedCents": 1800,
+    "configurationMatches": true,
+    "quoteCents": 1800,
+    "items": [
+      {
+        "options": [],
+        "dish": "Chinese Garden Salad",
+        "unitCents": 1800,
+        "quantity": 1,
+        "subtotalCents": 1800
+      }
+    ]
+  },
+  {
+    "sample": 17,
+    "orderCents": 7400,
+    "databaseItemSumCents": 7400,
+    "expectedCents": 7400,
+    "configurationMatches": true,
+    "quoteCents": 7400,
+    "items": [
+      {
+        "options": [
+          "Brioche bun",
+          "Extra cheese",
+          "Ketchup"
+        ],
+        "dish": "Classic Beef Burger",
+        "unitCents": 3700,
+        "quantity": 2,
+        "subtotalCents": 7400
+      }
+    ]
+  },
+  {
+    "sample": 18,
+    "orderCents": 9150,
+    "databaseItemSumCents": 9150,
+    "expectedCents": 9150,
+    "configurationMatches": true,
+    "quoteCents": 9150,
+    "items": [
+      {
+        "options": [
+          "Spaghetti",
+          "Cheese",
+          "Extra basil"
+        ],
+        "dish": "Tomato Pasta",
+        "unitCents": 3050,
+        "quantity": 3,
+        "subtotalCents": 9150
+      }
+    ]
+  },
+  {
+    "sample": 19,
+    "orderCents": 12800,
+    "databaseItemSumCents": 12800,
+    "expectedCents": 12800,
+    "configurationMatches": true,
+    "quoteCents": 12800,
+    "items": [
+      {
+        "options": [
+          "Plain bun",
+          "Ketchup"
+        ],
+        "dish": "Classic Beef Burger",
+        "unitCents": 3200,
+        "quantity": 4,
+        "subtotalCents": 12800
+      }
+    ]
+  },
+  {
+    "sample": 20,
+    "orderCents": 15250,
+    "databaseItemSumCents": 15250,
+    "expectedCents": 15250,
+    "configurationMatches": true,
+    "quoteCents": 15250,
+    "items": [
+      {
+        "options": [
+          "Spaghetti",
+          "Cheese",
+          "Extra basil"
+        ],
+        "dish": "Tomato Pasta",
+        "unitCents": 3050,
+        "quantity": 5,
+        "subtotalCents": 15250
+      }
+    ]
+  }
+]

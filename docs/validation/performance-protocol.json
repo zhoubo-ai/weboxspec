@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "registeredAt": "2026-10-16T14:39:59.098727+00:00",
+  "status": "Registered before the first full load run",
+  "users": 200,
+  "menuDishes": 500,
+  "rampSeconds": 60,
+  "steadySecondsAfterAllSseConnected": 600,
+  "thinkSeconds": [
+    1,
+    5
+  ],
+  "validOrdersMinimum": 200,
+  "inventoryStreamsPerEmployee": 1,
+  "browser": "Chromium",
+  "viewport": [
+    1440,
+    900
+  ],
+  "samplesPerMetric": 20,
+  "limitsMs": {
+    "menu": 2000,
+    "filter": 2000,
+    "searchIncludingDebounce": 2000,
+    "cart": 300,
+    "validOrder": 3000,
+    "inventory": 2000,
+    "dashboard": 3000
+  },
+  "percentile": "nearest-rank; all 20 attempts; failed/missing samples are positive infinity",
+  "retries": 0,
+  "warmup": "one menu and search; ordinary fixture preparation before each action",
+  "menuAndSearchRequireFreshNetworkResponse": true,
+  "cartMeasurement": "in-page click through two requestAnimationFrame callbacks after updated quantity is observed",
+  "inventoryMeasurement": "before authoritative order request through changed stock badge; includes write latency, conservative versus post-commit-only timing",
+  "hardware": {
+    "host": "Apple M4 Pro",
+    "logicalCpus": 14,
+    "memoryBytes": 51539607552,
+    "os": "macOS 15.7.3 (24G419)",
+    "dockerEngine": "28.1.1",
+    "dockerCpus": 2,
+    "dockerMemoryBytes": 6214086656
+  },
+  "applicationJvm": "JDK 17, separate from Gatling, Xms256m/Xmx1g",
+  "hikariPool": 16,
+  "authenticationSharedIp": {
+    "burst": 240,
+    "perMinute": 300
+  },
+  "sourceSha256": {
+    "backend/src/test/java/com/webox/load/LoadFixture.java": "9884b0a0f97ded0e6d261f9d75fc883e53360f2935443832d3448dbde6955466",
+    "backend/src/test/java/com/webox/load/MealOrderingSimulation.java": "ea5d5f53f4eb521c67c7a02c148ea39e189df889c60f15b8bedf3c9e5616e72f",
+    "frontend/tests/performance/user-visible.spec.ts": "e7ad186bbffa03a50f353f11ca14098678792f7dc877548253d870a85097b6e9",
+    "frontend/playwright.performance.config.ts": "ede33b42f481af504e24aa048b536f3e8a8f0f3ad74860023bd5c6da8f4cc9f4"
+  }
+}

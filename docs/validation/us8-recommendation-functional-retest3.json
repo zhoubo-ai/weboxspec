@@ -1,0 +1,1696 @@
+{
+  "manifestSha256" : "7e17a65d10f3fe36e5d16cde74caa579b74b9bf056b739b0ecc3332146a193ec",
+  "beganAt" : "2026-10-16T12:47:55.084228Z",
+  "java" : "17.0.20.1",
+  "os" : "Mac OS X",
+  "architecture" : "aarch64",
+  "configuredModel" : "openai/gpt-4.1-mini",
+  "concurrency" : 1,
+  "warmup" : {
+    "case" : "F01",
+    "expected" : "COMPLETE",
+    "deliveryDate" : "2032-01-01",
+    "httpStatus" : 200,
+    "elapsedMillis" : 3072,
+    "actual" : "AI_INVALID_RESPONSE",
+    "cards" : [ ],
+    "server" : {
+      "requestId" : "7e2a2b45-0d66-4782-8259-6a0ef0b4a2ea",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:47:55.680474Z",
+      "intent" : {
+        "generationId" : "gen-1792154876-CoGANmsJpTdRN6PVts57",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 662,
+          "completion_tokens" : 65,
+          "total_tokens" : 727,
+          "cost" : 3.688E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.688E-4,
+            "upstream_inference_prompt_cost" : 2.648E-4,
+            "upstream_inference_completions_cost" : 1.04E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : {
+        "generationId" : "gen-1792154878-jDY9R3AUtclgIarM9wGM",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : null,
+        "fingerprint" : ""
+      },
+      "firstCardMillis" : null,
+      "finishedMillis" : 2958,
+      "cards" : 0,
+      "outcome" : "AI_INVALID_RESPONSE"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "DEFAULT",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : null,
+      "needsClarification" : false,
+      "cuisines" : [ ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : null,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ ],
+    "problems" : [ "Unexpected outcome" ],
+    "passed" : false
+  },
+  "functional" : [ {
+    "case" : "F01",
+    "expected" : "COMPLETE",
+    "deliveryDate" : "2032-01-02",
+    "httpStatus" : 200,
+    "elapsedMillis" : 2505,
+    "actual" : "AI_INVALID_RESPONSE",
+    "cards" : [ ],
+    "server" : {
+      "requestId" : "df8be59b-ead1-4f42-9bc2-677d2fc9743a",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:47:59.129475Z",
+      "intent" : {
+        "generationId" : "gen-1792154879-0KcuBQXjJJN18njixAQA",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 662,
+          "completion_tokens" : 65,
+          "total_tokens" : 727,
+          "cost" : 3.688E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.688E-4,
+            "upstream_inference_prompt_cost" : 2.648E-4,
+            "upstream_inference_completions_cost" : 1.04E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : {
+        "generationId" : "gen-1792154881-O9xFFErJkF5CUg9XMPGW",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : null,
+        "fingerprint" : ""
+      },
+      "firstCardMillis" : null,
+      "finishedMillis" : 2491,
+      "cards" : 0,
+      "outcome" : "AI_INVALID_RESPONSE"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "DEFAULT",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : null,
+      "needsClarification" : false,
+      "cuisines" : [ ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : null,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ ],
+    "problems" : [ "Unexpected outcome" ],
+    "passed" : false
+  }, {
+    "case" : "F02",
+    "expected" : "COMPLETE",
+    "deliveryDate" : "2032-01-03",
+    "httpStatus" : 200,
+    "elapsedMillis" : 2483,
+    "actual" : "AI_INVALID_RESPONSE",
+    "cards" : [ ],
+    "server" : {
+      "requestId" : "90b8ceb9-10d5-4e69-8d8d-b0244397fbe7",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:48:02.050858Z",
+      "intent" : {
+        "generationId" : "gen-1792154882-72Kl6gLkuGB1mRqId92G",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 666,
+          "completion_tokens" : 66,
+          "total_tokens" : 732,
+          "cost" : 3.72E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.72E-4,
+            "upstream_inference_prompt_cost" : 2.664E-4,
+            "upstream_inference_completions_cost" : 1.056E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : {
+        "generationId" : "gen-1792154884-0vQG1R0sceWCFfLlvmBB",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : null,
+        "fingerprint" : ""
+      },
+      "firstCardMillis" : null,
+      "finishedMillis" : 2470,
+      "cards" : 0,
+      "outcome" : "AI_INVALID_RESPONSE"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "DEFAULT",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : null,
+      "needsClarification" : false,
+      "cuisines" : [ ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : 2000,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ ],
+    "problems" : [ "Unexpected outcome" ],
+    "passed" : false
+  }, {
+    "case" : "F03",
+    "expected" : "COMPLETE",
+    "deliveryDate" : "2032-01-04",
+    "httpStatus" : 200,
+    "elapsedMillis" : 2501,
+    "actual" : "AI_INVALID_RESPONSE",
+    "cards" : [ ],
+    "server" : {
+      "requestId" : "f1c1f0b4-70dc-4dd8-b5a7-f1d9f93298b4",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:48:04.956141Z",
+      "intent" : {
+        "generationId" : "gen-1792154885-cmQZaqaoBBeAcgfPFcIk",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 659,
+          "completion_tokens" : 67,
+          "total_tokens" : 726,
+          "cost" : 3.708E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.708E-4,
+            "upstream_inference_prompt_cost" : 2.636E-4,
+            "upstream_inference_completions_cost" : 1.072E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : {
+        "generationId" : "gen-1792154887-MuBJOP641uASDX3HhSLk",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : null,
+        "fingerprint" : ""
+      },
+      "firstCardMillis" : null,
+      "finishedMillis" : 2488,
+      "cards" : 0,
+      "outcome" : "AI_INVALID_RESPONSE"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "DEFAULT",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : null,
+      "needsClarification" : false,
+      "cuisines" : [ "Western" ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : null,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ ],
+    "problems" : [ "Unexpected outcome" ],
+    "passed" : false
+  }, {
+    "case" : "F04",
+    "expected" : "COMPLETE",
+    "deliveryDate" : "2032-01-05",
+    "httpStatus" : 200,
+    "elapsedMillis" : 2731,
+    "actual" : "AI_INVALID_RESPONSE",
+    "cards" : [ ],
+    "server" : {
+      "requestId" : "8d1cf1d0-fa52-4834-9d91-7290f309bbcd",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:48:07.876413Z",
+      "intent" : {
+        "generationId" : "gen-1792154888-6yQcgeJ8lgR1avZx7ZB5",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 659,
+          "completion_tokens" : 67,
+          "total_tokens" : 726,
+          "cost" : 3.708E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.708E-4,
+            "upstream_inference_prompt_cost" : 2.636E-4,
+            "upstream_inference_completions_cost" : 1.072E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : {
+        "generationId" : "gen-1792154889-A6rlttZxfocN6rif1hft",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : null,
+        "fingerprint" : ""
+      },
+      "firstCardMillis" : null,
+      "finishedMillis" : 2717,
+      "cards" : 0,
+      "outcome" : "AI_INVALID_RESPONSE"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "DEFAULT",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : null,
+      "needsClarification" : false,
+      "cuisines" : [ "Japanese" ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : null,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ ],
+    "problems" : [ "Unexpected outcome" ],
+    "passed" : false
+  }, {
+    "case" : "F05",
+    "expected" : "COMPLETE",
+    "deliveryDate" : "2032-01-06",
+    "httpStatus" : 200,
+    "elapsedMillis" : 2661,
+    "actual" : "AI_INVALID_RESPONSE",
+    "cards" : [ ],
+    "server" : {
+      "requestId" : "06cb2380-0fdd-44af-b199-709ec33439ab",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:48:11.023248Z",
+      "intent" : {
+        "generationId" : "gen-1792154891-7zl97GUH7x4UXzfZfeJo",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 659,
+          "completion_tokens" : 67,
+          "total_tokens" : 726,
+          "cost" : 3.708E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.708E-4,
+            "upstream_inference_prompt_cost" : 2.636E-4,
+            "upstream_inference_completions_cost" : 1.072E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : {
+        "generationId" : "gen-1792154893-OyxeOG9bh2FM1XJTCmSf",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : null,
+        "fingerprint" : ""
+      },
+      "firstCardMillis" : null,
+      "finishedMillis" : 2650,
+      "cards" : 0,
+      "outcome" : "AI_INVALID_RESPONSE"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "DEFAULT",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : null,
+      "needsClarification" : false,
+      "cuisines" : [ "Chinese" ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : null,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ ],
+    "problems" : [ "Unexpected outcome" ],
+    "passed" : false
+  }, {
+    "case" : "F06",
+    "expected" : "COMPLETE",
+    "deliveryDate" : "2032-01-07",
+    "httpStatus" : 200,
+    "elapsedMillis" : 2453,
+    "actual" : "AI_INVALID_RESPONSE",
+    "cards" : [ ],
+    "server" : {
+      "requestId" : "bb1c1cf1-9e6d-4381-95b3-a7afb65937e1",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:48:14.122558Z",
+      "intent" : {
+        "generationId" : "gen-1792154894-KTPqLsJ837OuVkA5SYSy",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 659,
+          "completion_tokens" : 66,
+          "total_tokens" : 725,
+          "cost" : 3.692E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.692E-4,
+            "upstream_inference_prompt_cost" : 2.636E-4,
+            "upstream_inference_completions_cost" : 1.056E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : {
+        "generationId" : "gen-1792154896-5gHqsLNFOXFutfw5LtvP",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : null,
+        "fingerprint" : ""
+      },
+      "firstCardMillis" : null,
+      "finishedMillis" : 2441,
+      "cards" : 0,
+      "outcome" : "AI_INVALID_RESPONSE"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "DEFAULT",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : null,
+      "needsClarification" : false,
+      "cuisines" : [ ],
+      "spiceLevel" : "Mild",
+      "flavor" : null,
+      "budgetMaxCents" : null,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ ],
+    "problems" : [ "Unexpected outcome" ],
+    "passed" : false
+  }, {
+    "case" : "F07",
+    "expected" : "COMPLETE",
+    "deliveryDate" : "2032-01-08",
+    "httpStatus" : 200,
+    "elapsedMillis" : 2730,
+    "actual" : "AI_INVALID_RESPONSE",
+    "cards" : [ ],
+    "server" : {
+      "requestId" : "acd9f8d4-0807-4164-b353-16c248dd58c0",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:48:16.990846Z",
+      "intent" : {
+        "generationId" : "gen-1792154897-zAuqxQ6d6phF6PDAWqhU",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 659,
+          "completion_tokens" : 66,
+          "total_tokens" : 725,
+          "cost" : 3.692E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.692E-4,
+            "upstream_inference_prompt_cost" : 2.636E-4,
+            "upstream_inference_completions_cost" : 1.056E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : {
+        "generationId" : "gen-1792154899-hTmav6lAFQvn3oVKSfSb",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : null,
+        "fingerprint" : ""
+      },
+      "firstCardMillis" : null,
+      "finishedMillis" : 2718,
+      "cards" : 0,
+      "outcome" : "AI_INVALID_RESPONSE"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "DEFAULT",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : null,
+      "needsClarification" : false,
+      "cuisines" : [ ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : null,
+      "protein" : "beef",
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ ],
+    "problems" : [ "Unexpected outcome" ],
+    "passed" : false
+  }, {
+    "case" : "F08",
+    "expected" : "COMPLETE",
+    "deliveryDate" : "2032-01-09",
+    "httpStatus" : 200,
+    "elapsedMillis" : 2254,
+    "actual" : "AI_INVALID_RESPONSE",
+    "cards" : [ ],
+    "server" : {
+      "requestId" : "1e5445b9-328b-4430-8c31-46c1a75f1104",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:48:20.141043Z",
+      "intent" : {
+        "generationId" : "gen-1792154900-eXTVxfjSCGhFcp9X1bl1",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 660,
+          "completion_tokens" : 67,
+          "total_tokens" : 727,
+          "cost" : 3.712E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.712E-4,
+            "upstream_inference_prompt_cost" : 2.64E-4,
+            "upstream_inference_completions_cost" : 1.072E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : {
+        "generationId" : "gen-1792154902-qGJw2NSjh2c3EV0IuISa",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : null,
+        "fingerprint" : ""
+      },
+      "firstCardMillis" : null,
+      "finishedMillis" : 2246,
+      "cards" : 0,
+      "outcome" : "AI_INVALID_RESPONSE"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "DEFAULT",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : null,
+      "needsClarification" : false,
+      "cuisines" : [ ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : null,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : "tomato pasta"
+    },
+    "generatedItems" : [ ],
+    "problems" : [ "Unexpected outcome" ],
+    "passed" : false
+  }, {
+    "case" : "F09",
+    "expected" : "COMPLETE",
+    "deliveryDate" : "2032-01-10",
+    "httpStatus" : 200,
+    "elapsedMillis" : 2703,
+    "actual" : "AI_INVALID_RESPONSE",
+    "cards" : [ ],
+    "server" : {
+      "requestId" : "ff1e6a65-4240-44b3-8737-4ee21b35a8c6",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:48:22.814983Z",
+      "intent" : {
+        "generationId" : "gen-1792154903-CqKesnjjTD7f64ZerhgD",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 661,
+          "completion_tokens" : 65,
+          "total_tokens" : 726,
+          "cost" : 3.684E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.684E-4,
+            "upstream_inference_prompt_cost" : 2.644E-4,
+            "upstream_inference_completions_cost" : 1.04E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : {
+        "generationId" : "gen-1792154904-WltteClLmIjQKiN2wnxU",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : null,
+        "fingerprint" : ""
+      },
+      "firstCardMillis" : null,
+      "finishedMillis" : 2694,
+      "cards" : 0,
+      "outcome" : "AI_INVALID_RESPONSE"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "DEFAULT",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : null,
+      "needsClarification" : false,
+      "cuisines" : [ ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : null,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ ],
+    "problems" : [ "Unexpected outcome" ],
+    "passed" : false
+  }, {
+    "case" : "F10",
+    "expected" : "COMPLETE",
+    "deliveryDate" : "2032-01-11",
+    "httpStatus" : 200,
+    "elapsedMillis" : 2397,
+    "actual" : "AI_INVALID_RESPONSE",
+    "cards" : [ ],
+    "server" : {
+      "requestId" : "6853d986-d0e1-4ac9-96d8-2fd86530ed9c",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:48:25.928348Z",
+      "intent" : {
+        "generationId" : "gen-1792154906-vq43kn2RO5aFEZvKTae4",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 661,
+          "completion_tokens" : 65,
+          "total_tokens" : 726,
+          "cost" : 3.684E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.684E-4,
+            "upstream_inference_prompt_cost" : 2.644E-4,
+            "upstream_inference_completions_cost" : 1.04E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : {
+        "generationId" : "gen-1792154908-niH3HtlHxV8EndfvXSYG",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : null,
+        "fingerprint" : ""
+      },
+      "firstCardMillis" : null,
+      "finishedMillis" : 2387,
+      "cards" : 0,
+      "outcome" : "AI_INVALID_RESPONSE"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "DEFAULT",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : null,
+      "needsClarification" : false,
+      "cuisines" : [ ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : null,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ ],
+    "problems" : [ "Unexpected outcome" ],
+    "passed" : false
+  }, {
+    "case" : "F11",
+    "expected" : "COMPLETE",
+    "deliveryDate" : "2032-01-12",
+    "httpStatus" : 200,
+    "elapsedMillis" : 3199,
+    "actual" : "AI_INVALID_RESPONSE",
+    "cards" : [ ],
+    "server" : {
+      "requestId" : "84b8eedb-c0de-4fc1-9e0a-b69263106fcc",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:48:28.748974Z",
+      "intent" : {
+        "generationId" : "gen-1792154909-T2R2F0lNk8DTeNK0FzAW",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 666,
+          "completion_tokens" : 65,
+          "total_tokens" : 731,
+          "cost" : 3.704E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.704E-4,
+            "upstream_inference_prompt_cost" : 2.664E-4,
+            "upstream_inference_completions_cost" : 1.04E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : {
+        "generationId" : "gen-1792154911-ZUPc98nqobwNJjk5UtVa",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : null,
+        "fingerprint" : ""
+      },
+      "firstCardMillis" : null,
+      "finishedMillis" : 3183,
+      "cards" : 0,
+      "outcome" : "AI_INVALID_RESPONSE"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "DEFAULT",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : null,
+      "needsClarification" : false,
+      "cuisines" : [ ],
+      "spiceLevel" : null,
+      "flavor" : "Light",
+      "budgetMaxCents" : null,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ ],
+    "problems" : [ "Unexpected outcome" ],
+    "passed" : false
+  }, {
+    "case" : "F12",
+    "expected" : "COMPLETE",
+    "deliveryDate" : "2032-01-13",
+    "httpStatus" : 200,
+    "elapsedMillis" : 2328,
+    "actual" : "AI_INVALID_RESPONSE",
+    "cards" : [ ],
+    "server" : {
+      "requestId" : "ff7f49df-3944-4ff8-8977-041dfe7ab1bb",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:48:32.376942Z",
+      "intent" : {
+        "generationId" : "gen-1792154912-FZzDgcfMND785TERghwu",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 663,
+          "completion_tokens" : 65,
+          "total_tokens" : 728,
+          "cost" : 3.692E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.692E-4,
+            "upstream_inference_prompt_cost" : 2.652E-4,
+            "upstream_inference_completions_cost" : 1.04E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : {
+        "generationId" : "gen-1792154914-bZfeCWTgRBZWLQGOZACx",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : null,
+        "fingerprint" : ""
+      },
+      "firstCardMillis" : null,
+      "finishedMillis" : 2306,
+      "cards" : 0,
+      "outcome" : "AI_INVALID_RESPONSE"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "DEFAULT",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : null,
+      "needsClarification" : false,
+      "cuisines" : [ ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : null,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ ],
+    "problems" : [ "Unexpected outcome" ],
+    "passed" : false
+  }, {
+    "case" : "F13",
+    "expected" : "COMPLETE",
+    "deliveryDate" : "2032-01-14",
+    "httpStatus" : 200,
+    "elapsedMillis" : 2722,
+    "actual" : "AI_INVALID_RESPONSE",
+    "cards" : [ ],
+    "server" : {
+      "requestId" : "3b6ae0b0-fc5e-4c42-8e18-fb4ff0666521",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:48:35.115713Z",
+      "intent" : {
+        "generationId" : "gen-1792154915-zWpnt4VIyn9q9o2kj65u",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 659,
+          "completion_tokens" : 65,
+          "total_tokens" : 724,
+          "cost" : 3.676E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.676E-4,
+            "upstream_inference_prompt_cost" : 2.636E-4,
+            "upstream_inference_completions_cost" : 1.04E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : {
+        "generationId" : "gen-1792154917-29s9ztzOBR5VwWQkdPJ3",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : null,
+        "fingerprint" : ""
+      },
+      "firstCardMillis" : null,
+      "finishedMillis" : 2710,
+      "cards" : 0,
+      "outcome" : "AI_INVALID_RESPONSE"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "DEFAULT",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : null,
+      "needsClarification" : false,
+      "cuisines" : [ ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : null,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ ],
+    "problems" : [ "Unexpected outcome" ],
+    "passed" : false
+  }, {
+    "case" : "F14",
+    "expected" : "COMPLETE",
+    "deliveryDate" : "2032-01-15",
+    "httpStatus" : 200,
+    "elapsedMillis" : 2599,
+    "actual" : "AI_INVALID_RESPONSE",
+    "cards" : [ ],
+    "server" : {
+      "requestId" : "6b3014be-3b57-4cf2-875d-8937586dad4f",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:48:38.256725Z",
+      "intent" : {
+        "generationId" : "gen-1792154918-GaTqmDOdAcPkVG8iJ5xJ",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 662,
+          "completion_tokens" : 65,
+          "total_tokens" : 727,
+          "cost" : 3.688E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.688E-4,
+            "upstream_inference_prompt_cost" : 2.648E-4,
+            "upstream_inference_completions_cost" : 1.04E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : {
+        "generationId" : "gen-1792154920-8VWlSseFokmIdoDS5HRD",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : null,
+        "fingerprint" : ""
+      },
+      "firstCardMillis" : null,
+      "finishedMillis" : 2583,
+      "cards" : 0,
+      "outcome" : "AI_INVALID_RESPONSE"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "DEFAULT",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : null,
+      "needsClarification" : false,
+      "cuisines" : [ ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : null,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ ],
+    "problems" : [ "Unexpected outcome" ],
+    "passed" : false
+  }, {
+    "case" : "F15",
+    "expected" : "COMPLETE",
+    "deliveryDate" : "2032-01-16",
+    "httpStatus" : 200,
+    "elapsedMillis" : 2209,
+    "actual" : "AI_INVALID_RESPONSE",
+    "cards" : [ ],
+    "server" : {
+      "requestId" : "baec38ba-903c-45b1-802a-9d9487f7eefd",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:48:41.346122Z",
+      "intent" : {
+        "generationId" : "gen-1792154921-HjwiA68L7dsbKZ6ClE8y",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 661,
+          "completion_tokens" : 65,
+          "total_tokens" : 726,
+          "cost" : 3.684E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.684E-4,
+            "upstream_inference_prompt_cost" : 2.644E-4,
+            "upstream_inference_completions_cost" : 1.04E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : {
+        "generationId" : "gen-1792154923-aA3Pu9fqcIasMzll1iMo",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : null,
+        "fingerprint" : ""
+      },
+      "firstCardMillis" : null,
+      "finishedMillis" : 2197,
+      "cards" : 0,
+      "outcome" : "AI_INVALID_RESPONSE"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "DEFAULT",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : null,
+      "needsClarification" : false,
+      "cuisines" : [ ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : null,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ ],
+    "problems" : [ "Unexpected outcome" ],
+    "passed" : false
+  }, {
+    "case" : "F16",
+    "expected" : "COMPLETE",
+    "deliveryDate" : "2032-01-17",
+    "httpStatus" : 200,
+    "elapsedMillis" : 2533,
+    "actual" : "AI_INVALID_RESPONSE",
+    "cards" : [ ],
+    "server" : {
+      "requestId" : "f247c652-cb69-4bde-a29c-b74d5b501763",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:48:44.038019Z",
+      "intent" : {
+        "generationId" : "gen-1792154924-8u9MP7MwxK8VefTuRF2b",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 663,
+          "completion_tokens" : 69,
+          "total_tokens" : 732,
+          "cost" : 3.756E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.756E-4,
+            "upstream_inference_prompt_cost" : 2.652E-4,
+            "upstream_inference_completions_cost" : 1.104E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : {
+        "generationId" : "gen-1792154926-NBfl0xdURcEDdrR4z5Ke",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : null,
+        "fingerprint" : ""
+      },
+      "firstCardMillis" : null,
+      "finishedMillis" : 2525,
+      "cards" : 0,
+      "outcome" : "AI_INVALID_RESPONSE"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "EXCLUDE",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : "last 30 days",
+      "needsClarification" : false,
+      "cuisines" : [ ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : null,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ ],
+    "problems" : [ "Unexpected outcome" ],
+    "passed" : false
+  }, {
+    "case" : "F17",
+    "expected" : "COMPLETE",
+    "deliveryDate" : "2032-01-18",
+    "httpStatus" : 200,
+    "elapsedMillis" : 2162,
+    "actual" : "AI_INVALID_RESPONSE",
+    "cards" : [ ],
+    "server" : {
+      "requestId" : "d46588da-9ef7-4b83-924d-cd8c1e53bd20",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:48:47.052047Z",
+      "intent" : {
+        "generationId" : "gen-1792154927-5asoySW9qPlqRVy1MDeh",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 660,
+          "completion_tokens" : 67,
+          "total_tokens" : 727,
+          "cost" : 3.712E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.712E-4,
+            "upstream_inference_prompt_cost" : 2.64E-4,
+            "upstream_inference_completions_cost" : 1.072E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : {
+        "generationId" : "gen-1792154928-dGtWti19ftDNXcz7BgIp",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : null,
+        "fingerprint" : ""
+      },
+      "firstCardMillis" : null,
+      "finishedMillis" : 2154,
+      "cards" : 0,
+      "outcome" : "AI_INVALID_RESPONSE"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "EXCLUDE",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : "yesterday",
+      "needsClarification" : false,
+      "cuisines" : [ ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : null,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ ],
+    "problems" : [ "Unexpected outcome" ],
+    "passed" : false
+  }, {
+    "case" : "F18",
+    "expected" : "COMPLETE",
+    "deliveryDate" : "2032-01-19",
+    "httpStatus" : 200,
+    "elapsedMillis" : 2892,
+    "actual" : "AI_INVALID_RESPONSE",
+    "cards" : [ ],
+    "server" : {
+      "requestId" : "76bac41c-beb3-46f8-acac-5abe25d4f0bc",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:48:49.664026Z",
+      "intent" : {
+        "generationId" : "gen-1792154930-EN8EbHjb9doRDO1YPbc3",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 675,
+          "completion_tokens" : 95,
+          "total_tokens" : 770,
+          "cost" : 4.22E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 4.22E-4,
+            "upstream_inference_prompt_cost" : 2.7E-4,
+            "upstream_inference_completions_cost" : 1.52E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : {
+        "generationId" : "gen-1792154932-jRAyiFEzovsaPxBRTqm4",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : null,
+        "fingerprint" : ""
+      },
+      "firstCardMillis" : null,
+      "finishedMillis" : 2870,
+      "cards" : 0,
+      "outcome" : "AI_INVALID_RESPONSE"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "EXCLUDE",
+      "repeatFrom" : "2026-09-01",
+      "repeatThrough" : "2026-10-16",
+      "repeatEvidence" : "Avoid meals I ate from 2026-09-01 through 2026-10-16.",
+      "needsClarification" : false,
+      "cuisines" : [ ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : null,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ ],
+    "problems" : [ "Unexpected outcome" ],
+    "passed" : false
+  }, {
+    "case" : "F19",
+    "expected" : "COMPLETE",
+    "deliveryDate" : "2032-01-20",
+    "httpStatus" : 200,
+    "elapsedMillis" : 2273,
+    "actual" : "AI_INVALID_RESPONSE",
+    "cards" : [ ],
+    "server" : {
+      "requestId" : "db08278d-929a-4d81-b141-9e3b2d1760f4",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:48:52.975603Z",
+      "intent" : {
+        "generationId" : "gen-1792154933-0CVblhizkAEdSOA3db9c",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 669,
+          "completion_tokens" : 65,
+          "total_tokens" : 734,
+          "cost" : 3.716E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.716E-4,
+            "upstream_inference_prompt_cost" : 2.676E-4,
+            "upstream_inference_completions_cost" : 1.04E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : {
+        "generationId" : "gen-1792154934-bdG2BNaQF3hy122sjhv2",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : null,
+        "fingerprint" : ""
+      },
+      "firstCardMillis" : null,
+      "finishedMillis" : 2262,
+      "cards" : 0,
+      "outcome" : "AI_INVALID_RESPONSE"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "DEFAULT",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : null,
+      "needsClarification" : false,
+      "cuisines" : [ ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : null,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ ],
+    "problems" : [ "Unexpected outcome" ],
+    "passed" : false
+  }, {
+    "case" : "F20",
+    "expected" : "NO_MATCH",
+    "deliveryDate" : "2052-01-21",
+    "httpStatus" : 200,
+    "elapsedMillis" : 16,
+    "actual" : "NO_MATCH",
+    "cards" : [ ],
+    "server" : {
+      "requestId" : "4de589f4-48b3-4121-890b-b2542a71575d",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:48:55.654512Z",
+      "intent" : null,
+      "recommendation" : null,
+      "firstCardMillis" : null,
+      "finishedMillis" : 3,
+      "cards" : 0,
+      "outcome" : "NO_MATCH"
+    },
+    "extractedIntent" : null,
+    "generatedItems" : [ ],
+    "problems" : [ ],
+    "passed" : true
+  }, {
+    "case" : "F21",
+    "expected" : "INTENT_CLARIFICATION_REQUIRED",
+    "deliveryDate" : "2032-01-22",
+    "httpStatus" : 200,
+    "elapsedMillis" : 1588,
+    "actual" : "INTENT_CLARIFICATION_REQUIRED",
+    "cards" : [ ],
+    "server" : {
+      "requestId" : "db49f218-e489-4b61-8344-65d06fd7b854",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:48:56.058468Z",
+      "intent" : {
+        "generationId" : "gen-1792154936-J6uePW9hoXc8FxJ15Buf",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 673,
+          "completion_tokens" : 93,
+          "total_tokens" : 766,
+          "cost" : 4.18E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 4.18E-4,
+            "upstream_inference_prompt_cost" : 2.692E-4,
+            "upstream_inference_completions_cost" : 1.488E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : null,
+      "firstCardMillis" : null,
+      "finishedMillis" : 1572,
+      "cards" : 0,
+      "outcome" : "INTENT_CLARIFICATION_REQUIRED"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "EXCLUDE",
+      "repeatFrom" : "2026-10-16",
+      "repeatThrough" : "2026-09-01",
+      "repeatEvidence" : "No repeats from 2026-10-16 through 2026-09-01.",
+      "needsClarification" : true,
+      "cuisines" : [ ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : null,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ ],
+    "problems" : [ ],
+    "passed" : true
+  }, {
+    "case" : "F22",
+    "expected" : "NO_MATCH",
+    "deliveryDate" : "2032-01-23",
+    "httpStatus" : 200,
+    "elapsedMillis" : 1410,
+    "actual" : "NO_MATCH",
+    "cards" : [ ],
+    "server" : {
+      "requestId" : "9d609a33-fe5d-43af-9ecc-de08458fe836",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:48:58.074523Z",
+      "intent" : {
+        "generationId" : "gen-1792154938-mC7Ti6C1g3wj7LEHNk9F",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 664,
+          "completion_tokens" : 65,
+          "total_tokens" : 729,
+          "cost" : 3.696E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.696E-4,
+            "upstream_inference_prompt_cost" : 2.656E-4,
+            "upstream_inference_completions_cost" : 1.04E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : null,
+      "firstCardMillis" : null,
+      "finishedMillis" : 1403,
+      "cards" : 0,
+      "outcome" : "NO_MATCH"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "DEFAULT",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : null,
+      "needsClarification" : false,
+      "cuisines" : [ ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : 100,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ ],
+    "problems" : [ ],
+    "passed" : true
+  }, {
+    "case" : "F23",
+    "expected" : "COMPLETE",
+    "deliveryDate" : "2032-01-24",
+    "httpStatus" : 200,
+    "elapsedMillis" : 2582,
+    "actual" : "AI_INVALID_RESPONSE",
+    "cards" : [ ],
+    "server" : {
+      "requestId" : "0528d4d9-bcf0-4e6f-bf09-0198b83758f5",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:48:59.908037Z",
+      "intent" : {
+        "generationId" : "gen-1792154940-frIS5QMu4vvPWaKFSp7p",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 660,
+          "completion_tokens" : 68,
+          "total_tokens" : 728,
+          "cost" : 3.728E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.728E-4,
+            "upstream_inference_prompt_cost" : 2.64E-4,
+            "upstream_inference_completions_cost" : 1.088E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : {
+        "generationId" : "gen-1792154942-bfsankX7mlePsXHKxBbb",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : null,
+        "fingerprint" : ""
+      },
+      "firstCardMillis" : null,
+      "finishedMillis" : 2570,
+      "cards" : 0,
+      "outcome" : "AI_INVALID_RESPONSE"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "DEFAULT",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : null,
+      "needsClarification" : false,
+      "cuisines" : [ ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : null,
+      "protein" : null,
+      "excludedAllergens" : [ "Dairy" ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ ],
+    "problems" : [ "Unexpected outcome" ],
+    "passed" : false
+  }, {
+    "case" : "F24",
+    "expected" : "INTENT_CLARIFICATION_REQUIRED",
+    "deliveryDate" : "2032-01-25",
+    "httpStatus" : 200,
+    "elapsedMillis" : 1593,
+    "actual" : "INTENT_CLARIFICATION_REQUIRED",
+    "cards" : [ ],
+    "server" : {
+      "requestId" : "fbe7a1dc-ce67-42ec-b652-e64525d47fc4",
+      "configuredModel" : "openai/gpt-4.1-mini",
+      "beganAt" : "2026-10-16T12:49:02.897327Z",
+      "intent" : {
+        "generationId" : "gen-1792154943-xr1dRkEKd1V7O86VG0fW",
+        "model" : "openai/gpt-4.1-mini",
+        "provider" : "OpenAI",
+        "usage" : {
+          "prompt_tokens" : 668,
+          "completion_tokens" : 70,
+          "total_tokens" : 738,
+          "cost" : 3.792E-4,
+          "is_byok" : false,
+          "prompt_tokens_details" : {
+            "cached_tokens" : 0,
+            "cache_write_tokens" : 0,
+            "audio_tokens" : 0,
+            "video_tokens" : 0
+          },
+          "cost_details" : {
+            "upstream_inference_cost" : 3.792E-4,
+            "upstream_inference_prompt_cost" : 2.672E-4,
+            "upstream_inference_completions_cost" : 1.12E-4
+          },
+          "completion_tokens_details" : {
+            "reasoning_tokens" : 0,
+            "image_tokens" : 0,
+            "audio_tokens" : 0
+          }
+        },
+        "fingerprint" : ""
+      },
+      "recommendation" : null,
+      "firstCardMillis" : null,
+      "finishedMillis" : 1584,
+      "cards" : 0,
+      "outcome" : "INTENT_CLARIFICATION_REQUIRED"
+    },
+    "extractedIntent" : {
+      "repeatPolicy" : "EXCLUDE",
+      "repeatFrom" : null,
+      "repeatThrough" : null,
+      "repeatEvidence" : "sometime years ago",
+      "needsClarification" : false,
+      "cuisines" : [ ],
+      "spiceLevel" : null,
+      "flavor" : null,
+      "budgetMaxCents" : null,
+      "protein" : null,
+      "excludedAllergens" : [ ],
+      "dishQuery" : null
+    },
+    "generatedItems" : [ ],
+    "problems" : [ ],
+    "passed" : true
+  } ]
+}

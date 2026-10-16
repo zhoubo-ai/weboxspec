@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "properties": {
+    "recommendations": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "properties": {
+          "dishId": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 240,
+            "description": "English plain text based only on menu facts, request, cuisine, spice, budget fit or recent variety. Never use healthy, nutritious, safe, free-from, gluten-free, dairy-free, or absence-of-ingredient claims. No numbers, HTML or URLs."
+          }
+        },
+        "required": [
+          "dishId",
+          "reason"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "recommendations"
+  ],
+  "additionalProperties": false
+}

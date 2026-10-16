@@ -1,0 +1,22 @@
+import { fireEvent, render, screen, waitFor, within } from '@testing-library/react';
+import { MemoryRouter } from 'react-router';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { afterEach, beforeEach, expect, it, vi } from 'vitest';
+import { AppRoutes } from '../../app/router';
+import { api } from '../../shared/api/client';
+import type { Dashboard } from '../../shared/api/types';
+vi.mock('../auth/session',()=>({useSession:()=>({user:{userId:'10000000-0000-4000-8000-000000000001',role:'Admin',email:'operator@example.test'},loading:false,error:null,logout:vi.fn()})}));
+vi.mock('../../shared/api/client',async original=>({...await original<typeof import('../../shared/api/client')>(),api:vi.fn()}));
+const value:Dashboard={date:'2051-03-08',generatedAt:'2051-03-15T01:00:00Z',totalOrders:6,revenueCents:9500,completedOrders:3,pendingOrders:2,cancelledOrders:1,topDishes:[{dishId:'10000000-0000-4000-8000-000000000002',name:'Latest Burger',quantity:3}],mealDistribution:[{meal:'Lunch',orderCount:3},{meal:'Dinner',orderCount:3}],trend:Array.from({length:7},(_,i)=>({date:`2051-03-0${i+2}`,orderCount:i===6?6:0,revenueCents:i===6?9500:0})),inventoryAlerts:[{dishId:'10000000-0000-4000-8000-000000000003',name:'Sold dish',remaining:0,level:'SoldOut'},{dishId:'10000000-0000-4000-8000-000000000004',name:'Low dish',remaining:3,level:'LowStock'}],countingPolicy:'Completed Order Amount includes add-ons from Completed orders; it is not payment received.'};
+let queries:QueryClient;
+beforeEach(()=>{vi.stubGlobal('ResizeObserver', class { observe(){} unobserve(){} disconnect(){} });vi.mocked(api).mockReset();queries=new QueryClient({defaultOptions:{queries:{retry:false}}});});afterEach(()=>{queries.clear();vi.unstubAllGlobals();});
+function show(){return render(<QueryClientProvider client={queries}><MemoryRouter initialEntries={['/console/dashboard']}><AppRoutes/></MemoryRouter></QueryClientProvider>);}
+it('labels real completed amounts and exposes chart data, query date and generation time separately',async()=>{
+  vi.mocked(api).mockResolvedValue(value);show();expect(await screen.findByText('Completed Order Amount',{exact:true})).toBeVisible();expect(api).toHaveBeenCalledWith('/admin/dashboard',expect.objectContaining({signal:expect.any(AbortSignal)}));expect(screen.getAllByText('¥95.00')[0]).toBeVisible();expect(screen.getByText('Delivery date: 2051-03-08')).toBeVisible();expect(screen.getByText(/Updated:/)).toHaveTextContent('2051');expect(screen.getByText(/not payment received/)).toBeVisible();expect(screen.getByRole('table',{name:'Top dishes by completed portions'})).toHaveTextContent('Latest Burger');expect(within(screen.getByRole('table',{name:'Seven-day totals'})).getAllByRole('row')).toHaveLength(8);expect(screen.getByText('Sold Out',{exact:true})).toBeVisible();expect(screen.getByText('Low Stock',{exact:true})).toBeVisible();
+});
+it('uses an explicitly selected date and preserves identifiable previous results after a failed refresh',async()=>{
+  vi.mocked(api).mockResolvedValueOnce(value).mockRejectedValueOnce(new Error('Network unavailable.')).mockResolvedValueOnce({...value,date:'2051-03-09'});show();await screen.findByText('Delivery date: 2051-03-08');fireEvent.click(screen.getByRole('button',{name:'Refresh dashboard'}));expect(await screen.findByRole('alert')).toHaveTextContent('previous successful');expect(screen.getAllByText('¥95.00')[0]).toBeVisible();expect(screen.getByText('Delivery date: 2051-03-08')).toBeVisible();fireEvent.change(screen.getByLabelText('Report date'),{target:{value:'2051-03-09'}});await waitFor(()=>expect(api).toHaveBeenLastCalledWith('/admin/dashboard?date=2051-03-09',expect.objectContaining({signal:expect.any(AbortSignal)})));await screen.findByText('Delivery date: 2051-03-09');
+});
+it('represents empty data with zero totals and seven explicit dates',async()=>{
+  vi.mocked(api).mockResolvedValue({...value,totalOrders:0,revenueCents:0,completedOrders:0,pendingOrders:0,cancelledOrders:0,topDishes:[],inventoryAlerts:[],mealDistribution:value.mealDistribution.map(row=>({...row,orderCount:0})),trend:value.trend.map(row=>({...row,orderCount:0,revenueCents:0}))});show();expect(await screen.findByText('No completed dishes for this date.')).toBeVisible();expect(screen.getByText('No low-stock alerts for this date.')).toBeVisible();expect(screen.getAllByText('¥0.00')[0]).toBeVisible();expect(within(screen.getByRole('table',{name:'Seven-day totals'})).getAllByRole('row')).toHaveLength(8);
+});

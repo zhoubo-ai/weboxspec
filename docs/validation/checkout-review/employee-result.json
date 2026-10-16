@@ -1,0 +1,73 @@
+{
+  "startedAt": "2026-10-16T15:47:02.603Z",
+  "origin": "http://127.0.0.1:15678",
+  "checks": [
+    {
+      "name": "Register and sign in through normal UI",
+      "passed": true
+    },
+    {
+      "name": "Pasta plus Cheese: 2 portions ¥59.00, 3 portions ¥88.50, decrease restores ¥59.00",
+      "passed": true
+    },
+    {
+      "name": "Checkout delivery selection is usable, including real-time cutoff confirmation",
+      "deliveryDate": "2026-10-17",
+      "passed": true
+    },
+    {
+      "name": "Review obtains real quote, selected options and exact total",
+      "passed": true
+    },
+    {
+      "name": "Empty delivery address is rejected without placing an order",
+      "passed": true
+    },
+    {
+      "name": "Place Order creates a Pending order with exact amount and delivery address",
+      "passed": true
+    },
+    {
+      "name": "Order survives page reload",
+      "passed": true
+    },
+    {
+      "name": "Submitted cart is cleared",
+      "passed": true
+    },
+    {
+      "name": "Pending order cancellation succeeds",
+      "passed": true
+    },
+    {
+      "name": "Saved address and Dinner selection work for a new order",
+      "passed": true
+    },
+    {
+      "name": "Both test orders cancelled",
+      "passed": true
+    },
+    {
+      "name": "Order list and Cancelled filter show both test orders",
+      "passed": true
+    }
+  ],
+  "orders": [
+    {
+      "id": "c65ffc73-4e89-4aaa-86ff-fbc764366059",
+      "status": "Cancelled"
+    },
+    {
+      "id": "89c4b2fd-1b03-4c08-ae10-22c63596d307",
+      "status": "Cancelled"
+    }
+  ],
+  "pageErrors": [],
+  "httpFailures": [],
+  "passed": true,
+  "cutoffNotice": [
+    "Lunch has closed. We selected Lunch on 2026-10-17. Confirm the new delivery selection before reviewing your order.Confirm delivery selection"
+  ],
+  "deliveryDate": "2026-10-17",
+  "finishedAt": "2026-10-16T15:47:05.989Z"
+}

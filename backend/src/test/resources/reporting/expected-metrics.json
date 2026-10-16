@@ -1,0 +1,159 @@
+{
+  "note": "Independent handwritten expectations. D has six orders, T=D+7 has three. Neither created_at nor current dish names determine revenue or snapshot labels.",
+  "D": {
+    "totalOrders": 6,
+    "revenueCents": 9500,
+    "completedOrders": 3,
+    "pendingOrders": 2,
+    "cancelledOrders": 1,
+    "topDishes": [
+      {
+        "dish": "A",
+        "name": "Latest Burger",
+        "quantity": 3
+      },
+      {
+        "dish": "B",
+        "name": "Latest Pasta",
+        "quantity": 3
+      }
+    ],
+    "mealDistribution": [
+      {
+        "meal": "Lunch",
+        "orderCount": 3
+      },
+      {
+        "meal": "Dinner",
+        "orderCount": 3
+      }
+    ],
+    "trend": [
+      {
+        "offset": -6,
+        "orderCount": 1,
+        "revenueCents": 3000
+      },
+      {
+        "offset": -5,
+        "orderCount": 0,
+        "revenueCents": 0
+      },
+      {
+        "offset": -4,
+        "orderCount": 1,
+        "revenueCents": 0
+      },
+      {
+        "offset": -3,
+        "orderCount": 1,
+        "revenueCents": 0
+      },
+      {
+        "offset": -2,
+        "orderCount": 1,
+        "revenueCents": 2000
+      },
+      {
+        "offset": -1,
+        "orderCount": 1,
+        "revenueCents": 0
+      },
+      {
+        "offset": 0,
+        "orderCount": 6,
+        "revenueCents": 9500
+      }
+    ],
+    "inventoryAlerts": [
+      {
+        "dish": "B",
+        "remaining": 0,
+        "level": "SoldOut"
+      },
+      {
+        "dish": "A",
+        "remaining": 3,
+        "level": "LowStock"
+      }
+    ]
+  },
+  "T": {
+    "totalOrders": 3,
+    "revenueCents": 1800,
+    "completedOrders": 1,
+    "pendingOrders": 1,
+    "cancelledOrders": 1,
+    "topDishes": [
+      {
+        "dish": "C",
+        "name": "Fresh Greens",
+        "quantity": 1
+      }
+    ],
+    "mealDistribution": [
+      {
+        "meal": "Lunch",
+        "orderCount": 2
+      },
+      {
+        "meal": "Dinner",
+        "orderCount": 1
+      }
+    ],
+    "trend": [
+      {
+        "offset": -6,
+        "orderCount": 1,
+        "revenueCents": 1000
+      },
+      {
+        "offset": -5,
+        "orderCount": 0,
+        "revenueCents": 0
+      },
+      {
+        "offset": -4,
+        "orderCount": 1,
+        "revenueCents": 0
+      },
+      {
+        "offset": -3,
+        "orderCount": 1,
+        "revenueCents": 4600
+      },
+      {
+        "offset": -2,
+        "orderCount": 1,
+        "revenueCents": 0
+      },
+      {
+        "offset": -1,
+        "orderCount": 0,
+        "revenueCents": 0
+      },
+      {
+        "offset": 0,
+        "orderCount": 3,
+        "revenueCents": 1800
+      }
+    ],
+    "inventoryAlerts": [
+      {
+        "dish": "A",
+        "remaining": 0,
+        "level": "SoldOut"
+      },
+      {
+        "dish": "C",
+        "remaining": 1,
+        "level": "LowStock"
+      },
+      {
+        "dish": "B",
+        "remaining": 2,
+        "level": "LowStock"
+      }
+    ]
+  }
+}

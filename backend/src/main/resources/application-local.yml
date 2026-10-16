@@ -1,0 +1,6 @@
+# The local profile still requires the real DB_* environment and Flyway migrations.
+server:
+  servlet:
+    session:
+      cookie:
+        secure: false

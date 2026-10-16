@@ -1,0 +1,229 @@
+{
+  "recordedAt": "2026-10-16T15:33:43.950577+00:00",
+  "applicationSource": {
+    "recordedAt": "2026-10-16T15:19:43.803761+00:00",
+    "sourceSha256": "207bee9a55967944baad48a439f019f861db6a32d061173797c805a1d80b4c7a",
+    "fileCount": 197,
+    "scope": [
+      "backend/src/main",
+      "frontend/src",
+      "infra",
+      "backend/pom.xml",
+      "frontend/package.json",
+      "frontend/package-lock.json",
+      "frontend/vite.config.ts"
+    ],
+    "method": "sorted relative path, NUL, exact bytes, NUL; excludes __pycache__",
+    "gitRepository": false
+  },
+  "engineeringValidationPassed": true,
+  "counts": {
+    "backendUnit": 20,
+    "backendIntegration": 119,
+    "frontendUnit": 55,
+    "fullBrowserMatrix": 324,
+    "postFixInventoryBrowser": 27,
+    "liveFunctional": 24,
+    "liveBrowserPerformance": 20,
+    "loadUsers": 200,
+    "loadDishes": 500,
+    "loadSteadySeconds": 600,
+    "loadHttpRequests": 41336,
+    "loadHttpFailures": 0,
+    "loadValidOrders": 200,
+    "loadDomAttempts": 140,
+    "loadDomFailures": 0
+  },
+  "remainingHumanAcceptance": [
+    "SC-001",
+    "SC-007",
+    "SC-008",
+    "SC-010"
+  ],
+  "nativeConversationCompletion": "ai-conversations/manifest.json is authoritative after delivery turn completes",
+  "commandGroups": {
+    "frontendClean": [
+      {
+        "command": [
+          "./scripts/frontend.sh",
+          "ci"
+        ],
+        "startedAt": "2026-10-16T14:30:05.424352+00:00",
+        "finishedAt": "2026-10-16T14:30:07.551476+00:00",
+        "exitCode": 0
+      },
+      {
+        "command": [
+          "./scripts/frontend.sh",
+          "run",
+          "typecheck"
+        ],
+        "startedAt": "2026-10-16T14:30:07.551895+00:00",
+        "finishedAt": "2026-10-16T14:30:10.062267+00:00",
+        "exitCode": 0
+      },
+      {
+        "command": [
+          "./scripts/frontend.sh",
+          "run",
+          "test:unit",
+          "--",
+          "--run"
+        ],
+        "startedAt": "2026-10-16T14:30:10.062607+00:00",
+        "finishedAt": "2026-10-16T14:30:12.949538+00:00",
+        "exitCode": 0
+      },
+      {
+        "command": [
+          "./scripts/frontend.sh",
+          "run",
+          "build"
+        ],
+        "startedAt": "2026-10-16T14:30:12.949827+00:00",
+        "finishedAt": "2026-10-16T14:30:15.350840+00:00",
+        "exitCode": 0
+      }
+    ],
+    "cleanBackendProxyPersistenceAndInitialFailedLoad": [
+      {
+        "phase": "backend",
+        "command": [
+          "./scripts/backend.sh",
+          "clean",
+          "verify"
+        ],
+        "startedAt": "2026-10-16T14:36:15.551302+00:00",
+        "finishedAt": "2026-10-16T14:37:59.497467+00:00",
+        "exitCode": 0,
+        "log": ".local/logs/release-backend-retest2.log"
+      },
+      {
+        "phase": "proxy",
+        "command": [
+          "./scripts/backend.sh",
+          "-Pproxy",
+          "verify"
+        ],
+        "startedAt": "2026-10-16T14:37:59.497983+00:00",
+        "finishedAt": "2026-10-16T14:38:35.372490+00:00",
+        "exitCode": 0,
+        "log": ".local/logs/release-proxy-retest2.log"
+      },
+      {
+        "phase": "persistence",
+        "command": [
+          "./scripts/backend.sh",
+          "-Ppersistence",
+          "verify"
+        ],
+        "startedAt": "2026-10-16T14:38:35.372852+00:00",
+        "finishedAt": "2026-10-16T14:41:45.264264+00:00",
+        "exitCode": 0,
+        "log": ".local/logs/release-persistence-retest2.log"
+      },
+      {
+        "phase": "load",
+        "command": [
+          "./scripts/backend.sh",
+          "-Pload",
+          "-Dwebox.load.run=full-initial",
+          "gatling:test"
+        ],
+        "startedAt": "2026-10-16T14:41:45.264870+00:00",
+        "finishedAt": "2026-10-16T14:49:53.484745+00:00",
+        "exitCode": 1,
+        "log": ".local/logs/release-load-retest2.log"
+      }
+    ],
+    "completeBrowsersAndLiveModels": [
+      {
+        "phase": "backend",
+        "command": [
+          "./scripts/backend.sh",
+          "verify"
+        ],
+        "startedAt": "2026-10-16T15:06:08.443497+00:00",
+        "finishedAt": "2026-10-16T15:07:53.385192+00:00",
+        "exitCode": 0,
+        "log": ".local/logs/release-post-load-initial-backend.log"
+      },
+      {
+        "phase": "e2e",
+        "command": [
+          "./scripts/frontend.sh",
+          "run",
+          "test:e2e"
+        ],
+        "startedAt": "2026-10-16T15:07:53.385567+00:00",
+        "finishedAt": "2026-10-16T15:13:52.595225+00:00",
+        "exitCode": 0,
+        "log": ".local/logs/release-post-load-initial-e2e.log"
+      },
+      {
+        "phase": "live-functional",
+        "command": [
+          "./scripts/backend.sh",
+          "-Pllm-live",
+          "verify"
+        ],
+        "startedAt": "2026-10-16T15:13:52.596216+00:00",
+        "finishedAt": "2026-10-16T15:15:37.802511+00:00",
+        "exitCode": 0,
+        "log": ".local/logs/release-post-load-initial-live-functional.log"
+      },
+      {
+        "phase": "live-browser",
+        "command": [
+          "./scripts/frontend.sh",
+          "run",
+          "test:e2e:live"
+        ],
+        "startedAt": "2026-10-16T15:15:37.803000+00:00",
+        "finishedAt": "2026-10-16T15:17:21.086176+00:00",
+        "exitCode": 0,
+        "log": ".local/logs/release-post-load-initial-live-browser.log"
+      }
+    ],
+    "finalBackendInventoryAndLoad": [
+      {
+        "phase": "backend",
+        "command": [
+          "./scripts/backend.sh",
+          "verify"
+        ],
+        "startedAt": "2026-10-16T15:17:21.561657+00:00",
+        "log": ".local/logs/release-final-backend.log",
+        "exitCode": 0,
+        "finishedAt": "2026-10-16T15:19:04.897411+00:00"
+      },
+      {
+        "phase": "inventory-browser",
+        "command": [
+          "./scripts/frontend.sh",
+          "run",
+          "test:e2e",
+          "--",
+          "inventory.spec.ts"
+        ],
+        "startedAt": "2026-10-16T15:19:04.898093+00:00",
+        "log": ".local/logs/release-final-inventory-browser.log",
+        "exitCode": 0,
+        "finishedAt": "2026-10-16T15:20:01.534259+00:00"
+      },
+      {
+        "phase": "load",
+        "command": [
+          "./scripts/backend.sh",
+          "-Pload",
+          "-Dwebox.load.run=full-final-authorization",
+          "gatling:test"
+        ],
+        "startedAt": "2026-10-16T15:20:01.534600+00:00",
+        "log": ".local/logs/release-final-load.log",
+        "exitCode": 0,
+        "finishedAt": "2026-10-16T15:31:59.462580+00:00"
+      }
+    ]
+  }
+}

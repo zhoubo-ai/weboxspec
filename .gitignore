@@ -1,0 +1,45 @@
+# Local configuration and credentials. Keep the public template.
+.env
+.env.*
+!.env.example
+.local/
+ai-conversations/
+*.key
+*.pem
+
+# Machine-local coding assistants and specification tool state.
+/.agents/
+/.codex/
+/.specify/
+
+# Java and frontend build outputs.
+**/target/
+**/node_modules/
+**/dist/
+**/build/
+*.class
+*.log
+*.log.*
+*.tsbuildinfo
+
+# Test sessions, generated browser output and local caches.
+**/.auth/
+**/playwright-report/
+**/test-results/
+**/coverage/
+**/.vite/
+.cache/
+**/__pycache__/
+*.py[cod]
+.venv/
+*.pid
+
+# Editor and operating system files.
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+.idea/
+.vscode/
+
+# Source assets, seed images, dependency locks and wrapper scripts are retained.

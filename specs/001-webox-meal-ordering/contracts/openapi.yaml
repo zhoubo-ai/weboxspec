@@ -1,0 +1,3687 @@
+openapi: 3.1.0
+info:
+  title: WeBox API
+  version: 1.0.0-design
+  description: Design contract; all Tier 1–3 features mandatory. API messages and persisted menu copy are English.
+    No implementation is asserted. Read README.md and streaming.md for concurrency, recovery and event framing.
+servers:
+- url: /api/v1
+  description: Same origin through Vite proxy or production reverse proxy
+tags:
+- name: Auth
+- name: Employee
+- name: Console
+security:
+- sessionCookie: []
+paths:
+  /health:
+    get:
+      operationId: health
+      summary: Application and MySQL readiness
+      description: No credentials or infrastructure details. AI availability is checked separately and does
+        not disable normal ordering.
+      tags:
+      - Employee
+      security: []
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties: false
+                properties:
+                  status:
+                    type: string
+                    const: UP
+                required:
+                - status
+        '503':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+  /auth/csrf:
+    get:
+      operationId: getCsrf
+      summary: Get a session-bound CSRF token
+      description: 'May create an anonymous session. Cache-Control: no-store. Re-fetch after login/logout.
+        A session cookie must accompany the token on subsequent requests.'
+      tags:
+      - Auth
+      security: []
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Csrf'
+        '500':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+  /auth/register:
+    post:
+      operationId: register
+      summary: Register an employee
+      description: EMAIL_ALREADY_REGISTERED for a normalized duplicate. Does not log in. Client cannot set
+        role.
+      tags:
+      - Auth
+      security:
+      - csrfToken: []
+      responses:
+        '201':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '409':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '400':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '429':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Registration'
+  /auth/login:
+    post:
+      operationId: login
+      summary: Log in and rotate the session
+      description: Sets WEBOXSESSION HttpOnly cookie. Invalid credentials return INVALID_CREDENTIALS; do not
+        disclose password details.
+      tags:
+      - Auth
+      security:
+      - csrfToken: []
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '400':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '429':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Login'
+  /auth/logout:
+    post:
+      operationId: logout
+      summary: Invalidate current session
+      description: Clears cookie and invalidates server session. Frontend clears personal query cache/cart
+        and closes streams.
+      tags:
+      - Auth
+      security:
+      - sessionCookie: []
+        csrfToken: []
+      responses:
+        '204':
+          description: Success
+        '403':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+  /auth/me:
+    get:
+      operationId: getCurrentUser
+      summary: Read current authenticated user
+      description: Read current authenticated user
+      tags:
+      - Auth
+      security:
+      - sessionCookie: []
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '403':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+  /me/preferences:
+    get:
+      operationId: getPreferences
+      summary: Read personal dietary preferences
+      description: Read personal dietary preferences
+      tags:
+      - Employee
+      security:
+      - sessionCookie: []
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Preferences'
+        '403':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    put:
+      operationId: replacePreferences
+      summary: Save or clear personal preferences
+      description: Save or clear personal preferences
+      tags:
+      - Employee
+      security:
+      - sessionCookie: []
+        csrfToken: []
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Preferences'
+        '409':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '400':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PreferencesWrite'
+  /me/addresses:
+    get:
+      operationId: listAddresses
+      summary: List own historical delivery addresses
+      description: Newest lastUsedAt first. New addresses are saved atomically with a successful order.
+      tags:
+      - Employee
+      security:
+      - sessionCookie: []
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Address'
+                minItems: 0
+        '403':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+  /menus/{date}:
+    get:
+      operationId: getMenu
+      summary: Browse a daily menu
+      description: Only scheduled and published dishes. Zero stock remains visible as Sold Out. Categories
+        OR; keyword matches name/description case-insensitively and ANDs with category selection. Default name
+        ascending, ID tiebreak. Recommended groups cuisine matches first then spice; preserves filters. Missing
+        date menu returns an empty page, not fabricated items. Live quantities are not cached.
+      tags:
+      - Employee
+      security:
+      - sessionCookie: []
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MenuPage'
+        '400':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      parameters:
+      - name: date
+        in: path
+        required: true
+        schema:
+          type: string
+          format: date
+      - name: categories
+        in: query
+        required: false
+        schema:
+          type: array
+          items:
+            $ref: '#/components/schemas/Category'
+          minItems: 0
+          maxItems: 6
+          uniqueItems: true
+        style: form
+        explode: true
+      - name: search
+        in: query
+        required: false
+        schema:
+          type: string
+          maxLength: 50
+      - name: recommended
+        in: query
+        required: false
+        schema:
+          type: boolean
+          default: false
+      - name: page
+        in: query
+        required: false
+        schema:
+          type: integer
+          format: int64
+          minimum: 0
+          maximum: 2147483647
+          default: 0
+      - name: size
+        in: query
+        required: false
+        schema:
+          type: integer
+          format: int64
+          minimum: 1
+          maximum: 100
+          default: 24
+  /menus/{date}/dishes/{dishId}:
+    get:
+      operationId: getMenuDish
+      summary: Read a scheduled dish and options
+      description: Read a scheduled dish and options
+      tags:
+      - Employee
+      security:
+      - sessionCookie: []
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MenuDish'
+        '404':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '400':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      parameters:
+      - name: date
+        in: path
+        required: true
+        schema:
+          type: string
+          format: date
+      - name: dishId
+        in: path
+        required: true
+        schema:
+          type: string
+          format: uuid
+  /menus/{date}/inventory:
+    get:
+      operationId: getInventory
+      summary: Read a current inventory snapshot
+      description: Read a current inventory snapshot
+      tags:
+      - Employee
+      security:
+      - sessionCookie: []
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InventorySnapshot'
+        '400':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      parameters:
+      - name: date
+        in: path
+        required: true
+        schema:
+          type: string
+          format: date
+  /menus/{date}/events:
+    get:
+      operationId: streamInventory
+      summary: Subscribe to inventory updates
+      description: Same-origin EventSource GET. Events inventory.snapshot, inventory.updated, menu.changed,
+        session.expired. See streaming.md. No personalized data. No proxy buffering; reconnect snapshot and
+        absolute row versions handle duplicates/out-of-order delivery.
+      tags:
+      - Employee
+      security:
+      - sessionCookie: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/event-stream:
+              schema:
+                type: string
+              examples:
+                heartbeat:
+                  value: ': heartbeat
+
+
+                    '
+        '400':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '429':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      parameters:
+      - name: date
+        in: path
+        required: true
+        schema:
+          type: string
+          format: date
+      - name: Last-Event-ID
+        in: header
+        required: false
+        schema:
+          type: string
+          maxLength: 100
+        description: Accepted but not used as a guaranteed replay cursor; every connection starts with a fresh
+          snapshot.
+  /checkout/quotes:
+    post:
+      operationId: createQuote
+      summary: Validate a cart and create a five-minute quote
+      description: Does not reserve stock. Past date -> 422 INVALID_DELIVERY_DATE; expired slot -> 409 SLOT_EXPIRED
+        with suggested date/meal; existing active order -> ACTIVE_ORDER_EXISTS. UI changes selection and re-quotes
+        visibly. Invalid/changed dish -> DISH_CHANGED or DISH_UNAVAILABLE with itemIssues. Insufficient stock
+        -> INSUFFICIENT_STOCK. A price change must be confirmed before a new quote is accepted.
+      tags:
+      - Employee
+      security:
+      - sessionCookie: []
+        csrfToken: []
+      responses:
+        '201':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Quote'
+        '422':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '409':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '400':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/QuoteRequest'
+  /orders:
+    post:
+      operationId: placeOrder
+      summary: Create exactly one order for a confirmed quote
+      description: 'Server resolves address, verifies ownership and canonical payload. Successful same key/hash
+        replays original order (200) before quote/cutoff/stock checks, even after cancellation/completion/quote
+        expiry. Different payload with same successful key -> IDEMPOTENCY_KEY_REUSED. Quote can be consumed
+        once: new key plus consumed quote -> QUOTE_CONSUMED. Short transaction commits order/snapshots/new
+        address/stock/outbox together. Existing active order -> ACTIVE_ORDER_EXISTS with own existingOrderId.
+        No partial success.'
+      tags:
+      - Employee
+      security:
+      - sessionCookie: []
+        csrfToken: []
+      responses:
+        '201':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Order'
+        '422':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '409':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '503':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '400':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '200':
+          description: Idempotent replay of the original order and its current state
+          headers:
+            Idempotency-Replayed:
+              schema:
+                type: boolean
+              description: 'true'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Order'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OrderCreate'
+      parameters:
+      - name: Idempotency-Key
+        in: header
+        required: true
+        schema:
+          type: string
+          format: uuid
+    get:
+      operationId: listOrders
+      summary: List own order history
+      description: Newest createdAt first, ID tiebreak. Paginate until all personal orders can be reached.
+        Never lists another user's orders.
+      tags:
+      - Employee
+      security:
+      - sessionCookie: []
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OrderPage'
+        '403':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      parameters:
+      - name: page
+        in: query
+        required: false
+        schema:
+          type: integer
+          format: int64
+          minimum: 0
+          maximum: 2147483647
+          default: 0
+      - name: size
+        in: query
+        required: false
+        schema:
+          type: integer
+          format: int64
+          minimum: 1
+          maximum: 100
+          default: 24
+      - name: status
+        in: query
+        required: false
+        schema:
+          $ref: '#/components/schemas/OrderStatus'
+  /orders/{orderId}:
+    get:
+      operationId: getOrder
+      summary: Read own immutable order details and current state
+      description: Read own immutable order details and current state
+      tags:
+      - Employee
+      security:
+      - sessionCookie: []
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Order'
+        '404':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      parameters:
+      - name: orderId
+        in: path
+        required: true
+        schema:
+          type: string
+          format: uuid
+  /orders/{orderId}/cancel:
+    post:
+      operationId: cancelOrder
+      summary: Cancel own pending order once
+      description: Pending -> Cancelled with one stock restoration. Cancelled -> return current order without
+        restoring again. Confirmed/Completed -> ORDER_NOT_CANCELLABLE. Ownership failure returns 404. Races
+        with admin confirmation serialize on owner/order locks.
+      tags:
+      - Employee
+      security:
+      - sessionCookie: []
+        csrfToken: []
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Order'
+        '409':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      parameters:
+      - name: orderId
+        in: path
+        required: true
+        schema:
+          type: string
+          format: uuid
+  /recommendations/stream:
+    post:
+      operationId: streamRecommendations
+      summary: Stream verified AI recommendation cards
+      description: Cookie+CSRF POST via fetch, not EventSource. See streaming.md. Before headers failures use
+        JSON Error; after headers send meta/card/done/error. Real OpenRouter calls; no static fallback success.
+        Structured intent then hard-filtered candidate generation; server rechecks each item. A partial error
+        is not completion.
+      tags:
+      - Employee
+      security:
+      - sessionCookie: []
+        csrfToken: []
+      responses:
+        '200':
+          description: Success
+          content:
+            text/event-stream:
+              schema:
+                type: string
+        '422':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '429':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '503':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '400':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RecommendationRequest'
+  /admin/dishes:
+    get:
+      operationId: adminListDishes
+      summary: Search all dishes including unpublished
+      description: Search all dishes including unpublished
+      tags:
+      - Console
+      security:
+      - sessionCookie: []
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AdminDishPage'
+        '403':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      parameters:
+      - name: page
+        in: query
+        required: false
+        schema:
+          type: integer
+          format: int64
+          minimum: 0
+          maximum: 2147483647
+          default: 0
+      - name: size
+        in: query
+        required: false
+        schema:
+          type: integer
+          format: int64
+          minimum: 1
+          maximum: 100
+          default: 24
+      - name: search
+        in: query
+        required: false
+        schema:
+          type: string
+          maxLength: 50
+      - name: categories
+        in: query
+        required: false
+        schema:
+          type: array
+          items:
+            $ref: '#/components/schemas/Category'
+          minItems: 0
+          maxItems: 6
+          uniqueItems: true
+        style: form
+        explode: true
+      - name: published
+        in: query
+        required: false
+        schema:
+          type: boolean
+      x-required-role: Admin
+    post:
+      operationId: adminCreateDish
+      summary: Create an unpublished dish
+      description: Create an unpublished dish
+      tags:
+      - Console
+      security:
+      - sessionCookie: []
+        csrfToken: []
+      responses:
+        '201':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AdminDish'
+        '422':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '400':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DishCreate'
+      x-required-role: Admin
+  /admin/dishes/{dishId}:
+    get:
+      operationId: adminGetDish
+      summary: Read all editable dish fields
+      description: Read all editable dish fields
+      tags:
+      - Console
+      security:
+      - sessionCookie: []
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AdminDish'
+        '404':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      parameters:
+      - name: dishId
+        in: path
+        required: true
+        schema:
+          type: string
+          format: uuid
+      x-required-role: Admin
+    put:
+      operationId: adminUpdateDish
+      summary: Replace dish details with version checking
+      description: VERSION_CONFLICT on stale expectedVersion. Increment dishVersion; preserve order snapshots.
+        Emit menu.changed for affected dates. Only real validated media IDs and owned option IDs are accepted.
+      tags:
+      - Console
+      security:
+      - sessionCookie: []
+        csrfToken: []
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AdminDish'
+        '422':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '409':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '400':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DishUpdate'
+      parameters:
+      - name: dishId
+        in: path
+        required: true
+        schema:
+          type: string
+          format: uuid
+      x-required-role: Admin
+  /admin/dishes/{dishId}/publication:
+    patch:
+      operationId: adminSetPublication
+      summary: Publish or unpublish a dish
+      description: Publish or unpublish a dish
+      tags:
+      - Console
+      security:
+      - sessionCookie: []
+        csrfToken: []
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AdminDish'
+        '409':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '400':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PublishRequest'
+      parameters:
+      - name: dishId
+        in: path
+        required: true
+        schema:
+          type: string
+          format: uuid
+      x-required-role: Admin
+  /admin/menus/{date}:
+    get:
+      operationId: adminGetDailyMenu
+      summary: Read daily assignments and supply
+      description: Missing menu returns revision 0 with no rows. Console date picker defaults to next business
+        calendar date, not next working day; today is allowed.
+      tags:
+      - Console
+      security:
+      - sessionCookie: []
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DailyMenu'
+        '400':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      parameters:
+      - name: date
+        in: path
+        required: true
+        schema:
+          type: string
+          format: date
+      x-required-role: Admin
+    put:
+      operationId: adminReplaceDailyMenu
+      summary: Replace scheduled dishes and adjust total supply
+      description: Atomic replacement with expectedRevision. Lock dishes then date metadata then supply in
+        stable order. total cannot be less than allocated; omitted rows retained unscheduled. Publish inventory
+        and menu events after commit; no resetting existing allocations.
+      tags:
+      - Console
+      security:
+      - sessionCookie: []
+        csrfToken: []
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DailyMenu'
+        '422':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '409':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '400':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DailyMenuWrite'
+      parameters:
+      - name: date
+        in: path
+        required: true
+        schema:
+          type: string
+          format: date
+      x-required-role: Admin
+  /admin/orders:
+    get:
+      operationId: adminListOrders
+      summary: List operational orders
+      description: List operational orders
+      tags:
+      - Console
+      security:
+      - sessionCookie: []
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AdminOrderPage'
+        '403':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      parameters:
+      - name: page
+        in: query
+        required: false
+        schema:
+          type: integer
+          format: int64
+          minimum: 0
+          maximum: 2147483647
+          default: 0
+      - name: size
+        in: query
+        required: false
+        schema:
+          type: integer
+          format: int64
+          minimum: 1
+          maximum: 100
+          default: 24
+      - name: deliveryDate
+        in: query
+        required: false
+        schema:
+          type: string
+          format: date
+      - name: meal
+        in: query
+        required: false
+        schema:
+          $ref: '#/components/schemas/Meal'
+      - name: status
+        in: query
+        required: false
+        schema:
+          $ref: '#/components/schemas/OrderStatus'
+      x-required-role: Admin
+  /admin/orders/{orderId}:
+    get:
+      operationId: adminGetOrder
+      summary: Read an order for authorized operations
+      description: Read an order for authorized operations
+      tags:
+      - Console
+      security:
+      - sessionCookie: []
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AdminOrder'
+        '404':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      parameters:
+      - name: orderId
+        in: path
+        required: true
+        schema:
+          type: string
+          format: uuid
+      x-required-role: Admin
+  /admin/orders/{orderId}/status:
+    patch:
+      operationId: adminChangeOrderStatus
+      summary: Confirm, complete or cancel a pending order
+      description: After Admin and CSRF checks, lock owner then order. Pending->Confirmed, Confirmed->Completed
+        and Pending->Cancelled only. If current and requested status are both Cancelled, return 200 current
+        AdminOrder before comparing expectedVersion, without changing version, timestamps, inventory or outbox.
+        Otherwise stale expectedVersion returns 409 VERSION_CONFLICT; invalid transition returns INVALID_ORDER_TRANSITION.
+        Cancellation restores original-date supply once. Completion releases active-slot uniqueness without
+        restoring stock.
+      tags:
+      - Console
+      security:
+      - sessionCookie: []
+        csrfToken: []
+      responses:
+        '200':
+          description: Updated AdminOrder, or current AdminOrder for an already cancelled replay.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AdminOrder'
+        '409':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '400':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/StatusChange'
+      parameters:
+      - name: orderId
+        in: path
+        required: true
+        schema:
+          type: string
+          format: uuid
+      x-required-role: Admin
+  /admin/dashboard:
+    get:
+      operationId: adminGetDashboard
+      summary: Read real operational metrics and inventory alerts
+      description: No-store. All aggregates from one consistent MySQL read snapshot. The query date D defaults
+        to today in Asia/Shanghai. Summary, Top10, meal counts and low-stock alerts all use D; trend spans D-6
+        through D inclusive. Response date echoes D; generatedAt is the current UTC generation time.
+        pendingOrders combines
+        Pending and Confirmed. Top10 aggregates configurations by dish ID, ties by dish ID ascending; historical
+        snapshots define displayed sold name. Current low-stock list uses scheduled published supply for the
+        selected date, read at query time rather than reconstructed as historical stock. Revenue and sold
+        quantities include Completed orders only; amounts include add-ons and do not represent payments.
+      tags:
+      - Console
+      security:
+      - sessionCookie: []
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Dashboard'
+        '400':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      parameters:
+      - name: date
+        in: query
+        required: false
+        schema:
+          type: string
+          format: date
+        description: Query date D for every metric, including low-stock alerts; defaults to today in
+          Asia/Shanghai. Trend includes D and prior six calendar days. A valid past or future date is accepted;
+          an invalid calendar date returns 400. Response date echoes the effective D.
+      x-required-role: Admin
+  /admin/media:
+    post:
+      operationId: adminUploadMedia
+      summary: Upload and validate a dish image
+      description: Upload and validate a dish image
+      tags:
+      - Console
+      security:
+      - sessionCookie: []
+        csrfToken: []
+      responses:
+        '201':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Media'
+        '422':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '415':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '413':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '400':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      x-required-role: Admin
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              additionalProperties: false
+              properties:
+                file:
+                  type: string
+                  format: binary
+                  description: Decodable JPEG/PNG/WebP, <=5,242,880 bytes. Reject excessive dimensions, embedded
+                    executable content and malformed data. Limit is 5 MiB. Conversion failure or an oversized
+                    derivative must not replace an existing image.
+                  x-max-file-size: 5242880
+              required:
+              - file
+  /media/{mediaId}:
+    get:
+      operationId: getPublicMedia
+      summary: Read immutable public dish imagery
+      description: Public dish imagery only, never private uploaded files. UUID resolves within MEDIA_ROOT;
+        no arbitrary filesystem path. Immutable URLs support long-lived caching.
+      tags:
+      - Employee
+      security: []
+      responses:
+        '200':
+          description: Success
+          content:
+            image/jpeg:
+              schema:
+                type: string
+                format: binary
+            image/png:
+              schema:
+                type: string
+                format: binary
+        '404':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: English error with stable business code. See README.md for recovery rules.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      parameters:
+      - name: mediaId
+        in: path
+        required: true
+        schema:
+          type: string
+          format: uuid
+      servers:
+      - url: /
+components:
+  securitySchemes:
+    sessionCookie:
+      type: apiKey
+      in: cookie
+      name: WEBOXSESSION
+      description: Opaque server session; HttpOnly, Secure in production, SameSite=Lax. All personal responses
+        no-store.
+    csrfToken:
+      type: apiKey
+      in: header
+      name: X-XSRF-TOKEN
+      description: Token from GET /auth/csrf, bound to the accompanying session cookie; refresh after login/logout.
+  schemas:
+    Id:
+      type: string
+      format: uuid
+    Version:
+      type: integer
+      format: int64
+      minimum: 0
+      maximum: 9007199254740991
+    MoneyCents:
+      type: integer
+      format: int64
+      minimum: 0
+      maximum: 9007199254740991
+    Category:
+      type: string
+      enum:
+      - Chinese
+      - Western
+      - Japanese
+      - Light Meal
+      - Korean
+      - Southeast Asian
+    SpiceLevel:
+      type: string
+      enum:
+      - None
+      - Mild
+      - Medium
+      - Hot
+    Allergen:
+      type: string
+      enum:
+      - Peanuts
+      - Dairy
+      - Egg
+      - Gluten
+      - Soy
+      - Fish
+      - Shellfish
+    Meal:
+      type: string
+      enum:
+      - Lunch
+      - Dinner
+    OrderStatus:
+      type: string
+      enum:
+      - Pending
+      - Confirmed
+      - Completed
+      - Cancelled
+    Role:
+      type: string
+      enum:
+      - Employee
+      - Admin
+    FieldError:
+      type: object
+      additionalProperties: false
+      properties:
+        field:
+          type: string
+          maxLength: 200
+        message:
+          type: string
+          maxLength: 500
+      required:
+      - field
+      - message
+    ItemIssue:
+      type: object
+      additionalProperties: false
+      properties:
+        dishId:
+          $ref: '#/components/schemas/Id'
+        code:
+          type: string
+          maxLength: 80
+        message:
+          type: string
+          maxLength: 500
+        availableQuantity:
+          type: integer
+          format: int64
+          minimum: 0
+          maximum: 2147483647
+        currentDishVersion:
+          $ref: '#/components/schemas/Version'
+      required:
+      - dishId
+      - code
+      - message
+    Error:
+      type: object
+      additionalProperties: false
+      properties:
+        code:
+          type: string
+          maxLength: 80
+        message:
+          type: string
+          maxLength: 500
+        requestId:
+          $ref: '#/components/schemas/Id'
+        fieldErrors:
+          type: array
+          items:
+            $ref: '#/components/schemas/FieldError'
+          minItems: 0
+        itemIssues:
+          type: array
+          items:
+            $ref: '#/components/schemas/ItemIssue'
+          minItems: 0
+        existingOrderId:
+          $ref: '#/components/schemas/Id'
+        suggestedDeliveryDate:
+          type: string
+          format: date
+        suggestedMeal:
+          $ref: '#/components/schemas/Meal'
+        retryable:
+          type: boolean
+      required:
+      - code
+      - message
+      - requestId
+      - retryable
+      description: English user-safe message. Never expose SQL, stack traces, credentials or another user's
+        records.
+      examples:
+      - code: INSUFFICIENT_STOCK
+        message: Some dishes no longer have enough stock. Please adjust your cart.
+        requestId: 48d690da-47b5-4c6b-b7ad-5d6cf6f1d610
+        retryable: false
+        itemIssues:
+        - dishId: 7c3d454a-62ad-4e1e-83b0-d15dcf0a1b99
+          code: INSUFFICIENT_STOCK
+          message: Only 1 portion remains.
+          availableQuantity: 1
+    User:
+      type: object
+      additionalProperties: false
+      properties:
+        userId:
+          $ref: '#/components/schemas/Id'
+        email:
+          type: string
+          format: email
+          maxLength: 200
+        role:
+          $ref: '#/components/schemas/Role'
+      required:
+      - userId
+      - email
+      - role
+    Registration:
+      type: object
+      additionalProperties: false
+      properties:
+        email:
+          type: string
+          minLength: 3
+          format: email
+          maxLength: 200
+        password:
+          type: string
+          minLength: 8
+          pattern: ^(?=.*[A-Za-z])(?=.*[0-9])[\s\S]{8,128}$
+          writeOnly: true
+          maxLength: 128
+      required:
+      - email
+      - password
+      description: Email trimmed and case-normalized; registration only creates Employee. Password is not trimmed
+        or truncated.
+      examples:
+      - email: employee@example.com
+        password: Example123
+    Login:
+      type: object
+      additionalProperties: false
+      properties:
+        email:
+          type: string
+          minLength: 3
+          format: email
+          maxLength: 200
+        password:
+          type: string
+          minLength: 8
+          writeOnly: true
+          maxLength: 128
+      required:
+      - email
+      - password
+      examples:
+      - email: employee@example.com
+        password: Example123
+    Csrf:
+      type: object
+      additionalProperties: false
+      properties:
+        token:
+          type: string
+        headerName:
+          type: string
+          const: X-XSRF-TOKEN
+      required:
+      - token
+      - headerName
+    PreferencesWrite:
+      type: object
+      additionalProperties: false
+      properties:
+        allergens:
+          type: array
+          items:
+            $ref: '#/components/schemas/Allergen'
+          minItems: 0
+          maxItems: 7
+          uniqueItems: true
+        cuisines:
+          type: array
+          items:
+            $ref: '#/components/schemas/Category'
+          minItems: 0
+          maxItems: 6
+          uniqueItems: true
+        spiceLevel:
+          anyOf:
+          - $ref: '#/components/schemas/SpiceLevel'
+          - type: 'null'
+        flavor:
+          anyOf:
+          - type: string
+            enum:
+            - Light
+            - Moderate
+            - Strong
+          - type: 'null'
+        budgetMinCents:
+          anyOf:
+          - $ref: '#/components/schemas/MoneyCents'
+          - type: 'null'
+        budgetMaxCents:
+          anyOf:
+          - $ref: '#/components/schemas/MoneyCents'
+          - type: 'null'
+        expectedVersion:
+          $ref: '#/components/schemas/Version'
+      required:
+      - allergens
+      - cuisines
+      - spiceLevel
+      - flavor
+      - budgetMinCents
+      - budgetMaxCents
+      - expectedVersion
+      description: PUT replacement. Empty arrays/null clear preferences. Budget must be both null or both nonnegative
+        with min <= max. New preference record has version 0. Budget boundaries are both null or both set;
+        when set, min must not exceed max (cross-field business validation).
+      oneOf:
+      - properties:
+          budgetMinCents:
+            type: 'null'
+          budgetMaxCents:
+            type: 'null'
+      - properties:
+          budgetMinCents:
+            type: integer
+          budgetMaxCents:
+            type: integer
+    Preferences:
+      type: object
+      additionalProperties: false
+      properties:
+        allergens:
+          type: array
+          items:
+            $ref: '#/components/schemas/Allergen'
+          minItems: 0
+          maxItems: 7
+          uniqueItems: true
+        cuisines:
+          type: array
+          items:
+            $ref: '#/components/schemas/Category'
+          minItems: 0
+          maxItems: 6
+          uniqueItems: true
+        spiceLevel:
+          anyOf:
+          - $ref: '#/components/schemas/SpiceLevel'
+          - type: 'null'
+        flavor:
+          anyOf:
+          - type: string
+            enum:
+            - Light
+            - Moderate
+            - Strong
+          - type: 'null'
+        budgetMinCents:
+          anyOf:
+          - $ref: '#/components/schemas/MoneyCents'
+          - type: 'null'
+        budgetMaxCents:
+          anyOf:
+          - $ref: '#/components/schemas/MoneyCents'
+          - type: 'null'
+        version:
+          $ref: '#/components/schemas/Version'
+      required:
+      - allergens
+      - cuisines
+      - spiceLevel
+      - flavor
+      - budgetMinCents
+      - budgetMaxCents
+      - version
+      oneOf:
+      - properties:
+          budgetMinCents:
+            type: 'null'
+          budgetMaxCents:
+            type: 'null'
+      - properties:
+          budgetMinCents:
+            type: integer
+          budgetMaxCents:
+            type: integer
+      description: ' Budget boundaries are both null or both set; when set, min must not exceed max (cross-field
+        business validation).'
+      examples:
+      - allergens: []
+        cuisines:
+        - Chinese
+        spiceLevel: null
+        flavor: Moderate
+        budgetMinCents: 1500
+        budgetMaxCents: 3000
+        version: 1
+    Address:
+      type: object
+      additionalProperties: false
+      properties:
+        addressId:
+          $ref: '#/components/schemas/Id'
+        text:
+          type: string
+          minLength: 1
+          maxLength: 200
+          description: User-supplied Unicode address preserved after trimming outer whitespace; do not translate.
+            Render safely as text.
+        lastUsedAt:
+          type: string
+          format: date-time
+      required:
+      - addressId
+      - text
+      - lastUsedAt
+    Option:
+      type: object
+      additionalProperties: false
+      properties:
+        optionId:
+          $ref: '#/components/schemas/Id'
+        name:
+          type: string
+          minLength: 1
+          maxLength: 100
+        extraCents:
+          $ref: '#/components/schemas/MoneyCents'
+        allergens:
+          type: array
+          items:
+            $ref: '#/components/schemas/Allergen'
+          minItems: 0
+          maxItems: 7
+          uniqueItems: true
+      required:
+      - optionId
+      - name
+      - extraCents
+      - allergens
+      description: Explicit option allergen labels. Empty means no recorded labels, not a safety guarantee.
+        Changes increment the parent dishVersion.
+      examples:
+      - optionId: 8f8fa718-d9c8-4fe4-8ad5-071aa4145624
+        name: Egg add-on
+        extraCents: 300
+        allergens:
+        - Egg
+    OptionGroup:
+      type: object
+      additionalProperties: false
+      properties:
+        groupId:
+          $ref: '#/components/schemas/Id'
+        name:
+          type: string
+          minLength: 1
+          maxLength: 100
+        required:
+          type: boolean
+        selectionMode:
+          type: string
+          enum:
+          - Single
+          - Multiple
+        options:
+          type: array
+          items:
+            $ref: '#/components/schemas/Option'
+          minItems: 1
+      required:
+      - groupId
+      - name
+      - required
+      - selectionMode
+      - options
+      description: Single allows at most one; Multiple permits distinct options once each; required requires
+        at least one.
+    PreferenceMatch:
+      type: object
+      additionalProperties: false
+      properties:
+        cuisine:
+          type: boolean
+        spice:
+          type: boolean
+      required:
+      - cuisine
+      - spice
+    MenuDish:
+      type: object
+      additionalProperties: false
+      properties:
+        dishId:
+          $ref: '#/components/schemas/Id'
+        name:
+          type: string
+          minLength: 1
+          maxLength: 100
+        description:
+          type: string
+          minLength: 1
+          maxLength: 2000
+        imageUrl:
+          type: string
+          format: uri-reference
+        basePriceCents:
+          $ref: '#/components/schemas/MoneyCents'
+        category:
+          $ref: '#/components/schemas/Category'
+        protein:
+          type: string
+          minLength: 1
+          maxLength: 200
+        allergens:
+          type: array
+          items:
+            $ref: '#/components/schemas/Allergen'
+          minItems: 0
+          maxItems: 7
+          uniqueItems: true
+          description: Base dish labels only; option labels are stored separately. Normal cart warnings use
+            selected options; AI excludes a dish if any current option conflicts.
+        spiceLevel:
+          $ref: '#/components/schemas/SpiceLevel'
+        optionGroups:
+          type: array
+          items:
+            $ref: '#/components/schemas/OptionGroup'
+          minItems: 0
+        dishVersion:
+          $ref: '#/components/schemas/Version'
+        remaining:
+          type: integer
+          format: int64
+          minimum: 0
+          maximum: 2147483647
+        inventoryVersion:
+          $ref: '#/components/schemas/Version'
+        preferenceMatch:
+          $ref: '#/components/schemas/PreferenceMatch'
+      required:
+      - dishId
+      - name
+      - description
+      - imageUrl
+      - basePriceCents
+      - category
+      - protein
+      - allergens
+      - spiceLevel
+      - optionGroups
+      - dishVersion
+      - remaining
+      - inventoryVersion
+      - preferenceMatch
+      examples:
+      - dishId: 7c3d454a-62ad-4e1e-83b0-d15dcf0a1b99
+        name: Kung Pao Chicken
+        description: Chicken stir-fried with peanuts and dried chili.
+        imageUrl: /media/8f8fa718-d9c8-4fe4-8ad5-071aa4145624
+        basePriceCents: 2200
+        category: Chinese
+        protein: Chicken
+        allergens:
+        - Peanuts
+        spiceLevel: Medium
+        optionGroups: []
+        dishVersion: 1
+        remaining: 3
+        inventoryVersion: 7
+        preferenceMatch:
+          cuisine: true
+          spice: false
+    AdminDish:
+      type: object
+      additionalProperties: false
+      properties:
+        dishId:
+          $ref: '#/components/schemas/Id'
+        name:
+          type: string
+          minLength: 1
+          maxLength: 100
+        description:
+          type: string
+          minLength: 1
+          maxLength: 2000
+        imageUrl:
+          type: string
+          format: uri-reference
+        basePriceCents:
+          $ref: '#/components/schemas/MoneyCents'
+        category:
+          $ref: '#/components/schemas/Category'
+        protein:
+          type: string
+          minLength: 1
+          maxLength: 200
+        allergens:
+          type: array
+          items:
+            $ref: '#/components/schemas/Allergen'
+          minItems: 0
+          maxItems: 7
+          uniqueItems: true
+          description: Base dish labels only; option labels are stored separately. Normal cart warnings use
+            selected options; AI excludes a dish if any current option conflicts.
+        spiceLevel:
+          $ref: '#/components/schemas/SpiceLevel'
+        optionGroups:
+          type: array
+          items:
+            $ref: '#/components/schemas/OptionGroup'
+          minItems: 0
+        dishVersion:
+          $ref: '#/components/schemas/Version'
+        published:
+          type: boolean
+        mediaId:
+          $ref: '#/components/schemas/Id'
+      required:
+      - dishId
+      - name
+      - description
+      - imageUrl
+      - basePriceCents
+      - category
+      - protein
+      - allergens
+      - spiceLevel
+      - optionGroups
+      - dishVersion
+      - published
+      - mediaId
+    MenuPage:
+      type: object
+      additionalProperties: false
+      properties:
+        deliveryDate:
+          type: string
+          format: date
+        serverTime:
+          type: string
+          format: date-time
+        businessTimezone:
+          type: string
+          const: Asia/Shanghai
+        menuRevision:
+          $ref: '#/components/schemas/Version'
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/MenuDish'
+          minItems: 0
+        page:
+          type: integer
+          format: int64
+          minimum: 0
+          maximum: 2147483647
+        size:
+          type: integer
+          format: int64
+          minimum: 1
+          maximum: 100
+        totalElements:
+          type: integer
+          format: int64
+          minimum: 0
+          maximum: 9007199254740991
+      required:
+      - deliveryDate
+      - serverTime
+      - businessTimezone
+      - menuRevision
+      - items
+      - page
+      - size
+      - totalElements
+    CartLine:
+      type: object
+      additionalProperties: false
+      properties:
+        dishId:
+          $ref: '#/components/schemas/Id'
+        dishVersion:
+          $ref: '#/components/schemas/Version'
+        optionIds:
+          type: array
+          items:
+            $ref: '#/components/schemas/Id'
+          minItems: 0
+          uniqueItems: true
+        quantity:
+          type: integer
+          format: int64
+          minimum: 1
+          maximum: 5
+      required:
+      - dishId
+      - dishVersion
+      - optionIds
+      - quantity
+      description: optionIds must belong to this dish; server sorts them for canonical identity. Sum of quantities
+        across all lines must be 1..5.
+    QuoteRequest:
+      type: object
+      additionalProperties: false
+      properties:
+        deliveryDate:
+          type: string
+          format: date
+        meal:
+          $ref: '#/components/schemas/Meal'
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/CartLine'
+          minItems: 1
+          maxItems: 5
+      required:
+      - deliveryDate
+      - meal
+      - items
+    OptionSnapshot:
+      type: object
+      additionalProperties: false
+      properties:
+        optionId:
+          $ref: '#/components/schemas/Id'
+        groupName:
+          type: string
+          maxLength: 100
+        optionName:
+          type: string
+          maxLength: 100
+        extraCents:
+          $ref: '#/components/schemas/MoneyCents'
+        groupId:
+          $ref: '#/components/schemas/Id'
+        allergens:
+          type: array
+          items:
+            $ref: '#/components/schemas/Allergen'
+          minItems: 0
+          maxItems: 7
+          uniqueItems: true
+      required:
+      - optionId
+      - groupId
+      - groupName
+      - optionName
+      - extraCents
+      - allergens
+      description: Explicit option allergen labels. Empty means no recorded labels, not a safety guarantee.
+        Immutable at quote/order creation.
+      examples:
+      - optionId: 8f8fa718-d9c8-4fe4-8ad5-071aa4145624
+        groupId: c3c7bac8-15da-4a2c-8b6f-2105bb594a30
+        groupName: Add-ons
+        optionName: Egg add-on
+        extraCents: 300
+        allergens:
+        - Egg
+    PricedLine:
+      type: object
+      additionalProperties: false
+      properties:
+        dishId:
+          $ref: '#/components/schemas/Id'
+        dishName:
+          type: string
+          maxLength: 100
+        dishVersion:
+          $ref: '#/components/schemas/Version'
+        selectedOptions:
+          type: array
+          items:
+            $ref: '#/components/schemas/OptionSnapshot'
+          minItems: 0
+        quantity:
+          type: integer
+          format: int64
+          minimum: 1
+          maximum: 5
+        basePriceCents:
+          $ref: '#/components/schemas/MoneyCents'
+        unitPriceCents:
+          $ref: '#/components/schemas/MoneyCents'
+        subtotalCents:
+          $ref: '#/components/schemas/MoneyCents'
+        effectiveAllergens:
+          type: array
+          items:
+            $ref: '#/components/schemas/Allergen'
+          minItems: 0
+          maxItems: 7
+          uniqueItems: true
+          description: Immutable union of base dish and selected option labels at quote/order creation.
+      required:
+      - dishId
+      - dishName
+      - dishVersion
+      - selectedOptions
+      - quantity
+      - basePriceCents
+      - unitPriceCents
+      - subtotalCents
+      - effectiveAllergens
+    CheckoutWarning:
+      type: object
+      additionalProperties: false
+      properties:
+        code:
+          type: string
+          enum:
+          - BUDGET_EXCEEDED
+          - FLAGGED_ALLERGEN
+        message:
+          type: string
+          maxLength: 500
+        dishId:
+          $ref: '#/components/schemas/Id'
+        allergens:
+          type: array
+          items:
+            $ref: '#/components/schemas/Allergen'
+          minItems: 0
+          maxItems: 7
+          uniqueItems: true
+        itemIndex:
+          type: integer
+          minimum: 0
+          maximum: 4
+          description: Zero-based index in the final Quote.items array, after merging equal configurations.
+            Required for FLAGGED_ALLERGEN.
+      required:
+      - code
+      - message
+      allOf:
+      - if:
+          properties:
+            code:
+              const: FLAGGED_ALLERGEN
+          required:
+          - code
+        then:
+          required:
+          - dishId
+          - allergens
+          - itemIndex
+          properties:
+            allergens:
+              minItems: 1
+      examples:
+      - code: FLAGGED_ALLERGEN
+        message: This selection contains Egg.
+        dishId: 7c3d454a-62ad-4e1e-83b0-d15dcf0a1b99
+        itemIndex: 0
+        allergens:
+        - Egg
+    Quote:
+      type: object
+      additionalProperties: false
+      properties:
+        quoteId:
+          $ref: '#/components/schemas/Id'
+        deliveryDate:
+          type: string
+          format: date
+        meal:
+          $ref: '#/components/schemas/Meal'
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/PricedLine'
+          minItems: 1
+          maxItems: 5
+        totalQuantity:
+          type: integer
+          format: int64
+          minimum: 1
+          maximum: 5
+        totalCents:
+          $ref: '#/components/schemas/MoneyCents'
+        expiresAt:
+          type: string
+          format: date-time
+        serverTime:
+          type: string
+          format: date-time
+        warnings:
+          type: array
+          items:
+            $ref: '#/components/schemas/CheckoutWarning'
+          minItems: 0
+      required:
+      - quoteId
+      - deliveryDate
+      - meal
+      - items
+      - totalQuantity
+      - totalCents
+      - expiresAt
+      - serverTime
+      - warnings
+      description: Valid for five minutes, scoped to the current user, and single-use for creation. No inventory
+        reservation. Warnings do not prevent ordering.
+      examples:
+      - quoteId: c3c7bac8-15da-4a2c-8b6f-2105bb594a30
+        deliveryDate: '2026-10-17'
+        meal: Lunch
+        items:
+        - dishId: 7c3d454a-62ad-4e1e-83b0-d15dcf0a1b99
+          dishName: Kung Pao Chicken
+          dishVersion: 1
+          selectedOptions: []
+          quantity: 1
+          basePriceCents: 2200
+          unitPriceCents: 2200
+          subtotalCents: 2200
+          effectiveAllergens:
+          - Peanuts
+        totalQuantity: 1
+        totalCents: 2200
+        expiresAt: '2026-10-16T08:05:00Z'
+        serverTime: '2026-10-16T08:00:00Z'
+        warnings: []
+    OrderCreate:
+      type: object
+      additionalProperties: false
+      properties:
+        quoteId:
+          $ref: '#/components/schemas/Id'
+        addressId:
+          $ref: '#/components/schemas/Id'
+        addressText:
+          type: string
+          minLength: 1
+          maxLength: 200
+          description: User-supplied Unicode address preserved after trimming outer whitespace; do not translate.
+            Render safely as text.
+      required:
+      - quoteId
+      oneOf:
+      - required:
+        - addressId
+        not:
+          required:
+          - addressText
+      - required:
+        - addressText
+        not:
+          required:
+          - addressId
+      examples:
+      - quoteId: c3c7bac8-15da-4a2c-8b6f-2105bb594a30
+        addressText: Building A, Floor 3
+    Order:
+      type: object
+      additionalProperties: false
+      properties:
+        orderId:
+          $ref: '#/components/schemas/Id'
+        orderNumber:
+          type: string
+          maxLength: 64
+        deliveryDate:
+          type: string
+          format: date
+        meal:
+          $ref: '#/components/schemas/Meal'
+        addressText:
+          type: string
+          maxLength: 200
+          description: User-supplied Unicode address preserved after trimming outer whitespace; do not translate.
+            Render safely as text.
+        status:
+          $ref: '#/components/schemas/OrderStatus'
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/PricedLine'
+          minItems: 1
+          maxItems: 5
+        totalQuantity:
+          type: integer
+          format: int64
+          minimum: 1
+          maximum: 5
+        totalCents:
+          $ref: '#/components/schemas/MoneyCents'
+        version:
+          $ref: '#/components/schemas/Version'
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+      required:
+      - orderId
+      - orderNumber
+      - deliveryDate
+      - meal
+      - addressText
+      - status
+      - items
+      - totalQuantity
+      - totalCents
+      - version
+      - createdAt
+      - updatedAt
+      examples:
+      - orderId: 48d690da-47b5-4c6b-b7ad-5d6cf6f1d610
+        orderNumber: WB-48D690DA-47B5-4C6B-B7AD-5D6CF6F1D610
+        deliveryDate: '2026-10-17'
+        meal: Lunch
+        addressText: Building A, Floor 3
+        status: Pending
+        items:
+        - dishId: 7c3d454a-62ad-4e1e-83b0-d15dcf0a1b99
+          dishName: Kung Pao Chicken
+          dishVersion: 1
+          selectedOptions: []
+          quantity: 1
+          basePriceCents: 2200
+          unitPriceCents: 2200
+          subtotalCents: 2200
+          effectiveAllergens:
+          - Peanuts
+        totalQuantity: 1
+        totalCents: 2200
+        version: 1
+        createdAt: '2026-10-16T08:00:00Z'
+        updatedAt: '2026-10-16T08:00:00Z'
+    AdminOrder:
+      type: object
+      additionalProperties: false
+      properties:
+        orderId:
+          $ref: '#/components/schemas/Id'
+        orderNumber:
+          type: string
+          maxLength: 64
+        deliveryDate:
+          type: string
+          format: date
+        meal:
+          $ref: '#/components/schemas/Meal'
+        addressText:
+          type: string
+          maxLength: 200
+          description: User-supplied Unicode address preserved after trimming outer whitespace; do not translate.
+            Render safely as text.
+        status:
+          $ref: '#/components/schemas/OrderStatus'
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/PricedLine'
+          minItems: 1
+          maxItems: 5
+        totalQuantity:
+          type: integer
+          format: int64
+          minimum: 1
+          maximum: 5
+        totalCents:
+          $ref: '#/components/schemas/MoneyCents'
+        version:
+          $ref: '#/components/schemas/Version'
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+        customer:
+          $ref: '#/components/schemas/User'
+      required:
+      - orderId
+      - orderNumber
+      - deliveryDate
+      - meal
+      - addressText
+      - status
+      - items
+      - totalQuantity
+      - totalCents
+      - version
+      - createdAt
+      - updatedAt
+      - customer
+    OptionWrite:
+      type: object
+      additionalProperties: false
+      properties:
+        optionId:
+          $ref: '#/components/schemas/Id'
+        name:
+          type: string
+          minLength: 1
+          maxLength: 100
+        extraCents:
+          $ref: '#/components/schemas/MoneyCents'
+        allergens:
+          type: array
+          items:
+            $ref: '#/components/schemas/Allergen'
+          minItems: 0
+          maxItems: 7
+          uniqueItems: true
+      required:
+      - name
+      - extraCents
+      - allergens
+      description: Explicit option allergen labels. Empty means no recorded labels, not a safety guarantee.
+        Changes increment the parent dishVersion.
+    GroupWrite:
+      type: object
+      additionalProperties: false
+      properties:
+        groupId:
+          $ref: '#/components/schemas/Id'
+        name:
+          type: string
+          minLength: 1
+          maxLength: 100
+        required:
+          type: boolean
+        selectionMode:
+          type: string
+          enum:
+          - Single
+          - Multiple
+        options:
+          type: array
+          items:
+            $ref: '#/components/schemas/OptionWrite'
+          minItems: 1
+      required:
+      - name
+      - required
+      - selectionMode
+      - options
+    DishCreate:
+      type: object
+      additionalProperties: false
+      properties:
+        name:
+          type: string
+          minLength: 1
+          maxLength: 100
+        description:
+          type: string
+          minLength: 1
+          maxLength: 2000
+        basePriceCents:
+          $ref: '#/components/schemas/MoneyCents'
+        category:
+          $ref: '#/components/schemas/Category'
+        protein:
+          type: string
+          minLength: 1
+          maxLength: 200
+        allergens:
+          type: array
+          items:
+            $ref: '#/components/schemas/Allergen'
+          minItems: 0
+          maxItems: 7
+          uniqueItems: true
+          description: Base dish labels only; option labels are stored separately. Normal cart warnings use
+            selected options; AI excludes a dish if any current option conflicts.
+        spiceLevel:
+          $ref: '#/components/schemas/SpiceLevel'
+        mediaId:
+          $ref: '#/components/schemas/Id'
+        optionGroups:
+          type: array
+          items:
+            $ref: '#/components/schemas/GroupCreate'
+          minItems: 0
+      required:
+      - name
+      - description
+      - basePriceCents
+      - category
+      - protein
+      - allergens
+      - spiceLevel
+      - mediaId
+      - optionGroups
+      description: Creates an unpublished dish. Names and all user-facing fields must be English; supplied
+        group/option IDs are forbidden on create. Server generates stable IDs.
+    DishUpdate:
+      type: object
+      additionalProperties: false
+      properties:
+        name:
+          type: string
+          minLength: 1
+          maxLength: 100
+        description:
+          type: string
+          minLength: 1
+          maxLength: 2000
+        basePriceCents:
+          $ref: '#/components/schemas/MoneyCents'
+        category:
+          $ref: '#/components/schemas/Category'
+        protein:
+          type: string
+          minLength: 1
+          maxLength: 200
+        allergens:
+          type: array
+          items:
+            $ref: '#/components/schemas/Allergen'
+          minItems: 0
+          maxItems: 7
+          uniqueItems: true
+          description: Base dish labels only; option labels are stored separately. Normal cart warnings use
+            selected options; AI excludes a dish if any current option conflicts.
+        spiceLevel:
+          $ref: '#/components/schemas/SpiceLevel'
+        mediaId:
+          $ref: '#/components/schemas/Id'
+        optionGroups:
+          type: array
+          items:
+            $ref: '#/components/schemas/GroupWrite'
+          minItems: 0
+        expectedVersion:
+          $ref: '#/components/schemas/Version'
+      required:
+      - name
+      - description
+      - basePriceCents
+      - category
+      - protein
+      - allergens
+      - spiceLevel
+      - mediaId
+      - optionGroups
+      - expectedVersion
+      description: Full replacement of editable dish data. Existing group/option IDs must belong to this dish;
+        omitted IDs create new entries. Retired options remain in historical snapshots. Any change increments
+        dishVersion.
+    PublishRequest:
+      type: object
+      additionalProperties: false
+      properties:
+        published:
+          type: boolean
+        expectedVersion:
+          $ref: '#/components/schemas/Version'
+      required:
+      - published
+      - expectedVersion
+    Supply:
+      type: object
+      additionalProperties: false
+      properties:
+        dishId:
+          $ref: '#/components/schemas/Id'
+        dishName:
+          type: string
+          maxLength: 100
+        scheduled:
+          type: boolean
+        totalQuantity:
+          type: integer
+          format: int64
+          minimum: 0
+          maximum: 2147483647
+        allocatedQuantity:
+          type: integer
+          format: int64
+          minimum: 0
+          maximum: 2147483647
+        remaining:
+          type: integer
+          format: int64
+          minimum: 0
+          maximum: 2147483647
+        version:
+          $ref: '#/components/schemas/Version'
+      required:
+      - dishId
+      - dishName
+      - scheduled
+      - totalQuantity
+      - allocatedQuantity
+      - remaining
+      - version
+    DailyMenu:
+      type: object
+      additionalProperties: false
+      properties:
+        deliveryDate:
+          type: string
+          format: date
+        revision:
+          $ref: '#/components/schemas/Version'
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/Supply'
+          minItems: 0
+      required:
+      - deliveryDate
+      - revision
+      - items
+    DailyMenuWrite:
+      type: object
+      additionalProperties: false
+      properties:
+        expectedRevision:
+          $ref: '#/components/schemas/Version'
+        items:
+          type: array
+          items:
+            type: object
+            additionalProperties: false
+            properties:
+              dishId:
+                $ref: '#/components/schemas/Id'
+              totalQuantity:
+                type: integer
+                format: int64
+                minimum: 0
+                maximum: 2147483647
+            required:
+            - dishId
+            - totalQuantity
+          minItems: 0
+          uniqueItems: true
+      required:
+      - expectedRevision
+      - items
+      description: Replace scheduled membership; duplicate dishId is invalid. Omitted rows become unscheduled,
+        not deleted; allocations retained. totalQuantity must be >= allocatedQuantity. expectedRevision=0 for
+        a new date.
+    StatusChange:
+      type: object
+      additionalProperties: false
+      properties:
+        status:
+          type: string
+          enum:
+          - Confirmed
+          - Completed
+          - Cancelled
+        expectedVersion:
+          $ref: '#/components/schemas/Version'
+      required:
+      - status
+      - expectedVersion
+      description: Admin only. Pending->Confirmed, Confirmed->Completed or Pending->Cancelled. Authorized Cancelled->Cancelled
+        replay returns current order before expectedVersion comparison and causes no mutation. Other requests
+        check expectedVersion before transition validation.
+      examples:
+      - status: Cancelled
+        expectedVersion: 1
+    Media:
+      type: object
+      additionalProperties: false
+      properties:
+        mediaId:
+          $ref: '#/components/schemas/Id'
+        url:
+          type: string
+          format: uri-reference
+        contentType:
+          type: string
+          enum:
+          - image/jpeg
+          - image/png
+        byteLength:
+          type: integer
+          format: int64
+          minimum: 1
+          maximum: 5242880
+      required:
+      - mediaId
+      - url
+      - contentType
+      - byteLength
+      description: Original JPEG/PNG/WebP validated and converted to immutable display media. Output metadata
+        describes the stored derivative. Input and stored derivative must each be <=5 MiB (5242880 bytes);
+        failed replacement keeps the old image.
+    RecommendationRequest:
+      type: object
+      additionalProperties: false
+      properties:
+        deliveryDate:
+          type: string
+          format: date
+        meal:
+          $ref: '#/components/schemas/Meal'
+        prompt:
+          type: string
+          minLength: 1
+          maxLength: 1000
+      required:
+      - deliveryDate
+      - meal
+      - prompt
+      description: English user request. Personal preferences/history are loaded by the server; clients cannot
+        supply another user ID, provider URL or override allergen exclusions.
+    Dashboard:
+      type: object
+      additionalProperties: false
+      properties:
+        date:
+          type: string
+          format: date
+        generatedAt:
+          type: string
+          format: date-time
+        totalOrders:
+          type: integer
+          format: int64
+          minimum: 0
+          maximum: 9007199254740991
+        revenueCents:
+          $ref: '#/components/schemas/MoneyCents'
+        completedOrders:
+          type: integer
+          format: int64
+          minimum: 0
+          maximum: 9007199254740991
+        pendingOrders:
+          type: integer
+          format: int64
+          minimum: 0
+          maximum: 9007199254740991
+        cancelledOrders:
+          type: integer
+          format: int64
+          minimum: 0
+          maximum: 9007199254740991
+        topDishes:
+          type: array
+          items:
+            type: object
+            additionalProperties: false
+            properties:
+              dishId:
+                $ref: '#/components/schemas/Id'
+              name:
+                type: string
+                maxLength: 100
+              quantity:
+                type: integer
+                format: int64
+                minimum: 0
+                maximum: 9007199254740991
+            required:
+            - dishId
+            - name
+            - quantity
+          minItems: 0
+          maxItems: 10
+        mealDistribution:
+          type: array
+          items:
+            type: object
+            additionalProperties: false
+            properties:
+              meal:
+                $ref: '#/components/schemas/Meal'
+              orderCount:
+                type: integer
+                format: int64
+                minimum: 0
+                maximum: 9007199254740991
+            required:
+            - meal
+            - orderCount
+          minItems: 2
+          maxItems: 2
+        trend:
+          type: array
+          items:
+            type: object
+            additionalProperties: false
+            properties:
+              date:
+                type: string
+                format: date
+              orderCount:
+                type: integer
+                format: int64
+                minimum: 0
+                maximum: 9007199254740991
+              revenueCents:
+                $ref: '#/components/schemas/MoneyCents'
+            required:
+            - date
+            - orderCount
+            - revenueCents
+          minItems: 7
+          maxItems: 7
+        inventoryAlerts:
+          type: array
+          items:
+            type: object
+            additionalProperties: false
+            properties:
+              dishId:
+                $ref: '#/components/schemas/Id'
+              name:
+                type: string
+                maxLength: 100
+              remaining:
+                type: integer
+                format: int64
+                minimum: 0
+                maximum: 3
+              level:
+                type: string
+                enum:
+                - SoldOut
+                - LowStock
+            required:
+            - dishId
+            - name
+            - remaining
+            - level
+          minItems: 0
+        countingPolicy:
+          type: string
+          maxLength: 1000
+      required:
+      - date
+      - generatedAt
+      - totalOrders
+      - revenueCents
+      - completedOrders
+      - pendingOrders
+      - cancelledOrders
+      - topDishes
+      - mealDistribution
+      - trend
+      - inventoryAlerts
+      - countingPolicy
+      description: By delivery date. Counts include every status; pendingOrders=Pending+Confirmed. Revenue
+        and quantities only Completed. Seven consecutive dates including date; fill zeros. One consistent read
+        snapshot. Revenue includes add-ons and is labelled Completed Order Amount, not payment received. Top10
+        ties are ordered by dish ID ascending.
+    OrderPage:
+      type: object
+      additionalProperties: false
+      properties:
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/Order'
+          minItems: 0
+        page:
+          type: integer
+          format: int64
+          minimum: 0
+          maximum: 2147483647
+        size:
+          type: integer
+          format: int64
+          minimum: 1
+          maximum: 100
+        totalElements:
+          type: integer
+          format: int64
+          minimum: 0
+          maximum: 9007199254740991
+      required:
+      - items
+      - page
+      - size
+      - totalElements
+    AdminOrderPage:
+      type: object
+      additionalProperties: false
+      properties:
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/AdminOrder'
+          minItems: 0
+        page:
+          type: integer
+          format: int64
+          minimum: 0
+          maximum: 2147483647
+        size:
+          type: integer
+          format: int64
+          minimum: 1
+          maximum: 100
+        totalElements:
+          type: integer
+          format: int64
+          minimum: 0
+          maximum: 9007199254740991
+      required:
+      - items
+      - page
+      - size
+      - totalElements
+    AdminDishPage:
+      type: object
+      additionalProperties: false
+      properties:
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/AdminDish'
+          minItems: 0
+        page:
+          type: integer
+          format: int64
+          minimum: 0
+          maximum: 2147483647
+        size:
+          type: integer
+          format: int64
+          minimum: 1
+          maximum: 100
+        totalElements:
+          type: integer
+          format: int64
+          minimum: 0
+          maximum: 9007199254740991
+      required:
+      - items
+      - page
+      - size
+      - totalElements
+    InventoryEntry:
+      type: object
+      additionalProperties: false
+      properties:
+        dishId:
+          $ref: '#/components/schemas/Id'
+        remaining:
+          type: integer
+          format: int64
+          minimum: 0
+          maximum: 2147483647
+        version:
+          $ref: '#/components/schemas/Version'
+      required:
+      - dishId
+      - remaining
+      - version
+    InventorySnapshot:
+      type: object
+      additionalProperties: false
+      properties:
+        deliveryDate:
+          type: string
+          format: date
+        menuRevision:
+          $ref: '#/components/schemas/Version'
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/InventoryEntry'
+          minItems: 0
+        serverTime:
+          type: string
+          format: date-time
+      required:
+      - deliveryDate
+      - menuRevision
+      - items
+      - serverTime
+    InventoryUpdated:
+      type: object
+      additionalProperties: false
+      properties:
+        deliveryDate:
+          type: string
+          format: date
+        menuRevision:
+          $ref: '#/components/schemas/Version'
+        dishId:
+          $ref: '#/components/schemas/Id'
+        remaining:
+          type: integer
+          format: int64
+          minimum: 0
+          maximum: 2147483647
+        version:
+          $ref: '#/components/schemas/Version'
+        occurredAt:
+          type: string
+          format: date-time
+      required:
+      - deliveryDate
+      - menuRevision
+      - dishId
+      - remaining
+      - version
+      - occurredAt
+    MenuChanged:
+      type: object
+      additionalProperties: false
+      properties:
+        deliveryDate:
+          type: string
+          format: date
+        menuRevision:
+          $ref: '#/components/schemas/Version'
+      required:
+      - deliveryDate
+      - menuRevision
+    RecommendationMeta:
+      type: object
+      additionalProperties: false
+      properties:
+        requestId:
+          $ref: '#/components/schemas/Id'
+        deliveryDate:
+          type: string
+          format: date
+        appliedRepeatRange:
+          anyOf:
+          - type: object
+            additionalProperties: false
+            properties:
+              from:
+                type: string
+                format: date
+              through:
+                type: string
+                format: date
+            required:
+            - from
+            - through
+          - type: 'null'
+      required:
+      - requestId
+      - deliveryDate
+    RecommendationCard:
+      type: object
+      additionalProperties: false
+      properties:
+        requestId:
+          $ref: '#/components/schemas/Id'
+        index:
+          type: integer
+          format: int64
+          minimum: 0
+          maximum: 2
+        dish:
+          $ref: '#/components/schemas/MenuDish'
+        reason:
+          type: string
+          minLength: 1
+          maxLength: 240
+      required:
+      - requestId
+      - index
+      - dish
+      - reason
+      examples:
+      - requestId: 48d690da-47b5-4c6b-b7ad-5d6cf6f1d610
+        index: 0
+        dish:
+          dishId: 7c3d454a-62ad-4e1e-83b0-d15dcf0a1b99
+          name: Kung Pao Chicken
+          description: Chicken stir-fried with peanuts and dried chili.
+          imageUrl: /media/8f8fa718-d9c8-4fe4-8ad5-071aa4145624
+          basePriceCents: 2200
+          category: Chinese
+          protein: Chicken
+          allergens:
+          - Peanuts
+          spiceLevel: Medium
+          optionGroups: []
+          dishVersion: 1
+          remaining: 3
+          inventoryVersion: 7
+          preferenceMatch:
+            cuisine: true
+            spice: false
+        reason: This chicken dish matches your preferred Chinese cuisine.
+    RecommendationDone:
+      type: object
+      additionalProperties: false
+      properties:
+        requestId:
+          $ref: '#/components/schemas/Id'
+        count:
+          type: integer
+          format: int64
+          minimum: 0
+          maximum: 3
+        outcome:
+          type: string
+          enum:
+          - COMPLETE
+          - NO_MATCH
+      required:
+      - requestId
+      - count
+      - outcome
+      examples:
+      - requestId: 48d690da-47b5-4c6b-b7ad-5d6cf6f1d610
+        count: 1
+        outcome: COMPLETE
+    RecommendationError:
+      type: object
+      additionalProperties: false
+      properties:
+        requestId:
+          $ref: '#/components/schemas/Id'
+        code:
+          type: string
+          maxLength: 80
+        message:
+          type: string
+          maxLength: 500
+        retryable:
+          type: boolean
+        partial:
+          type: boolean
+      required:
+      - requestId
+      - code
+      - message
+      - retryable
+      - partial
+    OptionCreate:
+      type: object
+      additionalProperties: false
+      properties:
+        name:
+          type: string
+          minLength: 1
+          maxLength: 100
+        extraCents:
+          $ref: '#/components/schemas/MoneyCents'
+        allergens:
+          type: array
+          items:
+            $ref: '#/components/schemas/Allergen'
+          minItems: 0
+          maxItems: 7
+          uniqueItems: true
+      required:
+      - name
+      - extraCents
+      - allergens
+      description: Explicit option allergen labels. Empty means no recorded labels, not a safety guarantee.
+        Changes increment the parent dishVersion.
+      examples:
+      - name: Egg add-on
+        extraCents: 300
+        allergens:
+        - Egg
+    GroupCreate:
+      type: object
+      additionalProperties: false
+      properties:
+        name:
+          type: string
+          minLength: 1
+          maxLength: 100
+        required:
+          type: boolean
+        selectionMode:
+          type: string
+          enum:
+          - Single
+          - Multiple
+        options:
+          type: array
+          items:
+            $ref: '#/components/schemas/OptionCreate'
+          minItems: 1
+      required:
+      - name
+      - required
+      - selectionMode
+      - options
+    SessionExpired:
+      type: object
+      additionalProperties: false
+      properties:
+        message:
+          type: string
+          minLength: 1
+          maxLength: 500
+      required:
+      - message

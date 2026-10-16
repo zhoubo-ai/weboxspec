@@ -1,0 +1,673 @@
+[ {
+  "status" : 200,
+  "missingCsrfRejected" : false,
+  "path" : "/health",
+  "method" : "GET",
+  "operationId" : "health",
+  "role" : "Anonymous"
+}, {
+  "status" : 200,
+  "missingCsrfRejected" : false,
+  "path" : "/health",
+  "method" : "GET",
+  "operationId" : "health",
+  "role" : "Employee"
+}, {
+  "status" : 200,
+  "missingCsrfRejected" : false,
+  "path" : "/health",
+  "method" : "GET",
+  "operationId" : "health",
+  "role" : "Admin"
+}, {
+  "status" : 200,
+  "missingCsrfRejected" : false,
+  "path" : "/auth/csrf",
+  "method" : "GET",
+  "operationId" : "getCsrf",
+  "role" : "Anonymous"
+}, {
+  "status" : 200,
+  "missingCsrfRejected" : false,
+  "path" : "/auth/csrf",
+  "method" : "GET",
+  "operationId" : "getCsrf",
+  "role" : "Employee"
+}, {
+  "status" : 200,
+  "missingCsrfRejected" : false,
+  "path" : "/auth/csrf",
+  "method" : "GET",
+  "operationId" : "getCsrf",
+  "role" : "Admin"
+}, {
+  "status" : 400,
+  "missingCsrfRejected" : true,
+  "path" : "/auth/register",
+  "method" : "POST",
+  "operationId" : "register",
+  "role" : "Anonymous"
+}, {
+  "status" : 400,
+  "missingCsrfRejected" : true,
+  "path" : "/auth/register",
+  "method" : "POST",
+  "operationId" : "register",
+  "role" : "Employee"
+}, {
+  "status" : 400,
+  "missingCsrfRejected" : true,
+  "path" : "/auth/register",
+  "method" : "POST",
+  "operationId" : "register",
+  "role" : "Admin"
+}, {
+  "status" : 400,
+  "missingCsrfRejected" : true,
+  "path" : "/auth/login",
+  "method" : "POST",
+  "operationId" : "login",
+  "role" : "Anonymous"
+}, {
+  "status" : 400,
+  "missingCsrfRejected" : true,
+  "path" : "/auth/login",
+  "method" : "POST",
+  "operationId" : "login",
+  "role" : "Employee"
+}, {
+  "status" : 400,
+  "missingCsrfRejected" : true,
+  "path" : "/auth/login",
+  "method" : "POST",
+  "operationId" : "login",
+  "role" : "Admin"
+}, {
+  "status" : 401,
+  "missingCsrfRejected" : true,
+  "path" : "/auth/logout",
+  "method" : "POST",
+  "operationId" : "logout",
+  "role" : "Anonymous"
+}, {
+  "status" : 204,
+  "missingCsrfRejected" : true,
+  "path" : "/auth/logout",
+  "method" : "POST",
+  "operationId" : "logout",
+  "role" : "Employee"
+}, {
+  "status" : 204,
+  "missingCsrfRejected" : true,
+  "path" : "/auth/logout",
+  "method" : "POST",
+  "operationId" : "logout",
+  "role" : "Admin"
+}, {
+  "status" : 401,
+  "missingCsrfRejected" : false,
+  "path" : "/auth/me",
+  "method" : "GET",
+  "operationId" : "getCurrentUser",
+  "role" : "Anonymous"
+}, {
+  "status" : 200,
+  "missingCsrfRejected" : false,
+  "path" : "/auth/me",
+  "method" : "GET",
+  "operationId" : "getCurrentUser",
+  "role" : "Employee"
+}, {
+  "status" : 200,
+  "missingCsrfRejected" : false,
+  "path" : "/auth/me",
+  "method" : "GET",
+  "operationId" : "getCurrentUser",
+  "role" : "Admin"
+}, {
+  "status" : 401,
+  "missingCsrfRejected" : false,
+  "path" : "/me/preferences",
+  "method" : "GET",
+  "operationId" : "getPreferences",
+  "role" : "Anonymous"
+}, {
+  "status" : 200,
+  "missingCsrfRejected" : false,
+  "path" : "/me/preferences",
+  "method" : "GET",
+  "operationId" : "getPreferences",
+  "role" : "Employee"
+}, {
+  "status" : 200,
+  "missingCsrfRejected" : false,
+  "path" : "/me/preferences",
+  "method" : "GET",
+  "operationId" : "getPreferences",
+  "role" : "Admin"
+}, {
+  "status" : 401,
+  "missingCsrfRejected" : true,
+  "path" : "/me/preferences",
+  "method" : "PUT",
+  "operationId" : "replacePreferences",
+  "role" : "Anonymous"
+}, {
+  "status" : 400,
+  "missingCsrfRejected" : true,
+  "path" : "/me/preferences",
+  "method" : "PUT",
+  "operationId" : "replacePreferences",
+  "role" : "Employee"
+}, {
+  "status" : 400,
+  "missingCsrfRejected" : true,
+  "path" : "/me/preferences",
+  "method" : "PUT",
+  "operationId" : "replacePreferences",
+  "role" : "Admin"
+}, {
+  "status" : 401,
+  "missingCsrfRejected" : false,
+  "path" : "/me/addresses",
+  "method" : "GET",
+  "operationId" : "listAddresses",
+  "role" : "Anonymous"
+}, {
+  "status" : 200,
+  "missingCsrfRejected" : false,
+  "path" : "/me/addresses",
+  "method" : "GET",
+  "operationId" : "listAddresses",
+  "role" : "Employee"
+}, {
+  "status" : 200,
+  "missingCsrfRejected" : false,
+  "path" : "/me/addresses",
+  "method" : "GET",
+  "operationId" : "listAddresses",
+  "role" : "Admin"
+}, {
+  "status" : 401,
+  "missingCsrfRejected" : false,
+  "path" : "/menus/{date}",
+  "method" : "GET",
+  "operationId" : "getMenu",
+  "role" : "Anonymous"
+}, {
+  "status" : 400,
+  "missingCsrfRejected" : false,
+  "path" : "/menus/{date}",
+  "method" : "GET",
+  "operationId" : "getMenu",
+  "role" : "Employee"
+}, {
+  "status" : 400,
+  "missingCsrfRejected" : false,
+  "path" : "/menus/{date}",
+  "method" : "GET",
+  "operationId" : "getMenu",
+  "role" : "Admin"
+}, {
+  "status" : 401,
+  "missingCsrfRejected" : false,
+  "path" : "/menus/{date}/dishes/{dishId}",
+  "method" : "GET",
+  "operationId" : "getMenuDish",
+  "role" : "Anonymous"
+}, {
+  "status" : 400,
+  "missingCsrfRejected" : false,
+  "path" : "/menus/{date}/dishes/{dishId}",
+  "method" : "GET",
+  "operationId" : "getMenuDish",
+  "role" : "Employee"
+}, {
+  "status" : 400,
+  "missingCsrfRejected" : false,
+  "path" : "/menus/{date}/dishes/{dishId}",
+  "method" : "GET",
+  "operationId" : "getMenuDish",
+  "role" : "Admin"
+}, {
+  "status" : 401,
+  "missingCsrfRejected" : false,
+  "path" : "/menus/{date}/inventory",
+  "method" : "GET",
+  "operationId" : "getInventory",
+  "role" : "Anonymous"
+}, {
+  "status" : 400,
+  "missingCsrfRejected" : false,
+  "path" : "/menus/{date}/inventory",
+  "method" : "GET",
+  "operationId" : "getInventory",
+  "role" : "Employee"
+}, {
+  "status" : 400,
+  "missingCsrfRejected" : false,
+  "path" : "/menus/{date}/inventory",
+  "method" : "GET",
+  "operationId" : "getInventory",
+  "role" : "Admin"
+}, {
+  "status" : 401,
+  "missingCsrfRejected" : false,
+  "path" : "/menus/{date}/events",
+  "method" : "GET",
+  "operationId" : "streamInventory",
+  "role" : "Anonymous"
+}, {
+  "status" : 400,
+  "missingCsrfRejected" : false,
+  "path" : "/menus/{date}/events",
+  "method" : "GET",
+  "operationId" : "streamInventory",
+  "role" : "Employee"
+}, {
+  "status" : 400,
+  "missingCsrfRejected" : false,
+  "path" : "/menus/{date}/events",
+  "method" : "GET",
+  "operationId" : "streamInventory",
+  "role" : "Admin"
+}, {
+  "status" : 401,
+  "missingCsrfRejected" : true,
+  "path" : "/checkout/quotes",
+  "method" : "POST",
+  "operationId" : "createQuote",
+  "role" : "Anonymous"
+}, {
+  "status" : 400,
+  "missingCsrfRejected" : true,
+  "path" : "/checkout/quotes",
+  "method" : "POST",
+  "operationId" : "createQuote",
+  "role" : "Employee"
+}, {
+  "status" : 400,
+  "missingCsrfRejected" : true,
+  "path" : "/checkout/quotes",
+  "method" : "POST",
+  "operationId" : "createQuote",
+  "role" : "Admin"
+}, {
+  "status" : 401,
+  "missingCsrfRejected" : true,
+  "path" : "/orders",
+  "method" : "POST",
+  "operationId" : "placeOrder",
+  "role" : "Anonymous"
+}, {
+  "status" : 400,
+  "missingCsrfRejected" : true,
+  "path" : "/orders",
+  "method" : "POST",
+  "operationId" : "placeOrder",
+  "role" : "Employee"
+}, {
+  "status" : 400,
+  "missingCsrfRejected" : true,
+  "path" : "/orders",
+  "method" : "POST",
+  "operationId" : "placeOrder",
+  "role" : "Admin"
+}, {
+  "status" : 401,
+  "missingCsrfRejected" : false,
+  "path" : "/orders",
+  "method" : "GET",
+  "operationId" : "listOrders",
+  "role" : "Anonymous"
+}, {
+  "status" : 200,
+  "missingCsrfRejected" : false,
+  "path" : "/orders",
+  "method" : "GET",
+  "operationId" : "listOrders",
+  "role" : "Employee"
+}, {
+  "status" : 200,
+  "missingCsrfRejected" : false,
+  "path" : "/orders",
+  "method" : "GET",
+  "operationId" : "listOrders",
+  "role" : "Admin"
+}, {
+  "status" : 401,
+  "missingCsrfRejected" : false,
+  "path" : "/orders/{orderId}",
+  "method" : "GET",
+  "operationId" : "getOrder",
+  "role" : "Anonymous"
+}, {
+  "status" : 404,
+  "missingCsrfRejected" : false,
+  "path" : "/orders/{orderId}",
+  "method" : "GET",
+  "operationId" : "getOrder",
+  "role" : "Employee"
+}, {
+  "status" : 404,
+  "missingCsrfRejected" : false,
+  "path" : "/orders/{orderId}",
+  "method" : "GET",
+  "operationId" : "getOrder",
+  "role" : "Admin"
+}, {
+  "status" : 401,
+  "missingCsrfRejected" : true,
+  "path" : "/orders/{orderId}/cancel",
+  "method" : "POST",
+  "operationId" : "cancelOrder",
+  "role" : "Anonymous"
+}, {
+  "status" : 404,
+  "missingCsrfRejected" : true,
+  "path" : "/orders/{orderId}/cancel",
+  "method" : "POST",
+  "operationId" : "cancelOrder",
+  "role" : "Employee"
+}, {
+  "status" : 404,
+  "missingCsrfRejected" : true,
+  "path" : "/orders/{orderId}/cancel",
+  "method" : "POST",
+  "operationId" : "cancelOrder",
+  "role" : "Admin"
+}, {
+  "status" : 401,
+  "missingCsrfRejected" : true,
+  "path" : "/recommendations/stream",
+  "method" : "POST",
+  "operationId" : "streamRecommendations",
+  "role" : "Anonymous"
+}, {
+  "status" : 400,
+  "missingCsrfRejected" : true,
+  "path" : "/recommendations/stream",
+  "method" : "POST",
+  "operationId" : "streamRecommendations",
+  "role" : "Employee"
+}, {
+  "status" : 400,
+  "missingCsrfRejected" : true,
+  "path" : "/recommendations/stream",
+  "method" : "POST",
+  "operationId" : "streamRecommendations",
+  "role" : "Admin"
+}, {
+  "status" : 401,
+  "missingCsrfRejected" : false,
+  "path" : "/admin/dishes",
+  "method" : "GET",
+  "operationId" : "adminListDishes",
+  "role" : "Anonymous"
+}, {
+  "status" : 403,
+  "missingCsrfRejected" : false,
+  "path" : "/admin/dishes",
+  "method" : "GET",
+  "operationId" : "adminListDishes",
+  "role" : "Employee"
+}, {
+  "status" : 200,
+  "missingCsrfRejected" : false,
+  "path" : "/admin/dishes",
+  "method" : "GET",
+  "operationId" : "adminListDishes",
+  "role" : "Admin"
+}, {
+  "status" : 401,
+  "missingCsrfRejected" : true,
+  "path" : "/admin/dishes",
+  "method" : "POST",
+  "operationId" : "adminCreateDish",
+  "role" : "Anonymous"
+}, {
+  "status" : 403,
+  "missingCsrfRejected" : true,
+  "path" : "/admin/dishes",
+  "method" : "POST",
+  "operationId" : "adminCreateDish",
+  "role" : "Employee"
+}, {
+  "status" : 400,
+  "missingCsrfRejected" : true,
+  "path" : "/admin/dishes",
+  "method" : "POST",
+  "operationId" : "adminCreateDish",
+  "role" : "Admin"
+}, {
+  "status" : 401,
+  "missingCsrfRejected" : false,
+  "path" : "/admin/dishes/{dishId}",
+  "method" : "GET",
+  "operationId" : "adminGetDish",
+  "role" : "Anonymous"
+}, {
+  "status" : 403,
+  "missingCsrfRejected" : false,
+  "path" : "/admin/dishes/{dishId}",
+  "method" : "GET",
+  "operationId" : "adminGetDish",
+  "role" : "Employee"
+}, {
+  "status" : 404,
+  "missingCsrfRejected" : false,
+  "path" : "/admin/dishes/{dishId}",
+  "method" : "GET",
+  "operationId" : "adminGetDish",
+  "role" : "Admin"
+}, {
+  "status" : 401,
+  "missingCsrfRejected" : true,
+  "path" : "/admin/dishes/{dishId}",
+  "method" : "PUT",
+  "operationId" : "adminUpdateDish",
+  "role" : "Anonymous"
+}, {
+  "status" : 403,
+  "missingCsrfRejected" : true,
+  "path" : "/admin/dishes/{dishId}",
+  "method" : "PUT",
+  "operationId" : "adminUpdateDish",
+  "role" : "Employee"
+}, {
+  "status" : 400,
+  "missingCsrfRejected" : true,
+  "path" : "/admin/dishes/{dishId}",
+  "method" : "PUT",
+  "operationId" : "adminUpdateDish",
+  "role" : "Admin"
+}, {
+  "status" : 401,
+  "missingCsrfRejected" : true,
+  "path" : "/admin/dishes/{dishId}/publication",
+  "method" : "PATCH",
+  "operationId" : "adminSetPublication",
+  "role" : "Anonymous"
+}, {
+  "status" : 403,
+  "missingCsrfRejected" : true,
+  "path" : "/admin/dishes/{dishId}/publication",
+  "method" : "PATCH",
+  "operationId" : "adminSetPublication",
+  "role" : "Employee"
+}, {
+  "status" : 400,
+  "missingCsrfRejected" : true,
+  "path" : "/admin/dishes/{dishId}/publication",
+  "method" : "PATCH",
+  "operationId" : "adminSetPublication",
+  "role" : "Admin"
+}, {
+  "status" : 401,
+  "missingCsrfRejected" : false,
+  "path" : "/admin/menus/{date}",
+  "method" : "GET",
+  "operationId" : "adminGetDailyMenu",
+  "role" : "Anonymous"
+}, {
+  "status" : 403,
+  "missingCsrfRejected" : false,
+  "path" : "/admin/menus/{date}",
+  "method" : "GET",
+  "operationId" : "adminGetDailyMenu",
+  "role" : "Employee"
+}, {
+  "status" : 400,
+  "missingCsrfRejected" : false,
+  "path" : "/admin/menus/{date}",
+  "method" : "GET",
+  "operationId" : "adminGetDailyMenu",
+  "role" : "Admin"
+}, {
+  "status" : 401,
+  "missingCsrfRejected" : true,
+  "path" : "/admin/menus/{date}",
+  "method" : "PUT",
+  "operationId" : "adminReplaceDailyMenu",
+  "role" : "Anonymous"
+}, {
+  "status" : 403,
+  "missingCsrfRejected" : true,
+  "path" : "/admin/menus/{date}",
+  "method" : "PUT",
+  "operationId" : "adminReplaceDailyMenu",
+  "role" : "Employee"
+}, {
+  "status" : 400,
+  "missingCsrfRejected" : true,
+  "path" : "/admin/menus/{date}",
+  "method" : "PUT",
+  "operationId" : "adminReplaceDailyMenu",
+  "role" : "Admin"
+}, {
+  "status" : 401,
+  "missingCsrfRejected" : false,
+  "path" : "/admin/orders",
+  "method" : "GET",
+  "operationId" : "adminListOrders",
+  "role" : "Anonymous"
+}, {
+  "status" : 403,
+  "missingCsrfRejected" : false,
+  "path" : "/admin/orders",
+  "method" : "GET",
+  "operationId" : "adminListOrders",
+  "role" : "Employee"
+}, {
+  "status" : 200,
+  "missingCsrfRejected" : false,
+  "path" : "/admin/orders",
+  "method" : "GET",
+  "operationId" : "adminListOrders",
+  "role" : "Admin"
+}, {
+  "status" : 401,
+  "missingCsrfRejected" : false,
+  "path" : "/admin/orders/{orderId}",
+  "method" : "GET",
+  "operationId" : "adminGetOrder",
+  "role" : "Anonymous"
+}, {
+  "status" : 403,
+  "missingCsrfRejected" : false,
+  "path" : "/admin/orders/{orderId}",
+  "method" : "GET",
+  "operationId" : "adminGetOrder",
+  "role" : "Employee"
+}, {
+  "status" : 404,
+  "missingCsrfRejected" : false,
+  "path" : "/admin/orders/{orderId}",
+  "method" : "GET",
+  "operationId" : "adminGetOrder",
+  "role" : "Admin"
+}, {
+  "status" : 401,
+  "missingCsrfRejected" : true,
+  "path" : "/admin/orders/{orderId}/status",
+  "method" : "PATCH",
+  "operationId" : "adminChangeOrderStatus",
+  "role" : "Anonymous"
+}, {
+  "status" : 403,
+  "missingCsrfRejected" : true,
+  "path" : "/admin/orders/{orderId}/status",
+  "method" : "PATCH",
+  "operationId" : "adminChangeOrderStatus",
+  "role" : "Employee"
+}, {
+  "status" : 400,
+  "missingCsrfRejected" : true,
+  "path" : "/admin/orders/{orderId}/status",
+  "method" : "PATCH",
+  "operationId" : "adminChangeOrderStatus",
+  "role" : "Admin"
+}, {
+  "status" : 401,
+  "missingCsrfRejected" : false,
+  "path" : "/admin/dashboard",
+  "method" : "GET",
+  "operationId" : "adminGetDashboard",
+  "role" : "Anonymous"
+}, {
+  "status" : 403,
+  "missingCsrfRejected" : false,
+  "path" : "/admin/dashboard",
+  "method" : "GET",
+  "operationId" : "adminGetDashboard",
+  "role" : "Employee"
+}, {
+  "status" : 200,
+  "missingCsrfRejected" : false,
+  "path" : "/admin/dashboard",
+  "method" : "GET",
+  "operationId" : "adminGetDashboard",
+  "role" : "Admin"
+}, {
+  "status" : 401,
+  "missingCsrfRejected" : true,
+  "path" : "/admin/media",
+  "method" : "POST",
+  "operationId" : "adminUploadMedia",
+  "role" : "Anonymous"
+}, {
+  "status" : 403,
+  "missingCsrfRejected" : true,
+  "path" : "/admin/media",
+  "method" : "POST",
+  "operationId" : "adminUploadMedia",
+  "role" : "Employee"
+}, {
+  "status" : 400,
+  "missingCsrfRejected" : true,
+  "path" : "/admin/media",
+  "method" : "POST",
+  "operationId" : "adminUploadMedia",
+  "role" : "Admin"
+}, {
+  "status" : 404,
+  "missingCsrfRejected" : false,
+  "path" : "/media/{mediaId}",
+  "method" : "GET",
+  "operationId" : "getPublicMedia",
+  "role" : "Anonymous"
+}, {
+  "status" : 404,
+  "missingCsrfRejected" : false,
+  "path" : "/media/{mediaId}",
+  "method" : "GET",
+  "operationId" : "getPublicMedia",
+  "role" : "Employee"
+}, {
+  "status" : 404,
+  "missingCsrfRejected" : false,
+  "path" : "/media/{mediaId}",
+  "method" : "GET",
+  "operationId" : "getPublicMedia",
+  "role" : "Admin"
+} ]

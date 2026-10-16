@@ -1,0 +1,4 @@
+# Seeding runs once without opening an HTTP port. T025 supplies the runner.
+spring:
+  main:
+    web-application-type: none

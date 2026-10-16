@@ -1,0 +1,909 @@
+{
+  "smokeOnly": false,
+  "browser": "156.0.8078.4",
+  "viewport": "1440x900",
+  "source": "production Vite build via local preview proxy",
+  "sampleCountPerMetric": 20,
+  "percentile": "nearest-rank, missing/failed attempt = positive infinity",
+  "warmup": "one menu/search; normal fixture preparation before each operation",
+  "results": {
+    "menu": [
+      {
+        "attempt": 1,
+        "elapsedMs": 307.124916,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 2,
+        "elapsedMs": 235.7849580000002,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 3,
+        "elapsedMs": 104.27612500000032,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 4,
+        "elapsedMs": 155.49524999999994,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 5,
+        "elapsedMs": 214.22262499999988,
+        "failure": null,
+        "activeStreams": 203
+      },
+      {
+        "attempt": 6,
+        "elapsedMs": 113.29766699999982,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 7,
+        "elapsedMs": 114.66720899999973,
+        "failure": null,
+        "activeStreams": 203
+      },
+      {
+        "attempt": 8,
+        "elapsedMs": 196.57804099999976,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 9,
+        "elapsedMs": 82.84354200000007,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 10,
+        "elapsedMs": 151.11804099999972,
+        "failure": null,
+        "activeStreams": 203
+      },
+      {
+        "attempt": 11,
+        "elapsedMs": 81.88479200000029,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 12,
+        "elapsedMs": 72.1483330000001,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 13,
+        "elapsedMs": 83.21116700000039,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 14,
+        "elapsedMs": 63.13041599999997,
+        "failure": null,
+        "activeStreams": 203
+      },
+      {
+        "attempt": 15,
+        "elapsedMs": 88.00404199999957,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 16,
+        "elapsedMs": 98.1411250000001,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 17,
+        "elapsedMs": 146.14345799999955,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 18,
+        "elapsedMs": 73.18529100000069,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 19,
+        "elapsedMs": 115.06762500000059,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 20,
+        "elapsedMs": 72.19045900000037,
+        "failure": null,
+        "activeStreams": 202
+      }
+    ],
+    "filter": [
+      {
+        "attempt": 1,
+        "elapsedMs": 74.99737499999992,
+        "failure": null,
+        "activeStreams": 203
+      },
+      {
+        "attempt": 2,
+        "elapsedMs": 46.130207999999584,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 3,
+        "elapsedMs": 40.29349999999977,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 4,
+        "elapsedMs": 53.15495899999951,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 5,
+        "elapsedMs": 44.46366699999999,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 6,
+        "elapsedMs": 48.636750000000575,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 7,
+        "elapsedMs": 39.86883300000045,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 8,
+        "elapsedMs": 40.18479099999968,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 9,
+        "elapsedMs": 44.919167000000016,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 10,
+        "elapsedMs": 43.608791999999994,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 11,
+        "elapsedMs": 46.225500000000466,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 12,
+        "elapsedMs": 77.14974999999959,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 13,
+        "elapsedMs": 53.04987500000061,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 14,
+        "elapsedMs": 43.948875000000044,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 15,
+        "elapsedMs": 43.99791600000026,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 16,
+        "elapsedMs": 50.38608299999942,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 17,
+        "elapsedMs": 41.27149999999983,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 18,
+        "elapsedMs": 34.30241599999954,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 19,
+        "elapsedMs": 43.3598750000001,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 20,
+        "elapsedMs": 46.095416000000114,
+        "failure": null,
+        "activeStreams": 201
+      }
+    ],
+    "search": [
+      {
+        "attempt": 1,
+        "elapsedMs": 221.25758399999995,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 2,
+        "elapsedMs": 221.09649999999965,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 3,
+        "elapsedMs": 221.02195800000027,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 4,
+        "elapsedMs": 225.2277920000006,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 5,
+        "elapsedMs": 225.3184169999995,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 6,
+        "elapsedMs": 226.1513329999998,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 7,
+        "elapsedMs": 219.42612499999905,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 8,
+        "elapsedMs": 220.5131249999995,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 9,
+        "elapsedMs": 223.1869999999999,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 10,
+        "elapsedMs": 219.45058299999982,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 11,
+        "elapsedMs": 222.65733399999954,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 12,
+        "elapsedMs": 225.9807090000013,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 13,
+        "elapsedMs": 222.02383299999929,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 14,
+        "elapsedMs": 217.5086250000004,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 15,
+        "elapsedMs": 221.46770800000013,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 16,
+        "elapsedMs": 223.8757910000004,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 17,
+        "elapsedMs": 223.76395799999955,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 18,
+        "elapsedMs": 220.89037500000086,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 19,
+        "elapsedMs": 223.92408299999988,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 20,
+        "elapsedMs": 225.88191600000027,
+        "failure": null,
+        "activeStreams": 201
+      }
+    ],
+    "cart": [
+      {
+        "attempt": 1,
+        "elapsedMs": 24.5,
+        "failure": null,
+        "activeStreams": 203
+      },
+      {
+        "attempt": 2,
+        "elapsedMs": 23.099999964237213,
+        "failure": null,
+        "activeStreams": 203
+      },
+      {
+        "attempt": 3,
+        "elapsedMs": 26.900000035762787,
+        "failure": null,
+        "activeStreams": 203
+      },
+      {
+        "attempt": 4,
+        "elapsedMs": 23.69999998807907,
+        "failure": null,
+        "activeStreams": 203
+      },
+      {
+        "attempt": 5,
+        "elapsedMs": 24,
+        "failure": null,
+        "activeStreams": 203
+      },
+      {
+        "attempt": 6,
+        "elapsedMs": 26.600000023841858,
+        "failure": null,
+        "activeStreams": 203
+      },
+      {
+        "attempt": 7,
+        "elapsedMs": 23.5,
+        "failure": null,
+        "activeStreams": 203
+      },
+      {
+        "attempt": 8,
+        "elapsedMs": 25.5,
+        "failure": null,
+        "activeStreams": 203
+      },
+      {
+        "attempt": 9,
+        "elapsedMs": 26.100000023841858,
+        "failure": null,
+        "activeStreams": 203
+      },
+      {
+        "attempt": 10,
+        "elapsedMs": 21.899999976158142,
+        "failure": null,
+        "activeStreams": 203
+      },
+      {
+        "attempt": 11,
+        "elapsedMs": 18.900000035762787,
+        "failure": null,
+        "activeStreams": 203
+      },
+      {
+        "attempt": 12,
+        "elapsedMs": 25.600000023841858,
+        "failure": null,
+        "activeStreams": 203
+      },
+      {
+        "attempt": 13,
+        "elapsedMs": 24.19999998807907,
+        "failure": null,
+        "activeStreams": 203
+      },
+      {
+        "attempt": 14,
+        "elapsedMs": 25.900000035762787,
+        "failure": null,
+        "activeStreams": 203
+      },
+      {
+        "attempt": 15,
+        "elapsedMs": 24.5,
+        "failure": null,
+        "activeStreams": 203
+      },
+      {
+        "attempt": 16,
+        "elapsedMs": 26.5,
+        "failure": null,
+        "activeStreams": 203
+      },
+      {
+        "attempt": 17,
+        "elapsedMs": 22.69999998807907,
+        "failure": null,
+        "activeStreams": 203
+      },
+      {
+        "attempt": 18,
+        "elapsedMs": 24.30000001192093,
+        "failure": null,
+        "activeStreams": 203
+      },
+      {
+        "attempt": 19,
+        "elapsedMs": 25.900000035762787,
+        "failure": null,
+        "activeStreams": 203
+      },
+      {
+        "attempt": 20,
+        "elapsedMs": 23.30000001192093,
+        "failure": null,
+        "activeStreams": 203
+      }
+    ],
+    "order": [
+      {
+        "attempt": 1,
+        "elapsedMs": 48.21795800000109,
+        "failure": null,
+        "activeStreams": 203
+      },
+      {
+        "attempt": 2,
+        "elapsedMs": 58.15258300000096,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 3,
+        "elapsedMs": 45.7192500000001,
+        "failure": null,
+        "activeStreams": 203
+      },
+      {
+        "attempt": 4,
+        "elapsedMs": 62.402084000001196,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 5,
+        "elapsedMs": 45.3414580000026,
+        "failure": null,
+        "activeStreams": 203
+      },
+      {
+        "attempt": 6,
+        "elapsedMs": 44.339874999997846,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 7,
+        "elapsedMs": 104.70362499999828,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 8,
+        "elapsedMs": 62.88304100000096,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 9,
+        "elapsedMs": 84.76024999999936,
+        "failure": null,
+        "activeStreams": 203
+      },
+      {
+        "attempt": 10,
+        "elapsedMs": 58.85087500000009,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 11,
+        "elapsedMs": 39.26008300000103,
+        "failure": null,
+        "activeStreams": 203
+      },
+      {
+        "attempt": 12,
+        "elapsedMs": 43.42229099999895,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 13,
+        "elapsedMs": 63.443749999998545,
+        "failure": null,
+        "activeStreams": 203
+      },
+      {
+        "attempt": 14,
+        "elapsedMs": 57.84941699999763,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 15,
+        "elapsedMs": 65.95712500000081,
+        "failure": null,
+        "activeStreams": 203
+      },
+      {
+        "attempt": 16,
+        "elapsedMs": 67.00154100000145,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 17,
+        "elapsedMs": 42.614041999997426,
+        "failure": null,
+        "activeStreams": 203
+      },
+      {
+        "attempt": 18,
+        "elapsedMs": 48.770416999999725,
+        "failure": null,
+        "activeStreams": 201
+      },
+      {
+        "attempt": 19,
+        "elapsedMs": 105.76050000000032,
+        "failure": null,
+        "activeStreams": 203
+      },
+      {
+        "attempt": 20,
+        "elapsedMs": 42.831333999998606,
+        "failure": null,
+        "activeStreams": 201
+      }
+    ],
+    "inventory": [
+      {
+        "attempt": 1,
+        "elapsedMs": 96.49745900000198,
+        "failure": null,
+        "activeStreams": 203
+      },
+      {
+        "attempt": 2,
+        "elapsedMs": 210.4744580000006,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 3,
+        "elapsedMs": 190.34912500000064,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 4,
+        "elapsedMs": 193.19787500000166,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 5,
+        "elapsedMs": 197.09120800000528,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 6,
+        "elapsedMs": 194.50333300000057,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 7,
+        "elapsedMs": 191.89250000000175,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 8,
+        "elapsedMs": 191.6060839999991,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 9,
+        "elapsedMs": 193.31554200000392,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 10,
+        "elapsedMs": 192.50987500000338,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 11,
+        "elapsedMs": 296.6628750000018,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 12,
+        "elapsedMs": 296.197874999998,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 13,
+        "elapsedMs": 293.65412500000093,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 14,
+        "elapsedMs": 193.9079999999958,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 15,
+        "elapsedMs": 299.35179100000096,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 16,
+        "elapsedMs": 290.4072079999969,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 17,
+        "elapsedMs": 291.6437500000029,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 18,
+        "elapsedMs": 208.73720799999865,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 19,
+        "elapsedMs": 296.9410409999982,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 20,
+        "elapsedMs": 195.06291699999565,
+        "failure": null,
+        "activeStreams": 202
+      }
+    ],
+    "dashboard": [
+      {
+        "attempt": 1,
+        "elapsedMs": 68.65458300000319,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 2,
+        "elapsedMs": 102.01762500000041,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 3,
+        "elapsedMs": 63.28624999999738,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 4,
+        "elapsedMs": 50.90833399999974,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 5,
+        "elapsedMs": 58.66604200000438,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 6,
+        "elapsedMs": 55.08129200000258,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 7,
+        "elapsedMs": 54.562582999998995,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 8,
+        "elapsedMs": 55.21633300000394,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 9,
+        "elapsedMs": 61.9421250000014,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 10,
+        "elapsedMs": 59.30254199999763,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 11,
+        "elapsedMs": 55.5370000000039,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 12,
+        "elapsedMs": 56.144500000002154,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 13,
+        "elapsedMs": 96.85562499999651,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 14,
+        "elapsedMs": 87.60704200000328,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 15,
+        "elapsedMs": 49.14079099999799,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 16,
+        "elapsedMs": 98.22208300000057,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 17,
+        "elapsedMs": 42.34845900000073,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 18,
+        "elapsedMs": 60.63262499999837,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 19,
+        "elapsedMs": 54.334083000001556,
+        "failure": null,
+        "activeStreams": 202
+      },
+      {
+        "attempt": 20,
+        "elapsedMs": 57.77145799999562,
+        "failure": null,
+        "activeStreams": 202
+      }
+    ]
+  },
+  "summaries": {
+    "menu": {
+      "attempts": 20,
+      "failures": 0,
+      "p95Ms": 235.7849580000002,
+      "limitMs": 2000
+    },
+    "filter": {
+      "attempts": 20,
+      "failures": 0,
+      "p95Ms": 74.99737499999992,
+      "limitMs": 2000
+    },
+    "search": {
+      "attempts": 20,
+      "failures": 0,
+      "p95Ms": 225.9807090000013,
+      "limitMs": 2000
+    },
+    "cart": {
+      "attempts": 20,
+      "failures": 0,
+      "p95Ms": 26.600000023841858,
+      "limitMs": 300
+    },
+    "order": {
+      "attempts": 20,
+      "failures": 0,
+      "p95Ms": 104.70362499999828,
+      "limitMs": 3000
+    },
+    "inventory": {
+      "attempts": 20,
+      "failures": 0,
+      "p95Ms": 296.9410409999982,
+      "limitMs": 2000
+    },
+    "dashboard": {
+      "attempts": 20,
+      "failures": 0,
+      "p95Ms": 98.22208300000057,
+      "limitMs": 3000
+    }
+  }
+}

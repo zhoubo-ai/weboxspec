@@ -1,0 +1,32 @@
+# Run one application instance behind the supplied HTTPS reverse proxy.
+server:
+  address: ${SERVER_ADDRESS:127.0.0.1}
+  shutdown: graceful
+  forward-headers-strategy: native
+  servlet:
+    session:
+      cookie:
+        secure: true
+  tomcat:
+    remoteip:
+      # Only the local proxy is trusted by default. Set an explicit private proxy range for container deployment.
+      internal-proxies: ${TRUSTED_PROXY_REGEX:127\.0\.0\.1|::1|0:0:0:0:0:0:0:1}
+spring:
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+  lifecycle:
+    timeout-per-shutdown-phase: 30s
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics
+  endpoint:
+    health:
+      show-details: never
+webox:
+  media-root: ${MEDIA_ROOT}
+  rate-limit:
+    enabled: true

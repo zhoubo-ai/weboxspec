@@ -1,0 +1,15 @@
+{
+  "origin": "http://127.0.0.1:15678",
+  "startedAt": "2026-10-16T15:50:11.120Z",
+  "role": "Admin",
+  "ordersSubmitted": 0,
+  "pageErrors": [],
+  "passed": true,
+  "adminLogin": true,
+  "activeOrderMeals": [
+    "Lunch"
+  ],
+  "expectedExistingOrderGuard": true,
+  "reviewQuote": true,
+  "finishedAt": "2026-10-16T15:50:12.364Z"
+}

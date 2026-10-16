@@ -1,0 +1,83 @@
+[
+  {
+    "project": "chromium-1440",
+    "commitObservedAt": "2026-10-16T11:51:16.379Z",
+    "domObservedAt": "2026-10-16T11:51:16.673Z",
+    "businessCreatedAt": "2026-10-16T01:00:00Z",
+    "elapsedMs": 293.07233299999916,
+    "limitMs": 1000,
+    "observation": "Order HTTP 201 body received to rendered remaining 19; business timestamp uses the fixed fixture clock."
+  },
+  {
+    "project": "chromium-375",
+    "commitObservedAt": "2026-10-16T11:50:33.048Z",
+    "domObservedAt": "2026-10-16T11:50:33.227Z",
+    "businessCreatedAt": "2026-10-16T01:00:00Z",
+    "elapsedMs": 178.21987499999977,
+    "limitMs": 1000,
+    "observation": "Order HTTP 201 body received to rendered remaining 19; business timestamp uses the fixed fixture clock."
+  },
+  {
+    "project": "chromium-768",
+    "commitObservedAt": "2026-10-16T11:50:54.743Z",
+    "domObservedAt": "2026-10-16T11:50:54.771Z",
+    "businessCreatedAt": "2026-10-16T01:00:00Z",
+    "elapsedMs": 28.166166999999405,
+    "limitMs": 1000,
+    "observation": "Order HTTP 201 body received to rendered remaining 19; business timestamp uses the fixed fixture clock."
+  },
+  {
+    "project": "firefox-1440",
+    "commitObservedAt": "2026-10-16T11:52:29.000Z",
+    "domObservedAt": "2026-10-16T11:52:29.085Z",
+    "businessCreatedAt": "2026-10-16T01:00:00Z",
+    "elapsedMs": 85.27520900000036,
+    "limitMs": 1000,
+    "observation": "Order HTTP 201 body received to rendered remaining 19; business timestamp uses the fixed fixture clock."
+  },
+  {
+    "project": "firefox-375",
+    "commitObservedAt": "2026-10-16T11:51:39.212Z",
+    "domObservedAt": "2026-10-16T11:51:39.399Z",
+    "businessCreatedAt": "2026-10-16T01:00:00Z",
+    "elapsedMs": 186.71212500000001,
+    "limitMs": 1000,
+    "observation": "Order HTTP 201 body received to rendered remaining 19; business timestamp uses the fixed fixture clock."
+  },
+  {
+    "project": "firefox-768",
+    "commitObservedAt": "2026-10-16T11:52:03.697Z",
+    "domObservedAt": "2026-10-16T11:52:03.887Z",
+    "businessCreatedAt": "2026-10-16T01:00:00Z",
+    "elapsedMs": 189.57866600000034,
+    "limitMs": 1000,
+    "observation": "Order HTTP 201 body received to rendered remaining 19; business timestamp uses the fixed fixture clock."
+  },
+  {
+    "project": "webkit-1440",
+    "commitObservedAt": "2026-10-16T11:53:36.401Z",
+    "domObservedAt": "2026-10-16T11:53:36.687Z",
+    "businessCreatedAt": "2026-10-16T01:00:00Z",
+    "elapsedMs": 285.2157909999996,
+    "limitMs": 1000,
+    "observation": "Order HTTP 201 body received to rendered remaining 19; business timestamp uses the fixed fixture clock."
+  },
+  {
+    "project": "webkit-375",
+    "commitObservedAt": "2026-10-16T11:52:53.385Z",
+    "domObservedAt": "2026-10-16T11:52:53.570Z",
+    "businessCreatedAt": "2026-10-16T01:00:00Z",
+    "elapsedMs": 185.29491700000017,
+    "limitMs": 1000,
+    "observation": "Order HTTP 201 body received to rendered remaining 19; business timestamp uses the fixed fixture clock."
+  },
+  {
+    "project": "webkit-768",
+    "commitObservedAt": "2026-10-16T11:53:14.326Z",
+    "domObservedAt": "2026-10-16T11:53:14.620Z",
+    "businessCreatedAt": "2026-10-16T01:00:00Z",
+    "elapsedMs": 293.4280830000007,
+    "limitMs": 1000,
+    "observation": "Order HTTP 201 body received to rendered remaining 19; business timestamp uses the fixed fixture clock."
+  }
+]

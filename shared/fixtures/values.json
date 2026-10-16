@@ -1,0 +1,5 @@
+{
+  "money": [{"cents":0,"display":"0.00"},{"cents":1,"display":"0.01"},{"cents":5900,"display":"59.00"},{"cents":9007199254740991,"display":"90071992547409.91"}],
+  "texts": [{"input":"  上海 🍜  ","normalized":"上海 🍜","codePoints":4},{"input":"\u00a0Hello\u3000","normalized":"Hello","codePoints":5},{"input":"á","normalized":"á","codePoints":2}],
+  "password":"  A12345🍜  "
+}

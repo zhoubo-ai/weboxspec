@@ -1,0 +1,21 @@
+[ {
+  "returnedModel" : "openai/gpt-4.1-mini",
+  "generationId" : "gen-1792138107-nIr3cjiSxhFGOALSBbz1",
+  "provider" : "OpenAI",
+  "elapsedMs" : 1799,
+  "configuredModel" : "openai/gpt-4.1-mini",
+  "stream" : false,
+  "generated" : {
+    "status" : "ready"
+  }
+}, {
+  "returnedModel" : "openai/gpt-4.1-mini",
+  "generationId" : "gen-1792138108-FLGOXaidvKgoClenCvlG",
+  "provider" : "OpenAI",
+  "elapsedMs" : 1505,
+  "configuredModel" : "openai/gpt-4.1-mini",
+  "stream" : true,
+  "generated" : {
+    "status" : "ready"
+  }
+} ]

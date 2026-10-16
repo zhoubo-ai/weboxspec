@@ -1,0 +1,35 @@
+import { useState } from 'react';
+import { useQuery } from '@tanstack/react-query';
+import { Bar, BarChart, CartesianGrid, ComposedChart, Legend, Line, ResponsiveContainer, XAxis, YAxis } from 'recharts';
+import { api } from '../../shared/api/client';
+import type { Dashboard } from '../../shared/api/types';
+import { money } from '../../shared/values';
+import { ErrorNotice, Loading } from '../../shared/ui/Status';
+import { useSession } from '../auth/session';
+
+function DashboardFigures({ data }: { data: Dashboard }) {
+  const top = data.topDishes.map((dish, index) => ({ ...dish, rank: String(index + 1) }));
+  return <>
+    <div className="report-time"><strong>Delivery date: {data.date}</strong><span>Updated: <time dateTime={data.generatedAt}>{new Date(data.generatedAt).toLocaleString('en-GB', { timeZone: 'Asia/Shanghai', hour12: false })} (Asia/Shanghai)</time></span></div>
+    <dl className="dashboard-metrics">
+      {([['Total orders', data.totalOrders], ['Completed Order Amount', `¥${money(data.revenueCents)}`], ['Completed orders', data.completedOrders], ['Pending orders', data.pendingOrders], ['Cancelled orders', data.cancelledOrders]] as const).map(([label, value]) => <div className="panel" key={label}><dt>{label}</dt><dd>{value}</dd></div>)}
+    </dl>
+    <p className="notice report-policy">{data.countingPolicy}</p>
+    <div className="dashboard-grid">
+      <section className="panel dashboard-section"><h2>Top dishes</h2><p>Completed portions · up to 10 dishes</p>
+        {top.length ? <><div className="dashboard-chart" aria-hidden="true"><ResponsiveContainer width="100%" height={240} initialDimension={{ width: 400, height: 240 }}><BarChart data={top} margin={{ top: 8, right: 12, bottom: 16, left: 0 }}><CartesianGrid vertical={false} stroke="#d9d5ca"/><XAxis dataKey="rank" label={{ value: 'Rank', position: 'insideBottom', offset: -10 }}/><YAxis allowDecimals={false} width={40}/><Bar dataKey="quantity" name="Completed portions" fill="#39674f" isAnimationActive={false}/></BarChart></ResponsiveContainer></div><table className="dashboard-table"><caption>Top dishes by completed portions</caption><thead><tr><th scope="col">Rank</th><th scope="col">Dish at purchase</th><th scope="col">Portions</th></tr></thead><tbody>{top.map(dish => <tr key={dish.dishId}><td>{dish.rank}</td><th scope="row">{dish.name}</th><td>{dish.quantity}</td></tr>)}</tbody></table></> : <p className="empty-state">No completed dishes for this date.</p>}
+      </section>
+      <section className="panel dashboard-section"><h2>Meal distribution</h2><p>All order statuses</p><div className="dashboard-chart" aria-hidden="true"><ResponsiveContainer width="100%" height={240} initialDimension={{ width: 400, height: 240 }}><BarChart data={data.mealDistribution}><CartesianGrid vertical={false} stroke="#d9d5ca"/><XAxis dataKey="meal"/><YAxis allowDecimals={false} width={40}/><Bar dataKey="orderCount" name="Orders" fill="#854025" isAnimationActive={false}/></BarChart></ResponsiveContainer></div><table className="dashboard-table"><caption>Orders by meal</caption><thead><tr><th scope="col">Meal</th><th scope="col">Orders</th></tr></thead><tbody>{data.mealDistribution.map(meal => <tr key={meal.meal}><th scope="row">{meal.meal}</th><td>{meal.orderCount}</td></tr>)}</tbody></table></section>
+      <section className="panel dashboard-section dashboard-wide"><h2>Seven-day trend</h2><p>Delivery dates {data.trend[0].date} to {data.date}</p><div className="dashboard-chart" aria-hidden="true"><ResponsiveContainer width="100%" height={280} initialDimension={{ width: 800, height: 280 }}><ComposedChart data={data.trend} margin={{ top: 12, right: 0, bottom: 8, left: 0 }}><CartesianGrid vertical={false} stroke="#d9d5ca"/><XAxis dataKey="date" tickFormatter={value => String(value).slice(5)} minTickGap={10}/><YAxis yAxisId="orders" allowDecimals={false} width={30}/><YAxis yAxisId="amount" orientation="right" width={62} tickFormatter={value => `¥${(Number(value) / 100).toLocaleString('en-GB', { maximumFractionDigits: 2 })}`}/><Legend/><Line yAxisId="orders" dataKey="orderCount" name="Orders" stroke="#39674f" strokeWidth={2} strokeDasharray="5 3" dot={{ r: 3 }} isAnimationActive={false}/><Line yAxisId="amount" dataKey="revenueCents" name="Completed amount (¥)" stroke="#854025" strokeWidth={3} dot={{ r: 4 }} isAnimationActive={false}/></ComposedChart></ResponsiveContainer></div><table className="dashboard-table"><caption>Seven-day totals</caption><thead><tr><th scope="col">Delivery date</th><th scope="col">Orders</th><th scope="col">Completed amount</th></tr></thead><tbody>{data.trend.map(day => <tr key={day.date}><th scope="row">{day.date}</th><td>{day.orderCount}</td><td>¥{money(day.revenueCents)}</td></tr>)}</tbody></table></section>
+      <section className="panel dashboard-section dashboard-wide"><h2>Inventory alerts</h2><p>Current stock for scheduled, published dishes on {data.date}. Sold Out means 0; Low Stock means 1–3 portions.</p>{data.inventoryAlerts.length ? <table className="dashboard-table"><caption>Low inventory for the selected delivery date</caption><thead><tr><th scope="col">Dish</th><th scope="col">Remaining</th><th scope="col">Status</th></tr></thead><tbody>{data.inventoryAlerts.map(dish => <tr key={dish.dishId}><th scope="row">{dish.name}</th><td>{dish.remaining}</td><td><span className={`stock-badge ${dish.level === 'SoldOut' ? 'sold-out' : 'low-stock'}`}>{dish.level === 'SoldOut' ? 'Sold Out' : 'Low Stock'}</span></td></tr>)}</tbody></table> : <p className="empty-state">No low-stock alerts for this date.</p>}</section>
+    </div>
+  </>;
+}
+export function DashboardPage() {
+  const { user } = useSession();const [date, setDate] = useState('');
+  const query = useQuery({ queryKey: ['dashboard', user!.userId, date], queryFn: ({ signal }) => api<Dashboard>(`/admin/dashboard${date ? `?date=${date}` : ''}`, { signal }) });
+  return <section><div className="page-heading"><div><p className="eyebrow">MEAL OPERATIONS</p><h1>Dashboard</h1><p>A snapshot of orders and stock by delivery date.</p></div><button className="secondary" type="button" disabled={query.isFetching} onClick={() => { void query.refetch(); }}>Refresh dashboard</button></div>
+    <div className="console-filters"><label className="field date-field">Report date<input type="date" aria-describedby="report-date-hint" value={date} onChange={e => setDate(e.target.value)}/></label><p className="form-hint" id="report-date-hint">Leave blank to use today in Asia/Shanghai.</p>{date && <button className="secondary" type="button" onClick={() => setDate('')}>Use today</button>}</div>
+    {query.isPending && <Loading>Loading dashboard…</Loading>}{query.isFetching && !query.isPending && <Loading>Refreshing dashboard…</Loading>}{query.isError && <ErrorNotice message="The dashboard could not be refreshed. Any displayed results are from the previous successful load." retry={() => { void query.refetch(); }}/>} {query.data && <DashboardFigures data={query.data}/>}
+  </section>;
+}

@@ -1,0 +1,275 @@
+{
+  "load": {
+    "smokeOnly": true,
+    "users": 10,
+    "dishes": 500,
+    "rampSeconds": 5,
+    "steadySeconds": 30,
+    "ready": 10,
+    "validOrders": 10,
+    "businessConflicts": 0,
+    "samples": [
+      {
+        "elapsedMs": 393,
+        "activeInventoryStreams": 10.0
+      },
+      {
+        "elapsedMs": 1391,
+        "activeInventoryStreams": 10.0
+      },
+      {
+        "elapsedMs": 2386,
+        "activeInventoryStreams": 12.0
+      },
+      {
+        "elapsedMs": 3391,
+        "activeInventoryStreams": 12.0
+      },
+      {
+        "elapsedMs": 4394,
+        "activeInventoryStreams": 13.0
+      },
+      {
+        "elapsedMs": 5396,
+        "activeInventoryStreams": 11.0
+      },
+      {
+        "elapsedMs": 6396,
+        "activeInventoryStreams": 11.0
+      },
+      {
+        "elapsedMs": 7396,
+        "activeInventoryStreams": 11.0
+      },
+      {
+        "elapsedMs": 8392,
+        "activeInventoryStreams": 11.0
+      },
+      {
+        "elapsedMs": 9396,
+        "activeInventoryStreams": 11.0
+      },
+      {
+        "elapsedMs": 10396,
+        "activeInventoryStreams": 11.0
+      },
+      {
+        "elapsedMs": 11391,
+        "activeInventoryStreams": 11.0
+      },
+      {
+        "elapsedMs": 12392,
+        "activeInventoryStreams": 11.0
+      },
+      {
+        "elapsedMs": 13396,
+        "activeInventoryStreams": 11.0
+      },
+      {
+        "elapsedMs": 14395,
+        "activeInventoryStreams": 11.0
+      },
+      {
+        "elapsedMs": 15393,
+        "activeInventoryStreams": 11.0
+      },
+      {
+        "elapsedMs": 16388,
+        "activeInventoryStreams": 11.0
+      },
+      {
+        "elapsedMs": 17396,
+        "activeInventoryStreams": 11.0
+      },
+      {
+        "elapsedMs": 18396,
+        "activeInventoryStreams": 11.0
+      },
+      {
+        "elapsedMs": 19393,
+        "activeInventoryStreams": 11.0
+      },
+      {
+        "elapsedMs": 20394,
+        "activeInventoryStreams": 11.0
+      },
+      {
+        "elapsedMs": 21396,
+        "activeInventoryStreams": 11.0
+      },
+      {
+        "elapsedMs": 22396,
+        "activeInventoryStreams": 11.0
+      },
+      {
+        "elapsedMs": 23396,
+        "activeInventoryStreams": 11.0
+      },
+      {
+        "elapsedMs": 24394,
+        "activeInventoryStreams": 11.0
+      },
+      {
+        "elapsedMs": 25395,
+        "activeInventoryStreams": 11.0
+      },
+      {
+        "elapsedMs": 26387,
+        "activeInventoryStreams": 11.0
+      },
+      {
+        "elapsedMs": 27396,
+        "activeInventoryStreams": 11.0
+      },
+      {
+        "elapsedMs": 28392,
+        "activeInventoryStreams": 11.0
+      },
+      {
+        "elapsedMs": 29391,
+        "activeInventoryStreams": 11.0
+      }
+    ],
+    "browserPassed": false,
+    "monitorFailure": null,
+    "separateApplicationJvm": true,
+    "applicationHeap": "256m\u20131g",
+    "hikariPool": 16,
+    "sharedIpAuthenticationBurst": 240,
+    "sharedIpAuthenticationPerMinute": 300,
+    "passed": false
+  },
+  "browser": {
+    "smokeOnly": true,
+    "browser": "156.0.8078.4",
+    "viewport": "1440x900",
+    "source": "production Vite build via local preview proxy",
+    "sampleCountPerMetric": 2,
+    "percentile": "nearest-rank, missing/failed attempt = positive infinity",
+    "warmup": "one menu/search; normal fixture preparation before each operation",
+    "results": {
+      "menu": [
+        {
+          "attempt": 1,
+          "elapsedMs": 123.74404099999992,
+          "failure": null,
+          "activeStreams": 12
+        },
+        {
+          "attempt": 2,
+          "elapsedMs": 114.07704100000001,
+          "failure": null,
+          "activeStreams": 13
+        }
+      ],
+      "search": [
+        {
+          "attempt": 1,
+          "elapsedMs": 289.8502089999997,
+          "failure": null,
+          "activeStreams": 12
+        },
+        {
+          "attempt": 2,
+          "elapsedMs": 290.8306249999996,
+          "failure": null,
+          "activeStreams": 10
+        }
+      ],
+      "cart": [
+        {
+          "attempt": 1,
+          "elapsedMs": 21,
+          "failure": null,
+          "activeStreams": 13
+        },
+        {
+          "attempt": 2,
+          "elapsedMs": 19.69999998807907,
+          "failure": null,
+          "activeStreams": 13
+        }
+      ],
+      "order": [
+        {
+          "attempt": 1,
+          "elapsedMs": null,
+          "failure": "Error",
+          "activeStreams": 11
+        },
+        {
+          "attempt": 2,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        }
+      ],
+      "inventory": [
+        {
+          "attempt": 1,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 2,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        }
+      ],
+      "dashboard": [
+        {
+          "attempt": 1,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        },
+        {
+          "attempt": 2,
+          "elapsedMs": null,
+          "failure": "Not executed",
+          "activeStreams": null
+        }
+      ]
+    },
+    "summaries": {
+      "menu": {
+        "attempts": 2,
+        "failures": 0,
+        "p95Ms": 123.74404099999992,
+        "limitMs": 2000
+      },
+      "search": {
+        "attempts": 2,
+        "failures": 0,
+        "p95Ms": 290.8306249999996,
+        "limitMs": 2000
+      },
+      "cart": {
+        "attempts": 2,
+        "failures": 0,
+        "p95Ms": 21,
+        "limitMs": 300
+      },
+      "order": {
+        "attempts": 2,
+        "failures": 2,
+        "p95Ms": "Infinity",
+        "limitMs": 3000
+      },
+      "inventory": {
+        "attempts": 2,
+        "failures": 2,
+        "p95Ms": "Infinity",
+        "limitMs": 2000
+      },
+      "dashboard": {
+        "attempts": 2,
+        "failures": 2,
+        "p95Ms": "Infinity",
+        "limitMs": 3000
+      }
+    }
+  }
+}

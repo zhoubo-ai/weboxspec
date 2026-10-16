@@ -1,0 +1,295 @@
+{
+  "load": {
+    "smokeOnly": true,
+    "users": 200,
+    "dishes": 500,
+    "rampSeconds": 5,
+    "steadySeconds": 30,
+    "ready": 200,
+    "validOrders": 200,
+    "businessConflicts": 0,
+    "samples": [
+      {
+        "activeInventoryStreams": 200.0,
+        "elapsedMs": 959
+      },
+      {
+        "activeInventoryStreams": 200.0,
+        "elapsedMs": 1953
+      },
+      {
+        "activeInventoryStreams": 200.0,
+        "elapsedMs": 2953
+      },
+      {
+        "activeInventoryStreams": 203.0,
+        "elapsedMs": 3949
+      },
+      {
+        "activeInventoryStreams": 203.0,
+        "elapsedMs": 4949
+      },
+      {
+        "activeInventoryStreams": 202.0,
+        "elapsedMs": 5958
+      },
+      {
+        "activeInventoryStreams": 203.0,
+        "elapsedMs": 6948
+      },
+      {
+        "activeInventoryStreams": 201.0,
+        "elapsedMs": 7949
+      },
+      {
+        "activeInventoryStreams": 201.0,
+        "elapsedMs": 8949
+      },
+      {
+        "activeInventoryStreams": 201.0,
+        "elapsedMs": 9958
+      },
+      {
+        "activeInventoryStreams": 200.0,
+        "elapsedMs": 10953
+      },
+      {
+        "activeInventoryStreams": 200.0,
+        "elapsedMs": 11949
+      },
+      {
+        "activeInventoryStreams": 200.0,
+        "elapsedMs": 12958
+      },
+      {
+        "activeInventoryStreams": 200.0,
+        "elapsedMs": 13958
+      },
+      {
+        "activeInventoryStreams": 200.0,
+        "elapsedMs": 14949
+      },
+      {
+        "activeInventoryStreams": 200.0,
+        "elapsedMs": 15950
+      },
+      {
+        "activeInventoryStreams": 200.0,
+        "elapsedMs": 16949
+      },
+      {
+        "activeInventoryStreams": 200.0,
+        "elapsedMs": 17958
+      },
+      {
+        "activeInventoryStreams": 200.0,
+        "elapsedMs": 18949
+      },
+      {
+        "activeInventoryStreams": 200.0,
+        "elapsedMs": 19953
+      },
+      {
+        "activeInventoryStreams": 200.0,
+        "elapsedMs": 20958
+      },
+      {
+        "activeInventoryStreams": 200.0,
+        "elapsedMs": 21950
+      },
+      {
+        "activeInventoryStreams": 200.0,
+        "elapsedMs": 22950
+      },
+      {
+        "activeInventoryStreams": 200.0,
+        "elapsedMs": 23953
+      },
+      {
+        "activeInventoryStreams": 200.0,
+        "elapsedMs": 24950
+      },
+      {
+        "activeInventoryStreams": 200.0,
+        "elapsedMs": 25958
+      },
+      {
+        "activeInventoryStreams": 200.0,
+        "elapsedMs": 26949
+      },
+      {
+        "activeInventoryStreams": 200.0,
+        "elapsedMs": 27952
+      },
+      {
+        "activeInventoryStreams": 200.0,
+        "elapsedMs": 28954
+      },
+      {
+        "activeInventoryStreams": 200.0,
+        "elapsedMs": 29949
+      }
+    ],
+    "browserPassed": true,
+    "monitorFailure": null,
+    "separateApplicationJvm": true,
+    "applicationHeap": "256m\u20131g",
+    "hikariPool": 16,
+    "sharedIpAuthenticationBurst": 240,
+    "sharedIpAuthenticationPerMinute": 300,
+    "passed": true
+  },
+  "browser": {
+    "smokeOnly": true,
+    "browser": "156.0.8078.4",
+    "viewport": "1440x900",
+    "source": "production Vite build via local preview proxy",
+    "sampleCountPerMetric": 2,
+    "percentile": "nearest-rank, missing/failed attempt = positive infinity",
+    "warmup": "one menu/search; normal fixture preparation before each operation",
+    "results": {
+      "menu": [
+        {
+          "attempt": 1,
+          "elapsedMs": 193.07570800000008,
+          "failure": null,
+          "activeStreams": 202
+        },
+        {
+          "attempt": 2,
+          "elapsedMs": 235.364333,
+          "failure": null,
+          "activeStreams": 202
+        }
+      ],
+      "filter": [
+        {
+          "attempt": 1,
+          "elapsedMs": 54.699208,
+          "failure": null,
+          "activeStreams": 202
+        },
+        {
+          "attempt": 2,
+          "elapsedMs": 53.322749999999814,
+          "failure": null,
+          "activeStreams": 202
+        }
+      ],
+      "search": [
+        {
+          "attempt": 1,
+          "elapsedMs": 224.2550839999999,
+          "failure": null,
+          "activeStreams": 202
+        },
+        {
+          "attempt": 2,
+          "elapsedMs": 222.9051669999999,
+          "failure": null,
+          "activeStreams": 202
+        }
+      ],
+      "cart": [
+        {
+          "attempt": 1,
+          "elapsedMs": 25.69999998807907,
+          "failure": null,
+          "activeStreams": 202
+        },
+        {
+          "attempt": 2,
+          "elapsedMs": 15.399999976158142,
+          "failure": null,
+          "activeStreams": 202
+        }
+      ],
+      "order": [
+        {
+          "attempt": 1,
+          "elapsedMs": 71.86645899999985,
+          "failure": null,
+          "activeStreams": 201
+        },
+        {
+          "attempt": 2,
+          "elapsedMs": 44.29320800000005,
+          "failure": null,
+          "activeStreams": 203
+        }
+      ],
+      "inventory": [
+        {
+          "attempt": 1,
+          "elapsedMs": 308.8239169999997,
+          "failure": null,
+          "activeStreams": 201
+        },
+        {
+          "attempt": 2,
+          "elapsedMs": 293.08829199999946,
+          "failure": null,
+          "activeStreams": 201
+        }
+      ],
+      "dashboard": [
+        {
+          "attempt": 1,
+          "elapsedMs": 98.33666600000015,
+          "failure": null,
+          "activeStreams": 201
+        },
+        {
+          "attempt": 2,
+          "elapsedMs": 100.12087500000052,
+          "failure": null,
+          "activeStreams": 201
+        }
+      ]
+    },
+    "summaries": {
+      "menu": {
+        "attempts": 2,
+        "failures": 0,
+        "p95Ms": 235.364333,
+        "limitMs": 2000
+      },
+      "filter": {
+        "attempts": 2,
+        "failures": 0,
+        "p95Ms": 54.699208,
+        "limitMs": 2000
+      },
+      "search": {
+        "attempts": 2,
+        "failures": 0,
+        "p95Ms": 224.2550839999999,
+        "limitMs": 2000
+      },
+      "cart": {
+        "attempts": 2,
+        "failures": 0,
+        "p95Ms": 25.69999998807907,
+        "limitMs": 300
+      },
+      "order": {
+        "attempts": 2,
+        "failures": 0,
+        "p95Ms": 71.86645899999985,
+        "limitMs": 3000
+      },
+      "inventory": {
+        "attempts": 2,
+        "failures": 0,
+        "p95Ms": 308.8239169999997,
+        "limitMs": 2000
+      },
+      "dashboard": {
+        "attempts": 2,
+        "failures": 0,
+        "p95Ms": 100.12087500000052,
+        "limitMs": 3000
+      }
+    }
+  }
+}

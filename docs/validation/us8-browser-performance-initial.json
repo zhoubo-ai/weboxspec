@@ -1,0 +1,551 @@
+{
+  "manifestSha256": "7e17a65d10f3fe36e5d16cde74caa579b74b9bf056b739b0ecc3332146a193ec",
+  "environment": {
+    "model": "openai/gpt-4.1-mini",
+    "browser": "156.0.8078.4",
+    "project": "chromium-1440",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "os": "darwin",
+    "release": "24.6.0",
+    "architecture": "arm64",
+    "cpu": "Apple M4 Pro",
+    "memoryBytes": 51539607552,
+    "node": "v24.22.0",
+    "concurrency": 1,
+    "warmupRequests": 1
+  },
+  "warmup": {
+    "case": "warmup",
+    "expected": "COMPLETE",
+    "actual": "CLIENT_FAILURE",
+    "firstCardMillis": 3128.800000011921,
+    "completeMillis": "Infinity",
+    "terminalMillis": 3770.600000023842,
+    "problems": [
+      "Error",
+      "Expected COMPLETE, received CLIENT_FAILURE",
+      "Invalid card count or reason",
+      "Missing real provider generation IDs"
+    ],
+    "passed": false,
+    "server": null,
+    "cards": [],
+    "requestId": ""
+  },
+  "denominator": 20,
+  "attempts": [
+    {
+      "case": "P01",
+      "expected": "COMPLETE",
+      "actual": "CLIENT_FAILURE",
+      "firstCardMillis": 3195.899999976158,
+      "completeMillis": "Infinity",
+      "terminalMillis": 3836.300000011921,
+      "problems": [
+        "Error",
+        "Expected COMPLETE, received CLIENT_FAILURE",
+        "Invalid card count or reason",
+        "Missing real provider generation IDs"
+      ],
+      "passed": false,
+      "server": null,
+      "cards": [],
+      "requestId": ""
+    },
+    {
+      "case": "P02",
+      "expected": "COMPLETE",
+      "actual": "CLIENT_FAILURE",
+      "firstCardMillis": 2561.7999999523163,
+      "completeMillis": "Infinity",
+      "terminalMillis": 2926.7999999523163,
+      "problems": [
+        "Error",
+        "Expected COMPLETE, received CLIENT_FAILURE",
+        "Invalid card count or reason",
+        "Missing real provider generation IDs"
+      ],
+      "passed": false,
+      "server": null,
+      "cards": [],
+      "requestId": ""
+    },
+    {
+      "case": "P03",
+      "expected": "COMPLETE",
+      "actual": "CLIENT_FAILURE",
+      "firstCardMillis": 2805,
+      "completeMillis": "Infinity",
+      "terminalMillis": 2959.199999988079,
+      "problems": [
+        "Error",
+        "Expected COMPLETE, received CLIENT_FAILURE",
+        "Invalid card count or reason",
+        "Missing real provider generation IDs"
+      ],
+      "passed": false,
+      "server": null,
+      "cards": [],
+      "requestId": ""
+    },
+    {
+      "case": "P04",
+      "expected": "COMPLETE",
+      "actual": "COMPLETE",
+      "firstCardMillis": 3122.899999976158,
+      "completeMillis": 3125.699999988079,
+      "terminalMillis": 3125.699999988079,
+      "problems": [],
+      "passed": true,
+      "server": {
+        "requestId": "e1a52b10-ab84-49a8-96ad-2c9189384d11",
+        "configuredModel": "openai/gpt-4.1-mini",
+        "beganAt": "2026-10-16T12:59:46.029171Z",
+        "intent": {
+          "generationId": "gen-1792155586-SkW4uIXEVObouQOIBwdN",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 690,
+            "completion_tokens": 67,
+            "total_tokens": 757,
+            "cost": 0.0003832,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0003832,
+              "upstream_inference_prompt_cost": 0.000276,
+              "upstream_inference_completions_cost": 0.0001072
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "recommendation": {
+          "generationId": "gen-1792155587-GzxZTHrRNrapivqBE3Fd",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 635,
+            "completion_tokens": 67,
+            "total_tokens": 702,
+            "cost": 0.0003612,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0003612,
+              "upstream_inference_prompt_cost": 0.000254,
+              "upstream_inference_completions_cost": 0.0001072
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "firstCardMillis": 3107,
+        "finishedMillis": 3108,
+        "cards": 1,
+        "outcome": "COMPLETE"
+      },
+      "cards": [
+        {
+          "dishId": "30170519-0e25-4a54-b2c0-1834102aa672",
+          "name": "Japanese Garden Salad",
+          "reason": "This Japanese Garden Salad offers a refreshing combination of fresh greens with a classic soy dressing, fitting well within Japanese cuisine and providing a mild, non-spicy option.",
+          "remaining": 20
+        }
+      ],
+      "requestId": "e1a52b10-ab84-49a8-96ad-2c9189384d11"
+    },
+    {
+      "case": "P05",
+      "expected": "COMPLETE",
+      "actual": "CLIENT_FAILURE",
+      "firstCardMillis": 2599.399999976158,
+      "completeMillis": "Infinity",
+      "terminalMillis": 3226.199999988079,
+      "problems": [
+        "Error",
+        "Expected COMPLETE, received CLIENT_FAILURE",
+        "Invalid card count or reason",
+        "Missing real provider generation IDs"
+      ],
+      "passed": false,
+      "server": null,
+      "cards": [],
+      "requestId": ""
+    },
+    {
+      "case": "P06",
+      "expected": "COMPLETE",
+      "actual": "COMPLETE",
+      "firstCardMillis": 2638.699999988079,
+      "completeMillis": 3305.199999988079,
+      "terminalMillis": 3305.199999988079,
+      "problems": [],
+      "passed": true,
+      "server": {
+        "requestId": "9a19a240-7d0f-4ac9-abe7-56e2c8711d5e",
+        "configuredModel": "openai/gpt-4.1-mini",
+        "beganAt": "2026-10-16T12:59:52.477688Z",
+        "intent": {
+          "generationId": "gen-1792155593-k1RgNjZKf4WPEMipG3vg",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 693,
+            "completion_tokens": 65,
+            "total_tokens": 758,
+            "cost": 0.0003812,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.0003812,
+              "upstream_inference_prompt_cost": 0.0002772,
+              "upstream_inference_completions_cost": 0.000104
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "recommendation": {
+          "generationId": "gen-1792155594-qNkvYF5REalfKG52jjTv",
+          "model": "openai/gpt-4.1-mini",
+          "provider": "OpenAI",
+          "usage": {
+            "prompt_tokens": 942,
+            "completion_tokens": 152,
+            "total_tokens": 1094,
+            "cost": 0.00062,
+            "is_byok": false,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0,
+              "video_tokens": 0
+            },
+            "cost_details": {
+              "upstream_inference_cost": 0.00062,
+              "upstream_inference_prompt_cost": 0.0003768,
+              "upstream_inference_completions_cost": 0.0002432
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "image_tokens": 0,
+              "audio_tokens": 0
+            }
+          },
+          "fingerprint": ""
+        },
+        "firstCardMillis": 2625,
+        "finishedMillis": 3286,
+        "cards": 3,
+        "outcome": "COMPLETE"
+      },
+      "cards": [
+        {
+          "dishId": "fa8b4a9b-9f7e-477e-bbe7-f991c3ca3b39",
+          "name": "Classic Beef Burger",
+          "reason": "A classic Western dish featuring grilled beef with fresh lettuce and tomato, offering a customizable burger experience.",
+          "remaining": 20
+        },
+        {
+          "dishId": "25825169-d74a-4620-8ffa-ed8e0ca4bd34",
+          "name": "Tomato Pasta",
+          "reason": "Western-style pasta with a flavorful tomato sauce and fresh basil, providing a comforting and familiar taste.",
+          "remaining": 20
+        },
+        {
+          "dishId": "30170519-0e25-4a54-b2c0-1834102aa672",
+          "name": "Japanese Garden Salad",
+          "reason": "A Japanese salad with fresh greens and a savory soy dressing, delivering a light and refreshing option.",
+          "remaining": 20
+        }
+      ],
+      "requestId": "9a19a240-7d0f-4ac9-abe7-56e2c8711d5e"
+    },
+    {
+      "case": "P07",
+      "expected": "COMPLETE",
+      "actual": "CLIENT_FAILURE",
+      "firstCardMillis": 2900.400000035763,
+      "completeMillis": "Infinity",
+      "terminalMillis": 3000.300000011921,
+      "problems": [
+        "Error",
+        "Expected COMPLETE, received CLIENT_FAILURE",
+        "Invalid card count or reason",
+        "Missing real provider generation IDs"
+      ],
+      "passed": false,
+      "server": null,
+      "cards": [],
+      "requestId": ""
+    },
+    {
+      "case": "P08",
+      "expected": "COMPLETE",
+      "actual": "CLIENT_FAILURE",
+      "firstCardMillis": 2695.600000023842,
+      "completeMillis": "Infinity",
+      "terminalMillis": 3083.900000035763,
+      "problems": [
+        "Error",
+        "Expected COMPLETE, received CLIENT_FAILURE",
+        "Invalid card count or reason",
+        "Missing real provider generation IDs"
+      ],
+      "passed": false,
+      "server": null,
+      "cards": [],
+      "requestId": ""
+    },
+    {
+      "case": "P09",
+      "expected": "COMPLETE",
+      "actual": "CLIENT_FAILURE",
+      "firstCardMillis": 2784.7000000476837,
+      "completeMillis": "Infinity",
+      "terminalMillis": 2883.100000023842,
+      "problems": [
+        "Error",
+        "Expected COMPLETE, received CLIENT_FAILURE",
+        "Invalid card count or reason",
+        "Missing real provider generation IDs"
+      ],
+      "passed": false,
+      "server": null,
+      "cards": [],
+      "requestId": ""
+    },
+    {
+      "case": "P10",
+      "expected": "COMPLETE",
+      "actual": "CLIENT_FAILURE",
+      "firstCardMillis": 2563.600000023842,
+      "completeMillis": "Infinity",
+      "terminalMillis": 3232.800000011921,
+      "problems": [
+        "Error",
+        "Expected COMPLETE, received CLIENT_FAILURE",
+        "Invalid card count or reason",
+        "Missing real provider generation IDs"
+      ],
+      "passed": false,
+      "server": null,
+      "cards": [],
+      "requestId": ""
+    },
+    {
+      "case": "P11",
+      "expected": "COMPLETE",
+      "actual": "CLIENT_FAILURE",
+      "firstCardMillis": 2682.900000035763,
+      "completeMillis": "Infinity",
+      "terminalMillis": 3325.100000023842,
+      "problems": [
+        "Error",
+        "Expected COMPLETE, received CLIENT_FAILURE",
+        "Invalid card count or reason",
+        "Missing real provider generation IDs"
+      ],
+      "passed": false,
+      "server": null,
+      "cards": [],
+      "requestId": ""
+    },
+    {
+      "case": "P12",
+      "expected": "COMPLETE",
+      "actual": "CLIENT_FAILURE",
+      "firstCardMillis": 3249.899999976158,
+      "completeMillis": "Infinity",
+      "terminalMillis": 3700.899999976158,
+      "problems": [
+        "Error",
+        "Expected COMPLETE, received CLIENT_FAILURE",
+        "Invalid card count or reason",
+        "Missing real provider generation IDs"
+      ],
+      "passed": false,
+      "server": null,
+      "cards": [],
+      "requestId": ""
+    },
+    {
+      "case": "P13",
+      "expected": "COMPLETE",
+      "actual": "CLIENT_FAILURE",
+      "firstCardMillis": 2662.300000011921,
+      "completeMillis": "Infinity",
+      "terminalMillis": 3074,
+      "problems": [
+        "Error",
+        "Expected COMPLETE, received CLIENT_FAILURE",
+        "Invalid card count or reason",
+        "Missing real provider generation IDs"
+      ],
+      "passed": false,
+      "server": null,
+      "cards": [],
+      "requestId": ""
+    },
+    {
+      "case": "P14",
+      "expected": "COMPLETE",
+      "actual": "CLIENT_FAILURE",
+      "firstCardMillis": 2846.199999988079,
+      "completeMillis": "Infinity",
+      "terminalMillis": 2893.699999988079,
+      "problems": [
+        "Error",
+        "Expected COMPLETE, received CLIENT_FAILURE",
+        "Invalid card count or reason",
+        "Missing real provider generation IDs"
+      ],
+      "passed": false,
+      "server": null,
+      "cards": [],
+      "requestId": ""
+    },
+    {
+      "case": "P15",
+      "expected": "COMPLETE",
+      "actual": "CLIENT_FAILURE",
+      "firstCardMillis": 2557.699999988079,
+      "completeMillis": "Infinity",
+      "terminalMillis": 3260.699999988079,
+      "problems": [
+        "Error",
+        "Expected COMPLETE, received CLIENT_FAILURE",
+        "Invalid card count or reason",
+        "Missing real provider generation IDs"
+      ],
+      "passed": false,
+      "server": null,
+      "cards": [],
+      "requestId": ""
+    },
+    {
+      "case": "P16",
+      "expected": "COMPLETE",
+      "actual": "CLIENT_FAILURE",
+      "firstCardMillis": 2637.199999988079,
+      "completeMillis": "Infinity",
+      "terminalMillis": 3301.599999964237,
+      "problems": [
+        "Error",
+        "Expected COMPLETE, received CLIENT_FAILURE",
+        "Invalid card count or reason",
+        "Missing real provider generation IDs"
+      ],
+      "passed": false,
+      "server": null,
+      "cards": [],
+      "requestId": ""
+    },
+    {
+      "case": "P17",
+      "expected": "COMPLETE",
+      "actual": "CLIENT_FAILURE",
+      "firstCardMillis": 2631.099999964237,
+      "completeMillis": "Infinity",
+      "terminalMillis": 3201.699999988079,
+      "problems": [
+        "Error",
+        "Expected COMPLETE, received CLIENT_FAILURE",
+        "Invalid card count or reason",
+        "Missing real provider generation IDs"
+      ],
+      "passed": false,
+      "server": null,
+      "cards": [],
+      "requestId": ""
+    },
+    {
+      "case": "P18",
+      "expected": "COMPLETE",
+      "actual": "CLIENT_FAILURE",
+      "firstCardMillis": 2627.100000023842,
+      "completeMillis": "Infinity",
+      "terminalMillis": 3123,
+      "problems": [
+        "Error",
+        "Expected COMPLETE, received CLIENT_FAILURE",
+        "Invalid card count or reason",
+        "Missing real provider generation IDs"
+      ],
+      "passed": false,
+      "server": null,
+      "cards": [],
+      "requestId": ""
+    },
+    {
+      "case": "P19",
+      "expected": "COMPLETE",
+      "actual": "CLIENT_FAILURE",
+      "firstCardMillis": 3589.900000035763,
+      "completeMillis": "Infinity",
+      "terminalMillis": 3743.7000000476837,
+      "problems": [
+        "Error",
+        "Expected COMPLETE, received CLIENT_FAILURE",
+        "Invalid card count or reason",
+        "Missing real provider generation IDs"
+      ],
+      "passed": false,
+      "server": null,
+      "cards": [],
+      "requestId": ""
+    },
+    {
+      "case": "P20",
+      "expected": "COMPLETE",
+      "actual": "CLIENT_FAILURE",
+      "firstCardMillis": 2546.399999976158,
+      "completeMillis": "Infinity",
+      "terminalMillis": 3225.800000011921,
+      "problems": [
+        "Error",
+        "Expected COMPLETE, received CLIENT_FAILURE",
+        "Invalid card count or reason",
+        "Missing real provider generation IDs"
+      ],
+      "passed": false,
+      "server": null,
+      "cards": [],
+      "requestId": ""
+    }
+  ],
+  "firstCardP95": 3249.899999976158,
+  "completeP95": "Infinity"
+}

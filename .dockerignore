@@ -1,0 +1,20 @@
+.git
+.agents
+.codex
+.specify
+.env
+.env.*
+!.env.example
+.local
+ai-conversations
+.cache
+**/node_modules
+**/target
+**/dist
+**/coverage
+**/.auth
+**/test-results
+**/playwright-report
+**/*.log
+**/.DS_Store
+# Do not exclude backend/src/main/resources/seed or dependency lock files.

@@ -1,0 +1,52 @@
+{
+  "environment": "Local isolated backend and MySQL; admin viewport is in project name; employee verification uses default browser viewport.",
+  "measurement": "Browser reload start through updated dish price and allergen visible; no SSE used.",
+  "limitMs": 2000,
+  "samples": [
+    {
+      "project": "chromium-1440",
+      "elapsedMs": 238.9780410000003,
+      "limitMs": 2000
+    },
+    {
+      "project": "chromium-375",
+      "elapsedMs": 254.90579200000002,
+      "limitMs": 2000
+    },
+    {
+      "project": "chromium-768",
+      "elapsedMs": 255.2165829999999,
+      "limitMs": 2000
+    },
+    {
+      "project": "firefox-1440",
+      "elapsedMs": 173.384458,
+      "limitMs": 2000
+    },
+    {
+      "project": "firefox-375",
+      "elapsedMs": 187.37275,
+      "limitMs": 2000
+    },
+    {
+      "project": "firefox-768",
+      "elapsedMs": 193.79591600000003,
+      "limitMs": 2000
+    },
+    {
+      "project": "webkit-1440",
+      "elapsedMs": 233.12866699999995,
+      "limitMs": 2000
+    },
+    {
+      "project": "webkit-375",
+      "elapsedMs": 189.75599999999986,
+      "limitMs": 2000
+    },
+    {
+      "project": "webkit-768",
+      "elapsedMs": 186.30520800000022,
+      "limitMs": 2000
+    }
+  ]
+}

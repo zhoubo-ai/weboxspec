@@ -1,0 +1,329 @@
+[
+  {
+    "slug": "kung-pao-chicken",
+    "name": "Kung Pao Chicken",
+    "description": "Classic Sichuan dish, chicken stir-fried with peanuts and dried chili",
+    "basePriceCents": 2200,
+    "category": "Chinese",
+    "protein": "Chicken",
+    "allergens": [
+      "Peanuts"
+    ],
+    "spiceLevel": "Medium",
+    "image": "kung-pao-chicken.png",
+    "optionGroups": []
+  },
+  {
+    "slug": "caesar-salad",
+    "name": "Caesar Salad",
+    "description": "Fresh romaine lettuce with Parmesan and Caesar dressing",
+    "basePriceCents": 2850,
+    "category": "Light Meal",
+    "protein": "None",
+    "allergens": [
+      "Dairy",
+      "Egg"
+    ],
+    "spiceLevel": "None",
+    "image": "caesar-salad.png",
+    "optionGroups": [
+      {
+        "name": "Add-ons",
+        "required": false,
+        "selectionMode": "Multiple",
+        "options": [
+          {
+            "name": "Grilled Chicken",
+            "extraCents": 600,
+            "allergens": []
+          },
+          {
+            "name": "Bacon",
+            "extraCents": 500,
+            "allergens": []
+          },
+          {
+            "name": "Avocado",
+            "extraCents": 400,
+            "allergens": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "salmon-sashimi-set",
+    "name": "Salmon Sashimi Set",
+    "description": "Fresh salmon sashimi with rice and miso soup",
+    "basePriceCents": 4500,
+    "category": "Japanese",
+    "protein": "Fish",
+    "allergens": [
+      "Fish"
+    ],
+    "spiceLevel": "None",
+    "image": "salmon-sashimi-set.png",
+    "optionGroups": []
+  },
+  {
+    "slug": "tomato-pasta",
+    "name": "Tomato Pasta",
+    "description": "Classic Italian tomato pasta with fresh basil",
+    "basePriceCents": 2650,
+    "category": "Western",
+    "protein": "None",
+    "allergens": [
+      "Gluten"
+    ],
+    "spiceLevel": "None",
+    "image": "tomato-pasta.png",
+    "optionGroups": [
+      {
+        "name": "Pasta Type",
+        "required": true,
+        "selectionMode": "Single",
+        "options": [
+          {
+            "name": "Spaghetti",
+            "extraCents": 0,
+            "allergens": [
+              "Gluten"
+            ]
+          },
+          {
+            "name": "Fusilli",
+            "extraCents": 0,
+            "allergens": [
+              "Gluten"
+            ]
+          },
+          {
+            "name": "Penne",
+            "extraCents": 0,
+            "allergens": [
+              "Gluten"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Add-ons",
+        "required": false,
+        "selectionMode": "Multiple",
+        "options": [
+          {
+            "name": "Bacon",
+            "extraCents": 500,
+            "allergens": []
+          },
+          {
+            "name": "Cheese",
+            "extraCents": 300,
+            "allergens": [
+              "Dairy"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "tom-yum-soup",
+    "name": "Tom Yum Soup",
+    "description": "Thai hot & sour shrimp soup with lemongrass, galangal, lime leaves",
+    "basePriceCents": 3200,
+    "category": "Southeast Asian",
+    "protein": "Shrimp",
+    "allergens": [
+      "Shellfish"
+    ],
+    "spiceLevel": "Hot",
+    "image": "tom-yum-soup.png",
+    "optionGroups": []
+  },
+  {
+    "slug": "chicken-quinoa-bowl",
+    "name": "Chicken Quinoa Bowl",
+    "description": "Low-fat high-protein grilled chicken with quinoa, avocado, veggies",
+    "basePriceCents": 3580,
+    "category": "Light Meal",
+    "protein": "Chicken",
+    "allergens": [],
+    "spiceLevel": "None",
+    "image": "chicken-quinoa-bowl.png",
+    "optionGroups": [
+      {
+        "name": "Base",
+        "required": true,
+        "selectionMode": "Single",
+        "options": [
+          {
+            "name": "Quinoa",
+            "extraCents": 0,
+            "allergens": []
+          },
+          {
+            "name": "Brown Rice",
+            "extraCents": 0,
+            "allergens": []
+          },
+          {
+            "name": "Mixed Grains",
+            "extraCents": 0,
+            "allergens": [
+              "Gluten"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "mapo-tofu",
+    "name": "Mapo Tofu",
+    "description": "Sichuan classic, soft tofu with spicy minced meat",
+    "basePriceCents": 1800,
+    "category": "Chinese",
+    "protein": "Tofu, Pork",
+    "allergens": [
+      "Soy"
+    ],
+    "spiceLevel": "Medium",
+    "image": "mapo-tofu.png",
+    "optionGroups": []
+  },
+  {
+    "slug": "korean-bibimbap",
+    "name": "Korean Bibimbap",
+    "description": "Stone-pot mixed rice with veggies, fried egg, and chili sauce",
+    "basePriceCents": 3000,
+    "category": "Korean",
+    "protein": "Egg",
+    "allergens": [
+      "Egg",
+      "Soy"
+    ],
+    "spiceLevel": "Mild",
+    "image": "korean-bibimbap.png",
+    "optionGroups": [
+      {
+        "name": "Add-ons",
+        "required": false,
+        "selectionMode": "Multiple",
+        "options": [
+          {
+            "name": "Cheese",
+            "extraCents": 300,
+            "allergens": [
+              "Dairy"
+            ]
+          },
+          {
+            "name": "Fried Egg",
+            "extraCents": 200,
+            "allergens": [
+              "Egg"
+            ]
+          },
+          {
+            "name": "Beef Slices",
+            "extraCents": 800,
+            "allergens": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "classic-beef-burger",
+    "name": "Classic Beef Burger",
+    "description": "Angus beef patty with lettuce, tomato, onion",
+    "basePriceCents": 3800,
+    "category": "Western",
+    "protein": "Beef",
+    "allergens": [
+      "Gluten",
+      "Dairy"
+    ],
+    "spiceLevel": "None",
+    "image": "classic-beef-burger.png",
+    "optionGroups": [
+      {
+        "name": "Bun",
+        "required": true,
+        "selectionMode": "Single",
+        "options": [
+          {
+            "name": "Plain",
+            "extraCents": 0,
+            "allergens": [
+              "Gluten"
+            ]
+          },
+          {
+            "name": "Whole Wheat",
+            "extraCents": 0,
+            "allergens": [
+              "Gluten"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sauce",
+        "required": true,
+        "selectionMode": "Single",
+        "options": [
+          {
+            "name": "Ketchup",
+            "extraCents": 0,
+            "allergens": []
+          },
+          {
+            "name": "Mustard",
+            "extraCents": 0,
+            "allergens": []
+          },
+          {
+            "name": "Mayo",
+            "extraCents": 0,
+            "allergens": [
+              "Egg"
+            ]
+          },
+          {
+            "name": "BBQ",
+            "extraCents": 0,
+            "allergens": []
+          }
+        ]
+      },
+      {
+        "name": "Add-ons",
+        "required": false,
+        "selectionMode": "Multiple",
+        "options": [
+          {
+            "name": "Cheese",
+            "extraCents": 300,
+            "allergens": [
+              "Dairy"
+            ]
+          },
+          {
+            "name": "Bacon",
+            "extraCents": 500,
+            "allergens": []
+          },
+          {
+            "name": "Fried Egg",
+            "extraCents": 200,
+            "allergens": [
+              "Egg"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

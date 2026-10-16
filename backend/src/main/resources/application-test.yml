@@ -1,0 +1,17 @@
+# MySqlTestSupport/E2eBackend provide a disposable database and media directory.
+spring:
+  datasource:
+    hikari:
+      maximum-pool-size: 8
+logging:
+  level:
+    org.springframework.test.web.servlet: warn
+
+# Functional suites exercise burst/concurrency semantics independently. RateLimitIT explicitly enables limits.
+webox:
+  inventory:
+    dispatch-enabled: false
+  rate-limit:
+    enabled: false
+  maintenance:
+    enabled: false

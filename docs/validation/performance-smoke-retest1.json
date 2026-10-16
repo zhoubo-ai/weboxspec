@@ -1,0 +1,275 @@
+{
+  "load": {
+    "smokeOnly": true,
+    "users": 10,
+    "dishes": 500,
+    "rampSeconds": 5,
+    "steadySeconds": 30,
+    "ready": 10,
+    "validOrders": 10,
+    "businessConflicts": 0,
+    "samples": [
+      {
+        "elapsedMs": 361,
+        "activeInventoryStreams": 10.0
+      },
+      {
+        "elapsedMs": 1364,
+        "activeInventoryStreams": 10.0
+      },
+      {
+        "elapsedMs": 2361,
+        "activeInventoryStreams": 10.0
+      },
+      {
+        "elapsedMs": 3365,
+        "activeInventoryStreams": 12.0
+      },
+      {
+        "elapsedMs": 4365,
+        "activeInventoryStreams": 12.0
+      },
+      {
+        "elapsedMs": 5365,
+        "activeInventoryStreams": 13.0
+      },
+      {
+        "elapsedMs": 6365,
+        "activeInventoryStreams": 13.0
+      },
+      {
+        "elapsedMs": 7365,
+        "activeInventoryStreams": 13.0
+      },
+      {
+        "elapsedMs": 8361,
+        "activeInventoryStreams": 13.0
+      },
+      {
+        "elapsedMs": 9365,
+        "activeInventoryStreams": 13.0
+      },
+      {
+        "elapsedMs": 10365,
+        "activeInventoryStreams": 12.0
+      },
+      {
+        "elapsedMs": 11365,
+        "activeInventoryStreams": 12.0
+      },
+      {
+        "elapsedMs": 12363,
+        "activeInventoryStreams": 12.0
+      },
+      {
+        "elapsedMs": 13363,
+        "activeInventoryStreams": 12.0
+      },
+      {
+        "elapsedMs": 14366,
+        "activeInventoryStreams": 12.0
+      },
+      {
+        "elapsedMs": 15366,
+        "activeInventoryStreams": 12.0
+      },
+      {
+        "elapsedMs": 16365,
+        "activeInventoryStreams": 12.0
+      },
+      {
+        "elapsedMs": 17364,
+        "activeInventoryStreams": 12.0
+      },
+      {
+        "elapsedMs": 18362,
+        "activeInventoryStreams": 12.0
+      },
+      {
+        "elapsedMs": 19366,
+        "activeInventoryStreams": 11.0
+      },
+      {
+        "elapsedMs": 20366,
+        "activeInventoryStreams": 11.0
+      },
+      {
+        "elapsedMs": 21365,
+        "activeInventoryStreams": 10.0
+      },
+      {
+        "elapsedMs": 22366,
+        "activeInventoryStreams": 10.0
+      },
+      {
+        "elapsedMs": 23365,
+        "activeInventoryStreams": 10.0
+      },
+      {
+        "elapsedMs": 24366,
+        "activeInventoryStreams": 10.0
+      },
+      {
+        "elapsedMs": 25363,
+        "activeInventoryStreams": 10.0
+      },
+      {
+        "elapsedMs": 26365,
+        "activeInventoryStreams": 10.0
+      },
+      {
+        "elapsedMs": 27366,
+        "activeInventoryStreams": 10.0
+      },
+      {
+        "elapsedMs": 28366,
+        "activeInventoryStreams": 10.0
+      },
+      {
+        "elapsedMs": 29366,
+        "activeInventoryStreams": 10.0
+      }
+    ],
+    "browserPassed": true,
+    "monitorFailure": null,
+    "separateApplicationJvm": true,
+    "applicationHeap": "256m\u20131g",
+    "hikariPool": 16,
+    "sharedIpAuthenticationBurst": 240,
+    "sharedIpAuthenticationPerMinute": 300,
+    "passed": true
+  },
+  "browser": {
+    "smokeOnly": true,
+    "browser": "156.0.8078.4",
+    "viewport": "1440x900",
+    "source": "production Vite build via local preview proxy",
+    "sampleCountPerMetric": 2,
+    "percentile": "nearest-rank, missing/failed attempt = positive infinity",
+    "warmup": "one menu/search; normal fixture preparation before each operation",
+    "results": {
+      "menu": [
+        {
+          "attempt": 1,
+          "elapsedMs": 80.83554200000003,
+          "failure": null,
+          "activeStreams": 12
+        },
+        {
+          "attempt": 2,
+          "elapsedMs": 86.7919589999999,
+          "failure": null,
+          "activeStreams": 13
+        }
+      ],
+      "search": [
+        {
+          "attempt": 1,
+          "elapsedMs": 231.13458300000002,
+          "failure": null,
+          "activeStreams": 12
+        },
+        {
+          "attempt": 2,
+          "elapsedMs": 227.26420800000005,
+          "failure": null,
+          "activeStreams": 12
+        }
+      ],
+      "cart": [
+        {
+          "attempt": 1,
+          "elapsedMs": 23.399999976158142,
+          "failure": null,
+          "activeStreams": 12
+        },
+        {
+          "attempt": 2,
+          "elapsedMs": 19.399999976158142,
+          "failure": null,
+          "activeStreams": 12
+        }
+      ],
+      "order": [
+        {
+          "attempt": 1,
+          "elapsedMs": 85.18170899999996,
+          "failure": null,
+          "activeStreams": 12
+        },
+        {
+          "attempt": 2,
+          "elapsedMs": 41.37345899999991,
+          "failure": null,
+          "activeStreams": 13
+        }
+      ],
+      "inventory": [
+        {
+          "attempt": 1,
+          "elapsedMs": 198.91237499999988,
+          "failure": null,
+          "activeStreams": 13
+        },
+        {
+          "attempt": 2,
+          "elapsedMs": 296.2862919999998,
+          "failure": null,
+          "activeStreams": 13
+        }
+      ],
+      "dashboard": [
+        {
+          "attempt": 1,
+          "elapsedMs": 88.51533399999971,
+          "failure": null,
+          "activeStreams": 13
+        },
+        {
+          "attempt": 2,
+          "elapsedMs": 106.24987499999952,
+          "failure": null,
+          "activeStreams": 13
+        }
+      ]
+    },
+    "summaries": {
+      "menu": {
+        "attempts": 2,
+        "failures": 0,
+        "p95Ms": 86.7919589999999,
+        "limitMs": 2000
+      },
+      "search": {
+        "attempts": 2,
+        "failures": 0,
+        "p95Ms": 231.13458300000002,
+        "limitMs": 2000
+      },
+      "cart": {
+        "attempts": 2,
+        "failures": 0,
+        "p95Ms": 23.399999976158142,
+        "limitMs": 300
+      },
+      "order": {
+        "attempts": 2,
+        "failures": 0,
+        "p95Ms": 85.18170899999996,
+        "limitMs": 3000
+      },
+      "inventory": {
+        "attempts": 2,
+        "failures": 0,
+        "p95Ms": 296.2862919999998,
+        "limitMs": 2000
+      },
+      "dashboard": {
+        "attempts": 2,
+        "failures": 0,
+        "p95Ms": 106.24987499999952,
+        "limitMs": 3000
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "backupManifestSha256" : "33a607fcf87f2265a3a4dc6601c15f9b65e68986a365fc6773e9be498da2eba5",
+  "mysqlImage" : "mysql@sha256:24989179f58856db763f418010c1169fecc944e3ec1ea7e921572d83eb070f70",
+  "sourceAndRestoreIsolated" : true,
+  "browserStages" : 4,
+  "passed" : [ "baseline", "application-restart", "mysql-restart", "seed-idempotency", "isolated-backup-restore", "nonempty-target-refused" ],
+  "normalAppShutdown" : true,
+  "browserProjects" : [ "chromium", "firefox", "webkit" ],
+  "browserChecksPerStage" : 6
+}
